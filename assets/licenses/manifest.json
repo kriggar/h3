@@ -1,0 +1,97 @@
+{
+  "FLARE-CC-BY-SA-3.0.txt": {
+    "sourceUrl": "https://raw.githubusercontent.com/flareteam/flare-game/af6eee6d339ac98011864bfe89da837fe7769c28/LICENSE.txt",
+    "sha256": "3f941b3b89cf7b8370ceb83cc76d2120d471b58735d8ca60238a751a48d7f72f",
+    "bytes": 22240
+  },
+  "FLARE-README.txt": {
+    "sourceUrl": "https://raw.githubusercontent.com/flareteam/flare-game/af6eee6d339ac98011864bfe89da837fe7769c28/README",
+    "sha256": "00039b58f496f89a97434750c4659fef10455675ccd6c26d238464bfc1850b82",
+    "bytes": 5144
+  },
+  "FLARE-CREDITS.txt": {
+    "sourceUrl": "https://raw.githubusercontent.com/flareteam/flare-game/af6eee6d339ac98011864bfe89da837fe7769c28/CREDITS.txt",
+    "sha256": "8b0985009dd04911b851553a35941e6862f1df66a6864f9b2a5c7ff330574fbc",
+    "bytes": 3510
+  },
+  "FLARE-DETAILED-CREDITS.html": {
+    "sourceUrl": "https://github.com/flareteam/flare-game/wiki/Credits",
+    "sha256": "d0c5ab931023f3c7ca3b0e0c9e8256e4c0a95d68aa282921ca31064404c59420",
+    "bytes": 259342
+  },
+  "WEREWOLF-SOURCE-PAGE.html": {
+    "sourceUrl": "https://opengameart.org/content/werewolf-0",
+    "sha256": "3031ac29a8f4e840e9a8c223bad3d203ca9448a42d4e006a0d1eada5660be231",
+    "bytes": 23382
+  },
+  "CC0-1.0.txt": {
+    "sourceUrl": "https://creativecommons.org/publicdomain/zero/1.0/legalcode.txt",
+    "sha256": "a2010f343487d3f7618affe54f789f5487602331c0a8d03f49e9a7c547cf0499",
+    "bytes": 7048
+  },
+  "BARDS-TALE-SOURCE-PAGE.html": {
+    "sourceUrl": "https://opengameart.org/content/medieval-the-bards-tale",
+    "sha256": "f76254171353889730637147b86560a0f9de66c4cfecda1f7b0309b58b9b07fb",
+    "bytes": 40356
+  },
+  "GODOT-LICENSE.txt": {
+    "sourceUrl": "https://raw.githubusercontent.com/godotengine/godot/4.7.2-stable/LICENSE.txt",
+    "version": "4.7.2-stable",
+    "runtimeVersion": "4.7.2.stable.official.ed1daf0bf",
+    "sha256": "b0435e3b3e4e55238f05f4b306f30524a1b2e20147810d436eaa554fa6855c80",
+    "bytes": 1149,
+    "retrievedUtc": "2026-10-22T00:47:54.681516+00:00"
+  },
+  "GODOT-COPYRIGHT.txt": {
+    "sourceUrl": "https://raw.githubusercontent.com/godotengine/godot/4.7.2-stable/COPYRIGHT.txt",
+    "version": "4.7.2-stable",
+    "runtimeVersion": "4.7.2.stable.official.ed1daf0bf",
+    "sha256": "cb1980c88089573bcacd7221d777c689bb8bbd778799f24c27fca0fe5f774d6d",
+    "bytes": 100108,
+    "retrievedUtc": "2026-10-22T00:47:54.681587+00:00"
+  },
+  "POLYHAVEN-LICENSE-PAGE.html": {
+    "sourceUrl": "https://polyhaven.com/license",
+    "bytes": 72685,
+    "sha256": "46158a6b319ae8ef55acd18bd96d986c9261fb0cc8086124e97bcbefe779a623"
+  },
+  "MEDIEVAL-HOUSES-SOURCE-PAGE.html": {
+    "sourceUrl": "https://opengameart.org/content/medieval-house-pack",
+    "bytes": 33887,
+    "sha256": "c8a950578f81259cb4809af82ebecc4997f3a6ebe43dab8229c32f9f757c3085"
+  },
+  "TIMBER-SHACK-SOURCE-PAGE.html": {
+    "sourceUrl": "https://opengameart.org/content/medievalhouse1",
+    "bytes": 22975,
+    "sha256": "2d360a866076d6a43ca47523fafd3f7b6ae2cf1be1eb9c72eb6d987cf31dfed4"
+  },
+  "YUGHUES-FOREST-SOURCE-PAGE.html": {
+    "sourceUrl": "https://opengameart.org/content/freebies-mundo-commissions",
+    "bytes": 30772,
+    "sha256": "91a389b437a14740128f803980f96138434c063b6fff17de643145c802febe91"
+  },
+  "EBGARAMOND-OFL.txt": {
+    "sourceUrl": "https://raw.githubusercontent.com/google/fonts/f8c1d3d6cc75e30d77130bdcbfbff27e3b6233fe/ofl/ebgaramond/OFL.txt",
+    "bytes": 4398,
+    "sha256": "0985066662eb755ed3683ae5482a81a9195b49ce3f7e165cc2388b3dbece7dd7"
+  },
+  "MAKEHUMAN-CC0-ASSET-NOTICE.md": {
+    "sourceUrl": "https://github.com/makehumancommunity/mpfb2/blob/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/LICENSE.ASSETS.md",
+    "bytes": 6962,
+    "sha256": "f6089cba01cb570a24712b41ab8a586ccd3cc5ef53dc266ca50b95c288956d2c"
+  },
+  "QUATERNIUS-ANIMATION-NOTICE.txt": {
+    "sourceUrl": "https://opengameart.org/content/universal-animation-library",
+    "bytes": 446,
+    "sha256": "11eac7504a28077e9d8dbac8ddfca2566510efba7eef46e11f21cdd2bc96d4d5"
+  },
+  "BUILDING-PBR-NOTICES.md": {
+    "source": "Original project provenance notice for CC0 material sources",
+    "sourceUrls": [
+      "https://polyhaven.com/license",
+      "https://docs.ambientcg.com/license/"
+    ],
+    "bytes": 3533,
+    "sha256": "8ab76fd153b231a22b18e2fcb2ad0fa234d57e97678fa0737d798db30a798381"
+  }
+}

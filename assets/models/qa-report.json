@@ -1,0 +1,21 @@
+{
+  "godot": "4.7.2.stable.official.ed1daf0bf",
+  "renderer": "OpenGL Compatibility / Mesa llvmpipe",
+  "textureFilesFullyDecoded": 107,
+  "gltfDependenciesPresent": 32,
+  "runtimeModels": 13,
+  "werewolfFullBodyTriangles": 892,
+  "werewolfAnimatedRenderHashes": {
+    "idle-a": "62db883a4f33d573bd11d6b3439f2a06c16f4ed60eafbbf034df04f20023ae16",
+    "idle-b": "cad4a8f8669d10aefeb9f8345461b13cbb95cb9a801d017fe0afb2bba3aaeb75",
+    "attack": "4e7c44a730c252d5d8158d3ec8924c7d6eb70cb663bec98cf608861de48ecf97",
+    "death": "57284e8734d280b62d8b85bcdd0b76075d740b6cf0d9d7e3325a61180390508e"
+  },
+  "werewolfChangedPixels": {
+    "idle-a_vs_idle-b": 19790,
+    "idle-a_vs_attack": 25414,
+    "idle-a_vs_death": 26143
+  },
+  "forestVisualReview": "Dense original alpha foliage and cutout shadows present; sparse preliminary mesh was rejected and replaced.",
+  "scope": "Asset import/texture integrity/selected actual render checks; full game integration QA belongs to docs/VERIFICATION.md."
+}

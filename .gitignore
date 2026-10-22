@@ -1,0 +1,43 @@
+# Godot-generated files and local exports
+.godot/
+dist/
+builds/
+export_templates/
+export_credentials.cfg
+
+# Local tool state, credentials, and caches
+.openai/
+.aws/
+.ssh/
+.gnupg/
+.codex/
+.agents/
+.env
+.env.*
+!.env.example
+!.env.sample
+!.env.template
+__pycache__/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+node_modules/
+*.pyc
+*.pyo
+*.tmp
+*.log
+.DS_Store
+Thumbs.db
+
+# Optional authoring material and historical evidence are distributed separately.
+assets/staging/
+assets/models/source/
+assets/animated/source/
+docs/verification-logs/
+docs/screenshots/
+research/evidence/
+*.blend1
+
+# Keep Godot source import settings (*.import) and script UID files (*.uid).

@@ -1,0 +1,37 @@
+{
+  "bone": "hand_r",
+  "godotBoneLocalSocketMatrixRows": [
+    [
+      0.1664694960425734,
+      0.6829299884406129,
+      -0.7112625083457819,
+      -0.012665431968160166
+    ],
+    [
+      -0.9548148577803489,
+      0.2917510781860908,
+      0.05665696385143994,
+      0.0754161948201321
+    ],
+    [
+      0.2462043889995212,
+      0.6696923890886758,
+      0.7006394608301235,
+      -0.00014922385050401127
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "fitMaxErrorMetres": 4.084678394133956e-08,
+  "looseSwordBladeAxis": "+Y",
+  "looseSwordGripOrigin": [
+    0,
+    0,
+    0
+  ],
+  "method": "Solved against exported glTF inverse-bind transform and corresponding held/loose mesh vertices; test actual BoneAttachment in Godot before relying on it."
+}

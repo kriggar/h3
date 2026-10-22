@@ -1,0 +1,46 @@
+[
+  {
+    "path": "medieval_house_01.glb",
+    "source": "House1Upload.blend",
+    "triangles": 17011,
+    "size_xyz_blender": [
+      16.495742797851562,
+      8.535837173461914,
+      12.274816513061523
+    ],
+    "materials": 13
+  },
+  {
+    "path": "medieval_house_02.glb",
+    "source": "House2_1Upload.blend",
+    "triangles": 12760,
+    "size_xyz_blender": [
+      13.53384017944336,
+      9.53465747833252,
+      8.868680953979492
+    ],
+    "materials": 12
+  },
+  {
+    "path": "medieval_house_03.glb",
+    "source": "House3Upload.blend",
+    "triangles": 17300,
+    "size_xyz_blender": [
+      13.169410705566406,
+      8.532731056213379,
+      14.649849891662598
+    ],
+    "materials": 12
+  },
+  {
+    "path": "medieval_house_04.glb",
+    "source": "House4Upload.blend",
+    "triangles": 12238,
+    "size_xyz_blender": [
+      15.091289520263672,
+      10.128690719604492,
+      9.794270515441895
+    ],
+    "materials": 14
+  }
+]

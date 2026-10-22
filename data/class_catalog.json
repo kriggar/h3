@@ -1,0 +1,601 @@
+{
+  "schemaVersion": 1,
+  "title": "Draconia fixed hero classes",
+  "status": "design_catalog_with_explicit_supported_skill_subset",
+  "rules": {
+    "oneHeroPerCampaign": true,
+    "classLocked": true,
+    "raceLocked": true,
+    "personalSignatureLocked": true,
+    "respecScope": "attributes and earned class talents only",
+    "raceOverridesClassSkills": false,
+    "equipmentGrantsOffClassActives": false
+  },
+  "classes": [
+    {
+      "id": "warlord",
+      "name": "Warlord",
+      "factionId": "ashen_crown",
+      "talentFamilies": [
+        "Steel",
+        "Command"
+      ],
+      "playstyle": "Command the fight through positioning, weapon pressure and rally orders.",
+      "classTrait": {
+        "id": "warlord_discipline",
+        "name": "Momentum",
+        "mechanic": "Gain momentum by completing ordered advances or counters; spend it on a committed command.",
+        "status": "design_only"
+      },
+      "equipmentIdentity": "swords, axes, polearms; medium or heavy armor",
+      "supportedSkills": [
+        "cleave"
+      ],
+      "plannedSkills": [
+        "rallying_cut",
+        "hold_the_line",
+        "shield_breaker",
+        "forced_march",
+        "challenge",
+        "battle_standard"
+      ],
+      "implementationStatus": "partial_kit",
+      "crossClassSkillLearning": false
+    },
+    {
+      "id": "oathwarden",
+      "name": "Oathwarden",
+      "factionId": "ashen_crown",
+      "talentFamilies": [
+        "Steel",
+        "Oaths"
+      ],
+      "playstyle": "Protect a chosen space and turn a successful defense into a counterattack.",
+      "classTrait": {
+        "id": "oathwarden_discipline",
+        "name": "Oath marks",
+        "mechanic": "Sworn ground rewards guarding and measured retaliation; abandoning it gives up the stored benefit.",
+        "status": "design_only"
+      },
+      "equipmentIdentity": "swords, maces; medium or heavy armor",
+      "supportedSkills": [
+        "cleave",
+        "ward"
+      ],
+      "plannedSkills": [
+        "cleave",
+        "ward",
+        "vowstrike",
+        "sanctuary_line",
+        "reckoning",
+        "unbroken_oath"
+      ],
+      "implementationStatus": "partial_kit",
+      "crossClassSkillLearning": false
+    },
+    {
+      "id": "ranger",
+      "name": "Ranger",
+      "factionId": "thornweald_court",
+      "talentFamilies": [
+        "Hunt",
+        "Steel"
+      ],
+      "playstyle": "Choose a quarry, shape its approach and strike from a prepared angle.",
+      "classTrait": {
+        "id": "ranger_discipline",
+        "name": "Quarry",
+        "mechanic": "Tracking an actual target builds one bounded opening; changing quarry loses the old opening.",
+        "status": "design_only"
+      },
+      "equipmentIdentity": "bows, spears, paired blades; light or medium armor",
+      "supportedSkills": [],
+      "plannedSkills": [
+        "marked_shot",
+        "barbed_snare",
+        "withdrawal",
+        "split_shot",
+        "brushwalk",
+        "hunters_patience"
+      ],
+      "implementationStatus": "design_only",
+      "crossClassSkillLearning": false
+    },
+    {
+      "id": "druid",
+      "name": "Druid",
+      "factionId": "thornweald_court",
+      "talentFamilies": [
+        "Rites",
+        "Hunt"
+      ],
+      "playstyle": "Use living ground, roots and seasonal exchanges to change the battlefield.",
+      "classTrait": {
+        "id": "druid_discipline",
+        "name": "Growth",
+        "mechanic": "Cultivate visible patches, then consume their growth for control or recovery.",
+        "status": "design_only"
+      },
+      "equipmentIdentity": "staves, sickles; light armor",
+      "supportedSkills": [
+        "roots"
+      ],
+      "plannedSkills": [
+        "roots",
+        "briar_shelter",
+        "sap_mend",
+        "thornburst",
+        "autumn_exchange",
+        "grove_awaken"
+      ],
+      "implementationStatus": "partial_kit",
+      "crossClassSkillLearning": false
+    },
+    {
+      "id": "spellblade",
+      "name": "Spellblade",
+      "factionId": "cloudspire_conclave",
+      "talentFamilies": [
+        "Steel",
+        "Storm"
+      ],
+      "playstyle": "Weave close weapon strikes with brief storm charges and precise repositioning.",
+      "classTrait": {
+        "id": "spellblade_discipline",
+        "name": "Charge",
+        "mechanic": "A completed weapon pattern prepares a charge; spend it on one named arcane follow-up.",
+        "status": "design_only"
+      },
+      "equipmentIdentity": "swords, spears; light or medium armor",
+      "supportedSkills": [
+        "cleave"
+      ],
+      "plannedSkills": [
+        "arc_cut",
+        "windstep",
+        "conductive_edge",
+        "catch_bolt",
+        "storm_lunge",
+        "overload_edge"
+      ],
+      "implementationStatus": "partial_kit",
+      "crossClassSkillLearning": false
+    },
+    {
+      "id": "stormcaller",
+      "name": "Stormcaller",
+      "factionId": "cloudspire_conclave",
+      "talentFamilies": [
+        "Storm",
+        "Rites"
+      ],
+      "playstyle": "Read a visible forecast and place wind, rain and lightning deliberately.",
+      "classTrait": {
+        "id": "stormcaller_discipline",
+        "name": "Pressure",
+        "mechanic": "Wind and rain spells build a forecast; discharge it along telegraphed storm lanes.",
+        "status": "design_only"
+      },
+      "equipmentIdentity": "staves, rods; light armor",
+      "supportedSkills": [],
+      "plannedSkills": [
+        "forked_bolt",
+        "gust_line",
+        "rainfield",
+        "grounding_rod",
+        "eye_of_storm",
+        "thunderhead"
+      ],
+      "implementationStatus": "design_only",
+      "crossClassSkillLearning": false
+    },
+    {
+      "id": "death_knight",
+      "name": "Death Knight",
+      "factionId": "vesper_court",
+      "talentFamilies": [
+        "Steel",
+        "Oaths"
+      ],
+      "playstyle": "Bind hostile pressure into finite debt and answer it through weapon combat.",
+      "classTrait": {
+        "id": "death_knight_discipline",
+        "name": "Debt",
+        "mechanic": "Intercept real harm to bank a capped counter; debt expires and cannot be farmed on allies.",
+        "status": "design_only"
+      },
+      "equipmentIdentity": "swords, axes; heavy armor",
+      "supportedSkills": [
+        "cleave"
+      ],
+      "plannedSkills": [
+        "grave_cut",
+        "debt_brand",
+        "night_mantle",
+        "soul_tether",
+        "dread_advance",
+        "last_judgment"
+      ],
+      "implementationStatus": "partial_kit",
+      "crossClassSkillLearning": false
+    },
+    {
+      "id": "necromancer",
+      "name": "Necromancer",
+      "factionId": "vesper_court",
+      "talentFamilies": [
+        "Rites",
+        "Oaths"
+      ],
+      "playstyle": "Spend battlefield remains to command short-lived servants, curses and bone cover.",
+      "classTrait": {
+        "id": "necromancer_discipline",
+        "name": "Remains",
+        "mechanic": "Finite eligible remains power temporary summons; summoned deaths never produce more remains.",
+        "status": "design_only"
+      },
+      "equipmentIdentity": "staves, ritual blades; light armor",
+      "supportedSkills": [],
+      "plannedSkills": [
+        "bone_lance",
+        "raise_thrall",
+        "withering_seal",
+        "bone_screen",
+        "siphon_memory",
+        "procession"
+      ],
+      "implementationStatus": "design_only",
+      "crossClassSkillLearning": false
+    },
+    {
+      "id": "berserker",
+      "name": "Berserker",
+      "factionId": "gloamfang_clans",
+      "talentFamilies": [
+        "Steel",
+        "Hunt"
+      ],
+      "playstyle": "Commit to close pursuit, build fury and choose when to release or restrain it.",
+      "classTrait": {
+        "id": "berserker_discipline",
+        "name": "Fury",
+        "mechanic": "Committed strikes build fury; spending it forces a readable recovery instead of endless chaining.",
+        "status": "design_only"
+      },
+      "equipmentIdentity": "axes, greatswords, claws; light or medium armor",
+      "supportedSkills": [
+        "cleave"
+      ],
+      "plannedSkills": [
+        "rending_arc",
+        "pounce",
+        "defiant_roar",
+        "blood_scent",
+        "hold_fury",
+        "red_moon"
+      ],
+      "implementationStatus": "partial_kit",
+      "crossClassSkillLearning": false
+    },
+    {
+      "id": "moon_witch",
+      "name": "Moon Witch",
+      "factionId": "gloamfang_clans",
+      "talentFamilies": [
+        "Rites",
+        "Hunt"
+      ],
+      "playstyle": "Use lunar marks, howls and predatory bargains to manipulate pursuit.",
+      "classTrait": {
+        "id": "moon_witch_discipline",
+        "name": "Moon phases",
+        "mechanic": "A visible sequence alternates pursuit and restraint; each phase offers a different payoff.",
+        "status": "design_only"
+      },
+      "equipmentIdentity": "staves, ritual blades; light armor",
+      "supportedSkills": [],
+      "plannedSkills": [
+        "moonbrand",
+        "hushing_howl",
+        "pale_orb",
+        "scent_veil",
+        "hunger_bargain",
+        "eclipse"
+      ],
+      "implementationStatus": "design_only",
+      "crossClassSkillLearning": false
+    },
+    {
+      "id": "reaver",
+      "name": "Reaver",
+      "factionId": "emberhorn_dominion",
+      "talentFamilies": [
+        "Steel",
+        "Command"
+      ],
+      "playstyle": "Break a defended position with heavy blows and carefully timed intimidation.",
+      "classTrait": {
+        "id": "reaver_discipline",
+        "name": "Impact",
+        "mechanic": "Committed heavy attacks build fracture on a target; overcommitting leaves a long punishable recovery.",
+        "status": "design_only"
+      },
+      "equipmentIdentity": "axes, hammers, greatswords; heavy armor",
+      "supportedSkills": [
+        "cleave"
+      ],
+      "plannedSkills": [
+        "armor_rend",
+        "stampede",
+        "hammerfall",
+        "chain_drag",
+        "dominating_shout",
+        "breach"
+      ],
+      "implementationStatus": "partial_kit",
+      "crossClassSkillLearning": false
+    },
+    {
+      "id": "pyromancer",
+      "name": "Pyromancer",
+      "factionId": "emberhorn_dominion",
+      "talentFamilies": [
+        "Rites",
+        "Storm"
+      ],
+      "playstyle": "Lay fire, manage its spread and consume heat for a controlled release.",
+      "classTrait": {
+        "id": "pyromancer_discipline",
+        "name": "Heat",
+        "mechanic": "Casting builds heat; vent it deliberately or suffer a predictable reduction in casting efficiency.",
+        "status": "design_only"
+      },
+      "equipmentIdentity": "staves, rods; light armor",
+      "supportedSkills": [
+        "ember"
+      ],
+      "plannedSkills": [
+        "ember",
+        "cinder_line",
+        "flashover",
+        "heat_mirage",
+        "banked_flame",
+        "furnace_breath"
+      ],
+      "implementationStatus": "partial_kit",
+      "crossClassSkillLearning": false
+    },
+    {
+      "id": "wayfinder",
+      "name": "Wayfinder",
+      "factionId": "reedbound_league",
+      "talentFamilies": [
+        "Hunt",
+        "Command"
+      ],
+      "playstyle": "Set routes and anchors that turn difficult ground into an advantage.",
+      "classTrait": {
+        "id": "wayfinder_discipline",
+        "name": "Route marks",
+        "mechanic": "A few visible anchors enable repeatable movement tricks, with no teleportation through blocked ground.",
+        "status": "design_only"
+      },
+      "equipmentIdentity": "spears, bows, swords; light or medium armor",
+      "supportedSkills": [],
+      "plannedSkills": [
+        "cast_line",
+        "channel_dash",
+        "crossing_mark",
+        "harpoon",
+        "wake_guard",
+        "open_passage"
+      ],
+      "implementationStatus": "design_only",
+      "crossClassSkillLearning": false
+    },
+    {
+      "id": "tidebinder",
+      "name": "Tidebinder",
+      "factionId": "reedbound_league",
+      "talentFamilies": [
+        "Rites",
+        "Storm"
+      ],
+      "playstyle": "Shape a finite supply of water into flow, mist and returning waves.",
+      "classTrait": {
+        "id": "tidebinder_discipline",
+        "name": "Stored water",
+        "mechanic": "Move water between connected patches; strong effects dry their source instead of appearing endlessly.",
+        "status": "design_only"
+      },
+      "equipmentIdentity": "staves, rods; light armor",
+      "supportedSkills": [],
+      "plannedSkills": [
+        "returning_wave",
+        "mist_screen",
+        "salt_seal",
+        "silt_bank",
+        "draw_water",
+        "floodgate"
+      ],
+      "implementationStatus": "design_only",
+      "crossClassSkillLearning": false
+    },
+    {
+      "id": "marshal",
+      "name": "Marshal",
+      "factionId": "ironroad_compact",
+      "talentFamilies": [
+        "Command",
+        "Steel"
+      ],
+      "playstyle": "Combine disciplined weapon combat with portable tools and explicit orders.",
+      "classTrait": {
+        "id": "marshal_discipline",
+        "name": "Readiness",
+        "mechanic": "Preparing an order costs time now to improve one later action; only one preparation may be banked.",
+        "status": "design_only"
+      },
+      "equipmentIdentity": "swords, polearms, crossbows; medium or heavy armor",
+      "supportedSkills": [
+        "cleave"
+      ],
+      "plannedSkills": [
+        "ordered_strike",
+        "portable_cover",
+        "rally_point",
+        "intercept",
+        "advance_order",
+        "decisive_order"
+      ],
+      "implementationStatus": "partial_kit",
+      "crossClassSkillLearning": false
+    },
+    {
+      "id": "runemage",
+      "name": "Runemage",
+      "factionId": "ironroad_compact",
+      "talentFamilies": [
+        "Rites",
+        "Command"
+      ],
+      "playstyle": "Draw a small network of deliberate glyphs and trigger their interactions.",
+      "classTrait": {
+        "id": "runemage_discipline",
+        "name": "Inscribed charges",
+        "mechanic": "Place a bounded number of visible runes; consume, reposition or combine them at real preparation cost.",
+        "status": "design_only"
+      },
+      "equipmentIdentity": "staves, rune tools; light or medium armor",
+      "supportedSkills": [],
+      "plannedSkills": [
+        "rune_bolt",
+        "binding_glyph",
+        "warding_glyph",
+        "relay_mark",
+        "inscribed_snare",
+        "grand_circuit"
+      ],
+      "implementationStatus": "design_only",
+      "crossClassSkillLearning": false
+    },
+    {
+      "id": "stoneguard",
+      "name": "Stoneguard",
+      "factionId": "deepcairn_pact",
+      "talentFamilies": [
+        "Steel",
+        "Oaths"
+      ],
+      "playstyle": "Brace at a chosen boundary and convert a heavy impact into a measured counter.",
+      "classTrait": {
+        "id": "stoneguard_discipline",
+        "name": "Brace",
+        "mechanic": "A timed brace catches one valid impact; carrying it slows turning until the stored force is released.",
+        "status": "design_only"
+      },
+      "equipmentIdentity": "hammers, axes, shields; heavy armor",
+      "supportedSkills": [
+        "cleave"
+      ],
+      "plannedSkills": [
+        "stone_sweep",
+        "brace",
+        "fault_strike",
+        "pillar_stance",
+        "counterweight",
+        "unbroken_wall"
+      ],
+      "implementationStatus": "partial_kit",
+      "crossClassSkillLearning": false
+    },
+    {
+      "id": "earthshaper",
+      "name": "Earthshaper",
+      "factionId": "deepcairn_pact",
+      "talentFamilies": [
+        "Rites",
+        "Command"
+      ],
+      "playstyle": "Manipulate stone seams, resonance and temporary terrain without sealing every route.",
+      "classTrait": {
+        "id": "earthshaper_discipline",
+        "name": "Resonance",
+        "mechanic": "Valid stone anchors carry finite pulses; every obstruction preserves a readable path around it.",
+        "status": "design_only"
+      },
+      "equipmentIdentity": "staves, hammers; light or medium armor",
+      "supportedSkills": [],
+      "plannedSkills": [
+        "stone_lance",
+        "raise_ridge",
+        "resonance_pin",
+        "quartz_lens",
+        "weight_anchor",
+        "mountains_answer"
+      ],
+      "implementationStatus": "design_only",
+      "crossClassSkillLearning": false
+    },
+    {
+      "id": "thief",
+      "name": "Thief",
+      "factionId": "ironroad_compact",
+      "talentFamilies": [
+        "Hunt",
+        "Command"
+      ],
+      "playstyle": "Infiltrate dangerous spaces, solve physical obstacles and use limited tools to secure optional treasure before escaping.",
+      "classTrait": {
+        "id": "thief_preparation",
+        "name": "Preparation",
+        "mechanic": "Reconnaissance identifies real locks, traps and pockets. Spend a bounded tool supply to create an opening; each marked container or enemy can yield its registered stolen item only once.",
+        "status": "design_only"
+      },
+      "equipmentIdentity": "short blades, slings, light crossbows; light armor and tool belt",
+      "supportedSkills": [],
+      "plannedSkills": [
+        "lift_key",
+        "disarm_trap",
+        "false_sound",
+        "smoke_bomb",
+        "tripwire",
+        "escape_line"
+      ],
+      "implementationStatus": "design_only",
+      "crossClassSkillLearning": false,
+      "combatIdentity": "Distraction, control and escape; weaker sustained damage and no automatic boss execution.",
+      "rewardRules": "Theft uses registered one-time optional rewards. It cannot duplicate boss loot, invent unlimited money or satisfy a mandatory boss-clear objective."
+    },
+    {
+      "id": "rogue",
+      "name": "Rogue",
+      "factionId": "vesper_court",
+      "talentFamilies": [
+        "Hunt",
+        "Steel"
+      ],
+      "playstyle": "Isolate a dangerous opponent, attack from an earned angle and spend a brief opening on precise melee pressure.",
+      "classTrait": {
+        "id": "rogue_openings",
+        "name": "Openings",
+        "mechanic": "A successful flank, interrupt or timed evasion opens one target. Spend that opening on a precise finisher; it expires on a target switch and cannot stack into an infinite stun.",
+        "status": "design_only"
+      },
+      "equipmentIdentity": "paired daggers, short swords, hand crossbow; light or medium armor",
+      "supportedSkills": [],
+      "plannedSkills": [
+        "backstab",
+        "venom_edge",
+        "hamstring",
+        "throat_feint",
+        "sidestep",
+        "expose_weakness"
+      ],
+      "implementationStatus": "design_only",
+      "crossClassSkillLearning": false,
+      "combatIdentity": "Single-target burst, bounded poison and bleed pressure, interrupts; fragile when surrounded and weak against sustained frontal pressure.",
+      "rewardRules": "Earn ordinary combat rewards through the registered encounter ledger; precision does not manufacture extra loot or unlock Thief-only tools."
+    }
+  ]
+}

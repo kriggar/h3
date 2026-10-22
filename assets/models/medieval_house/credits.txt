@@ -1,0 +1,27 @@
+This document is for informational purposes only.
+If redistributing this archive, please include this file so that others may benefit from 
+the information included herein.
+
+All included files are, or have previously been, released into the public domain - CC0
+No credit is required.
+
+medieval_house_1_001.blend - https://opengameart.org/content/medieval_house_1 - Paul_Wortmann - cc0
+Included is the blend file, as well as obj exports of each piece.
+
+The brick texture is derived from:
+http://www.blendswap.com/blends/view/49210 - Beaterator - CC0
+
+The textures were extracted from:
+(They have been modified.)
+https://opengameart.org/content/medieval-shack - AnyRPG - CC0
+
+Preview image 1:
+In game, floor CC0, not included.
+
+Preview image 2:
+Blender 2.79b
+
+
+
+*The floor is not included, however the texture used is a modified form of:
+rock01.jpg - https://opengameart.org/content/seamless-2 - Arikel - CC0

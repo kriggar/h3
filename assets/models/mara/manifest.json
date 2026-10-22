@@ -1,0 +1,157 @@
+{
+  "name": "Mara Veyne",
+  "status": "v9 accepted development PBR material integration; production character art incomplete",
+  "runtimePath": "res://assets/models/mara/mara.glb",
+  "sourceStaging": "assets/staging/ileana-mpfb-proof",
+  "sourceVersion": "v9",
+  "sha256": "8ada77b97e748814283fbf3f6efe960026674c0bf4ed04776610515c70fac94d",
+  "bytes": 11190780,
+  "upAxis": "+Y",
+  "forwardAxis": "+Z",
+  "unit": "metres",
+  "standingHeightApprox": 1.63,
+  "feetOffset": 0,
+  "skeleton": "IleanaRig/Skeleton3D",
+  "boneCount": 53,
+  "rightHandBone": "hand_r",
+  "leftHandBone": "hand_l",
+  "heldSwordMesh": "IleanaRig/Skeleton3D/Mara_Sword",
+  "clips": [
+    {
+      "length": 1.54166662693024,
+      "loopMode": 0,
+      "name": "attack"
+    },
+    {
+      "length": 0.416666656732559,
+      "loopMode": 0,
+      "name": "cast_end"
+    },
+    {
+      "length": 2.08333325386047,
+      "loopMode": 1,
+      "name": "cast_hold"
+    },
+    {
+      "length": 0.5,
+      "loopMode": 0,
+      "name": "cast_release"
+    },
+    {
+      "length": 0.541666686534882,
+      "loopMode": 0,
+      "name": "cast_start"
+    },
+    {
+      "length": 1.66666662693024,
+      "loopMode": 1,
+      "name": "combat_idle"
+    },
+    {
+      "length": 2.41666674613953,
+      "loopMode": 0,
+      "name": "death"
+    },
+    {
+      "length": 1.45833337306976,
+      "loopMode": 0,
+      "name": "dodge"
+    },
+    {
+      "length": 0.333333343267441,
+      "loopMode": 0,
+      "name": "hit"
+    },
+    {
+      "length": 2.5,
+      "loopMode": 1,
+      "name": "idle"
+    },
+    {
+      "length": 0.916666686534882,
+      "loopMode": 1,
+      "name": "run"
+    },
+    {
+      "length": 1.33333337306976,
+      "loopMode": 1,
+      "name": "walk"
+    }
+  ],
+  "attackImpactPhaseEstimate": 0.44,
+  "attackTimingAuthority": "Rules/controller owns damage timing; seek/speed-match visual clip. Estimate is not a gameplay event.",
+  "weaponPolicy": {
+    "cast_start,cast_hold,cast_release,cast_end": "Hide/stow held sword before cast_start; restore after cast_end. Empty-hand spell animation.",
+    "dodge": "Hide/stow held sword throughout the unarmed roll.",
+    "death": "Drop/hide held sword once at state entry t=0, before unarmed fall. Do not retain held sword for whole death clip.",
+    "other": "Show held sword unless equipment state overrides."
+  },
+  "licenses": {
+    "bodyAccessoriesGarments": "CC0-1.0",
+    "sourceMotions": "CC0-1.0",
+    "MPFBToolCodeNotInRuntime": "GPL-3.0-or-later",
+    "projectAuthoredSwordAndTechnicalEdits": "Project release terms; underlying third-party art retains its licenses",
+    "pbrSources": "Poly Haven Caban/Rough Linen/Brown Leather and ambientCG Metal012: CC0-1.0; skin microdetail is project-authored"
+  },
+  "productionBlockers": [
+    "front collar inner edge and close-range cowl trim remain uneven",
+    "tunic hem pinches in walking pose; elbow/sleeve topology and weights need final tailored pass",
+    "final face/eye/hair identity and shading remain unfinished",
+    "static braid",
+    "continuous locomotion needs full contact/foot-slide review",
+    "lower LODs and material optimization unfinished",
+    "Only Vowkeeper and Bellworn Cowl modules exist; full armor catalog and mixing unfinished",
+    "Boots retain prior albedo; dedicated normal/roughness set remains open"
+  ],
+  "triangles": 41590,
+  "meshCount": 9,
+  "materialSurfaces": 14,
+  "materialCount": 13,
+  "animationPlayer": "AnimationPlayer",
+  "sixPriorClipsPreserved": "v7 preserved all six v6 clips. v8 intentionally corrects one hand_r rotation channel in attack; other five baseline clips and all added clips remain unchanged.",
+  "stanceMapping": {
+    "guard": "combat_idle; visible sword-ready stance, not a shield-block impact animation"
+  },
+  "looseSword": {
+    "path": "res://assets/models/mara/sword.glb",
+    "bytes": 11356,
+    "sha256": "1e3cf5bb82a2393fcc43122e8208a259b51d19843865f4621c303cd98f5d36f7",
+    "socket": "sword-socket.json",
+    "bone": "hand_r",
+    "origin": "grip center",
+    "bladeAxis": "+Y",
+    "nativeAttachmentVerified": true
+  },
+  "gaitPacingEstimateAtScaleOne": {
+    "walkMetresPerSecond": 0.8902392536401749,
+    "runMetresPerSecond": 4.774393647909164,
+    "qualification": "Analytic baseline only. Multiply by model scale, match playback speed to actual controller speed and inspect in game."
+  },
+  "dodgeTimingRecommendation": {
+    "fullVisualSeconds": 0.8,
+    "authoredSeconds": 1.4583333333333333,
+    "reason": "A 0.3s full roll is 4.86x source speed and loses readability. Separate invulnerability/movement/recovery rules from whole visual duration."
+  },
+  "proofEvidence": "assets/staging/ileana-mpfb-proof/evidence/native-v7/",
+  "reviewedBy": [
+    "asset author: actual native pose/sequence inspection",
+    "root: independent v6 grip/idle/attack/action-camera review",
+    "heroes_architecture: independent v6 attack/run/death/grip review",
+    "root: independent v8 low-swing/contact and two-item fit review",
+    "root: v9 ten native material/pose captures, including final mipmap correction",
+    "native_backend: independent v9 material/fit review before mipmap refinement; production limitations retained"
+  ],
+  "promotedUtc": "2026-10-22T05:36:18.922006+00:00",
+  "revisionNote": "v9 applies licensed PBR maps, restored neck coverage, consistent cloth and four rounded bindings. Only body/tunic mesh buffers replaced; original node/skin/animation records and binary channels preserved. The v8 attack/hand_r clearance correction remains intact.",
+  "weaponClearanceEvidence": {
+    "nativeImages": "assets/staging/ileana-mpfb-proof/evidence/equipment-native/attack-low.png",
+    "denseSampleRate": 96,
+    "starterMinimumMetres": 0.05835763365030289,
+    "vowkeeperMinimumMetres": 0.03468397632241249
+  },
+  "equipmentManifest": "res://assets/models/mara/equipment/manifest.json",
+  "runtimeEquipmentEvidence": "assets/staging/ileana-mpfb-proof/evidence/runtime-equipment/",
+  "materialManifest": "assets/staging/mara-pbr-v9/candidate-manifest.json",
+  "editablePbrSource": "assets/models/source/characters/mara-pbr-v9/mara-pbr-v9.blend",
+  "pbrEvidence": "docs/verification-logs/character-pbr/"
+}

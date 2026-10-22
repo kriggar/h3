@@ -1,0 +1,56 @@
+MIT License
+
+Copyright (c) 2026 Draconia contributors
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+------------------------------------------------------------------------
+Scope and third-party notices
+------------------------------------------------------------------------
+
+The MIT grant above covers original DRACONIA source code and original
+documentation, except where an individual file states otherwise. It does
+not relicense third-party artwork, models, animation definitions, fonts,
+audio, engine components or other material carrying separate terms.
+
+Downloaded assets retain their original licensing:
+
+* Flare-derived character artwork and its adaptations: CC BY-SA 3.0.
+* Poly Haven models/textures, Yughues forest models, Daniel Andersson
+  houses, Paul Wortmann's shack, br-n518's Werewolf model/animations and
+  the identified downloaded audio: CC0 1.0 Universal.
+* Cinzel and EB Garamond fonts: SIL Open Font License 1.1.
+
+See ASSET_CREDITS.md, assets/licenses/, assets/animated/source/ provenance
+records and assets/audio/manifest.json for exact attribution, sources,
+modifications and applicable notices. Preserve those credits and licenses
+when redistributing the corresponding assets. The source-code license does
+not override the Flare artwork's attribution and ShareAlike obligations.
+
+Godot Engine is distributed under its own MIT License. Its copyright and
+license notice, and links to third-party component notices, are available
+at the official page:
+
+https://godotengine.org/license/
+
+Godot third-party component notices:
+https://github.com/godotengine/godot/blob/master/COPYRIGHT.txt
+
+The separate REA/Ghidra analysis installation and reference repositories
+are not part of the game's source-code license or runtime distribution.

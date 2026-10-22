@@ -1,0 +1,132 @@
+{
+  "asset": {
+    "version": "2.0",
+    "generator": "Draconia OBJ-to-glTF technical conversion; original by Paul Wortmann, CC0"
+  },
+  "scene": 0,
+  "scenes": [
+    {
+      "nodes": [
+        0
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "name": "medieval_timber_house",
+      "mesh": 0
+    }
+  ],
+  "meshes": [
+    {
+      "name": "medieval_timber_house",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TEXCOORD_0": 2
+          },
+          "indices": 3,
+          "material": 0
+        }
+      ]
+    }
+  ],
+  "buffers": [
+    {
+      "uri": "medieval_house.bin",
+      "byteLength": 13840
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteOffset": 0,
+      "byteLength": 4272
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 4272,
+      "byteLength": 4272
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 8544,
+      "byteLength": 2848
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 11392,
+      "byteLength": 2448
+    }
+  ],
+  "accessors": [
+    {
+      "bufferView": 0,
+      "componentType": 5126,
+      "count": 356,
+      "type": "VEC3",
+      "min": [
+        -2.200000047683716,
+        0.0,
+        -3.549999952316284
+      ],
+      "max": [
+        2.200000047683716,
+        5.656402111053467,
+        3.0999999046325684
+      ]
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 356,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 356,
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 3,
+      "componentType": 5125,
+      "count": 612,
+      "type": "SCALAR"
+    }
+  ],
+  "images": [
+    {
+      "uri": "medieval_house_1_001_d.png"
+    },
+    {
+      "uri": "medieval_house_1_001_n.png"
+    }
+  ],
+  "textures": [
+    {
+      "source": 0
+    },
+    {
+      "source": 1
+    }
+  ],
+  "materials": [
+    {
+      "name": "weathered_timber_shingle_brick",
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 0
+        },
+        "metallicFactor": 0,
+        "roughnessFactor": 0.9
+      },
+      "normalTexture": {
+        "index": 1
+      },
+      "doubleSided": true
+    }
+  ]
+}

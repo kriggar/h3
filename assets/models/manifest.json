@@ -1,0 +1,1385 @@
+{
+  "schemaVersion": 1,
+  "pathBase": "res://",
+  "license": "Per-entry licenses; downloaded environment/model bases are CC0. Project-authored Mara additions retain project release terms.",
+  "coordinateSystem": "glTF Y-up; most original Poly Haven scenes contain showroom translations; normalized forest models1m high",
+  "models": [
+    {
+      "key": "fort",
+      "scene": "assets/models/modular_fort_01/modular_fort_01_1k.gltf",
+      "authors": [
+        "Rico Cilliers"
+      ],
+      "sourcePage": "https://polyhaven.com/a/modular_fort_01",
+      "license": "CC0-1.0",
+      "triangles": 28218,
+      "nodeNames": [
+        "modular_fort_01_wall_thick_corner_02",
+        "modular_fort_01_tower_round",
+        "modular_fort_01_wall_thick_straight_01",
+        "modular_fort_01_wall_thick_end_02",
+        "modular_fort_01_wall_thick_corner_01",
+        "modular_fort_01_wall_thick_thin_transition_01",
+        "modular_fort_01_wall_thin_straight_01",
+        "modular_fort_01_wall_thin_corner_01",
+        "modular_fort_01_wall_thin_corner_02",
+        "modular_fort_01_wall_thin_straight_02",
+        "modular_fort_01_wall_thin_straight_04",
+        "modular_fort_01_wall_thick_end_01",
+        "modular_fort_01_wall_thin_gate_01",
+        "modular_fort_01_wall_thin_corner_03",
+        "modular_fort_01_wall_thin_straight_03",
+        "modular_fort_01_wall_walkway_straight_01",
+        "modular_fort_01_wall_walkway_corner_01",
+        "modular_fort_01_wall_stairs_straight_01",
+        "modular_fort_01_wall_walkway_corner_02",
+        "modular_fort_01_wall_thick_straight_02",
+        "modular_fort_01_wall_walkway_straight_02",
+        "modular_fort_01_wall_walkway_end_01"
+      ],
+      "processing": "Unchanged original glTF + 1K PBR dependencies. Select individual named modular meshes; showroom translations need resetting.",
+      "bytes": 71433,
+      "sha256": "829ac97d4c5c5672d3055d772e0ef4b545ad93cb4b639296f34e3ddf04cf9faf"
+    },
+    {
+      "key": "rocks",
+      "scene": "assets/models/rock_moss_set_02/rock_moss_set_02_1k.gltf",
+      "authors": [
+        "Kless Gyzen"
+      ],
+      "sourcePage": "https://polyhaven.com/a/rock_moss_set_02",
+      "license": "CC0-1.0",
+      "triangles": 57647,
+      "nodeNames": [
+        "rock_moss_set_02_rock08",
+        "rock_moss_set_02_rock09",
+        "rock_moss_set_02_rock12",
+        "rock_moss_set_02_rock13",
+        "rock_moss_set_02_rock10",
+        "rock_moss_set_02_rock11",
+        "rock_moss_set_02_rock07"
+      ],
+      "processing": "Unchanged original glTF + 1K PBR dependencies. Seven separately placed rocks.",
+      "bytes": 11608,
+      "sha256": "c3b992a7622e94f7d8da97a47277a2a5177a513af0312a127ec908d4056c97db"
+    },
+    {
+      "key": "pine",
+      "scene": "assets/models/forest/pine.glb",
+      "authors": [
+        "Yughues (Hugues Muller)"
+      ],
+      "sourcePage": "https://opengameart.org/content/freebies-mundo-commissions",
+      "license": "CC0-1.0",
+      "triangles": 784,
+      "nodeNames": [
+        "pine"
+      ],
+      "processing": "Original snow-free pine OBJ and original TGA textures converted; centered and scaled to1m height; alpha MASK cutoff0.4; double sided; roughness0.95.",
+      "bytes": 3254132,
+      "sha256": "4453800bea8f8966fcb5de4ea69f47560cefbe6fc3a6c888fa1eb3e9abe9828d",
+      "normalizedHeight": 1.0
+    },
+    {
+      "key": "broadleaf",
+      "scene": "assets/models/forest/broadleaf.glb",
+      "authors": [
+        "Yughues (Hugues Muller)"
+      ],
+      "sourcePage": "https://opengameart.org/content/freebies-mundo-commissions",
+      "license": "CC0-1.0",
+      "triangles": 1080,
+      "nodeNames": [
+        "broadleaf"
+      ],
+      "processing": "Original broadleaf OBJ and original TGA textures converted; centered and scaled to1m height; alpha MASK cutoff0.4; double sided; roughness0.95.",
+      "bytes": 4365064,
+      "sha256": "2723c6ef0d5522c3a86141c7dc16b99b6363da158373607db609cfdaca87ec44",
+      "normalizedHeight": 1.0
+    },
+    {
+      "key": "pine_compatibility",
+      "scene": "assets/models/fir_sapling/fir_sapling_lod.glb",
+      "authors": [
+        "Yughues (Hugues Muller)"
+      ],
+      "sourcePage": "https://opengameart.org/content/freebies-mundo-commissions",
+      "license": "CC0-1.0",
+      "triangles": 784,
+      "nodeNames": [
+        "fir_sapling_a",
+        "fir_sapling_b",
+        "fir_sapling_c"
+      ],
+      "processing": "Compatibility alias with three instances of the same Yughues pine, named fir_sapling_a/b/c. This file is NOT a Poly Haven fir adaptation. Individual meshes are784tri; reset X showroom offsets 0/1/2.",
+      "bytes": 3254356,
+      "sha256": "d3f8c49e06707a21107099df3df93af2a92135afcb3368d8d5008cc3638ba43d",
+      "normalizedHeight": 1.0
+    },
+    {
+      "key": "timber_shack",
+      "scene": "assets/models/medieval_house/medieval_house.gltf",
+      "authors": [
+        "Paul Wortmann",
+        "Beaterator",
+        "AnyRPG"
+      ],
+      "sourcePage": "https://opengameart.org/content/medievalhouse1",
+      "license": "CC0-1.0",
+      "triangles": 204,
+      "nodeNames": [
+        "medieval_timber_house"
+      ],
+      "processing": "Original OBJ converted with included albedo and normal, V coordinate adjusted for glTF; matte0.9 roughness.",
+      "bytes": 2212,
+      "sha256": "92564dc3b24727620d3cfd904aa804040c2e3ac8c509cb38cde66ed980eb85d5"
+    },
+    {
+      "key": "barrel",
+      "scene": "assets/models/wine_barrel_01/wine_barrel_lod.glb",
+      "authors": [
+        "James Ray Cock"
+      ],
+      "sourcePage": "https://polyhaven.com/a/wine_barrel_01",
+      "license": "CC0-1.0",
+      "triangles": 4819,
+      "nodeNames": [
+        "wine_barrel_01_Lid",
+        "wine_barrel_01_bung",
+        "wine_barrel_01",
+        "wine_barrel_01_base"
+      ],
+      "processing": "Geometry simplified with glTF Transform4.5.0/meshoptimizer0.25; ratio0.25,error0.003. Textures,UVs,node assembly preserved.",
+      "bytes": 739544,
+      "sha256": "3681a502acfc9dba5cd75828116951f3a8ad29f8dcedb2eb31b53faa1d1d5fdf"
+    },
+    {
+      "key": "chest",
+      "scene": "assets/models/treasure_chest/treasure_chest_lod.glb",
+      "authors": [
+        "Rico Cilliers"
+      ],
+      "sourcePage": "https://polyhaven.com/a/treasure_chest",
+      "license": "CC0-1.0",
+      "triangles": 11008,
+      "nodeNames": [
+        "treasure_chest_bottom",
+        "treasure_chest_lid",
+        "treasure_chest_handle_left",
+        "treasure_chest_handle_right",
+        "treasure_chest_lock"
+      ],
+      "processing": "Geometry simplified with glTF Transform4.5.0/meshoptimizer0.25; ratio0.08,error0.005. Textures,UVs,node assembly preserved.",
+      "bytes": 3071044,
+      "sha256": "26f0c9a479f319cea62807cf3d08f99407818f2f86df3a5002f31d84c7419427"
+    },
+    {
+      "key": "werewolf",
+      "scene": "assets/models/werewolf/werewolf.glb",
+      "authors": [
+        "br-n518"
+      ],
+      "sourcePage": "https://opengameart.org/content/werewolf-0",
+      "license": "CC0-1.0",
+      "triangles": 892,
+      "nodeNames": [
+        "Werewolf"
+      ],
+      "processing": "Converted original Blender rig, normalized weights, evaluated Mirror modifier and sampled constraints. Original texture images and seven actions retained. Native raw DAE reference is not recommended for runtime.",
+      "bytes": 3019236,
+      "sha256": "32630fff2a2bc4cc47bf6096ed0e51d1f60ea5ce2f4c3066cff6889afe9a576e",
+      "forwardAxis": "+Z",
+      "bindBounds": {
+        "position": [
+          -4.721181,
+          0,
+          -3.254076
+        ],
+        "size": [
+          9.442362,
+          6.784301,
+          4.725657
+        ]
+      },
+      "nativeAnimations": {
+        "idle": 0.6666667,
+        "run": 0.6666667,
+        "walk": 0.625,
+        "attack": 0.6666667,
+        "death": 0.6666667,
+        "idle_sniff": 1.75,
+        "idle_bare_teeth": 1.1666667
+      },
+      "bones": 38
+    },
+    {
+      "key": "house_1",
+      "scene": "assets/models/medieval_village/medieval_house_01.glb",
+      "authors": [
+        "Daniel Andersson"
+      ],
+      "sourcePage": "https://opengameart.org/content/medieval-house-pack",
+      "license": "CC0-1.0",
+      "triangles": 17011,
+      "nodeNames": [
+        "medieval_house_01"
+      ],
+      "processing": "Converted original Blender scene; legacy materials reconnected to matching original packed textures; modifiers evaluated; joined, centered and grounded; Y-up. PBR roughness0.88. Original editable sources retained.",
+      "bytes": 4456116,
+      "sha256": "8ecf95228130ef664b21deacff03b6deaed72bc0fb4edad7b9e5464398b73fa4"
+    },
+    {
+      "key": "house_2",
+      "scene": "assets/models/medieval_village/medieval_house_02.glb",
+      "authors": [
+        "Daniel Andersson"
+      ],
+      "sourcePage": "https://opengameart.org/content/medieval-house-pack",
+      "license": "CC0-1.0",
+      "triangles": 12760,
+      "nodeNames": [
+        "medieval_house_02"
+      ],
+      "processing": "Converted original Blender scene; legacy materials reconnected to matching original packed textures; modifiers evaluated; joined, centered and grounded; Y-up. PBR roughness0.88. Original editable sources retained.",
+      "bytes": 4307008,
+      "sha256": "27459c5e71ed1f82322664ec4aa5fa0896318d1df1620e7f6dfdbbab8a66140b"
+    },
+    {
+      "key": "house_3",
+      "scene": "assets/models/medieval_village/medieval_house_03.glb",
+      "authors": [
+        "Daniel Andersson"
+      ],
+      "sourcePage": "https://opengameart.org/content/medieval-house-pack",
+      "license": "CC0-1.0",
+      "triangles": 17300,
+      "nodeNames": [
+        "medieval_house_03"
+      ],
+      "processing": "Converted original Blender scene; legacy materials reconnected to matching original packed textures; modifiers evaluated; joined, centered and grounded; Y-up. PBR roughness0.88. Original editable sources retained.",
+      "bytes": 3988328,
+      "sha256": "35e44180abb3dcd0e439bc6f1d60c51d2ecf3324ee8ae8ae55b411758a372045"
+    },
+    {
+      "key": "house_4",
+      "scene": "assets/models/medieval_village/medieval_house_04.glb",
+      "authors": [
+        "Daniel Andersson"
+      ],
+      "sourcePage": "https://opengameart.org/content/medieval-house-pack",
+      "license": "CC0-1.0",
+      "triangles": 12238,
+      "nodeNames": [
+        "medieval_house_04"
+      ],
+      "processing": "Converted original Blender scene; legacy materials reconnected to matching original packed textures; modifiers evaluated; joined, centered and grounded; Y-up. PBR roughness0.88. Original editable sources retained.",
+      "bytes": 4247084,
+      "sha256": "cc060b9e8d3c9f21d0036847ae26396e6bde85e5113360942f8f867786f38a26"
+    },
+    {
+      "key": "mara",
+      "scene": "assets/models/mara/mara.glb",
+      "authors": [
+        "MakeHuman community",
+        "RehmanPolanski (garments)",
+        "Quaternius (source motion)",
+        "Draconia project (technical adaptation and sword)"
+      ],
+      "sourcePage": "https://static.makehumancommunity.org/assets/assetpacks/makehuman_system_assets.html",
+      "license": "CC0-1.0 source body/accessories/garments/motions; project-authored additions under project release terms",
+      "triangles": 39262,
+      "bones": 53,
+      "status": "integration proof only",
+      "manifest": "assets/models/mara/manifest.json",
+      "bytes": 10246268,
+      "sha256": "753067c5fa7bc0d2e58c482aa861c96dd640aa7ed844e6e1791699fdd16e3fda",
+      "equipmentManifest": "assets/models/mara/equipment/manifest.json"
+    }
+  ],
+  "materials": [
+    {
+      "key": "forrest_ground_01",
+      "author": "Rob Tuytel",
+      "license": "CC0-1.0",
+      "sourcePage": "https://polyhaven.com/a/forrest_ground_01",
+      "resolution": "2K",
+      "maps": {
+        "albedo": "assets/models/materials/forrest_ground_01/albedo.jpg",
+        "normal": "assets/models/materials/forrest_ground_01/normal.jpg",
+        "roughness": "assets/models/materials/forrest_ground_01/roughness.jpg"
+      }
+    },
+    {
+      "key": "brown_mud_leaves_01",
+      "author": "Rob Tuytel",
+      "license": "CC0-1.0",
+      "sourcePage": "https://polyhaven.com/a/brown_mud_leaves_01",
+      "resolution": "2K",
+      "maps": {
+        "albedo": "assets/models/materials/brown_mud_leaves_01/albedo.jpg",
+        "normal": "assets/models/materials/brown_mud_leaves_01/normal.jpg",
+        "roughness": "assets/models/materials/brown_mud_leaves_01/roughness.jpg"
+      }
+    }
+  ],
+  "originalDownloadFiles": [
+    {
+      "asset": "modular_fort_01",
+      "path": "modular_fort_01/modular_fort_01_1k.gltf",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Models/gltf/1k/modular_fort_01/modular_fort_01_1k.gltf",
+      "bytes": 71433,
+      "md5": "340e7883860599c6b17ab73a893ff9b3",
+      "sha256": "829ac97d4c5c5672d3055d772e0ef4b545ad93cb4b639296f34e3ddf04cf9faf"
+    },
+    {
+      "asset": "modular_fort_01",
+      "path": "modular_fort_01/modular_fort_01.bin",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Models/gltf/8k/modular_fort_01/modular_fort_01.bin",
+      "bytes": 1288144,
+      "md5": "49bfa2a55e65c997840799099ad6ffa5",
+      "sha256": "de86e71af4cd5b37006914a8e7ae7de59b245b73364317f1886285a6aa797f57"
+    },
+    {
+      "asset": "modular_fort_01",
+      "path": "modular_fort_01/textures/modular_fort_01_plaster_diff_1k.jpg",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/modular_fort_01/modular_fort_01_plaster_diff_1k.jpg",
+      "bytes": 995332,
+      "md5": "c2b8f298926cb63a8d926cffcab863c8",
+      "sha256": "d453b45cec06da3da9e67b38d016f6358c7c310a99db9b066e07e3a494731f4d"
+    },
+    {
+      "asset": "modular_fort_01",
+      "path": "modular_fort_01/textures/modular_fort_01_wall_nor_gl_1k.jpg",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/modular_fort_01/modular_fort_01_wall_nor_gl_1k.jpg",
+      "bytes": 1194253,
+      "md5": "2164dad0582c2ec60e757e6565b1f257",
+      "sha256": "6e8b0e1abac9c6ab0f9a36c04300ea3d0ca83dede3b49485c969a71494ce8d53"
+    },
+    {
+      "asset": "modular_fort_01",
+      "path": "modular_fort_01/textures/modular_fort_01_trim_nor_gl_1k.jpg",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/modular_fort_01/modular_fort_01_trim_nor_gl_1k.jpg",
+      "bytes": 1070875,
+      "md5": "4e87ba7c3ac854d64a6d0de56362f76a",
+      "sha256": "c5a21bd71f1ed0186fedaad18edb74713527a9426f5d136a5b21c3e09a71e1c3"
+    },
+    {
+      "asset": "modular_fort_01",
+      "path": "modular_fort_01/textures/modular_fort_01_plaster_nor_gl_1k.jpg",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/modular_fort_01/modular_fort_01_plaster_nor_gl_1k.jpg",
+      "bytes": 1478355,
+      "md5": "b76724f4bb1ec196728c1a4d704f322c",
+      "sha256": "567953f0b7da39f6d4f173cc98ff948d31e07b516c8d2e0e0b0ec69de35cab3e"
+    },
+    {
+      "asset": "modular_fort_01",
+      "path": "modular_fort_01/textures/modular_fort_01_wall_arm_1k.jpg",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/modular_fort_01/modular_fort_01_wall_arm_1k.jpg",
+      "bytes": 936858,
+      "md5": "9e667ae75549188caa03da56aa276fdb",
+      "sha256": "6d3327658794a90fc1b52c19dfbb57059b7ea9801f59abd13417e4be7bf40a34"
+    },
+    {
+      "asset": "modular_fort_01",
+      "path": "modular_fort_01/textures/modular_fort_01_plaster_arm_1k.jpg",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/modular_fort_01/modular_fort_01_plaster_arm_1k.jpg",
+      "bytes": 872242,
+      "md5": "a367aa0d7b6307df5b961f4d339c593c",
+      "sha256": "d51902ce06084dd828cf82d60fcbc733160cc27ada41d5e57b38bafbe5d12327"
+    },
+    {
+      "asset": "modular_fort_01",
+      "path": "modular_fort_01/textures/modular_fort_01_trim_diff_1k.jpg",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/modular_fort_01/modular_fort_01_trim_diff_1k.jpg",
+      "bytes": 945345,
+      "md5": "1e5e6e32e599ebaa6471c4c1ce3023fd",
+      "sha256": "fe5811560cf0471321fe6af08114f279a7f957412b8aa6e2c224112990760556"
+    },
+    {
+      "asset": "modular_fort_01",
+      "path": "modular_fort_01/textures/modular_fort_01_wall_diff_1k.jpg",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/modular_fort_01/modular_fort_01_wall_diff_1k.jpg",
+      "bytes": 978641,
+      "md5": "c3958a33d456a5f2b776dde465024072",
+      "sha256": "8bdefadca0688e9b3fd91b4d12f341918b0a3670c25537c18a777fa51bb90bea"
+    },
+    {
+      "asset": "modular_fort_01",
+      "path": "modular_fort_01/textures/modular_fort_01_trim_arm_1k.jpg",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/modular_fort_01/modular_fort_01_trim_arm_1k.jpg",
+      "bytes": 807245,
+      "md5": "2ad72ca33693932204ffe68ee7232120",
+      "sha256": "d6a9e67be3f171857bb06af436ebaefedd1fd3ca4e1212c8ad42be7ef6038c91"
+    },
+    {
+      "asset": "fir_sapling",
+      "path": "fir_sapling/fir_sapling_1k.gltf",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Models/gltf/1k/fir_sapling/fir_sapling_1k.gltf",
+      "bytes": 10979,
+      "md5": "7b1a5ceae7be69954510b5a5c719b4fb",
+      "sha256": "a9466ca9d8c5b9b2eeeeafd3ce426f8912dcbd98a7281bad8c734833eb35b186"
+    },
+    {
+      "asset": "fir_sapling",
+      "path": "fir_sapling/textures/fir_sapling_twigs_nor_gl_1k.jpg",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/fir_sapling/fir_sapling_twigs_nor_gl_1k.jpg",
+      "bytes": 474717,
+      "md5": "764771b717c54b86fa7d3eadc4a1ada5",
+      "sha256": "34928b2a9d1f722d2f64a7da468c790ecaca9b89c00ac0878a9e0bad26748368"
+    },
+    {
+      "asset": "fir_sapling",
+      "path": "fir_sapling/textures/fir_sapling_branches_diff_1k.jpg",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/fir_sapling/fir_sapling_branches_diff_1k.jpg",
+      "bytes": 776633,
+      "md5": "84f1d40b80a015d65c0ded042a10765b",
+      "sha256": "46d216526b6203dbd5dc3cfce5e49d7a4cc1770da2420faab45adf33671c7de4"
+    },
+    {
+      "asset": "fir_sapling",
+      "path": "fir_sapling/textures/fir_sapling_twigs_diff_1k.jpg",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/fir_sapling/fir_sapling_twigs_diff_1k.jpg",
+      "bytes": 252678,
+      "md5": "cd218269e0b34bd1bdb48a8daf21be67",
+      "sha256": "a9900fafad850deeb5f79b928fd7590bca9e8ec8734d2368d4c64bba8b0c5b22"
+    },
+    {
+      "asset": "fir_sapling",
+      "path": "fir_sapling/textures/fir_sapling_branches_nor_gl_1k.jpg",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/fir_sapling/fir_sapling_branches_nor_gl_1k.jpg",
+      "bytes": 1137599,
+      "md5": "db70c4595cf207cc04a02b49c195b78d",
+      "sha256": "dbe474f6cd593d51a19fb92a627ad900b9ab47dabd1bf60117a2cf9d110f79ea"
+    },
+    {
+      "asset": "fir_sapling",
+      "path": "fir_sapling/textures/fir_sapling_twigs_arm_1k.jpg",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/fir_sapling/fir_sapling_twigs_arm_1k.jpg",
+      "bytes": 300249,
+      "md5": "cf97b5de863ebad9a48cb187ef3c3e74",
+      "sha256": "d1ec27a55bb67bfe5fa2c8a41a545dc71769934b142db56ad7c703d4146e1770"
+    },
+    {
+      "asset": "fir_sapling",
+      "path": "fir_sapling/textures/fir_sapling_branches_arm_1k.jpg",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/fir_sapling/fir_sapling_branches_arm_1k.jpg",
+      "bytes": 793567,
+      "md5": "29a9ff22b8f7f224069b1254db171c05",
+      "sha256": "44c32b056b78c1046aeeb44c973a1d1352ea12d0d7ef2425527555f1256a0964"
+    },
+    {
+      "asset": "fir_sapling",
+      "path": "fir_sapling/fir_sapling.bin",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Models/gltf/8k/fir_sapling/fir_sapling.bin",
+      "bytes": 21677180,
+      "md5": "b329143a90d95201891afc52daeb9698",
+      "sha256": "efdebfae6ee4b3ea20c7a85eb9f798ff4953259a3616bcff0b7e580b00f34f40"
+    },
+    {
+      "asset": "rock_moss_set_02",
+      "path": "rock_moss_set_02/rock_moss_set_02_1k.gltf",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Models/gltf/1k/rock_moss_set_02/rock_moss_set_02_1k.gltf",
+      "bytes": 11608,
+      "md5": "257569e8c064d0cf198ff866446a5f96",
+      "sha256": "c3b992a7622e94f7d8da97a47277a2a5177a513af0312a127ec908d4056c97db"
+    },
+    {
+      "asset": "rock_moss_set_02",
+      "path": "rock_moss_set_02/textures/rock_moss_set_02_nor_gl_1k.jpg",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/rock_moss_set_02/rock_moss_set_02_nor_gl_1k.jpg",
+      "bytes": 273527,
+      "md5": "936601de53528f15a12d16a7e187a4f1",
+      "sha256": "dd2503789089fb72ef469efd14364d393e769c0de8781a251475cac7e0b6f51d"
+    },
+    {
+      "asset": "rock_moss_set_02",
+      "path": "rock_moss_set_02/textures/rock_moss_set_02_diff_1k.jpg",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/rock_moss_set_02/rock_moss_set_02_diff_1k.jpg",
+      "bytes": 194307,
+      "md5": "50a31622ba7d6f3b8157035ce375de4d",
+      "sha256": "91dd2cc77d5198b067d77e5bdb3fa8ee7b8950aeff5aec2c1ccaddb76dcca481"
+    },
+    {
+      "asset": "rock_moss_set_02",
+      "path": "rock_moss_set_02/textures/rock_moss_set_02_rough_1k.jpg",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/rock_moss_set_02/rock_moss_set_02_rough_1k.jpg",
+      "bytes": 146226,
+      "md5": "5de4c0669f19304230fa550a8f3ac0f4",
+      "sha256": "12252219a98a560940359973e83af831abdcfab0ead3f0a2a7b135a0143105f1"
+    },
+    {
+      "asset": "rock_moss_set_02",
+      "path": "rock_moss_set_02/rock_moss_set_02.bin",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Models/gltf/8k/rock_moss_set_02/rock_moss_set_02.bin",
+      "bytes": 1316572,
+      "md5": "a63878339f14feceab7347cc28110eaa",
+      "sha256": "2df9d8eaaca4207529b0f613d4886d3962d0b9ffc0cdfd2bc4bf35dbcd391cb5"
+    },
+    {
+      "asset": "forrest_ground_01",
+      "path": "materials/forrest_ground_01/albedo.jpg",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/forrest_ground_01/forrest_ground_01_diff_2k.jpg",
+      "bytes": 3077552,
+      "md5": "18fa30c294be21805159ca6e73a5e5fa",
+      "sha256": "e4d557ff61a0b42712a58e8a2e91c6010738977d4e172b7af47abd7d406ae735"
+    },
+    {
+      "asset": "forrest_ground_01",
+      "path": "materials/forrest_ground_01/normal.jpg",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/forrest_ground_01/forrest_ground_01_nor_gl_2k.jpg",
+      "bytes": 5551101,
+      "md5": "7bb5186bd63bef99f6d21316718896f2",
+      "sha256": "aa23fa930c6303490f842f7c016c19d838263e8e4538d42508a9332e3fd76b69"
+    },
+    {
+      "asset": "forrest_ground_01",
+      "path": "materials/forrest_ground_01/roughness.jpg",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/forrest_ground_01/forrest_ground_01_rough_2k.jpg",
+      "bytes": 920422,
+      "md5": "a4c7ecc9cef47f5d097d4553e421ed6a",
+      "sha256": "e09258c7f055156a7607f1b21dccf38c7efd847e7d030271d5ffcc4a722df37d"
+    },
+    {
+      "asset": "brown_mud_leaves_01",
+      "path": "materials/brown_mud_leaves_01/albedo.jpg",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/brown_mud_leaves_01/brown_mud_leaves_01_diff_2k.jpg",
+      "bytes": 4539452,
+      "md5": "e8b45aee8e00a253eb3a2b08cea89776",
+      "sha256": "29c997d77f56e4ea16d3e998a306be0c17fddb28ab4822657c7cd8249040ffda"
+    },
+    {
+      "asset": "brown_mud_leaves_01",
+      "path": "materials/brown_mud_leaves_01/normal.jpg",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/brown_mud_leaves_01/brown_mud_leaves_01_nor_gl_2k.jpg",
+      "bytes": 5688696,
+      "md5": "eb2c704d2889e1e5a53148dc6a2ebdf4",
+      "sha256": "b6ec386e00d9d2a1c3a1da6a98a67066b0dfaa88ddb779341df29700cf081bdf"
+    },
+    {
+      "asset": "brown_mud_leaves_01",
+      "path": "materials/brown_mud_leaves_01/roughness.jpg",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/brown_mud_leaves_01/brown_mud_leaves_01_rough_2k.jpg",
+      "bytes": 2421908,
+      "md5": "3e7209ff00204174c5bd013df3945b22",
+      "sha256": "9556215f5fef905c37cdf19c77aef7822f124890f8fb7dcce65d57c5eafc0ca5"
+    },
+    {
+      "asset": "wine_barrel_01",
+      "path": "wine_barrel_01/wine_barrel_01_1k.gltf",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Models/gltf/1k/wine_barrel_01/wine_barrel_01_1k.gltf",
+      "bytes": 6673,
+      "md5": "5397e6d959dd3ef20d1fc14436d0eb70",
+      "sha256": "503d3339677217c3241a3cdbc1c803ed1eb82d1a48f51436d1545ec5745ae8d8"
+    },
+    {
+      "asset": "wine_barrel_01",
+      "path": "wine_barrel_01/wine_barrel_01.bin",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Models/gltf/8k/wine_barrel_01/wine_barrel_01.bin",
+      "bytes": 385912,
+      "md5": "84f578460020912056a1e3fbe3ec1b97",
+      "sha256": "d827c31afed824b923ea9168462c93ab3ad3a88c4a68b155bd35efb1a02cbf00"
+    },
+    {
+      "asset": "wine_barrel_01",
+      "path": "wine_barrel_01/textures/wine_barrel_01_diff_1k.jpg",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/wine_barrel_01/wine_barrel_01_diff_1k.jpg",
+      "bytes": 195980,
+      "md5": "fdea9538acf01a04a61626919a84b3fb",
+      "sha256": "6bea25b4fadda0636b6b7e46e0cc15153eda21ef62c823d5ee2e06a5a7589214"
+    },
+    {
+      "asset": "wine_barrel_01",
+      "path": "wine_barrel_01/textures/wine_barrel_01_arm_1k.jpg",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/wine_barrel_01/wine_barrel_01_arm_1k.jpg",
+      "bytes": 172531,
+      "md5": "2f0cc81ac07fdbe8c22927feac722927",
+      "sha256": "be658e1389dbe8669e847b8fc7df8affdce46d6582f01ac701555b6446a40b9d"
+    },
+    {
+      "asset": "wine_barrel_01",
+      "path": "wine_barrel_01/textures/wine_barrel_01_nor_gl_1k.jpg",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/wine_barrel_01/wine_barrel_01_nor_gl_1k.jpg",
+      "bytes": 163587,
+      "md5": "6b3ce558fa74d3760fa0192dfc4564a3",
+      "sha256": "86cdb0729b44d1687c75d895e6d0ef650f7580d70f3bcb52bce6fedc5fd79b6f"
+    },
+    {
+      "asset": "treasure_chest",
+      "path": "treasure_chest/treasure_chest_1k.gltf",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Models/gltf/1k/treasure_chest/treasure_chest_1k.gltf",
+      "bytes": 8584,
+      "md5": "7bfc4b335cff3e2641c8b9e55dbee0a2",
+      "sha256": "5edb8df3a45d2709b9407102ba4dd63025adff401ed8eba939d0117a74dd8dd5"
+    },
+    {
+      "asset": "treasure_chest",
+      "path": "treasure_chest/textures/treasure_chest_arm_1k.jpg",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/treasure_chest/treasure_chest_arm_1k.jpg",
+      "bytes": 958484,
+      "md5": "ffb1a453af7e91fb63c1ec51da29832a",
+      "sha256": "1f09896cfad5b2f80483ab440b732fb03e94a67c3b09eee4c864af7ad2c6cc12"
+    },
+    {
+      "asset": "treasure_chest",
+      "path": "treasure_chest/textures/treasure_chest_diff_1k.jpg",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/treasure_chest/treasure_chest_diff_1k.jpg",
+      "bytes": 812089,
+      "md5": "59a684377b91eed5cb0cf44fad6b1089",
+      "sha256": "4a2ee3b53835e7d4a3e411863c7829f37df1221aeb1cd78d89e24239cf8bbd0b"
+    },
+    {
+      "asset": "treasure_chest",
+      "path": "treasure_chest/textures/treasure_chest_nor_gl_1k.jpg",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/treasure_chest/treasure_chest_nor_gl_1k.jpg",
+      "bytes": 893221,
+      "md5": "5ce2977f7417f17575b92873a56a3c4f",
+      "sha256": "c86a694f7d40e46dfdd0293a5a9bae32061a8476132bbd679b63404cc1795b68"
+    },
+    {
+      "asset": "treasure_chest",
+      "path": "treasure_chest/treasure_chest.bin",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Models/gltf/8k/treasure_chest/treasure_chest.bin",
+      "bytes": 2811372,
+      "md5": "c955b1084bb3f7c8cea414bdf1a89845",
+      "sha256": "6e8fd5b5c641c3535bf26767fc7b0e7295c314d43613726da9679ee8cffecb03"
+    }
+  ],
+  "originalArchives": [
+    {
+      "filename": "medieval_house_1.zip",
+      "sourceUrl": "https://opengameart.org/sites/default/files/medieval_house_1.zip",
+      "bytes": 28330329,
+      "sha256": "ce767ce06d128e27a7b9ddbc9803bee2b8af0b7a2f0134d314d9bb0f470d8587"
+    },
+    {
+      "filename": "Mundo.7z",
+      "sourceUrl": "https://opengameart.org/sites/default/files/Mundo.7z",
+      "bytes": 26652796,
+      "sha256": "a4794cbb9d1f281b7d51ba79e04c0a97a6962a4f63ddaa480f695bcc64a5ff3e"
+    },
+    {
+      "filename": "werewolf_source.7z",
+      "sourceUrl": "https://opengameart.org/sites/default/files/werewolf_source.7z",
+      "bytes": 9112974,
+      "sha256": "268a05f2008eb10187a7346d718bf798944e223480b5c4980ff30e845214052a"
+    },
+    {
+      "filename": "75519_House1Upload_blend.zip",
+      "sourceUrl": "https://opengameart.org/sites/default/files/75519_House1Upload_blend.zip",
+      "bytes": 5947310,
+      "sha256": "d7b53c94eb77fbba5e57360bbc8ac9889eff85340bf1e9a92d851e58b88cee0d"
+    },
+    {
+      "filename": "75861_House2_1Upload_blend.zip",
+      "sourceUrl": "https://opengameart.org/sites/default/files/75861_House2_1Upload_blend.zip",
+      "bytes": 7218154,
+      "sha256": "601f13cbab73f4a100518194445867c8e9af1e7c268fb194304a0ebaa5043e07"
+    },
+    {
+      "filename": "75862_House3Upload_blend.zip",
+      "sourceUrl": "https://opengameart.org/sites/default/files/75862_House3Upload_blend.zip",
+      "bytes": 6670672,
+      "sha256": "7247ff6632769f60648470adb965a7d48f887e30bbf52b9e2e37e0ff707050d2"
+    },
+    {
+      "filename": "75864_House4Upload_blend.zip",
+      "sourceUrl": "https://opengameart.org/sites/default/files/75864_House4Upload_blend.zip",
+      "bytes": 9055910,
+      "sha256": "a218110510361b03a1cbdfe2e47776056abf7d6f04e6ab10746fb653ed99f866"
+    }
+  ],
+  "files": [
+    {
+      "path": "assets/models/fir_sapling/fir_sapling.bin",
+      "bytes": 21677180,
+      "sha256": "efdebfae6ee4b3ea20c7a85eb9f798ff4953259a3616bcff0b7e580b00f34f40"
+    },
+    {
+      "path": "assets/models/fir_sapling/fir_sapling_1k.gltf",
+      "bytes": 10979,
+      "sha256": "a9466ca9d8c5b9b2eeeeafd3ce426f8912dcbd98a7281bad8c734833eb35b186"
+    },
+    {
+      "path": "assets/models/fir_sapling/fir_sapling_lod.glb",
+      "bytes": 3254356,
+      "sha256": "d3f8c49e06707a21107099df3df93af2a92135afcb3368d8d5008cc3638ba43d"
+    },
+    {
+      "path": "assets/models/fir_sapling/fir_sapling_lod_diffuse_none.png",
+      "bytes": 2045230,
+      "sha256": "f2d5ccaaa95de7087e5327fa52c4a5481771350020aa6da76125faac62c7fd8d"
+    },
+    {
+      "path": "assets/models/fir_sapling/fir_sapling_lod_fir_sapling_branches_diff.jpg",
+      "bytes": 776633,
+      "sha256": "46d216526b6203dbd5dc3cfce5e49d7a4cc1770da2420faab45adf33671c7de4"
+    },
+    {
+      "path": "assets/models/fir_sapling/fir_sapling_lod_fir_sapling_branches_nor_gl.jpg",
+      "bytes": 1137599,
+      "sha256": "dbe474f6cd593d51a19fb92a627ad900b9ab47dabd1bf60117a2cf9d110f79ea"
+    },
+    {
+      "path": "assets/models/fir_sapling/fir_sapling_lod_fir_sapling_branches_rough.jpg",
+      "bytes": 793567,
+      "sha256": "44c32b056b78c1046aeeb44c973a1d1352ea12d0d7ef2425527555f1256a0964"
+    },
+    {
+      "path": "assets/models/fir_sapling/fir_sapling_lod_fir_sapling_twigs_diff.jpg",
+      "bytes": 252678,
+      "sha256": "a9900fafad850deeb5f79b928fd7590bca9e8ec8734d2368d4c64bba8b0c5b22"
+    },
+    {
+      "path": "assets/models/fir_sapling/fir_sapling_lod_fir_sapling_twigs_nor_gl.jpg",
+      "bytes": 474717,
+      "sha256": "34928b2a9d1f722d2f64a7da468c790ecaca9b89c00ac0878a9e0bad26748368"
+    },
+    {
+      "path": "assets/models/fir_sapling/fir_sapling_lod_fir_sapling_twigs_rough.jpg",
+      "bytes": 300249,
+      "sha256": "d1ec27a55bb67bfe5fa2c8a41a545dc71769934b142db56ad7c703d4146e1770"
+    },
+    {
+      "path": "assets/models/fir_sapling/fir_sapling_lod_normal_none.png",
+      "bytes": 1175853,
+      "sha256": "3462390046248345c9665d1d16edc4445bc34d0f80dc2f978ab840c4fea38ec4"
+    },
+    {
+      "path": "assets/models/fir_sapling/textures/fir_sapling_branches_arm_1k.jpg",
+      "bytes": 793567,
+      "sha256": "44c32b056b78c1046aeeb44c973a1d1352ea12d0d7ef2425527555f1256a0964"
+    },
+    {
+      "path": "assets/models/fir_sapling/textures/fir_sapling_branches_diff_1k.jpg",
+      "bytes": 776633,
+      "sha256": "46d216526b6203dbd5dc3cfce5e49d7a4cc1770da2420faab45adf33671c7de4"
+    },
+    {
+      "path": "assets/models/fir_sapling/textures/fir_sapling_branches_nor_gl_1k.jpg",
+      "bytes": 1137599,
+      "sha256": "dbe474f6cd593d51a19fb92a627ad900b9ab47dabd1bf60117a2cf9d110f79ea"
+    },
+    {
+      "path": "assets/models/fir_sapling/textures/fir_sapling_twigs_arm_1k.jpg",
+      "bytes": 300249,
+      "sha256": "d1ec27a55bb67bfe5fa2c8a41a545dc71769934b142db56ad7c703d4146e1770"
+    },
+    {
+      "path": "assets/models/fir_sapling/textures/fir_sapling_twigs_diff_1k.jpg",
+      "bytes": 252678,
+      "sha256": "a9900fafad850deeb5f79b928fd7590bca9e8ec8734d2368d4c64bba8b0c5b22"
+    },
+    {
+      "path": "assets/models/fir_sapling/textures/fir_sapling_twigs_nor_gl_1k.jpg",
+      "bytes": 474717,
+      "sha256": "34928b2a9d1f722d2f64a7da468c790ecaca9b89c00ac0878a9e0bad26748368"
+    },
+    {
+      "path": "assets/models/forest/broadleaf.glb",
+      "bytes": 4365064,
+      "sha256": "2723c6ef0d5522c3a86141c7dc16b99b6363da158373607db609cfdaca87ec44"
+    },
+    {
+      "path": "assets/models/forest/broadleaf_diffuse.png",
+      "bytes": 2408471,
+      "sha256": "4bfb8d7f5d8c56d33ea249e360934f846609e026701fe5e407cde87e820f3b52"
+    },
+    {
+      "path": "assets/models/forest/broadleaf_normal.png",
+      "bytes": 1899036,
+      "sha256": "f6323eeca1a067c6867531cb3b592d9360b96df58cada16ec82371a32616f3ab"
+    },
+    {
+      "path": "assets/models/forest/pine.glb",
+      "bytes": 3254132,
+      "sha256": "4453800bea8f8966fcb5de4ea69f47560cefbe6fc3a6c888fa1eb3e9abe9828d"
+    },
+    {
+      "path": "assets/models/forest/pine_diffuse_none.png",
+      "bytes": 2045230,
+      "sha256": "f2d5ccaaa95de7087e5327fa52c4a5481771350020aa6da76125faac62c7fd8d"
+    },
+    {
+      "path": "assets/models/forest/pine_normal_none.png",
+      "bytes": 1175853,
+      "sha256": "3462390046248345c9665d1d16edc4445bc34d0f80dc2f978ab840c4fea38ec4"
+    },
+    {
+      "path": "assets/models/materials/brown_mud_leaves_01/albedo.jpg",
+      "bytes": 4539452,
+      "sha256": "29c997d77f56e4ea16d3e998a306be0c17fddb28ab4822657c7cd8249040ffda"
+    },
+    {
+      "path": "assets/models/materials/brown_mud_leaves_01/normal.jpg",
+      "bytes": 5688696,
+      "sha256": "b6ec386e00d9d2a1c3a1da6a98a67066b0dfaa88ddb779341df29700cf081bdf"
+    },
+    {
+      "path": "assets/models/materials/brown_mud_leaves_01/roughness.jpg",
+      "bytes": 2421908,
+      "sha256": "9556215f5fef905c37cdf19c77aef7822f124890f8fb7dcce65d57c5eafc0ca5"
+    },
+    {
+      "path": "assets/models/materials/forrest_ground_01/albedo.jpg",
+      "bytes": 3077552,
+      "sha256": "e4d557ff61a0b42712a58e8a2e91c6010738977d4e172b7af47abd7d406ae735"
+    },
+    {
+      "path": "assets/models/materials/forrest_ground_01/normal.jpg",
+      "bytes": 5551101,
+      "sha256": "aa23fa930c6303490f842f7c016c19d838263e8e4538d42508a9332e3fd76b69"
+    },
+    {
+      "path": "assets/models/materials/forrest_ground_01/roughness.jpg",
+      "bytes": 920422,
+      "sha256": "e09258c7f055156a7607f1b21dccf38c7efd847e7d030271d5ffcc4a722df37d"
+    },
+    {
+      "path": "assets/models/medieval_house/medieval_house.bin",
+      "bytes": 13840,
+      "sha256": "eba8b5b2c604e32ff6e746c4c8731600faca25ec5a6f9662d3b000e297c1543c"
+    },
+    {
+      "path": "assets/models/medieval_house/medieval_house.gltf",
+      "bytes": 2212,
+      "sha256": "92564dc3b24727620d3cfd904aa804040c2e3ac8c509cb38cde66ed980eb85d5"
+    },
+    {
+      "path": "assets/models/medieval_house/medieval_house_1_001.mtl",
+      "bytes": 127,
+      "sha256": "e6182c17f784166749ec2254c658385dac078674e0938b4ca5229753ec11733d"
+    },
+    {
+      "path": "assets/models/medieval_house/medieval_house_1_001.obj",
+      "bytes": 12958,
+      "sha256": "8ca5975ae66aedb9260871a66f791de4a632e91d321cf10a6d235a00ebd7d2d2"
+    },
+    {
+      "path": "assets/models/medieval_house/medieval_house_1_001_d.png",
+      "bytes": 4639965,
+      "sha256": "7ad4da51dee5c01eb90db3360fad559940a201c04c0d1d87bcc3f58ee2f8f8e9"
+    },
+    {
+      "path": "assets/models/medieval_house/medieval_house_1_001_n.png",
+      "bytes": 10564271,
+      "sha256": "6bbcf330261463f1e880bab169e5034d627a377c3278948f27cdc58fb9a2d9ee"
+    },
+    {
+      "path": "assets/models/medieval_house/medieval_house_1_001_s.png",
+      "bytes": 2291302,
+      "sha256": "e6b8bea08bb07c502b9e4c44422e20c2bbb3c50ff69356e92be91da51a694163"
+    },
+    {
+      "path": "assets/models/medieval_village/medieval_house_01.glb",
+      "bytes": 4456116,
+      "sha256": "8ecf95228130ef664b21deacff03b6deaed72bc0fb4edad7b9e5464398b73fa4"
+    },
+    {
+      "path": "assets/models/medieval_village/medieval_house_01_DoorType1_1.jpg",
+      "bytes": 427522,
+      "sha256": "39a1a9cabcafb9a2bef5532e3c15a159ec40451b96143ab6cf7b3a9e578aac28"
+    },
+    {
+      "path": "assets/models/medieval_village/medieval_house_01_DoorType1_2.jpg",
+      "bytes": 248592,
+      "sha256": "cf831de534b37567c19638a2f8bf099c6ed3d2edc90e4f9c20aafcdde6beaa0d"
+    },
+    {
+      "path": "assets/models/medieval_village/medieval_house_01_GreyBricks2.jpg",
+      "bytes": 289485,
+      "sha256": "95689677a381bdbb0d50c6aec1d6f32a1bcd060faacbedb4b2a7bdc8e6e4ca2f"
+    },
+    {
+      "path": "assets/models/medieval_village/medieval_house_01_GreyStone2.jpg",
+      "bytes": 21267,
+      "sha256": "b083e4e985829acd38c3dee98bfd1f71bae8ce997d605b00a4c880aff680802d"
+    },
+    {
+      "path": "assets/models/medieval_village/medieval_house_01_PlasterLarge.jpg",
+      "bytes": 793902,
+      "sha256": "e66dba35cb0d00605288a74011408b1335c0acdde2b55c9378fd89535b218860"
+    },
+    {
+      "path": "assets/models/medieval_village/medieval_house_01_RoofTiles.jpg",
+      "bytes": 194812,
+      "sha256": "df73a93cc468528c36c4e0c39b706575e5aab6077dc5d829e5948284c3c67fc8"
+    },
+    {
+      "path": "assets/models/medieval_village/medieval_house_01_Rusted Metal.jpg",
+      "bytes": 298722,
+      "sha256": "63a6a0bd18f8bd8c01ba18efe83a15baf18ce75cabf9f441b85cad11054118ac"
+    },
+    {
+      "path": "assets/models/medieval_village/medieval_house_01_Stone.jpg",
+      "bytes": 127606,
+      "sha256": "8a54c76c44fa77849db7492ad99976a6caffe08238225fba9a9d1eb2556ac5f9"
+    },
+    {
+      "path": "assets/models/medieval_village/medieval_house_01_TreeLogEdgeWeathered.jpg",
+      "bytes": 260268,
+      "sha256": "b68f0516d81a570e927675398c9bcb04490509d8dff8fc725581b0d028689480"
+    },
+    {
+      "path": "assets/models/medieval_village/medieval_house_01_WindowBlue1.jpg",
+      "bytes": 272852,
+      "sha256": "4ce8a2ac546132d29c83f49bd34424940b49c5eb54ad2f6ad457714dc61f8ef7"
+    },
+    {
+      "path": "assets/models/medieval_village/medieval_house_01_WindowsBlue2.jpg",
+      "bytes": 135995,
+      "sha256": "4f9a2426dd75d59745ff405e69e8bc75f120786be0af329064e05c88f0a2e790"
+    },
+    {
+      "path": "assets/models/medieval_village/medieval_house_01_Wood.jpg",
+      "bytes": 512848,
+      "sha256": "8def4262d4a9e6b46aa784261adfe08539b7d62a6349449d50b008f85f42c842"
+    },
+    {
+      "path": "assets/models/medieval_village/medieval_house_02.glb",
+      "bytes": 4307008,
+      "sha256": "27459c5e71ed1f82322664ec4aa5fa0896318d1df1620e7f6dfdbbab8a66140b"
+    },
+    {
+      "path": "assets/models/medieval_village/medieval_house_02_DoorType1_2.jpg",
+      "bytes": 248592,
+      "sha256": "cf831de534b37567c19638a2f8bf099c6ed3d2edc90e4f9c20aafcdde6beaa0d"
+    },
+    {
+      "path": "assets/models/medieval_village/medieval_house_02_GreyBricks.jpg",
+      "bytes": 582830,
+      "sha256": "101844a3101ad3b885f4849328b0f622d2a745b4acbb2aedc9d6c5df3634b863"
+    },
+    {
+      "path": "assets/models/medieval_village/medieval_house_02_GreyBricks2.jpg",
+      "bytes": 289485,
+      "sha256": "95689677a381bdbb0d50c6aec1d6f32a1bcd060faacbedb4b2a7bdc8e6e4ca2f"
+    },
+    {
+      "path": "assets/models/medieval_village/medieval_house_02_PlasterLarge.jpg",
+      "bytes": 793902,
+      "sha256": "e66dba35cb0d00605288a74011408b1335c0acdde2b55c9378fd89535b218860"
+    },
+    {
+      "path": "assets/models/medieval_village/medieval_house_02_RoofTiles.jpg",
+      "bytes": 194812,
+      "sha256": "df73a93cc468528c36c4e0c39b706575e5aab6077dc5d829e5948284c3c67fc8"
+    },
+    {
+      "path": "assets/models/medieval_village/medieval_house_02_Rusted Metal.jpg",
+      "bytes": 298722,
+      "sha256": "63a6a0bd18f8bd8c01ba18efe83a15baf18ce75cabf9f441b85cad11054118ac"
+    },
+    {
+      "path": "assets/models/medieval_village/medieval_house_02_Stone.jpg",
+      "bytes": 127606,
+      "sha256": "8a54c76c44fa77849db7492ad99976a6caffe08238225fba9a9d1eb2556ac5f9"
+    },
+    {
+      "path": "assets/models/medieval_village/medieval_house_02_TreeLogEdgeWeathered.jpg",
+      "bytes": 260268,
+      "sha256": "b68f0516d81a570e927675398c9bcb04490509d8dff8fc725581b0d028689480"
+    },
+    {
+      "path": "assets/models/medieval_village/medieval_house_02_WindowBlue1.jpg",
+      "bytes": 272852,
+      "sha256": "4ce8a2ac546132d29c83f49bd34424940b49c5eb54ad2f6ad457714dc61f8ef7"
+    },
+    {
+      "path": "assets/models/medieval_village/medieval_house_02_WindowsBlue2.jpg",
+      "bytes": 135995,
+      "sha256": "4f9a2426dd75d59745ff405e69e8bc75f120786be0af329064e05c88f0a2e790"
+    },
+    {
+      "path": "assets/models/medieval_village/medieval_house_02_Wood.jpg",
+      "bytes": 512848,
+      "sha256": "8def4262d4a9e6b46aa784261adfe08539b7d62a6349449d50b008f85f42c842"
+    },
+    {
+      "path": "assets/models/medieval_village/medieval_house_03.glb",
+      "bytes": 3988328,
+      "sha256": "35e44180abb3dcd0e439bc6f1d60c51d2ecf3324ee8ae8ae55b411758a372045"
+    },
+    {
+      "path": "assets/models/medieval_village/medieval_house_03_DoorType1_2.jpg",
+      "bytes": 248592,
+      "sha256": "cf831de534b37567c19638a2f8bf099c6ed3d2edc90e4f9c20aafcdde6beaa0d"
+    },
+    {
+      "path": "assets/models/medieval_village/medieval_house_03_GreyBricks2.jpg",
+      "bytes": 289485,
+      "sha256": "95689677a381bdbb0d50c6aec1d6f32a1bcd060faacbedb4b2a7bdc8e6e4ca2f"
+    },
+    {
+      "path": "assets/models/medieval_village/medieval_house_03_GreyStone2.jpg",
+      "bytes": 21267,
+      "sha256": "b083e4e985829acd38c3dee98bfd1f71bae8ce997d605b00a4c880aff680802d"
+    },
+    {
+      "path": "assets/models/medieval_village/medieval_house_03_PlasterLarge.jpg",
+      "bytes": 793902,
+      "sha256": "e66dba35cb0d00605288a74011408b1335c0acdde2b55c9378fd89535b218860"
+    },
+    {
+      "path": "assets/models/medieval_village/medieval_house_03_RoofTiles.jpg",
+      "bytes": 194812,
+      "sha256": "df73a93cc468528c36c4e0c39b706575e5aab6077dc5d829e5948284c3c67fc8"
+    },
+    {
+      "path": "assets/models/medieval_village/medieval_house_03_Rusted Metal.jpg",
+      "bytes": 298722,
+      "sha256": "63a6a0bd18f8bd8c01ba18efe83a15baf18ce75cabf9f441b85cad11054118ac"
+    },
+    {
+      "path": "assets/models/medieval_village/medieval_house_03_Stone.jpg",
+      "bytes": 127606,
+      "sha256": "8a54c76c44fa77849db7492ad99976a6caffe08238225fba9a9d1eb2556ac5f9"
+    },
+    {
+      "path": "assets/models/medieval_village/medieval_house_03_TreeLogEdgeWeathered.jpg",
+      "bytes": 260268,
+      "sha256": "b68f0516d81a570e927675398c9bcb04490509d8dff8fc725581b0d028689480"
+    },
+    {
+      "path": "assets/models/medieval_village/medieval_house_03_WindowBlue1.jpg",
+      "bytes": 272852,
+      "sha256": "4ce8a2ac546132d29c83f49bd34424940b49c5eb54ad2f6ad457714dc61f8ef7"
+    },
+    {
+      "path": "assets/models/medieval_village/medieval_house_03_WindowsBlue2.jpg",
+      "bytes": 135995,
+      "sha256": "4f9a2426dd75d59745ff405e69e8bc75f120786be0af329064e05c88f0a2e790"
+    },
+    {
+      "path": "assets/models/medieval_village/medieval_house_03_Wood.jpg",
+      "bytes": 512848,
+      "sha256": "8def4262d4a9e6b46aa784261adfe08539b7d62a6349449d50b008f85f42c842"
+    },
+    {
+      "path": "assets/models/medieval_village/medieval_house_04.glb",
+      "bytes": 4247084,
+      "sha256": "cc060b9e8d3c9f21d0036847ae26396e6bde85e5113360942f8f867786f38a26"
+    },
+    {
+      "path": "assets/models/medieval_village/medieval_house_04_DoorType1_2.jpg",
+      "bytes": 248592,
+      "sha256": "cf831de534b37567c19638a2f8bf099c6ed3d2edc90e4f9c20aafcdde6beaa0d"
+    },
+    {
+      "path": "assets/models/medieval_village/medieval_house_04_GreyBricks.jpg",
+      "bytes": 582830,
+      "sha256": "101844a3101ad3b885f4849328b0f622d2a745b4acbb2aedc9d6c5df3634b863"
+    },
+    {
+      "path": "assets/models/medieval_village/medieval_house_04_GreyBricks2.jpg",
+      "bytes": 289485,
+      "sha256": "95689677a381bdbb0d50c6aec1d6f32a1bcd060faacbedb4b2a7bdc8e6e4ca2f"
+    },
+    {
+      "path": "assets/models/medieval_village/medieval_house_04_GreyStone2.jpg",
+      "bytes": 21267,
+      "sha256": "b083e4e985829acd38c3dee98bfd1f71bae8ce997d605b00a4c880aff680802d"
+    },
+    {
+      "path": "assets/models/medieval_village/medieval_house_04_PlasterLarge.jpg",
+      "bytes": 793902,
+      "sha256": "e66dba35cb0d00605288a74011408b1335c0acdde2b55c9378fd89535b218860"
+    },
+    {
+      "path": "assets/models/medieval_village/medieval_house_04_RoofTiles.jpg",
+      "bytes": 194812,
+      "sha256": "df73a93cc468528c36c4e0c39b706575e5aab6077dc5d829e5948284c3c67fc8"
+    },
+    {
+      "path": "assets/models/medieval_village/medieval_house_04_Rusted Metal.jpg",
+      "bytes": 298722,
+      "sha256": "63a6a0bd18f8bd8c01ba18efe83a15baf18ce75cabf9f441b85cad11054118ac"
+    },
+    {
+      "path": "assets/models/medieval_village/medieval_house_04_Stone.jpg",
+      "bytes": 127606,
+      "sha256": "8a54c76c44fa77849db7492ad99976a6caffe08238225fba9a9d1eb2556ac5f9"
+    },
+    {
+      "path": "assets/models/medieval_village/medieval_house_04_TreeLogEdgeWeathered.jpg",
+      "bytes": 260268,
+      "sha256": "b68f0516d81a570e927675398c9bcb04490509d8dff8fc725581b0d028689480"
+    },
+    {
+      "path": "assets/models/medieval_village/medieval_house_04_WindowBlue1.jpg",
+      "bytes": 272852,
+      "sha256": "4ce8a2ac546132d29c83f49bd34424940b49c5eb54ad2f6ad457714dc61f8ef7"
+    },
+    {
+      "path": "assets/models/medieval_village/medieval_house_04_WindowsBlue2.jpg",
+      "bytes": 135995,
+      "sha256": "4f9a2426dd75d59745ff405e69e8bc75f120786be0af329064e05c88f0a2e790"
+    },
+    {
+      "path": "assets/models/medieval_village/medieval_house_04_Wood.jpg",
+      "bytes": 512848,
+      "sha256": "8def4262d4a9e6b46aa784261adfe08539b7d62a6349449d50b008f85f42c842"
+    },
+    {
+      "path": "assets/models/modular_fort_01/modular_fort_01.bin",
+      "bytes": 1288144,
+      "sha256": "de86e71af4cd5b37006914a8e7ae7de59b245b73364317f1886285a6aa797f57"
+    },
+    {
+      "path": "assets/models/modular_fort_01/modular_fort_01_1k.gltf",
+      "bytes": 71433,
+      "sha256": "829ac97d4c5c5672d3055d772e0ef4b545ad93cb4b639296f34e3ddf04cf9faf"
+    },
+    {
+      "path": "assets/models/modular_fort_01/textures/modular_fort_01_plaster_arm_1k.jpg",
+      "bytes": 872242,
+      "sha256": "d51902ce06084dd828cf82d60fcbc733160cc27ada41d5e57b38bafbe5d12327"
+    },
+    {
+      "path": "assets/models/modular_fort_01/textures/modular_fort_01_plaster_diff_1k.jpg",
+      "bytes": 995332,
+      "sha256": "d453b45cec06da3da9e67b38d016f6358c7c310a99db9b066e07e3a494731f4d"
+    },
+    {
+      "path": "assets/models/modular_fort_01/textures/modular_fort_01_plaster_nor_gl_1k.jpg",
+      "bytes": 1478355,
+      "sha256": "567953f0b7da39f6d4f173cc98ff948d31e07b516c8d2e0e0b0ec69de35cab3e"
+    },
+    {
+      "path": "assets/models/modular_fort_01/textures/modular_fort_01_trim_arm_1k.jpg",
+      "bytes": 807245,
+      "sha256": "d6a9e67be3f171857bb06af436ebaefedd1fd3ca4e1212c8ad42be7ef6038c91"
+    },
+    {
+      "path": "assets/models/modular_fort_01/textures/modular_fort_01_trim_diff_1k.jpg",
+      "bytes": 945345,
+      "sha256": "fe5811560cf0471321fe6af08114f279a7f957412b8aa6e2c224112990760556"
+    },
+    {
+      "path": "assets/models/modular_fort_01/textures/modular_fort_01_trim_nor_gl_1k.jpg",
+      "bytes": 1070875,
+      "sha256": "c5a21bd71f1ed0186fedaad18edb74713527a9426f5d136a5b21c3e09a71e1c3"
+    },
+    {
+      "path": "assets/models/modular_fort_01/textures/modular_fort_01_wall_arm_1k.jpg",
+      "bytes": 936858,
+      "sha256": "6d3327658794a90fc1b52c19dfbb57059b7ea9801f59abd13417e4be7bf40a34"
+    },
+    {
+      "path": "assets/models/modular_fort_01/textures/modular_fort_01_wall_diff_1k.jpg",
+      "bytes": 978641,
+      "sha256": "8bdefadca0688e9b3fd91b4d12f341918b0a3670c25537c18a777fa51bb90bea"
+    },
+    {
+      "path": "assets/models/modular_fort_01/textures/modular_fort_01_wall_nor_gl_1k.jpg",
+      "bytes": 1194253,
+      "sha256": "6e8b0e1abac9c6ab0f9a36c04300ea3d0ca83dede3b49485c969a71494ce8d53"
+    },
+    {
+      "path": "assets/models/rock_moss_set_02/rock_moss_set_02.bin",
+      "bytes": 1316572,
+      "sha256": "2df9d8eaaca4207529b0f613d4886d3962d0b9ffc0cdfd2bc4bf35dbcd391cb5"
+    },
+    {
+      "path": "assets/models/rock_moss_set_02/rock_moss_set_02_1k.gltf",
+      "bytes": 11608,
+      "sha256": "c3b992a7622e94f7d8da97a47277a2a5177a513af0312a127ec908d4056c97db"
+    },
+    {
+      "path": "assets/models/rock_moss_set_02/textures/rock_moss_set_02_diff_1k.jpg",
+      "bytes": 194307,
+      "sha256": "91dd2cc77d5198b067d77e5bdb3fa8ee7b8950aeff5aec2c1ccaddb76dcca481"
+    },
+    {
+      "path": "assets/models/rock_moss_set_02/textures/rock_moss_set_02_nor_gl_1k.jpg",
+      "bytes": 273527,
+      "sha256": "dd2503789089fb72ef469efd14364d393e769c0de8781a251475cac7e0b6f51d"
+    },
+    {
+      "path": "assets/models/rock_moss_set_02/textures/rock_moss_set_02_rough_1k.jpg",
+      "bytes": 146226,
+      "sha256": "12252219a98a560940359973e83af831abdcfab0ead3f0a2a7b135a0143105f1"
+    },
+    {
+      "path": "assets/models/source/medieval-village/House1Upload.blend",
+      "bytes": 7936032,
+      "sha256": "3ee3158d231060500fc15b175592759c12a0a0dc12656e49f36bd39f807682d6"
+    },
+    {
+      "path": "assets/models/source/medieval-village/House2_1Upload.blend",
+      "bytes": 8794948,
+      "sha256": "e41e1bacb9d3e08bd9162257c0cc6b87cd39415dfe5c53e6d67f0391109018bb"
+    },
+    {
+      "path": "assets/models/source/medieval-village/House3Upload.blend",
+      "bytes": 8586300,
+      "sha256": "747538d2939a5b249756816976a19aff487fed68c0254150683a9c202aa010d6"
+    },
+    {
+      "path": "assets/models/source/medieval-village/House4Upload.blend",
+      "bytes": 10758036,
+      "sha256": "d27094601a0aa51a9a7a93cbec381362d989064c54671eca00aee707160d97dd"
+    },
+    {
+      "path": "assets/models/source/mundo/huge tree/diffuse.tga",
+      "bytes": 4194348,
+      "sha256": "af34f8a350be0c168a7ad7281e9f7d1c70452cd0e00c53e2f685d48b741d9fe9"
+    },
+    {
+      "path": "assets/models/source/mundo/huge tree/huge_tree.obj",
+      "bytes": 99273,
+      "sha256": "dbfc35029dfc1bf5fb5ce3746aa8be8d0aea8eed5571d3e72786a075204718a1"
+    },
+    {
+      "path": "assets/models/source/mundo/huge tree/normal.tga",
+      "bytes": 3145772,
+      "sha256": "6ab139462fc26cdc5c1a9bb64ec4aa2e226d9376cb3abce1f4e66fd5b851768c"
+    },
+    {
+      "path": "assets/models/source/mundo/pine/diffuse_none.tga",
+      "bytes": 4194348,
+      "sha256": "d0591274fa5b9ff09553a90a483acbc8b452df792cb68462584e535d5d33ed20"
+    },
+    {
+      "path": "assets/models/source/mundo/pine/normal_none.tga",
+      "bytes": 3145772,
+      "sha256": "55b6e3c9ee87a075acf5cdb25b36506cc2e6eabfa933ca5fdfd7815436e1b4e5"
+    },
+    {
+      "path": "assets/models/source/mundo/pine/snow_pine_tree.obj",
+      "bytes": 62046,
+      "sha256": "d9c3a69d9d07fa23f40bf4bc65c607ebf4c9ad25adf396a027c245f6f8b82729"
+    },
+    {
+      "path": "assets/models/source/werewolf/werewolf.blend",
+      "bytes": 1790984,
+      "sha256": "e8efe309422d0386be68529769bcdc55bbc66daded24da6805ebc0512dfc287d"
+    },
+    {
+      "path": "assets/models/source/werewolf/werewolf_diffuse.png",
+      "bytes": 2400211,
+      "sha256": "2805572122c5c952a2e49cd46957b131a729839e68c1277dac6b1db856bb567f"
+    },
+    {
+      "path": "assets/models/source/werewolf/werewolf_normal.png",
+      "bytes": 363004,
+      "sha256": "cdaa3fbb831366b258653daf13028c7f8c17b43bc8f4b37e7521b8e521c36910"
+    },
+    {
+      "path": "assets/models/treasure_chest/textures/treasure_chest_arm_1k.jpg",
+      "bytes": 958484,
+      "sha256": "1f09896cfad5b2f80483ab440b732fb03e94a67c3b09eee4c864af7ad2c6cc12"
+    },
+    {
+      "path": "assets/models/treasure_chest/textures/treasure_chest_diff_1k.jpg",
+      "bytes": 812089,
+      "sha256": "4a2ee3b53835e7d4a3e411863c7829f37df1221aeb1cd78d89e24239cf8bbd0b"
+    },
+    {
+      "path": "assets/models/treasure_chest/textures/treasure_chest_nor_gl_1k.jpg",
+      "bytes": 893221,
+      "sha256": "c86a694f7d40e46dfdd0293a5a9bae32061a8476132bbd679b63404cc1795b68"
+    },
+    {
+      "path": "assets/models/treasure_chest/treasure_chest.bin",
+      "bytes": 2811372,
+      "sha256": "6e8fd5b5c641c3535bf26767fc7b0e7295c314d43613726da9679ee8cffecb03"
+    },
+    {
+      "path": "assets/models/treasure_chest/treasure_chest_1k.gltf",
+      "bytes": 8584,
+      "sha256": "5edb8df3a45d2709b9407102ba4dd63025adff401ed8eba939d0117a74dd8dd5"
+    },
+    {
+      "path": "assets/models/treasure_chest/treasure_chest_lod.glb",
+      "bytes": 3071044,
+      "sha256": "26f0c9a479f319cea62807cf3d08f99407818f2f86df3a5002f31d84c7419427"
+    },
+    {
+      "path": "assets/models/treasure_chest/treasure_chest_lod_treasure_chest_diff.jpg",
+      "bytes": 812089,
+      "sha256": "4a2ee3b53835e7d4a3e411863c7829f37df1221aeb1cd78d89e24239cf8bbd0b"
+    },
+    {
+      "path": "assets/models/treasure_chest/treasure_chest_lod_treasure_chest_metal-treasure_chest_rough.jpg",
+      "bytes": 958484,
+      "sha256": "1f09896cfad5b2f80483ab440b732fb03e94a67c3b09eee4c864af7ad2c6cc12"
+    },
+    {
+      "path": "assets/models/treasure_chest/treasure_chest_lod_treasure_chest_nor_gl.jpg",
+      "bytes": 893221,
+      "sha256": "c86a694f7d40e46dfdd0293a5a9bae32061a8476132bbd679b63404cc1795b68"
+    },
+    {
+      "path": "assets/models/werewolf/werewolf.glb",
+      "bytes": 3019236,
+      "sha256": "32630fff2a2bc4cc47bf6096ed0e51d1f60ea5ce2f4c3066cff6889afe9a576e"
+    },
+    {
+      "path": "assets/models/werewolf/werewolf_diffuse.png",
+      "bytes": 2400211,
+      "sha256": "2805572122c5c952a2e49cd46957b131a729839e68c1277dac6b1db856bb567f"
+    },
+    {
+      "path": "assets/models/werewolf/werewolf_normal.png",
+      "bytes": 363004,
+      "sha256": "cdaa3fbb831366b258653daf13028c7f8c17b43bc8f4b37e7521b8e521c36910"
+    },
+    {
+      "path": "assets/models/werewolf/werewolf_werewolf_diffuse.png",
+      "bytes": 2400211,
+      "sha256": "2805572122c5c952a2e49cd46957b131a729839e68c1277dac6b1db856bb567f"
+    },
+    {
+      "path": "assets/models/werewolf/werewolf_werewolf_normal.png",
+      "bytes": 363004,
+      "sha256": "cdaa3fbb831366b258653daf13028c7f8c17b43bc8f4b37e7521b8e521c36910"
+    },
+    {
+      "path": "assets/models/wine_barrel_01/textures/wine_barrel_01_arm_1k.jpg",
+      "bytes": 172531,
+      "sha256": "be658e1389dbe8669e847b8fc7df8affdce46d6582f01ac701555b6446a40b9d"
+    },
+    {
+      "path": "assets/models/wine_barrel_01/textures/wine_barrel_01_diff_1k.jpg",
+      "bytes": 195980,
+      "sha256": "6bea25b4fadda0636b6b7e46e0cc15153eda21ef62c823d5ee2e06a5a7589214"
+    },
+    {
+      "path": "assets/models/wine_barrel_01/textures/wine_barrel_01_nor_gl_1k.jpg",
+      "bytes": 163587,
+      "sha256": "86cdb0729b44d1687c75d895e6d0ef650f7580d70f3bcb52bce6fedc5fd79b6f"
+    },
+    {
+      "path": "assets/models/wine_barrel_01/wine_barrel_01.bin",
+      "bytes": 385912,
+      "sha256": "d827c31afed824b923ea9168462c93ab3ad3a88c4a68b155bd35efb1a02cbf00"
+    },
+    {
+      "path": "assets/models/wine_barrel_01/wine_barrel_01_1k.gltf",
+      "bytes": 6673,
+      "sha256": "503d3339677217c3241a3cdbc1c803ed1eb82d1a48f51436d1545ec5745ae8d8"
+    },
+    {
+      "path": "assets/models/wine_barrel_01/wine_barrel_lod.glb",
+      "bytes": 739544,
+      "sha256": "3681a502acfc9dba5cd75828116951f3a8ad29f8dcedb2eb31b53faa1d1d5fdf"
+    },
+    {
+      "path": "assets/models/wine_barrel_01/wine_barrel_lod_wine_barrel_01_diff.jpg",
+      "bytes": 195980,
+      "sha256": "6bea25b4fadda0636b6b7e46e0cc15153eda21ef62c823d5ee2e06a5a7589214"
+    },
+    {
+      "path": "assets/models/wine_barrel_01/wine_barrel_lod_wine_barrel_01_metal-wine_barrel_01_rough.jpg",
+      "bytes": 172531,
+      "sha256": "be658e1389dbe8669e847b8fc7df8affdce46d6582f01ac701555b6446a40b9d"
+    },
+    {
+      "path": "assets/models/wine_barrel_01/wine_barrel_lod_wine_barrel_01_nor_gl.jpg",
+      "bytes": 163587,
+      "sha256": "86cdb0729b44d1687c75d895e6d0ef650f7580d70f3bcb52bce6fedc5fd79b6f"
+    }
+  ],
+  "sourceDirectory": "assets/models/source/ (excluded from Godot import via .gdignore)",
+  "note": "Original reference files retained; runtime selections are models[].scene. All generated UI illustrations, Flare sprites, fonts, and audio have separate provenance."
+}

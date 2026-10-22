@@ -1,0 +1,926 @@
+{
+  "authoring": {
+    "blendBytes": 22695232,
+    "blendPath": "assets/models/source/towns/ashen_crown/ashen_crown_master.blend",
+    "blendSha256": "0e573d983ccefa87c4e70a2b4c906b0ce702af6f96c1981062483478ed882e41",
+    "exportScript": {
+      "path": "assets/models/source/towns/build_ashen_crown.py",
+      "sha256": "db2f6cc30f6d818a2dd74b4440bc7e15b2ac3b8af0a2f1d6b1bddcdee193bde4"
+    },
+    "tool": "Blender"
+  },
+  "buildings": {
+    "barracks": {
+      "alpha": {
+        "borderPixels": 0,
+        "opaquePixels": 68120,
+        "transparentPixels": 194024,
+        "usedRect": [
+          53,
+          116,
+          406,
+          336
+        ]
+      },
+      "alphaMatchesRaw": true,
+      "blendSha256": "0e573d983ccefa87c4e70a2b4c906b0ce702af6f96c1981062483478ed882e41",
+      "cardFile": "barracks.png",
+      "cardSha256": "4cd955a5c5650ca40ec2b951fb1969a3c81284f76618c03e2a446e578a7f0010",
+      "dependencies": [],
+      "generator": "Khronos glTF Blender I/O v4.5.51",
+      "gltfMaterialCount": 12,
+      "gltfMeshCount": 2,
+      "id": "barracks",
+      "rawCardFile": "barracks.raw.png",
+      "rawCardSha256": "4cd955a5c5650ca40ec2b951fb1969a3c81284f76618c03e2a446e578a7f0010",
+      "render": {
+        "ambientEnergy": 0.3,
+        "camera": {
+          "azimuthDegrees": 35.0,
+          "elevationDegrees": 28.0,
+          "paddingFraction": 0.1
+        },
+        "cameraPosition": [
+          16.631668090820312,
+          18.167675018310547,
+          23.752483367919922
+        ],
+        "cameraTarget": [
+          0.0,
+          2.75,
+          0.0
+        ],
+        "engine": "4.7.2-stable (official)",
+        "fillEnergy": 0.15,
+        "keyEnergy": 0.75,
+        "msaa": 4,
+        "orthographicSize": 11.658787727355957,
+        "pipelineVersion": "same-scene-native-card-v2",
+        "pose": "authored_completed_rest",
+        "projectedBounds": [
+          51.200042724609375,
+          53.34577941894531,
+          409.5999450683594,
+          405.30841064453125
+        ],
+        "reflection": {
+          "energy": 0.65,
+          "groundHorizonSrgb": "7b7769",
+          "groundSrgb": "44433c",
+          "horizonSrgb": "b0afa6",
+          "kind": "static_neutral_gradient_sky",
+          "processMode": "quality",
+          "radianceSize": 128,
+          "sceneLightDependent": false,
+          "shaderSha256": "31bc6ad81a91400565d17c3c445729eec55509b14550a07944773d157c16e87f",
+          "topSrgb": "89929b",
+          "version": "neutral-overcast-reflections-v1"
+        },
+        "renderer": "gl_compatibility",
+        "resolution": [
+          512,
+          512
+        ],
+        "restPose": {
+          "clip": "RESET",
+          "seconds": 0.0,
+          "strategy": "authored_RESET"
+        },
+        "transparentBackground": true,
+        "treatment": "raw"
+      },
+      "scenePath": "res://assets/models/towns/ashen_crown/barracks.glb",
+      "signature": {
+        "bounds": {
+          "position": [
+            -3.358623504638672,
+            0.0,
+            -3.3339791297912598
+          ],
+          "size": [
+            6.717247009277344,
+            5.5,
+            6.6679582595825195
+          ]
+        },
+        "geometrySha256": "d8f1d1f2b0c66de59508ca5c21f0233521fa2fe39e257d553d0eac348311971a",
+        "id": "barracks",
+        "indexCount": 27030,
+        "instantiatedScenePath": "res://assets/models/towns/ashen_crown/barracks.glb",
+        "materialSha256": "c7c0b1ffd9ea37dc3f46d9b40858daa855d558abdfd3911754224acb995f9a01",
+        "meshCount": 2,
+        "meshDataSha256": "c8f2a578788be7ed764a07399afc637edc2ee9ab3a11a01077f798c7e667dd36",
+        "poseSha256": "cd6c92996f45d87215e1bc7b2be7f9031148fa11ce368b3dbb0685c410f09560",
+        "scenePath": "res://assets/models/towns/ashen_crown/barracks.glb",
+        "signatureVersion": "godot-mesh-morph-pose-material-v2",
+        "surfaceCount": 14,
+        "vertexCount": 16805
+      },
+      "sourceBytes": 10510188,
+      "sourceSha256": "e8d5f37ff13e651deb711b5dd0fb6a68b841b7bd2107106bb9eeb1a476b7fc15",
+      "sourceUnchanged": true
+    },
+    "granary": {
+      "alpha": {
+        "borderPixels": 0,
+        "opaquePixels": 71924,
+        "transparentPixels": 190220,
+        "usedRect": [
+          123,
+          85,
+          316,
+          356
+        ]
+      },
+      "alphaMatchesRaw": true,
+      "blendSha256": "0e573d983ccefa87c4e70a2b4c906b0ce702af6f96c1981062483478ed882e41",
+      "cardFile": "granary.png",
+      "cardSha256": "4c089142b3f6c0a285dd1c76db35f77c4184eec1c94f1595a031c807c0997f04",
+      "dependencies": [],
+      "generator": "Khronos glTF Blender I/O v4.5.51",
+      "gltfMaterialCount": 11,
+      "gltfMeshCount": 2,
+      "id": "granary",
+      "rawCardFile": "granary.raw.png",
+      "rawCardSha256": "4c089142b3f6c0a285dd1c76db35f77c4184eec1c94f1595a031c807c0997f04",
+      "render": {
+        "ambientEnergy": 0.3,
+        "camera": {
+          "azimuthDegrees": 35.0,
+          "elevationDegrees": 28.0,
+          "paddingFraction": 0.1
+        },
+        "cameraPosition": [
+          15.928604125976562,
+          17.758115768432617,
+          23.736974716186523
+        ],
+        "cameraTarget": [
+          0.0,
+          2.9921858310699463,
+          0.9885711669921875
+        ],
+        "engine": "4.7.2-stable (official)",
+        "fillEnergy": 0.15,
+        "keyEnergy": 0.75,
+        "msaa": 4,
+        "orthographicSize": 11.636757850646973,
+        "pipelineVersion": "same-scene-native-card-v2",
+        "pose": "authored_completed_rest",
+        "projectedBounds": [
+          73.01254272460938,
+          51.199920654296875,
+          365.9748840332031,
+          409.6000671386719
+        ],
+        "reflection": {
+          "energy": 0.65,
+          "groundHorizonSrgb": "7b7769",
+          "groundSrgb": "44433c",
+          "horizonSrgb": "b0afa6",
+          "kind": "static_neutral_gradient_sky",
+          "processMode": "quality",
+          "radianceSize": 128,
+          "sceneLightDependent": false,
+          "shaderSha256": "31bc6ad81a91400565d17c3c445729eec55509b14550a07944773d157c16e87f",
+          "topSrgb": "89929b",
+          "version": "neutral-overcast-reflections-v1"
+        },
+        "renderer": "gl_compatibility",
+        "resolution": [
+          512,
+          512
+        ],
+        "restPose": {
+          "clip": "RESET",
+          "seconds": 0.0,
+          "strategy": "authored_RESET"
+        },
+        "transparentBackground": true,
+        "treatment": "raw"
+      },
+      "repeatPixelsMatch": true,
+      "scenePath": "res://assets/models/towns/ashen_crown/granary.glb",
+      "signature": {
+        "bounds": {
+          "position": [
+            -2.7709529399871826,
+            0.0,
+            -2.3050003051757812
+          ],
+          "size": [
+            5.541905879974365,
+            5.984371662139893,
+            6.5871429443359375
+          ]
+        },
+        "geometrySha256": "662fa54585c09f16d01d95fd184dee12fd27f7c193ba3e6068846fc68a904cb4",
+        "id": "granary",
+        "indexCount": 62520,
+        "instantiatedScenePath": "res://assets/models/towns/ashen_crown/granary.glb",
+        "materialSha256": "cb3b4cb9c472c7bbcf777f2918c669ad8589e5ca4874c3335cd488cfaa8c0d05",
+        "meshCount": 2,
+        "meshDataSha256": "35e150208c9b03efba16e980f3faf937e0092bfaf269c95c504d004adde9c6c6",
+        "poseSha256": "fd57a5463ec633cc8d996c317d9781b8da2b85862d0852a856f6cf8078143b67",
+        "scenePath": "res://assets/models/towns/ashen_crown/granary.glb",
+        "signatureVersion": "godot-mesh-morph-pose-material-v2",
+        "surfaceCount": 13,
+        "vertexCount": 32648
+      },
+      "sourceBytes": 11059036,
+      "sourceSha256": "05d1921a10cb7bea704cf779cc41da49630565d4e1803d93ff393e7653c3cf73",
+      "sourceUnchanged": true
+    },
+    "market": {
+      "alpha": {
+        "borderPixels": 0,
+        "opaquePixels": 55157,
+        "transparentPixels": 206987,
+        "usedRect": [
+          73,
+          118,
+          386,
+          289
+        ]
+      },
+      "alphaMatchesRaw": true,
+      "blendSha256": "0e573d983ccefa87c4e70a2b4c906b0ce702af6f96c1981062483478ed882e41",
+      "cardFile": "market.png",
+      "cardSha256": "2595d27694234bda7d6d507704f7183e7ccf94e603b004937aece1498e71a295",
+      "dependencies": [],
+      "generator": "Khronos glTF Blender I/O v4.5.51",
+      "gltfMaterialCount": 12,
+      "gltfMeshCount": 6,
+      "id": "market",
+      "rawCardFile": "market.raw.png",
+      "rawCardSha256": "2595d27694234bda7d6d507704f7183e7ccf94e603b004937aece1498e71a295",
+      "render": {
+        "ambientEnergy": 0.3,
+        "camera": {
+          "azimuthDegrees": 35.0,
+          "elevationDegrees": 28.0,
+          "paddingFraction": 0.1
+        },
+        "cameraPosition": [
+          10.855326652526855,
+          11.948721885681152,
+          15.93435287475586
+        ],
+        "cameraTarget": [
+          -0.33522629737854004,
+          1.5749999284744263,
+          -0.04741215705871582
+        ],
+        "engine": "4.7.2-stable (official)",
+        "fillEnergy": 0.15,
+        "keyEnergy": 0.75,
+        "msaa": 4,
+        "orthographicSize": 8.2914400100708,
+        "pipelineVersion": "same-scene-native-card-v2",
+        "pose": "authored_completed_rest",
+        "projectedBounds": [
+          51.19999694824219,
+          82.62501525878906,
+          409.5999755859375,
+          346.74981689453125
+        ],
+        "reflection": {
+          "energy": 0.65,
+          "groundHorizonSrgb": "7b7769",
+          "groundSrgb": "44433c",
+          "horizonSrgb": "b0afa6",
+          "kind": "static_neutral_gradient_sky",
+          "processMode": "quality",
+          "radianceSize": 128,
+          "sceneLightDependent": false,
+          "shaderSha256": "31bc6ad81a91400565d17c3c445729eec55509b14550a07944773d157c16e87f",
+          "topSrgb": "89929b",
+          "version": "neutral-overcast-reflections-v1"
+        },
+        "renderer": "gl_compatibility",
+        "resolution": [
+          512,
+          512
+        ],
+        "restPose": {
+          "clip": "RESET",
+          "seconds": 0.0,
+          "strategy": "authored_RESET"
+        },
+        "transparentBackground": true,
+        "treatment": "raw"
+      },
+      "scenePath": "res://assets/models/towns/ashen_crown/market.glb",
+      "signature": {
+        "bounds": {
+          "position": [
+            -3.2167141437530518,
+            0.0,
+            -1.7144951820373535
+          ],
+          "size": [
+            5.762975692749023,
+            3.1499998569488525,
+            3.3341660499572754
+          ]
+        },
+        "geometrySha256": "50f1896426f22175c57f3f725690a886d45f580f881bd26dda35afd2ca939186",
+        "id": "market",
+        "indexCount": 26280,
+        "instantiatedScenePath": "res://assets/models/towns/ashen_crown/market.glb",
+        "materialSha256": "a321acf8fd3b586ab1c4bcc194d6c81b19af04fb8ed9faa5a61756cbb2fb1064",
+        "meshCount": 6,
+        "meshDataSha256": "80c93306733131165edaa4afe1955ec331b164fb83813debb25b64a360b3308c",
+        "poseSha256": "dae29b50505483beef9cf940a10549be02452413bb6f1fb0287d54c2fef7a2d8",
+        "scenePath": "res://assets/models/towns/ashen_crown/market.glb",
+        "signatureVersion": "godot-mesh-morph-pose-material-v2",
+        "surfaceCount": 21,
+        "vertexCount": 13792
+      },
+      "sourceBytes": 5954956,
+      "sourceSha256": "c6b85dc9b09b182a3c3cc3ae3c272abc87f69e1dc2e2cab1a6ca4398badf05bf",
+      "sourceUnchanged": true
+    },
+    "palisade": {
+      "alpha": {
+        "borderPixels": 0,
+        "opaquePixels": 42013,
+        "transparentPixels": 220131,
+        "usedRect": [
+          66,
+          167,
+          380,
+          242
+        ]
+      },
+      "alphaMatchesRaw": true,
+      "blendSha256": "0e573d983ccefa87c4e70a2b4c906b0ce702af6f96c1981062483478ed882e41",
+      "cardFile": "palisade.png",
+      "cardSha256": "75038bf798aa3a227f827ea7e5035966ee92e23d45430242ad6c4820962975ce",
+      "dependencies": [],
+      "generator": "Khronos glTF Blender I/O v4.5.51",
+      "gltfMaterialCount": 11,
+      "gltfMeshCount": 4,
+      "id": "palisade",
+      "rawCardFile": "palisade.raw.png",
+      "rawCardSha256": "75038bf798aa3a227f827ea7e5035966ee92e23d45430242ad6c4820962975ce",
+      "render": {
+        "ambientEnergy": 0.3,
+        "camera": {
+          "azimuthDegrees": 35.0,
+          "elevationDegrees": 28.0,
+          "paddingFraction": 0.1
+        },
+        "cameraPosition": [
+          20.84546661376953,
+          22.052949905395508,
+          28.494773864746094
+        ],
+        "cameraTarget": [
+          -0.004372119903564453,
+          2.7249999046325684,
+          -1.2818808555603027
+        ],
+        "engine": "4.7.2-stable (official)",
+        "fillEnergy": 0.15,
+        "keyEnergy": 0.75,
+        "msaa": 4,
+        "orthographicSize": 15.161506652832031,
+        "pipelineVersion": "same-scene-native-card-v2",
+        "pose": "authored_completed_rest",
+        "projectedBounds": [
+          51.19999694824219,
+          93.59596252441406,
+          409.5999755859375,
+          324.8079833984375
+        ],
+        "reflection": {
+          "energy": 0.65,
+          "groundHorizonSrgb": "7b7769",
+          "groundSrgb": "44433c",
+          "horizonSrgb": "b0afa6",
+          "kind": "static_neutral_gradient_sky",
+          "processMode": "quality",
+          "radianceSize": 128,
+          "sceneLightDependent": false,
+          "shaderSha256": "31bc6ad81a91400565d17c3c445729eec55509b14550a07944773d157c16e87f",
+          "topSrgb": "89929b",
+          "version": "neutral-overcast-reflections-v1"
+        },
+        "renderer": "gl_compatibility",
+        "resolution": [
+          512,
+          512
+        ],
+        "restPose": {
+          "clip": "RESET",
+          "seconds": 0.0,
+          "strategy": "authored_RESET"
+        },
+        "transparentBackground": true,
+        "treatment": "raw"
+      },
+      "scenePath": "res://assets/models/towns/ashen_crown/palisade.glb",
+      "signature": {
+        "bounds": {
+          "position": [
+            -5.945000171661377,
+            0.0,
+            -3.3710978031158447
+          ],
+          "size": [
+            11.881256103515625,
+            5.449999809265137,
+            4.178433895111084
+          ]
+        },
+        "geometrySha256": "8382a30cf27d173a8827a59ae022556767f90794af067bff9991e1acde8a5eed",
+        "id": "palisade",
+        "indexCount": 25446,
+        "instantiatedScenePath": "res://assets/models/towns/ashen_crown/palisade.glb",
+        "materialSha256": "bafc35cc6b84a21296d7e142e1a1cd6860d156e123fcabd9f4210fdb66392890",
+        "meshCount": 4,
+        "meshDataSha256": "fe91dc9b8297ab9e44c03b997070e800213f651c61914f30b8063c941b401d91",
+        "poseSha256": "005803aff6a5229275b3f4986a5a575630f28f1b5a5325cd0c2cf6f8f4862434",
+        "scenePath": "res://assets/models/towns/ashen_crown/palisade.glb",
+        "signatureVersion": "godot-mesh-morph-pose-material-v2",
+        "surfaceCount": 19,
+        "vertexCount": 15473
+      },
+      "sourceBytes": 8243944,
+      "sourceSha256": "801d971422a375c647bdd6aac572bae36dd93520b918d387ac2c2f245d4df238",
+      "sourceUnchanged": true
+    },
+    "shrine": {
+      "alpha": {
+        "borderPixels": 0,
+        "opaquePixels": 87277,
+        "transparentPixels": 174867,
+        "usedRect": [
+          97,
+          89,
+          352,
+          352
+        ]
+      },
+      "alphaMatchesRaw": true,
+      "blendSha256": "0e573d983ccefa87c4e70a2b4c906b0ce702af6f96c1981062483478ed882e41",
+      "cardFile": "shrine.png",
+      "cardSha256": "d96baf5235d6ec7eb084a22049a1e0a89a1e380e495d50f4eec6e2217e8a6b4b",
+      "dependencies": [],
+      "generator": "Khronos glTF Blender I/O v4.5.51",
+      "gltfMaterialCount": 14,
+      "gltfMeshCount": 5,
+      "id": "shrine",
+      "rawCardFile": "shrine.raw.png",
+      "rawCardSha256": "d96baf5235d6ec7eb084a22049a1e0a89a1e380e495d50f4eec6e2217e8a6b4b",
+      "render": {
+        "ambientEnergy": 0.3,
+        "camera": {
+          "azimuthDegrees": 35.0,
+          "elevationDegrees": 28.0,
+          "paddingFraction": 0.1
+        },
+        "cameraPosition": [
+          15.6636381149292,
+          17.327489852905273,
+          23.012493133544922
+        ],
+        "cameraTarget": [
+          0.0,
+          2.8071858882904053,
+          0.6424996852874756
+        ],
+        "engine": "4.7.2-stable (official)",
+        "fillEnergy": 0.15,
+        "keyEnergy": 0.75,
+        "msaa": 4,
+        "orthographicSize": 11.212892532348633,
+        "pipelineVersion": "same-scene-native-card-v2",
+        "pose": "authored_completed_rest",
+        "projectedBounds": [
+          62.43489074707031,
+          51.19984436035156,
+          387.13018798828125,
+          409.60009765625
+        ],
+        "reflection": {
+          "energy": 0.65,
+          "groundHorizonSrgb": "7b7769",
+          "groundSrgb": "44433c",
+          "horizonSrgb": "b0afa6",
+          "kind": "static_neutral_gradient_sky",
+          "processMode": "quality",
+          "radianceSize": 128,
+          "sceneLightDependent": false,
+          "shaderSha256": "31bc6ad81a91400565d17c3c445729eec55509b14550a07944773d157c16e87f",
+          "topSrgb": "89929b",
+          "version": "neutral-overcast-reflections-v1"
+        },
+        "renderer": "gl_compatibility",
+        "resolution": [
+          512,
+          512
+        ],
+        "restPose": {
+          "clip": "RESET",
+          "seconds": 0.0,
+          "strategy": "authored_RESET"
+        },
+        "transparentBackground": true,
+        "treatment": "raw"
+      },
+      "scenePath": "res://assets/models/towns/ashen_crown/shrine.glb",
+      "signature": {
+        "bounds": {
+          "position": [
+            -2.9850993156433105,
+            0.0,
+            -2.4850003719329834
+          ],
+          "size": [
+            5.970198631286621,
+            5.6143717765808105,
+            6.255000114440918
+          ]
+        },
+        "geometrySha256": "e8889be6eff57582f0407ca45d8082fe02323fd89589759b50b1da05ba4ed669",
+        "id": "shrine",
+        "indexCount": 80604,
+        "instantiatedScenePath": "res://assets/models/towns/ashen_crown/shrine.glb",
+        "materialSha256": "def0d6a52262833b41c6a3eea9a0631d9bcffeaa9f14d221d5409e201ab4fe79",
+        "meshCount": 5,
+        "meshDataSha256": "029b7e2e67cb740aabadccbaabc15f85372d859d08ffff9ee6de9b2c3f67f253",
+        "poseSha256": "f1faca49edb6fe6c12ee30cfa1533e05eca08e3db05ffcb66dba1b74de64ca0d",
+        "scenePath": "res://assets/models/towns/ashen_crown/shrine.glb",
+        "signatureVersion": "godot-mesh-morph-pose-material-v2",
+        "surfaceCount": 22,
+        "vertexCount": 42714
+      },
+      "sourceBytes": 13012396,
+      "sourceSha256": "e63cc7edad2cf43412345b972b015dc6274a54dc18218f268d8d703ba674efe0",
+      "sourceUnchanged": true
+    },
+    "smithy": {
+      "alpha": {
+        "borderPixels": 0,
+        "opaquePixels": 68699,
+        "transparentPixels": 193445,
+        "usedRect": [
+          100,
+          85,
+          316,
+          339
+        ]
+      },
+      "alphaMatchesRaw": true,
+      "blendSha256": "0e573d983ccefa87c4e70a2b4c906b0ce702af6f96c1981062483478ed882e41",
+      "cardFile": "smithy.png",
+      "cardSha256": "1578c32142ed124dd6b2976ba2d480fa19e7d7d00cf55bc4e134d35b6137a2c1",
+      "dependencies": [],
+      "generator": "Khronos glTF Blender I/O v4.5.51",
+      "gltfMaterialCount": 13,
+      "gltfMeshCount": 4,
+      "id": "smithy",
+      "rawCardFile": "smithy.raw.png",
+      "rawCardSha256": "1578c32142ed124dd6b2976ba2d480fa19e7d7d00cf55bc4e134d35b6137a2c1",
+      "render": {
+        "ambientEnergy": 0.3,
+        "camera": {
+          "azimuthDegrees": 35.0,
+          "elevationDegrees": 28.0,
+          "paddingFraction": 0.1
+        },
+        "cameraPosition": [
+          16.082721710205078,
+          17.470067977905273,
+          22.829118728637695
+        ],
+        "cameraTarget": [
+          0.4827139377593994,
+          3.0087499618530273,
+          0.5499999523162842
+        ],
+        "engine": "4.7.2-stable (official)",
+        "fillEnergy": 0.15,
+        "keyEnergy": 0.75,
+        "msaa": 4,
+        "orthographicSize": 11.4078950881958,
+        "pipelineVersion": "same-scene-native-card-v2",
+        "pose": "authored_completed_rest",
+        "projectedBounds": [
+          70.89535522460938,
+          51.19987487792969,
+          370.2091979980469,
+          409.60003662109375
+        ],
+        "reflection": {
+          "energy": 0.65,
+          "groundHorizonSrgb": "7b7769",
+          "groundSrgb": "44433c",
+          "horizonSrgb": "b0afa6",
+          "kind": "static_neutral_gradient_sky",
+          "processMode": "quality",
+          "radianceSize": 128,
+          "sceneLightDependent": false,
+          "shaderSha256": "31bc6ad81a91400565d17c3c445729eec55509b14550a07944773d157c16e87f",
+          "topSrgb": "89929b",
+          "version": "neutral-overcast-reflections-v1"
+        },
+        "renderer": "gl_compatibility",
+        "resolution": [
+          512,
+          512
+        ],
+        "restPose": {
+          "clip": "RESET",
+          "seconds": 0.0,
+          "strategy": "authored_RESET"
+        },
+        "transparentBackground": true,
+        "treatment": "raw"
+      },
+      "scenePath": "res://assets/models/towns/ashen_crown/smithy.glb",
+      "signature": {
+        "bounds": {
+          "position": [
+            -2.5845720767974854,
+            0.0,
+            -2.260000228881836
+          ],
+          "size": [
+            6.1345720291137695,
+            6.017499923706055,
+            5.62000036239624
+          ]
+        },
+        "geometrySha256": "3ace917fb377a698ade183cb9c188aecac4b05e198c50e4758b1b9a2e630d773",
+        "id": "smithy",
+        "indexCount": 60228,
+        "instantiatedScenePath": "res://assets/models/towns/ashen_crown/smithy.glb",
+        "materialSha256": "ba7d172ab6b74c626bc094ce1e42b09dc64eb8a4f7acc9f84c9bc4953e092785",
+        "meshCount": 4,
+        "meshDataSha256": "737114b0cfadbc50b35c016c1260ac274b371465b5da48866cd9e0519514cd42",
+        "poseSha256": "42cd7a1f66e3739edabe072a101908a86b384d7b6ec723f69e6eb44f97d9bf20",
+        "scenePath": "res://assets/models/towns/ashen_crown/smithy.glb",
+        "signatureVersion": "godot-mesh-morph-pose-material-v2",
+        "surfaceCount": 18,
+        "vertexCount": 32390
+      },
+      "sourceBytes": 9923448,
+      "sourceSha256": "6b5abd624d6e5a3086f9dc04e82d673b4260b80a26d899aa1129ea1300315595",
+      "sourceUnchanged": true
+    },
+    "water_gate": {
+      "alpha": {
+        "borderPixels": 0,
+        "opaquePixels": 71532,
+        "transparentPixels": 190612,
+        "usedRect": [
+          124,
+          93,
+          333,
+          334
+        ]
+      },
+      "alphaMatchesRaw": true,
+      "blendSha256": "0e573d983ccefa87c4e70a2b4c906b0ce702af6f96c1981062483478ed882e41",
+      "cardFile": "water_gate.png",
+      "cardSha256": "e78c790e9c452e71c67c019c48181e9939044b7d538c36682d789ab1c5c588af",
+      "dependencies": [],
+      "generator": "Khronos glTF Blender I/O v4.5.51",
+      "gltfMaterialCount": 11,
+      "gltfMeshCount": 5,
+      "id": "water_gate",
+      "rawCardFile": "water_gate.raw.png",
+      "rawCardSha256": "e78c790e9c452e71c67c019c48181e9939044b7d538c36682d789ab1c5c588af",
+      "render": {
+        "ambientEnergy": 0.3,
+        "camera": {
+          "azimuthDegrees": 35.0,
+          "elevationDegrees": 28.0,
+          "paddingFraction": 0.1
+        },
+        "cameraPosition": [
+          15.884475708007812,
+          17.450021743774414,
+          23.60525131225586
+        ],
+        "cameraTarget": [
+          0.0,
+          2.7249999046325684,
+          0.9198706150054932
+        ],
+        "engine": "4.7.2-stable (official)",
+        "fillEnergy": 0.15,
+        "keyEnergy": 0.75,
+        "msaa": 4,
+        "orthographicSize": 11.151996612548828,
+        "pipelineVersion": "same-scene-native-card-v2",
+        "pose": "authored_completed_rest",
+        "projectedBounds": [
+          51.19993591308594,
+          54.81340026855469,
+          409.60009765625,
+          402.37310791015625
+        ],
+        "reflection": {
+          "energy": 0.65,
+          "groundHorizonSrgb": "7b7769",
+          "groundSrgb": "44433c",
+          "horizonSrgb": "b0afa6",
+          "kind": "static_neutral_gradient_sky",
+          "processMode": "quality",
+          "radianceSize": 128,
+          "sceneLightDependent": false,
+          "shaderSha256": "31bc6ad81a91400565d17c3c445729eec55509b14550a07944773d157c16e87f",
+          "topSrgb": "89929b",
+          "version": "neutral-overcast-reflections-v1"
+        },
+        "renderer": "gl_compatibility",
+        "resolution": [
+          512,
+          512
+        ],
+        "restPose": {
+          "clip": "RESET",
+          "seconds": 0.0,
+          "strategy": "authored_RESET"
+        },
+        "transparentBackground": true,
+        "treatment": "raw"
+      },
+      "scenePath": "res://assets/models/towns/ashen_crown/water_gate.glb",
+      "signature": {
+        "bounds": {
+          "position": [
+            -3.625,
+            0.0,
+            -1.6802587509155273
+          ],
+          "size": [
+            7.25,
+            5.449999809265137,
+            5.200258731842041
+          ]
+        },
+        "geometrySha256": "3f073c21c21cf6ef52eede671f859338b62b3b93290e6b9dc0462ec62a5a518f",
+        "id": "water_gate",
+        "indexCount": 26952,
+        "instantiatedScenePath": "res://assets/models/towns/ashen_crown/water_gate.glb",
+        "materialSha256": "f0eb193de6e860360c4863c5a2e532b69e073f429526875b761906bec60d177d",
+        "meshCount": 5,
+        "meshDataSha256": "8391a1a820ed60a1f2bdcc65d390a9f7f591924c414e2922ce4738b5447dd039",
+        "poseSha256": "99b09b6461539b424935e97fe0ea824a4ced787c0eb5e4570a8cf1049635b104",
+        "scenePath": "res://assets/models/towns/ashen_crown/water_gate.glb",
+        "signatureVersion": "godot-mesh-morph-pose-material-v2",
+        "surfaceCount": 18,
+        "vertexCount": 17552
+      },
+      "sourceBytes": 10518916,
+      "sourceSha256": "b69a8b5a8fd24895be944842c5aa7f770883c5e9d62d1fc14068c649a4fa5f84",
+      "sourceUnchanged": true
+    },
+    "wharf": {
+      "alpha": {
+        "borderPixels": 0,
+        "opaquePixels": 56884,
+        "transparentPixels": 205260,
+        "usedRect": [
+          98,
+          117,
+          356,
+          282
+        ]
+      },
+      "alphaMatchesRaw": true,
+      "blendSha256": "0e573d983ccefa87c4e70a2b4c906b0ce702af6f96c1981062483478ed882e41",
+      "cardFile": "wharf.png",
+      "cardSha256": "bef32d4ee9e0350935a81b0ed1a8a5b63bc42bb33a4ce3c2fb433debb928979c",
+      "dependencies": [],
+      "generator": "Khronos glTF Blender I/O v4.5.51",
+      "gltfMaterialCount": 10,
+      "gltfMeshCount": 5,
+      "id": "wharf",
+      "rawCardFile": "wharf.raw.png",
+      "rawCardSha256": "bef32d4ee9e0350935a81b0ed1a8a5b63bc42bb33a4ce3c2fb433debb928979c",
+      "render": {
+        "ambientEnergy": 0.3,
+        "camera": {
+          "azimuthDegrees": 35.0,
+          "elevationDegrees": 28.0,
+          "paddingFraction": 0.1
+        },
+        "cameraPosition": [
+          14.057225227355957,
+          14.858333587646484,
+          20.778297424316406
+        ],
+        "cameraTarget": [
+          0.0,
+          1.8271857500076294,
+          0.7025001049041748
+        ],
+        "engine": "4.7.2-stable (official)",
+        "fillEnergy": 0.15,
+        "keyEnergy": 0.75,
+        "msaa": 4,
+        "orthographicSize": 10.389705657958984,
+        "pipelineVersion": "same-scene-native-card-v2",
+        "pose": "authored_completed_rest",
+        "projectedBounds": [
+          51.19996643066406,
+          79.1075439453125,
+          409.60009765625,
+          353.78466796875
+        ],
+        "reflection": {
+          "energy": 0.65,
+          "groundHorizonSrgb": "7b7769",
+          "groundSrgb": "44433c",
+          "horizonSrgb": "b0afa6",
+          "kind": "static_neutral_gradient_sky",
+          "processMode": "quality",
+          "radianceSize": 128,
+          "sceneLightDependent": false,
+          "shaderSha256": "31bc6ad81a91400565d17c3c445729eec55509b14550a07944773d157c16e87f",
+          "topSrgb": "89929b",
+          "version": "neutral-overcast-reflections-v1"
+        },
+        "renderer": "gl_compatibility",
+        "resolution": [
+          512,
+          512
+        ],
+        "restPose": {
+          "clip": "RESET",
+          "seconds": 0.0,
+          "strategy": "authored_RESET"
+        },
+        "transparentBackground": true,
+        "treatment": "raw"
+      },
+      "scenePath": "res://assets/models/towns/ashen_crown/wharf.glb",
+      "signature": {
+        "bounds": {
+          "position": [
+            -2.8939998149871826,
+            0.0,
+            -2.4100000858306885
+          ],
+          "size": [
+            5.787999629974365,
+            3.654371500015259,
+            6.225000381469727
+          ]
+        },
+        "geometrySha256": "db5e7d06be3c32902fcb1957e57304c19837c154e65ce2aa2170e7addd2e8307",
+        "id": "wharf",
+        "indexCount": 32520,
+        "instantiatedScenePath": "res://assets/models/towns/ashen_crown/wharf.glb",
+        "materialSha256": "255adea895d3cbe162fc561dc6f5f3bc36ad1dae53c91f4c50a6df147e14b7d1",
+        "meshCount": 5,
+        "meshDataSha256": "907b45aca279081d566230a7076ccaa9e81e2dfeefeec4de83ffc4ec0c6f7afc",
+        "poseSha256": "82a9b232847fab5e6121e58cc7e7a061909ce34f1e963403aa0db3840ee6e846",
+        "scenePath": "res://assets/models/towns/ashen_crown/wharf.glb",
+        "signatureVersion": "godot-mesh-morph-pose-material-v2",
+        "surfaceCount": 18,
+        "vertexCount": 18278
+      },
+      "sourceBytes": 8329052,
+      "sourceSha256": "c97239ac48eb652e109277f2256ad365a1e9078fea3e8485bcacd4164ccb55d7",
+      "sourceUnchanged": true
+    }
+  },
+  "nativeChecks": 83,
+  "nativeFailures": [],
+  "schemaVersion": 1,
+  "scope": "Eight Ashen Crown building identity proofs; not nine finished towns or production-art acceptance.",
+  "status": "development_model_card_identity_proof",
+  "tools": [
+    {
+      "path": "game/redesign/building_visuals.gd",
+      "sha256": "ac2d5fa7e2a5dc808097d11f0bc0a8ee2ee4c7578ef9f4b7c6a1dad83a26e7f4"
+    },
+    {
+      "path": "game/redesign/building_card_studio.gd",
+      "sha256": "41961424eacefe1191d199b93c6ca3276cdcc07fcc12cf88c6ab4951f33b452f"
+    },
+    {
+      "path": "game/redesign/pbr_lighting.gd",
+      "sha256": "70ef4fbd26c595281189cf3e7e4f482f511a6a8a47bc015a7016dcc0f196d2cd"
+    },
+    {
+      "path": "game/redesign/building_card_pigment.gdshader",
+      "sha256": "db3853ba07ac637b48b0ae58202da0bf92b948058271390e167e6a69ab5e6b5e"
+    },
+    {
+      "path": "tools/render_building_cards.gd",
+      "sha256": "924d4cfe9ee686cde6a7d9fac1694c761a2fa23de365986c8eb4f65ddc6aaf29"
+    },
+    {
+      "path": "tools/build_building_cards.py",
+      "sha256": "48132871fac00330b087b2e4422e5a2567c7d6a21fbed3c3439c9a63b191f0a7"
+    }
+  ]
+}

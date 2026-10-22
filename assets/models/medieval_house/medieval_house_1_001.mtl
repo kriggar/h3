@@ -1,0 +1,7 @@
+newmtl Material
+Ka 1 1 1
+Kd 1 1 1
+Ks 0.05 0.05 0.05
+Ns 2
+map_Kd medieval_house_1_001_d.png
+map_Bump medieval_house_1_001_n.png
