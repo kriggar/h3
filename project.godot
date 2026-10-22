@@ -3,7 +3,7 @@ config_version=5
 
 [application]
 config/name="Draconia — The Blackbriar March"
-config/version="0.4.0-third-person"
+config/version="0.4.1-motion"
 run/main_scene="res://online.tscn"
 config/features=PackedStringArray("4.7", "GL Compatibility")
 config/icon="res://icon.svg"

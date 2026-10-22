@@ -1,0 +1,32 @@
+{
+  "checks": 43,
+  "failures": [],
+  "metrics": {
+    "collision_prediction_stop": 26.7466640472412,
+    "jump_peak_height": 0.950631260871887,
+    "stalled_prediction": 0.316690474748611,
+    "stalled_speed": 0.0,
+    "steady_speed": {
+      "max_distance_from_confirmed": 0.186168670654297,
+      "maximum": 4.75004148483276,
+      "mean": 4.74998474121094,
+      "minimum": 4.74998426437378,
+      "spread": 5.7220458984375e-05
+    }
+  },
+  "suite": "motion_presentation",
+  "native_run": {
+    "exit_code": 0,
+    "seconds": 3.36,
+    "errors": [],
+    "source_sha256": {
+      "game/online/avatar.gd": "eec9c577e1a5a85ccc377e6c4e0ede148bb5e08db14049f8397b32b748395f7c",
+      "game/online/foot_placement.gd": "aa1097e318191b52d466503e61f903e7d9e60a1c1e1946bb5c5204a093f3c7b8",
+      "game/online/world.gd": "bdbec5e2d0ff91d6877a81772cfa420cf4edddedcf2ddc17d9abf51b534a5eee",
+      "game/online/main.gd": "f44ca0e7ca53849b2617154e28fb86a2633090b51ae08fd3129f4ba880f62ff9",
+      "game/online/soundscape.gd": "7cfcceda716b55c6e14809cd4852a052e7115ed698d682ef9637ac406a400f65",
+      "assets/online/animations/mara_extended.tres": "c6837181c5715528f0e8a3c38877bc92883802b3f758f73198b54f4fc251273d",
+      "assets/models/mara/mara.glb": "8ada77b97e748814283fbf3f6efe960026674c0bf4ed04776610515c70fac94d"
+    }
+  }
+}

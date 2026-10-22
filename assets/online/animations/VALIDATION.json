@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "passed": true,
+  "engine": "Godot 4.7.2 native GL Compatibility / llvmpipe",
+  "method": "Native Godot skeletal playback at 120 samples/s with half-sample offset; exact original CPU-skinned boot and blade vertices; real rendered pose sheets.",
+  "checks": 90647,
+  "unique_clips": 6,
+  "bones_per_pose": 53,
+  "checks_qualification": "Count includes repeated finite/normalized assertions on each bone at each sample, not 90,647 distinct gameplay scenarios.",
+  "sample_rate_hz": 120,
+  "sample_offset_seconds": 0.004166666666666667,
+  "calibration_key_rate_hz": 120,
+  "mara_sha256": "8ada77b97e748814283fbf3f6efe960026674c0bf4ed04776610515c70fac94d",
+  "library_sha256": "c6837181c5715528f0e8a3c38877bc92883802b3f758f73198b54f4fc251273d",
+  "maximum_imported_rest_basis_error": 2.13331350096269e-06,
+  "runtime_errors": [],
+  "failures": [],
+  "minimum_sole_clearance_metres": 0.00111714005470276,
+  "armed_minimum_blade_clearance_metres": 0.686566233634949,
+  "maximum_loop_endpoint_rotation_radians": 0.0009765625,
+  "captures": [
+    {
+      "file": "hit_head.png",
+      "bytes": 506990,
+      "sha256": "aefdb089f73e4ea35bb50b561fd475aaefbdcd5dc06ec9fe1c7f19f924af8cca"
+    },
+    {
+      "file": "interact.png",
+      "bytes": 457562,
+      "sha256": "2f7df159452e407d2b32babb9460332811b4d36cef6445a1b7021c0e3b770bbf"
+    },
+    {
+      "file": "jump_land.png",
+      "bytes": 450398,
+      "sha256": "78b225a6c6fa60d5b33b7a942ae2232e7a2f8451d787166e8f3dd8ea9096034e"
+    },
+    {
+      "file": "jump_loop.png",
+      "bytes": 498641,
+      "sha256": "d5e838e3a658468410c4e12b5dbf5b3f120aa8e34d9ca3a6ebc1240dea72d246"
+    },
+    {
+      "file": "jump_start.png",
+      "bytes": 476608,
+      "sha256": "7e37acb3019c4920efb721544e57dc1d012537051c987c825635c24109d18bc1"
+    },
+    {
+      "file": "sprint.png",
+      "bytes": 413811,
+      "sha256": "1a47dee2465047ec38f0685c5323e833af2cb919583d5c593a02712600fafb27"
+    }
+  ],
+  "visual_review": [
+    "Viewed each of the six actual native four-pose sheets. Accepted natural anatomical silhouettes and readable movement.",
+    "Jump and landing show deliberate knee compression/tuck. Sprint has distinct forward lean and alternating flight; grip remains in the hand.",
+    "Existing tunic skinning stretches across deeply flexed legs, especially crouch/jump. No cloth simulation or mesh re-authoring is claimed."
+  ],
+  "limits": [
+    "This is animation-asset acceptance. Controller transitions, terrain, collision, multiplayer timing and action interruption require the separate integrated controller suite.",
+    "Captured sheets are native engine frames, not image-generation concepts.",
+    "No additional character models, armor rigs, motion capture, or new authored directional/cleave clips are claimed."
+  ]
+}

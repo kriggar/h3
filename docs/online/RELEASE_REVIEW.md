@@ -2,6 +2,11 @@
 
 Version: **0.4.0-third-person**
 
+This is the historical third-person reboot review. The current motion update,
+its additional tests and native videos are documented in
+[ANIMATION_REVIEW.md](ANIMATION_REVIEW.md). The jumping limitation below describes
+0.4.0 and is superseded by that update.
+
 Review date: **22 October 2026**
 
 Engine used: **Godot 4.7.2 stable**, native GL Compatibility

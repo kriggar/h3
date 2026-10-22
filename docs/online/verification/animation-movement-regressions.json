@@ -1,0 +1,80 @@
+{
+  "avatar_sha256": "eec9c577e1a5a85ccc377e6c4e0ede148bb5e08db14049f8397b32b748395f7c",
+  "checks": 24,
+  "failures": [],
+  "foot_placement_sha256": "aa1097e318191b52d466503e61f903e7d9e60a1c1e1946bb5c5204a093f3c7b8",
+  "metrics": {
+    "backward_diagonals": [
+      {
+        "direction_error_degrees": 1.70754729250319e-06,
+        "lateral": -1.0,
+        "playback_sign": -0.99999999879909,
+        "stride_yaw": 0.78539815360412
+      },
+      {
+        "direction_error_degrees": 1.70754729250319e-06,
+        "lateral": 1.0,
+        "playback_sign": -0.99999999879909,
+        "stride_yaw": -0.78539815360412
+      }
+    ],
+    "cpu_milliseconds_per_avatar_frame": {
+      "idle": 0.254526666666667,
+      "run": 0.246223333333333,
+      "strike": 0.314911666666667,
+      "ward": 0.326533333333333
+    },
+    "cpu_scope": "Headless native CPU; final sole support and shared terrain enabled; includes pose evaluation and motion/terrain update, excludes GPU rendering. Timings are observations, not hardware-independent assertions.",
+    "forward_reset": {
+      "normalized_phase": 0.0156115386268588,
+      "playback_sign": 1.0
+    },
+    "late_repeats": [
+      {
+        "displayed_elapsed": 0.316666666666667,
+        "new_confirmed": 0.3,
+        "previous_confirmed": 0.950000000000001,
+        "source_time": 1.76666666666667,
+        "visual_progress": 0.230920453609905
+      },
+      {
+        "displayed_elapsed": 0.716666666666667,
+        "new_confirmed": 0.700000000000001,
+        "previous_confirmed": 0.950000000000001,
+        "source_time": 2.16666666666666,
+        "visual_progress": 0.746695383085638
+      }
+    ],
+    "moving_action_full_body_exits": {
+      "death": {
+        "maximum_full_pose_position_error_metres": 0.0,
+        "maximum_full_pose_rotation_error_radians": 0.000690533954184502,
+        "transition_seconds": 0.16
+      },
+      "roll": {
+        "maximum_full_pose_position_error_metres": 0.0,
+        "maximum_full_pose_rotation_error_radians": 0.0009765625,
+        "transition_seconds": 0.07
+      }
+    },
+    "moving_attack": {
+      "maximum_lower_body_difference_radians": 0.000690533954184502,
+      "upperarm_difference_radians": 1.71304774284363
+    },
+    "roll": {
+      "body_yaw_after_recovery": 3.4283436951499e-08,
+      "container_needed_reconciliation": true,
+      "minimum_model_facing_travel_dot": 1.0
+    },
+    "sole_support_vertices": [
+      17,
+      17
+    ],
+    "source_clock": {
+      "elapsed_after_realm_restart": 0.0166666666666667,
+      "same_origin_elapsed_after_republications": 1.01666666666667
+    }
+  },
+  "suite": "animation_movement_regressions",
+  "test_sha256": "7c89fb519bf00792a3b99fc4c759cec027366d0084003df51576839f30a29208"
+}

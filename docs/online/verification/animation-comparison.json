@@ -1,0 +1,483 @@
+{
+  "scope": "Actual native Godot render of the unchanged Mara character on a labelled scripted review stage. This is animation presentation evidence, not gameplay footage or proof of production-quality character art.",
+  "baseline": {
+    "commit": "bc95b0de649c5ace85c975d198e24e5e06fb5a47",
+    "avatar_sha256": "ab99d601f30c56d34d349604d1041eedece61e546363066baadfc36628a625bc",
+    "mara_sha256": "8ada77b97e748814283fbf3f6efe960026674c0bf4ed04776610515c70fac94d",
+    "native_run": {
+      "exit_code": 0,
+      "seconds": 42.19,
+      "errors": [],
+      "rendering": "native GL Compatibility under llvmpipe"
+    }
+  },
+  "after": {
+    "avatar_sha256": "eec9c577e1a5a85ccc377e6c4e0ede148bb5e08db14049f8397b32b748395f7c",
+    "mara_sha256": "8ada77b97e748814283fbf3f6efe960026674c0bf4ed04776610515c70fac94d",
+    "source_receipt": {
+      "sha256_at_launch": {
+        "harness": "4ef8514bbb3d00e732ea053abe7d358769f202c28699d0bedeb92b1f483fd1d7",
+        "avatar": "eec9c577e1a5a85ccc377e6c4e0ede148bb5e08db14049f8397b32b748395f7c",
+        "catalog": "6ef9bae00371e6915bc931e4f8bae54b15ebaad46a2afa3a6fd3e89a3cf667a5",
+        "foot_placement": "aa1097e318191b52d466503e61f903e7d9e60a1c1e1946bb5c5204a093f3c7b8",
+        "extended_library": "c6837181c5715528f0e8a3c38877bc92883802b3f758f73198b54f4fc251273d"
+      },
+      "unchanged_during_capture": true
+    },
+    "native_run": {
+      "exit_code": 0,
+      "seconds": 28.49,
+      "errors": [],
+      "rendering": "native GL Compatibility under llvmpipe"
+    }
+  },
+  "comparison_method": {
+    "fps": 24,
+    "frames_per_capture": 444,
+    "duration_seconds": 18.5,
+    "bone_count": 53,
+    "identical_scripted_inputs": true,
+    "input_trace_sha256": "4337d5ac9d88ec3af989a6927817e9d99e2e00b8b3895c39545ee68fd6d84772",
+    "harness_sha256": "4ef8514bbb3d00e732ea053abe7d358769f202c28699d0bedeb92b1f483fd1d7",
+    "harness": "tests/online/animation_review.gd",
+    "runner": "tools/animation_review.py",
+    "comparison_builder": "tools/compare_animation_reviews.py",
+    "headless_gates": "tests/online/animation_controller_tests.gd"
+  },
+  "render_pose_overwrite": {
+    "before": {
+      "maximum_radians": 1.62126398086548,
+      "maximum_degrees": 92.89158358017066,
+      "frames_above_0_002_radians": 29,
+      "interpretation": "Values at or below 0.002 radians are quaternion/float measurement tolerance, not evidence of a visible overwritten pose."
+    },
+    "after": {
+      "maximum_radians": 0.00119603995699435,
+      "maximum_degrees": 0.06852804166478474,
+      "frames_above_0_002_radians": 0,
+      "interpretation": "Values at or below 0.002 radians are quaternion/float measurement tolerance, not evidence of a visible overwritten pose."
+    }
+  },
+  "semantic_motion": {
+    "before": {
+      "airborne_frames": 19,
+      "airborne_clips": [
+        "run"
+      ],
+      "authored_airborne_clip_count": 0,
+      "jump_segment_clips": [
+        "run"
+      ],
+      "moving_hit_maximum_weight": 0.0,
+      "interaction_clips": [
+        "combat_idle"
+      ]
+    },
+    "after": {
+      "airborne_frames": 19,
+      "airborne_clips": [
+        "extended/jump_loop",
+        "extended/jump_start"
+      ],
+      "authored_airborne_clip_count": 2,
+      "jump_segment_clips": [
+        "extended/jump_land",
+        "extended/jump_loop",
+        "extended/jump_start"
+      ],
+      "moving_hit_maximum_weight": 0.912548602799127,
+      "interaction_clips": [
+        "combat_idle",
+        "extended/interact"
+      ]
+    }
+  },
+  "transition_windows": {
+    "idle_to_walk": {
+      "before": {
+        "window_seconds": [
+          1.0,
+          1.16
+        ],
+        "maximum_bone_step_degrees": 42.10311311956155,
+        "bone": "calf_r",
+        "time_seconds": 1.0,
+        "first_frame_step_degrees": 42.10311311956155
+      },
+      "after": {
+        "window_seconds": [
+          1.0,
+          1.16
+        ],
+        "maximum_bone_step_degrees": 14.320092651578673,
+        "bone": "calf_r",
+        "time_seconds": 1.0,
+        "first_frame_step_degrees": 14.320092651578673
+      }
+    },
+    "walk_to_run": {
+      "before": {
+        "window_seconds": [
+          2.5,
+          2.66
+        ],
+        "maximum_bone_step_degrees": 78.76237422532618,
+        "bone": "calf_l",
+        "time_seconds": 2.5,
+        "first_frame_step_degrees": 78.76237422532618
+      },
+      "after": {
+        "window_seconds": [
+          2.5,
+          2.66
+        ],
+        "maximum_bone_step_degrees": 31.734984997225183,
+        "bone": "thigh_r",
+        "time_seconds": 2.58333333333333,
+        "first_frame_step_degrees": 12.496038553534344
+      }
+    },
+    "run_to_turn": {
+      "before": {
+        "window_seconds": [
+          5.0,
+          5.16
+        ],
+        "maximum_bone_step_degrees": 86.37973586699378,
+        "bone": "thigh_r",
+        "time_seconds": 5.0,
+        "first_frame_step_degrees": 86.37973586699378
+      },
+      "after": {
+        "window_seconds": [
+          5.0,
+          5.16
+        ],
+        "maximum_bone_step_degrees": 20.75383032140722,
+        "bone": "lowerarm_r",
+        "time_seconds": 5.125,
+        "first_frame_step_degrees": 12.269514475937273
+      }
+    },
+    "turn_to_strafe": {
+      "before": {
+        "window_seconds": [
+          6.0,
+          6.16
+        ],
+        "maximum_bone_step_degrees": 82.938153808386,
+        "bone": "thigh_r",
+        "time_seconds": 6.0,
+        "first_frame_step_degrees": 82.938153808386
+      },
+      "after": {
+        "window_seconds": [
+          6.0,
+          6.16
+        ],
+        "maximum_bone_step_degrees": 42.01681709449304,
+        "bone": "foot_r",
+        "time_seconds": 6.0,
+        "first_frame_step_degrees": 42.01681709449304
+      }
+    },
+    "jump_launch": {
+      "before": {
+        "window_seconds": [
+          7.0,
+          7.16
+        ],
+        "maximum_bone_step_degrees": 36.87600349869665,
+        "bone": "calf_l",
+        "time_seconds": 7.08333333333333,
+        "first_frame_step_degrees": 8.381736649420134
+      },
+      "after": {
+        "window_seconds": [
+          7.0,
+          7.16
+        ],
+        "maximum_bone_step_degrees": 53.56757198104966,
+        "bone": "calf_l",
+        "time_seconds": 7.08333333333333,
+        "first_frame_step_degrees": 15.580691147816474
+      }
+    }
+  },
+  "common_low_ball_contact_proxy": {
+    "definition": "Same definition for both versions: after the first 0.25 seconds of each named segment, both consecutive grounded samples have ball bone world Y below 0.040 m on the flat stage. Report world XZ ball speed over one 24 fps sample. This includes toe roll and low swing/release; it is a proxy, not an assertion that the foot is rigidly planted.",
+    "before": {
+      "Walk": {
+        "samples": 29,
+        "median_mps": 0.0883507691323757,
+        "p90_mps": 0.47280641198158246,
+        "maximum_mps": 0.965721666812897
+      },
+      "Run": {
+        "samples": 13,
+        "median_mps": 0.567014113068581,
+        "p90_mps": 0.7724567413330076,
+        "maximum_mps": 0.772459030151367
+      },
+      "Turn in place": {
+        "samples": 36,
+        "median_mps": 0.690881319344044,
+        "p90_mps": 0.7451387867331505,
+        "maximum_mps": 0.757550686597824
+      },
+      "Strafe": {
+        "samples": 5,
+        "median_mps": 3.899977684021,
+        "p90_mps": 4.097433614730838,
+        "maximum_mps": 4.20105886459351
+      }
+    },
+    "after": {
+      "Walk": {
+        "samples": 18,
+        "median_mps": 2.874946744668705e-06,
+        "p90_mps": 0.5202996969223024,
+        "maximum_mps": 2.05462968349457
+      },
+      "Run": {
+        "samples": 5,
+        "median_mps": 1.43051147460938e-06,
+        "p90_mps": 1.6110185970319426e-05,
+        "maximum_mps": 2.30059258683468e-05
+      },
+      "Turn in place": {
+        "samples": 13,
+        "median_mps": 0.00354488741140813,
+        "p90_mps": 0.5089703021105385,
+        "maximum_mps": 0.740162059664726
+      },
+      "Strafe": {
+        "samples": 4,
+        "median_mps": 0.6698640659451485,
+        "p90_mps": 1.6581150501966502,
+        "maximum_mps": 1.9197011590004
+      }
+    }
+  },
+  "strong_plant_contact": {
+    "definition": "Final controller only: foot contact age exceeds two frames, foot plant weight >= 0.8 at both interval endpoints, first 0.25 seconds excluded. Baseline has no plant weights, so its low-ball proxy is not directly compared with these strong-plant figures. Blended acquisition/release is reported separately.",
+    "before": null,
+    "after": {
+      "Walk": {
+        "strong_plant": {
+          "samples": 23,
+          "median_mps": 8.61281955621962e-06,
+          "p90_mps": 0.057506357878446594,
+          "maximum_mps": 0.154908891767263
+        },
+        "blended_contact": {
+          "samples": 2,
+          "median_mps": 1.360279843211176,
+          "p90_mps": 2.000385627150539,
+          "maximum_mps": 2.16041207313538
+        }
+      },
+      "Run": {
+        "strong_plant": {
+          "samples": 5,
+          "median_mps": 1.43051147460938e-06,
+          "p90_mps": 1.6110185970319426e-05,
+          "maximum_mps": 2.30059258683468e-05
+        },
+        "blended_contact": {
+          "samples": 5,
+          "median_mps": 1.16765356063843,
+          "p90_mps": 1.24583814740181,
+          "maximum_mps": 1.27817460894585
+        }
+      },
+      "Turn in place": {
+        "strong_plant": {
+          "samples": 13,
+          "median_mps": 0.00452178879640996,
+          "p90_mps": 0.008013964723795656,
+          "maximum_mps": 0.00819085235707462
+        },
+        "blended_contact": {
+          "samples": 1,
+          "median_mps": 0.197724625468254,
+          "p90_mps": 0.197724625468254,
+          "maximum_mps": 0.197724625468254
+        }
+      },
+      "Strafe": {
+        "strong_plant": {
+          "samples": 1,
+          "median_mps": 0.291980668902397,
+          "p90_mps": 0.291980668902397,
+          "maximum_mps": 0.291980668902397
+        },
+        "blended_contact": {
+          "samples": 4,
+          "median_mps": 0.952251434326172,
+          "p90_mps": 1.6581150501966502,
+          "maximum_mps": 1.9197011590004
+        }
+      }
+    }
+  },
+  "controller_gates": {
+    "report": "docs/online/verification/animation-controller.json",
+    "sha256": "8f22f118b4e923a08464fa68e4964e4962776ff6301422a20d0096b85ba8c175",
+    "checks": 46,
+    "failures": [],
+    "source_receipt": {
+      "sha256_at_launch": {
+        "controller_tests": "bb6b667b279d1ef4adb1512d1ef6315a735f76005c26e52858e13c43bd1387ac",
+        "avatar": "eec9c577e1a5a85ccc377e6c4e0ede148bb5e08db14049f8397b32b748395f7c",
+        "foot_placement": "aa1097e318191b52d466503e61f903e7d9e60a1c1e1946bb5c5204a093f3c7b8",
+        "realm": "841a3b7eaafd986bcde8621660fd9bde548dc54ca0b334b19213cc4334ca9d9f",
+        "catalog": "6ef9bae00371e6915bc931e4f8bae54b15ebaad46a2afa3a6fd3e89a3cf667a5",
+        "extended_library": "c6837181c5715528f0e8a3c38877bc92883802b3f758f73198b54f4fc251273d",
+        "mara": "8ada77b97e748814283fbf3f6efe960026674c0bf4ed04776610515c70fac94d"
+      },
+      "unchanged_during_test": true
+    },
+    "metrics": {
+      "action_clock": {
+        "after_old_snapshot": 0.883333333333333,
+        "before_old_snapshot": 0.866666666666667,
+        "new_action_elapsed": 0.0266666666666667,
+        "same_snapshot_elapsed": 0.700000000000001
+      },
+      "airborne_clips": [
+        "extended/jump_start",
+        "extended/jump_loop"
+      ],
+      "authority_contacts": {
+        "cleave": {
+          "authority_impact_seconds": 0.500000000000001,
+          "clip_at_impact": "attack",
+          "impact_count": 1,
+          "source_visual_phase": 0.450957381126907
+        },
+        "strike": {
+          "authority_impact_seconds": 0.483333333333334,
+          "clip_at_impact": "attack",
+          "impact_count": 1,
+          "source_visual_phase": 0.457280529463193
+        },
+        "ward": {
+          "authority_impact_seconds": 0.55,
+          "clip_at_impact": "cast_release",
+          "impact_count": 1,
+          "source_visual_phase": -1.0
+        }
+      },
+      "death_hold_difference_radians": 0.000690533954184502,
+      "directional_recovery": {
+        "forward_upper_body_difference_radians": 0.0,
+        "idle_upper_body_difference_radians": 0.000690533954184502,
+        "peak_stride_yaw_radians": 1.34999999999987
+      },
+      "gait_stop": {
+        "final_phase": 1.15411220898591,
+        "moving_phase": 1.15411220898591,
+        "reported_speed": 1.80073896777413e-10,
+        "settled_phase": 1.15411220898591
+      },
+      "geometry": {
+        "run": {
+          "blended_contact_samples": 6,
+          "blended_contact_toe_speed_median_mps": 3.21141511201859,
+          "blended_contact_toe_speed_p90_mps": 3.59389588236809,
+          "lowest_skinned_sole_metres": -0.00104716792702675,
+          "plant_measurement": "Both consecutive samples have foot weight >=0.8 and contact age exceeds two frames. Blended acquisition/release is reported separately.",
+          "strong_plant_samples": 25,
+          "strong_plant_toe_speed_median_mps": 4.4703483581543e-06,
+          "strong_plant_toe_speed_p90_mps": 5.72361750528216e-05
+        },
+        "strafe": {
+          "blended_contact_samples": 6,
+          "blended_contact_toe_speed_median_mps": 8.00588339567184,
+          "blended_contact_toe_speed_p90_mps": 8.91002744436264,
+          "lowest_skinned_sole_metres": -0.00145478174090385,
+          "plant_measurement": "Both consecutive samples have foot weight >=0.8 and contact age exceeds two frames. Blended acquisition/release is reported separately.",
+          "strong_plant_samples": 25,
+          "strong_plant_toe_speed_median_mps": 7.76723027229309e-06,
+          "strong_plant_toe_speed_p90_mps": 5.73321085539646e-05
+        },
+        "turn": {
+          "blended_contact_samples": 14,
+          "blended_contact_toe_speed_median_mps": 0.0929830851964653,
+          "blended_contact_toe_speed_p90_mps": 0.114147160202265,
+          "lowest_skinned_sole_metres": 0.00196192041039467,
+          "plant_measurement": "Both consecutive samples have foot weight >=0.8 and contact age exceeds two frames. Blended acquisition/release is reported separately.",
+          "strong_plant_samples": 122,
+          "strong_plant_toe_speed_median_mps": 0.000989229047263507,
+          "strong_plant_toe_speed_p90_mps": 0.00789034558692947
+        },
+        "walk": {
+          "blended_contact_samples": 16,
+          "blended_contact_toe_speed_median_mps": 0.413123359903693,
+          "blended_contact_toe_speed_p90_mps": 2.94728346168995,
+          "lowest_skinned_sole_metres": 0.000108394771814346,
+          "plant_measurement": "Both consecutive samples have foot weight >=0.8 and contact age exceeds two frames. Blended acquisition/release is reported separately.",
+          "strong_plant_samples": 121,
+          "strong_plant_toe_speed_median_mps": 7.27719964288553e-06,
+          "strong_plant_toe_speed_p90_mps": 0.0520887086167932
+        }
+      },
+      "locomotion_transitions": {
+        "idle_to_walk_first_frame_radians": 0.232546642422676,
+        "maximum_allowed_radians": 0.7,
+        "maximum_walk_to_run_first_frame_radians": 0.506136357784271,
+        "sample_delta_seconds": 0.0416666666666667,
+        "tested_gait_phases": 6
+      },
+      "moving_hit": {
+        "gait_phases_match": true,
+        "lower_leg_difference_radians": 0.0009765625,
+        "peak_weight": 0.924190078810773,
+        "recovered_upper_body_difference_radians": 0.000690533954184502,
+        "upper_body_difference_radians": 0.250690758228302
+      },
+      "render_pose_overwrite_radians": 0.0009765625,
+      "run_to_turn_transition": {
+        "cases": 16,
+        "finite_bone_transforms": true,
+        "finite_world_foot_rotations": true,
+        "gait_offsets": 8,
+        "maximum_allowed_radians": 1.0471975511966,
+        "maximum_world_foot_step_radians": 0.56213241815567,
+        "sample_delta_seconds": 0.0416666666666667,
+        "turn_directions": 2,
+        "worst_case": {
+          "direction": -1.0,
+          "foot": "right",
+          "frame_after_stop": 4,
+          "gait_weights": {
+            "idle": 0.5,
+            "run": 0.03125,
+            "turn": 0.903028032135595,
+            "walk": 0.46875
+          },
+          "run_frames": 60
+        }
+      }
+    }
+  },
+  "limitations": [
+    "Procedural turns and directional stride warping are not newly authored turn/strafe clips.",
+    "Low-ball proxy tails include rapid step release; median improvement does not imply every frame improved.",
+    "Deep crouches retain existing tunic stretching; the braid and garment geometry were not replaced.",
+    "Mara mesh, materials, and original animation binary remain unchanged.",
+    "Strike and cleave share the retained source attack; cleave has a derived torso follow-through."
+  ],
+  "video": {
+    "path": "docs/online/videos/animation-before-after.mp4",
+    "bytes": 8172239,
+    "sha256": "a573eead518993bd0f9f0132d815193e3325f77918e0868fdc680e93ee76f18a",
+    "width": 1920,
+    "height": 720,
+    "left": "Baseline bc95b0d",
+    "right": "Animation overhaul",
+    "before_video_sha256": "f1b018fc1146775419b406ebc0f6afb85ca31b1f8e6a1a0ccee75b7c04cb6310",
+    "after_video_sha256": "5319ed19bd6e9f5a313444c239b93b03134be8ebb4bef30d7bf18aabda820454"
+  }
+}

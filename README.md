@@ -9,6 +9,13 @@ The accepted **Mara player model and all twelve source animation clips are
 unchanged**. The active camera, world, interface, simulation, quests, progression,
 and multiplayer session flow have been rebuilt around her.
 
+**Animation update — 0.4.1:** authored takeoff, airborne, landing and interaction
+motion; layered moving-hit reactions; continuous walk/run blending; terrain-aware
+foot placement; stepping turns; directional movement; and roll facing aligned to
+actual travel. Six supplementary motion clips use the existing rig. The separate
+sprint clip is included for future use; it does not change current movement speed.
+See the [animation review and native footage](docs/online/ANIMATION_REVIEW.md).
+
 ![Actual native Godot gameplay](docs/online/screenshots/02-thornwatch-third-person.png)
 
 ## Download, import, play
@@ -31,9 +38,9 @@ Compatibility**, not a browser wrapper.
 |---|---|
 | W / A / S / D | Move relative to the camera |
 | Hold left mouse + drag | Orbit the camera |
-| Hold right mouse + drag | Orbit and steer the character |
+| Hold right mouse + drag | Orbit and face the camera direction; A/D strafe and S backpedals |
 | Mouse wheel | Zoom |
-| Space | Physical jump using the existing movement pose |
+| Space | Jump with takeoff, airborne and landing animations |
 | Tab / left-click an enemy | Select a hostile target |
 | F | Speak, gather, or collect nearby personal spoils |
 | 1 | **Swordfall** — targeted sword strike |
@@ -119,8 +126,9 @@ hosted persistent MMO world.
 
 ## Verification and scope
 
-See [the release review](docs/online/RELEASE_REVIEW.md) for exact results, native
-screenshots, corrected issues, and reproducible commands. The new tests are
+See [the animation update review](docs/online/ANIMATION_REVIEW.md) and
+[the original third-person release review](docs/online/RELEASE_REVIEW.md) for exact
+results, native footage/screenshots, corrected issues, and reproducible commands. The new tests are
 independent of the retired strategy-game tests. The network scenario exercises
 two simultaneous remote clients and a server restart; four-player capacity is a
 configured limit, not a load-test claim.
@@ -129,7 +137,7 @@ This is a **playable multiplayer RPG foundation**, not a finished AAA MMORPG or
 an assertion of bug-free production quality. It does not yet contain multiple
 complete regions, a class/race roster, dungeons, raids, a full visual armor catalog,
 mounts, crafting, guilds, public authentication, or MMO-scale services. NPC and
-creature art, terrain detail, an authored jump animation, sound design, equipment
+creature art, terrain detail, authored directional locomotion, sound design, equipment
 appearance, deformation/secondary motion, and target-hardware performance still
 need production work. The next milestone should deepen this region and its combat
 before expanding content count.
@@ -140,10 +148,10 @@ before expanding content count.
 - `game/online/catalog.gd`: content, terrain, and shared collision data.
 - `game/online/realm.gd`: authoritative game simulation.
 - `game/online/session.gd`: solo, ENet host/join, saves, and chat.
-- `game/online/world.gd`, `scenery.gd`, `avatar.gd`: third-person presentation.
+- `game/online/world.gd`, `scenery.gd`, `avatar.gd`, `foot_placement.gd`: third-person presentation.
 - `game/online/hud.gd`, `ui_*.gd`: native interface.
 - `assets/models/mara/`: exact accepted character and dependencies.
-- `assets/online/`: new icon atlas and sound assets.
+- `assets/online/`: icons, sounds, environment materials, and supplementary motion library.
 - `tests/online/`: rules, network workers, UI, and rendered acceptance.
 
 The earlier game remains in Git history at

@@ -1,0 +1,7 @@
+{
+  "captures": "Actual native Godot viewports",
+  "checks": 55,
+  "failures": [],
+  "fixture_scope": "Some server-owned positions/death state are set explicitly to shorten UI setup. Combat/quest invariants have separate rules and real-network suites.",
+  "passed": true
+}

@@ -78,17 +78,22 @@ func _run() -> void:
 	avatar.apply_state(pose)
 	avatar._process(0.016)
 	check(avatar._clip=="idle" and avatar.sword.visible,"Respawn restores the weapon and idle")
-	var phase: float=avatar._locomotion_phase
 	pose.action="run"
 	pose.speed=4.77
 	avatar.apply_state(pose)
+	avatar.set_presentation_motion({"local_velocity":Vector3(0,0,4.77),"grounded":true})
+	for unused: int in range(15):avatar._process(1.0/30.0)
+	var phase: float=avatar._locomotion_phase
 	avatar._process(0.1)
 	var phase_after: float=avatar._locomotion_phase
-	check(absf(phase_after-phase-0.1)<0.0001,"Foot phase integrates velocity over elapsed time")
+	var stride: float=avatar.animation_diagnostics().stride_metres
+	check(absf(phase_after-phase-0.477/stride)<0.0001,"Settled normalized gait phase matches displayed distance and source stride")
 	pose.speed=2.385
 	avatar.apply_state(pose)
+	avatar.set_presentation_motion({"local_velocity":Vector3(0,0,2.385),"grounded":true})
 	avatar._process(0.1)
-	check(absf(avatar._locomotion_phase-phase_after-0.05)<0.0001,"Speed change does not jump the locomotion phase")
+	stride=float(avatar.animation_diagnostics().stride_metres)
+	check(absf(avatar._locomotion_phase-phase_after-0.2385/stride)<0.0001,"Speed changes advance the same normalized gait phase without resetting it")
 	for i: int in range(avatar._skeleton.get_bone_count()):
 		check(avatar._skeleton.get_bone_pose(i).origin.is_finite(),"Blended bone pose remains finite: "+str(i))
 	var bloom: Dictionary=realm.state.gathers.bloom_1

@@ -1,0 +1,351 @@
+{
+  "schema": 1,
+  "asset": "mara_extended.tres",
+  "kind": "Godot AnimationLibrary; transforms only, no mesh, material or textures",
+  "creator": "Quaternius (source motions); Draconia retargeting and native compatibility corrections",
+  "source_license": "CC0-1.0",
+  "license_files": [
+    "../../licenses/QUATERNIUS-ANIMATION-NOTICE.txt",
+    "../../licenses/CC0-1.0.txt"
+  ],
+  "source_pack": "Universal Animation Library (Standard), retained 2025-04-16 source snapshot",
+  "source_urls": [
+    "https://quaternius.com/packs/universalanimationlibrary.html",
+    "https://opengameart.org/content/universal-animation-library"
+  ],
+  "source_glb": "Animation Library[Standard]/Godot/AnimationLibrary_Godot_Standard.glb",
+  "source_glb_sha256": "1b7bf67866360665426bb99e4c71bd619f19b408453c24e30f0c3071601eee5c",
+  "source_archive_sha256": "18ff1a7215f4852b320203e8aaf02a1578b5c8eef9027fbaedfcedc7b85a3ac2",
+  "original_notice_sha256": "11eac7504a28077e9d8dbac8ddfca2566510efba7eef46e11f21cdd2bc96d4d5",
+  "target_glb": "res://assets/models/mara/mara.glb",
+  "target_glb_sha256": "8ada77b97e748814283fbf3f6efe960026674c0bf4ed04776610515c70fac94d",
+  "target_source_modified": false,
+  "target_skeleton_path": "IleanaRig/Skeleton3D",
+  "target_bones": 53,
+  "animation_library_prefix": "extended",
+  "authoring_inputs": {
+    "mara-pbr-v9.blend": "cc83d34c357b24d48f49293bcea7e3f9d673566fa7c62d5376376d82fb6591b9",
+    "retarget-source.blend": "9151e48a7d6998869fbf91bcdbb1b7fd58999cd8e56c8ad436953429b2ec205a",
+    "grip-v6-report.json": "ef3b2a84e82e7b0af20ad1d5cf337e6a8832e1dc907168b5d7d142bbcfe22652"
+  },
+  "tools": {
+    "blender": "4.5.14 LTS",
+    "godot": "4.7.2.stable.official.ed1daf0bf",
+    "bake": "tools/bake_mara_extended.py",
+    "extract": "tools/extract_mara_extended.gd",
+    "native_probe": "tests/online/extended_motion_probe.gd"
+  },
+  "retarget_method": "Global rotations with limb rest-axis calibration and scaled pelvis displacement, using the exact final editable Mara rig. Source animation at 24 fps. No geometry or material changes.",
+  "bone_mapping": {
+    "pelvis": "DEF-hips",
+    "spine_01": "DEF-spine.001",
+    "spine_02": "DEF-spine.002",
+    "spine_03": "DEF-spine.003",
+    "neck_01": "DEF-neck",
+    "head": "DEF-head",
+    "clavicle_l": "DEF-shoulder.L",
+    "upperarm_l": "DEF-upper_arm.L",
+    "lowerarm_l": "DEF-forearm.L",
+    "hand_l": "DEF-hand.L",
+    "thigh_l": "DEF-thigh.L",
+    "calf_l": "DEF-shin.L",
+    "foot_l": "DEF-foot.L",
+    "ball_l": "DEF-toe.L",
+    "index_01_l": "DEF-f_index.01.L",
+    "index_02_l": "DEF-f_index.02.L",
+    "index_03_l": "DEF-f_index.03.L",
+    "middle_01_l": "DEF-f_middle.01.L",
+    "middle_02_l": "DEF-f_middle.02.L",
+    "middle_03_l": "DEF-f_middle.03.L",
+    "ring_01_l": "DEF-f_ring.01.L",
+    "ring_02_l": "DEF-f_ring.02.L",
+    "ring_03_l": "DEF-f_ring.03.L",
+    "pinky_01_l": "DEF-f_pinky.01.L",
+    "pinky_02_l": "DEF-f_pinky.02.L",
+    "pinky_03_l": "DEF-f_pinky.03.L",
+    "thumb_01_l": "DEF-thumb.01.L",
+    "thumb_02_l": "DEF-thumb.02.L",
+    "thumb_03_l": "DEF-thumb.03.L",
+    "clavicle_r": "DEF-shoulder.R",
+    "upperarm_r": "DEF-upper_arm.R",
+    "lowerarm_r": "DEF-forearm.R",
+    "hand_r": "DEF-hand.R",
+    "thigh_r": "DEF-thigh.R",
+    "calf_r": "DEF-shin.R",
+    "foot_r": "DEF-foot.R",
+    "ball_r": "DEF-toe.R",
+    "index_01_r": "DEF-f_index.01.R",
+    "index_02_r": "DEF-f_index.02.R",
+    "index_03_r": "DEF-f_index.03.R",
+    "middle_01_r": "DEF-f_middle.01.R",
+    "middle_02_r": "DEF-f_middle.02.R",
+    "middle_03_r": "DEF-f_middle.03.R",
+    "ring_01_r": "DEF-f_ring.01.R",
+    "ring_02_r": "DEF-f_ring.02.R",
+    "ring_03_r": "DEF-f_ring.03.R",
+    "pinky_01_r": "DEF-f_pinky.01.R",
+    "pinky_02_r": "DEF-f_pinky.02.R",
+    "pinky_03_r": "DEF-f_pinky.03.R",
+    "thumb_01_r": "DEF-thumb.01.R",
+    "thumb_02_r": "DEF-thumb.02.R",
+    "thumb_03_r": "DEF-thumb.03.R"
+  },
+  "hip_translation_scale": 0.9049842668966845,
+  "native_adjustments": [
+    "Preserve the original 24 fps key times via an intermediate 120 fps glTF import; reduce constant tracks without dropping their explicit poses.",
+    "Correct root clearance using the exact shipped Mara boot skin at 120 Hz, then verify between those keys. Preserve sprint flight with a single constant offset.",
+    "Close the sprint final pose to its first pose to remove the small existing source endpoint mismatch.",
+    "Keep the reviewed closed right-hand grip for sprint and hit_head; all other new motions are unarmed and require the held sword hidden."
+  ],
+  "runtime_resource_sha256": "c6837181c5715528f0e8a3c38877bc92883802b3f758f73198b54f4fc251273d",
+  "runtime_resource_bytes": 634386,
+  "runtime_meshes_in_library": 0,
+  "clips": [
+    {
+      "duration": 1.3333334,
+      "loop_rotation_difference_radians": 0.0,
+      "maximum_frame_rotation_radians_at_120fps": 0.303056418895721,
+      "name": "jump_start",
+      "native_minimum_sole_metres": 0.00111714005470276,
+      "native_minimum_sword_metres": 0.292740702629089,
+      "native_peak_lowest_sole_metres": 0.429585635662079,
+      "source_clip": "Jump_Start",
+      "source_duration_seconds": 1.3333333333333333,
+      "loop": false,
+      "weapon_visible": false,
+      "tracks": 159,
+      "keys": 1855,
+      "native_floor_calibration": {
+        "correction_sample_rate": 120,
+        "maximum_correction_metres": 0.0131127775162458,
+        "method": "minimum 2 mm native skinned sole clearance",
+        "minimum_native_sole_before": -0.0111127775162458
+      },
+      "contact_threshold_metres": 0.035,
+      "sole_near_floor_phase_windows": {
+        "left": [
+          [
+            0.0,
+            0.046875
+          ]
+        ],
+        "right": [
+          [
+            0.0,
+            0.059375
+          ],
+          [
+            0.071875,
+            0.134375
+          ],
+          [
+            0.778125,
+            0.999999
+          ]
+        ]
+      },
+      "contact_window_qualification": "Relative to the actor origin, not world-space contact. Gameplay airborne/grounded state owns footstep and landing events.",
+      "peak_knee_tuck_phase": 0.25312498734375066,
+      "first_airborne_source_phase_approx": 0.15,
+      "anticipation": "First pose is already crouched. Blend into it; source takeoff occupies roughly the first 0.2 seconds."
+    },
+    {
+      "duration": 2.5,
+      "loop_rotation_difference_radians": 0.000690533954184502,
+      "maximum_frame_rotation_radians_at_120fps": 0.00468343356624246,
+      "name": "jump_loop",
+      "native_minimum_sole_metres": 0.00202682614326477,
+      "native_minimum_sword_metres": 1.11455631256104,
+      "native_peak_lowest_sole_metres": 0.0486553013324738,
+      "source_clip": "Jump_Loop",
+      "source_duration_seconds": 2.5,
+      "loop": true,
+      "weapon_visible": false,
+      "tracks": 159,
+      "keys": 1479,
+      "native_floor_calibration": {
+        "correction_sample_rate": 120,
+        "maximum_correction_metres": 0.0,
+        "method": "minimum 2 mm native skinned sole clearance",
+        "minimum_native_sole_before": 0.00202652812004089
+      },
+      "contact_threshold_metres": 0.035,
+      "sole_near_floor_phase_windows": {
+        "left": [],
+        "right": [
+          [
+            0.0,
+            0.421667
+          ],
+          [
+            0.785,
+            1.0
+          ]
+        ]
+      },
+      "contact_window_qualification": "Relative to the actor origin, not world-space contact. Gameplay airborne/grounded state owns footstep and landing events."
+    },
+    {
+      "duration": 1.25,
+      "loop_rotation_difference_radians": 0.0,
+      "maximum_frame_rotation_radians_at_120fps": 0.141243323683739,
+      "name": "jump_land",
+      "native_minimum_sole_metres": 0.00154775939881802,
+      "native_minimum_sword_metres": 0.268688917160034,
+      "native_peak_lowest_sole_metres": 0.00200406834483147,
+      "source_clip": "Jump_Land",
+      "source_duration_seconds": 1.2666666507720947,
+      "loop": false,
+      "weapon_visible": false,
+      "tracks": 159,
+      "keys": 1809,
+      "native_floor_calibration": {
+        "correction_sample_rate": 120,
+        "maximum_correction_metres": 0.00993855730444193,
+        "method": "minimum 2 mm native skinned sole clearance",
+        "minimum_native_sole_before": -0.00793855730444193
+      },
+      "contact_threshold_metres": 0.035,
+      "sole_near_floor_phase_windows": {
+        "left": [
+          [
+            0.0,
+            0.999999
+          ]
+        ],
+        "right": [
+          [
+            0.0,
+            0.999999
+          ]
+        ]
+      },
+      "contact_window_qualification": "Relative to the actor origin, not world-space contact. Gameplay airborne/grounded state owns footstep and landing events.",
+      "deepest_compression_phase": 0.1633333333333336,
+      "deepest_compression_seconds": 0.204166666666667,
+      "recovery": "The full 1.25 seconds can be interrupted or retimed after the compression pose when gameplay permits movement."
+    },
+    {
+      "duration": 0.8333333,
+      "loop_rotation_difference_radians": 0.0,
+      "maximum_frame_rotation_radians_at_120fps": 0.137382805347443,
+      "name": "interact",
+      "native_minimum_sole_metres": 0.00199445150792599,
+      "native_minimum_sword_metres": 0.710194826126099,
+      "native_peak_lowest_sole_metres": 0.00201125629246235,
+      "source_clip": "PickUp_Table",
+      "source_duration_seconds": 0.8333333333333334,
+      "loop": false,
+      "weapon_visible": false,
+      "tracks": 159,
+      "keys": 859,
+      "native_floor_calibration": {
+        "correction_sample_rate": 120,
+        "maximum_correction_metres": 0.000133057728409767,
+        "method": "minimum 2 mm native skinned sole clearance",
+        "minimum_native_sole_before": 0.00186694227159023
+      },
+      "contact_threshold_metres": 0.035,
+      "sole_near_floor_phase_windows": {
+        "left": [
+          [
+            0.0,
+            0.999999
+          ]
+        ],
+        "right": [
+          [
+            0.0,
+            0.999999
+          ]
+        ]
+      },
+      "maximum_forward_left_hand_reach_phase": 0.3150000126000005,
+      "gesture": "Left-hand waist/table-height pickup; not a kneeling or digging motion."
+    },
+    {
+      "duration": 0.41666666,
+      "loop_rotation_difference_radians": 0.0,
+      "maximum_frame_rotation_radians_at_120fps": 0.0512449033558369,
+      "name": "hit_head",
+      "native_minimum_sole_metres": 0.00196105986833572,
+      "native_minimum_sword_metres": 0.701095819473267,
+      "native_peak_lowest_sole_metres": 0.00203396193683147,
+      "source_clip": "Hit_Head",
+      "source_duration_seconds": 0.4333333174387614,
+      "loop": false,
+      "weapon_visible": true,
+      "tracks": 159,
+      "keys": 509,
+      "native_floor_calibration": {
+        "correction_sample_rate": 120,
+        "maximum_correction_metres": 0.000150400817394257,
+        "method": "minimum 2 mm native skinned sole clearance",
+        "minimum_native_sole_before": 0.00184959918260574
+      },
+      "contact_threshold_metres": 0.035,
+      "sole_near_floor_phase_windows": {
+        "left": [
+          [
+            0.0,
+            0.999998
+          ]
+        ],
+        "right": [
+          [
+            0.0,
+            0.999998
+          ]
+        ]
+      }
+    },
+    {
+      "duration": 0.6666667,
+      "loop_rotation_difference_radians": 0.0009765625,
+      "maximum_frame_rotation_radians_at_120fps": 0.247393175959587,
+      "name": "sprint",
+      "native_minimum_sole_metres": 0.0018744986737147,
+      "native_minimum_sword_metres": 0.686566233634949,
+      "native_peak_lowest_sole_metres": 0.243616104125977,
+      "source_clip": "Sprint_Loop",
+      "source_duration_seconds": 0.6666666666666666,
+      "loop": true,
+      "weapon_visible": true,
+      "tracks": 159,
+      "keys": 575,
+      "native_floor_calibration": {
+        "correction_sample_rate": 120,
+        "maximum_correction_metres": 0.0287392303794622,
+        "method": "constant offset preserving flight",
+        "minimum_native_sole_before": -0.0267392303794622
+      },
+      "contact_threshold_metres": 0.035,
+      "sole_near_floor_phase_windows": {
+        "left": [
+          [
+            0.06875,
+            0.18125
+          ]
+        ],
+        "right": [
+          [
+            0.64375,
+            0.66875
+          ],
+          [
+            0.69375,
+            0.71875
+          ]
+        ]
+      },
+      "median_contact_foot_speed_metres_per_second": 7.46118307113642,
+      "pace_qualification": "Native near-floor foot velocity estimate, not permission to change gameplay speed. Match playback rate to movement and review blended controller.",
+      "loop_endpoint_adjustment": "Last pose closed to first; source left upper/lower arm mismatch was up to 0.0113533 radians."
+    }
+  ],
+  "unsupported_source_motion_claims": [
+    "No authored strafe, backward locomotion, turn-in-place or second unique sword attack exists in this retained Standard source pack.",
+    "jump_loop is an airborne pose cycle, not a world trajectory or separate authored fall motion."
+  ],
+  "validation": "See VALIDATION.json for the actual native engine results and inspection scope."
+}

@@ -4,6 +4,8 @@ const C = preload("res://game/online/catalog.gd")
 const Avatar = preload("res://game/online/avatar.gd")
 const Scenery = preload("res://game/online/scenery.gd")
 const WOLF := "res://assets/models/werewolf/werewolf.glb"
+const PRESENTATION_PREDICTION_LIMIT := 1.0 / 15.0
+const PRESENTATION_TELEPORT_DISTANCE := 5.0
 signal input_changed(command: Dictionary)
 signal action_requested(command: Dictionary)
 signal target_changed(id: String)
@@ -80,14 +82,14 @@ func set_snapshot(snapshot: Dictionary, player_id: int) -> void:
 		var id := "p_"+key
 		present[id]=true
 		if not actors.has(id):_make_player(id,player)
-		actors[id].data=player
+		_ingest_actor_snapshot(actors[id],player)
 		actors[id].label.text=str(player.get("name","Wayfarer"))
-		actors[id].avatar.apply_state(player)
+		actors[id].avatar.apply_state(player,0.0,float(state.get("time",-1.0)))
 	for key: String in state.get("enemies",{}):
 		var enemy: Dictionary=state.enemies[key]
 		present[key]=true
 		if not actors.has(key):_make_enemy(key,enemy)
-		actors[key].data=enemy
+		_ingest_actor_snapshot(actors[key],enemy)
 	for id: String in actors.keys():
 		if not present.has(id):
 			actors[id].node.queue_free()
@@ -119,6 +121,108 @@ func _release_mouse() -> void:
 	_orbit_left=false
 	_orbit_right=false
 	Input.mouse_mode=Input.MOUSE_MODE_VISIBLE
+
+func _movement_intent(side: float, forward: float, steering: bool) -> Dictionary:
+	var movement := Vector3(cos(camera_yaw)*side-sin(camera_yaw)*forward,0,-sin(camera_yaw)*side-cos(camera_yaw)*forward).normalized()
+	var facing := _last_yaw
+	# With RMB held, movement is relative to a stable facing: S backpedals and
+	# A/D travel sideways. The realm already validates movement and yaw separately.
+	if steering:facing=wrapf(camera_yaw+PI,-PI,PI)
+	elif movement.length_squared()>0.01:facing=atan2(movement.x,movement.z)
+	return {"move":movement,"yaw":facing}
+
+func _ingest_actor_snapshot(visual: Dictionary, data: Dictionary) -> void:
+	var position := C.vector(data.get("pos",[0,0,0]))
+	var source_time := float(state.get("time",_clock))
+	var old: Dictionary=visual.get("data",{})
+	var has_sample := visual.has("source_position")
+	var previous := C.vector(visual.get("source_position",position))
+	var elapsed := source_time-float(visual.get("source_time",source_time))
+	var reset := not has_sample or elapsed < -0.001 or position.distance_to(previous)>PRESENTATION_TELEPORT_DISTANCE
+	reset=reset or (bool(old.get("dead",false)) and not bool(data.get("dead",false)))
+	var velocity: Vector3=visual.get("source_velocity",Vector3.ZERO)
+	var vertical := float(visual.get("source_vertical_speed",0.0))
+	if reset:
+		velocity=Vector3.ZERO
+		vertical=0.0
+		visual.discontinuity=true
+	elif elapsed>0.0001:
+		velocity=(position-previous)/elapsed
+		velocity.y=0.0
+		var old_height := maxf(0.0,previous.y-C.ground_y(previous.x,previous.z))
+		var new_height := maxf(0.0,position.y-C.ground_y(position.x,position.z))
+		vertical=clampf((new_height-old_height)/elapsed,-9.0,9.0)
+		# A correction must not become a burst of speculative movement. Player
+		# speed is confirmed by collision-aware simulation, never by local intent.
+		var confirmed_speed := clampf(float(data.get("speed",velocity.length())),0.0,8.0)
+		velocity=velocity.limit_length(confirmed_speed)
+		if confirmed_speed<0.02:velocity=Vector3.ZERO
+	if bool(data.get("dead",false)) or (not bool(visual.hero) and not str(data.get("action","idle")) in ["run","chase","return"]):
+		velocity=Vector3.ZERO
+		vertical=0.0
+	if bool(data.get("grounded",true)):vertical=0.0
+	# Repeated same-tick publications may update a quest, target or chat. They
+	# must not erase motion or restart its interpolation interval.
+	if reset or elapsed>0.0001 or position.distance_squared_to(previous)>0.000001:
+		visual.sample_age=0.0
+		visual.source_time=source_time
+		visual.source_position=position
+	visual.source_velocity=velocity
+	visual.source_vertical_speed=vertical
+	visual.data=data
+
+func _advance_actor(visual: Dictionary, dt: float, is_local: bool) -> void:
+	var data: Dictionary=visual.data
+	var node: Node3D=visual.node
+	var confirmed := C.vector(data.get("pos",[0,0,0]))
+	var grounded := bool(data.get("grounded",true))
+	var previous := node.position
+	var previous_yaw := node.rotation.y
+	var old_height := maxf(0.0,previous.y-C.ground_y(previous.x,previous.z))
+	var safe_dt := maxf(dt,0.00001)
+	visual.sample_age=minf(4.0,float(visual.get("sample_age",0.0))+dt)
+	var horizon := minf(float(visual.sample_age),PRESENTATION_PREDICTION_LIMIT)
+	var source_velocity: Vector3=visual.get("source_velocity",Vector3.ZERO)
+	var radius := 0.42 if bool(visual.hero) else 0.5
+	var desired := C.move_slide(confirmed,source_velocity*horizon,radius)
+	if not grounded:
+		var height := maxf(0.0,confirmed.y-C.ground_y(confirmed.x,confirmed.z))
+		desired.y+=maxf(0.0,height+float(visual.get("source_vertical_speed",0.0))*horizon)
+	var teleported := not bool(visual.placed) or bool(visual.get("discontinuity",false)) or node.position.distance_to(confirmed)>PRESENTATION_TELEPORT_DISTANCE
+	var yaw := float(data.get("yaw",PI))
+	if teleported:
+		node.position=confirmed
+		node.rotation.y=yaw
+		visual.placed=true
+		visual.discontinuity=false
+		if is_local:_camera_ready=false
+	else:
+		var smoothed := node.position.lerp(desired,1.0-exp(-dt*(24.0 if is_local else 16.0)))
+		# Smoothing must obey the same solid surfaces as extrapolation. This also
+		# prevents a diagonal correction from cutting through a corner.
+		var displacement := smoothed-node.position
+		displacement.y=0.0
+		node.position=C.move_slide(node.position,displacement,radius)
+		node.position.y=maxf(node.position.y,smoothed.y)
+		if not bool(data.get("dead",false)):
+			var action := str(data.get("action","idle"))
+			var action_facing := action in ["strike","cleave","roll","dodge","ward","cast"]
+			var difference := wrapf(yaw-node.rotation.y,-PI,PI)
+			var step := difference*(1.0-exp(-dt*(24.0 if action_facing else 18.0)))
+			var maximum_step := (18.0 if action_facing else 10.0)*dt
+			node.rotation.y=wrapf(node.rotation.y+clampf(step,-maximum_step,maximum_step),-PI,PI)
+	var velocity := Vector3.ZERO if teleported else (node.position-previous)/safe_dt
+	var last_velocity: Vector3=visual.get("render_velocity",Vector3.ZERO)
+	var raw_acceleration := (velocity-last_velocity)/safe_dt
+	var acceleration: Vector3=visual.get("render_acceleration",Vector3.ZERO)
+	acceleration=Vector3.ZERO if teleported else acceleration.lerp(raw_acceleration.limit_length(40.0),1.0-exp(-dt*12.0))
+	var height := maxf(0.0,node.position.y-C.ground_y(node.position.x,node.position.z))
+	var turn_rate := 0.0 if teleported else wrapf(node.rotation.y-previous_yaw,-PI,PI)/safe_dt
+	visual.render_velocity=velocity
+	visual.render_acceleration=acceleration
+	visual.motion={"velocity":velocity,"local_velocity":Basis(Vector3.UP,node.rotation.y).inverse()*velocity,"acceleration":acceleration,"turn_rate":turn_rate,"grounded":grounded,"height":height,"vertical_speed":0.0 if teleported else (height-old_height)/safe_dt,"teleported":teleported,"source_age":float(visual.sample_age),"dt":dt}
+	if bool(visual.hero) and visual.avatar.has_method("set_presentation_motion"):
+		visual.avatar.set_presentation_motion(visual.motion)
 
 func _unhandled_input(event: InputEvent) -> void:
 	if event is InputEventKey and event.pressed and event.keycode==KEY_ESCAPE:
@@ -169,9 +273,9 @@ func _process(dt: float) -> void:
 	if input_active:
 		var side := float(Input.is_physical_key_pressed(KEY_D))-float(Input.is_physical_key_pressed(KEY_A))
 		var forward := float(Input.is_physical_key_pressed(KEY_W))-float(Input.is_physical_key_pressed(KEY_S))
-		_last_move=Vector3(cos(camera_yaw)*side-sin(camera_yaw)*forward,0,-sin(camera_yaw)*side-cos(camera_yaw)*forward).normalized()
-		if _last_move.length_squared()>0.01:_last_yaw=atan2(_last_move.x,_last_move.z)
-		elif _orbit_right:_last_yaw=wrapf(camera_yaw+PI,-PI,PI)
+		var intention := _movement_intent(side,forward,_orbit_right)
+		_last_move=intention.move
+		_last_yaw=float(intention.yaw)
 	if _input_clock>=1.0/30.0:
 		_input_clock=0.0
 		input_changed.emit({"move":[_last_move.x,_last_move.z],"yaw":_last_yaw,"jump":_jump_queued if input_active else false})
@@ -183,13 +287,7 @@ func _process(dt: float) -> void:
 		var node: Node3D=visual.node
 		var desired := C.vector(data.get("pos",[0,0,0]))
 		var is_local := id=="p_"+str(local_id)
-		if not visual.placed:
-			node.position=desired
-			visual.placed=true
-		elif node.position.distance_to(desired)>5.0:node.position=desired
-		else:node.position=node.position.lerp(desired,1.0-exp(-dt*(24.0 if is_local else 16.0)))
-		var yaw := float(data.get("yaw",PI))
-		node.rotation.y=lerp_angle(node.rotation.y,yaw,1.0-exp(-dt*18.0))
+		_advance_actor(visual,dt,is_local)
 		if is_local:_local_render=node.position
 		var dead := bool(data.get("dead",false))
 		visual.ring.visible=id==target_id and not dead
@@ -262,6 +360,7 @@ func _make_player(id: String, data: Dictionary) -> void:
 	add_child(node)
 	var avatar := Avatar.new()
 	node.add_child(avatar)
+	if avatar.has_method("set_ground_sampler"):avatar.set_ground_sampler(C.ground_y)
 	var ring := _ring(node,0.66,Color("dfc87b"))
 	ring.visible=false
 	var ward := _ring(node,0.85,Color(0.94,0.68,0.31,0.7),0.055)
@@ -546,6 +645,11 @@ func show_event(event: Dictionary) -> void:
 	elif type in ["level","level_up"]:
 		_floating(pos+Vector3(0,2.0,0),"LEVEL UP",Color("edce75"))
 		_sparks(pos+Vector3(0,1,0),Color("edce75"))
+	elif type in ["gather","loot"] and actors.has(actor_key) and bool(actors[actor_key].hero):
+		# Only the realm's success event plays the interaction, including remote
+		# party members. Input requests and rejected actions do not predict it.
+		var avatar: Node3D=actors[actor_key].avatar
+		if avatar.has_method("interact"):avatar.interact(type)
 	var ability := type if type in ["cleave","strike","ward","roll"] else str(event.get("ability",""))
 	if type in ["ability","cast","action","cleave","strike","ward","roll"] and actors.has(actor_key):
 		var source: Node3D=actors[actor_key].node

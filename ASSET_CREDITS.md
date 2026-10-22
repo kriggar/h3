@@ -225,6 +225,17 @@ The original creator notice is
 animation entries plus a T-pose record; the differently advertised larger
 library is not claimed to be included.
 
+The **0.4.1 motion update** retargets six additional clips from that same licensed
+source into `assets/online/animations/mara_extended.tres`: jump start, airborne
+loop, landing, table-height pickup, head-hit reaction and sprint. This resource
+contains animation curves for the existing Mara rig only. It does not replace the
+original model or its twelve clips. Native skin-contact correction, sprint loop
+closure, source hashes, the exact 53-bone mapping and reproduction tools are
+recorded in `assets/online/animations/PROVENANCE.json` and its README. The current
+controller uses the first five motions; sprint is available but not selected at
+the current player speed. Strafing, backwards gait, turning and the wider cleave
+are presentation adaptations, not additional authored source clips.
+
 Project changes comprise adult macro proportions, rig fitting, covered-body
 export masking, restrained garment material assignments, retargeting and
 floor-contact corrections, right-hand grip correction, and a simple original

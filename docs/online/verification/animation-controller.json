@@ -1,0 +1,142 @@
+{
+  "checks": 46,
+  "failures": [],
+  "mara_sha256": "8ada77b97e748814283fbf3f6efe960026674c0bf4ed04776610515c70fac94d",
+  "metrics": {
+    "action_clock": {
+      "after_old_snapshot": 0.883333333333333,
+      "before_old_snapshot": 0.866666666666667,
+      "new_action_elapsed": 0.0266666666666667,
+      "same_snapshot_elapsed": 0.700000000000001
+    },
+    "airborne_clips": [
+      "extended/jump_start",
+      "extended/jump_loop"
+    ],
+    "authority_contacts": {
+      "cleave": {
+        "authority_impact_seconds": 0.500000000000001,
+        "clip_at_impact": "attack",
+        "impact_count": 1,
+        "source_visual_phase": 0.450957381126907
+      },
+      "strike": {
+        "authority_impact_seconds": 0.483333333333334,
+        "clip_at_impact": "attack",
+        "impact_count": 1,
+        "source_visual_phase": 0.457280529463193
+      },
+      "ward": {
+        "authority_impact_seconds": 0.55,
+        "clip_at_impact": "cast_release",
+        "impact_count": 1,
+        "source_visual_phase": -1.0
+      }
+    },
+    "death_hold_difference_radians": 0.000690533954184502,
+    "directional_recovery": {
+      "forward_upper_body_difference_radians": 0.0,
+      "idle_upper_body_difference_radians": 0.000690533954184502,
+      "peak_stride_yaw_radians": 1.34999999999987
+    },
+    "gait_stop": {
+      "final_phase": 1.15411220898591,
+      "moving_phase": 1.15411220898591,
+      "reported_speed": 1.80073896777413e-10,
+      "settled_phase": 1.15411220898591
+    },
+    "geometry": {
+      "run": {
+        "blended_contact_samples": 6,
+        "blended_contact_toe_speed_median_mps": 3.21141511201859,
+        "blended_contact_toe_speed_p90_mps": 3.59389588236809,
+        "lowest_skinned_sole_metres": -0.00104716792702675,
+        "plant_measurement": "Both consecutive samples have foot weight >=0.8 and contact age exceeds two frames. Blended acquisition/release is reported separately.",
+        "strong_plant_samples": 25,
+        "strong_plant_toe_speed_median_mps": 4.4703483581543e-06,
+        "strong_plant_toe_speed_p90_mps": 5.72361750528216e-05
+      },
+      "strafe": {
+        "blended_contact_samples": 6,
+        "blended_contact_toe_speed_median_mps": 8.00588339567184,
+        "blended_contact_toe_speed_p90_mps": 8.91002744436264,
+        "lowest_skinned_sole_metres": -0.00145478174090385,
+        "plant_measurement": "Both consecutive samples have foot weight >=0.8 and contact age exceeds two frames. Blended acquisition/release is reported separately.",
+        "strong_plant_samples": 25,
+        "strong_plant_toe_speed_median_mps": 7.76723027229309e-06,
+        "strong_plant_toe_speed_p90_mps": 5.73321085539646e-05
+      },
+      "turn": {
+        "blended_contact_samples": 14,
+        "blended_contact_toe_speed_median_mps": 0.0929830851964653,
+        "blended_contact_toe_speed_p90_mps": 0.114147160202265,
+        "lowest_skinned_sole_metres": 0.00196192041039467,
+        "plant_measurement": "Both consecutive samples have foot weight >=0.8 and contact age exceeds two frames. Blended acquisition/release is reported separately.",
+        "strong_plant_samples": 122,
+        "strong_plant_toe_speed_median_mps": 0.000989229047263507,
+        "strong_plant_toe_speed_p90_mps": 0.00789034558692947
+      },
+      "walk": {
+        "blended_contact_samples": 16,
+        "blended_contact_toe_speed_median_mps": 0.413123359903693,
+        "blended_contact_toe_speed_p90_mps": 2.94728346168995,
+        "lowest_skinned_sole_metres": 0.000108394771814346,
+        "plant_measurement": "Both consecutive samples have foot weight >=0.8 and contact age exceeds two frames. Blended acquisition/release is reported separately.",
+        "strong_plant_samples": 121,
+        "strong_plant_toe_speed_median_mps": 7.27719964288553e-06,
+        "strong_plant_toe_speed_p90_mps": 0.0520887086167932
+      }
+    },
+    "locomotion_transitions": {
+      "idle_to_walk_first_frame_radians": 0.232546642422676,
+      "maximum_allowed_radians": 0.7,
+      "maximum_walk_to_run_first_frame_radians": 0.506136357784271,
+      "sample_delta_seconds": 0.0416666666666667,
+      "tested_gait_phases": 6
+    },
+    "moving_hit": {
+      "gait_phases_match": true,
+      "lower_leg_difference_radians": 0.0009765625,
+      "peak_weight": 0.924190078810773,
+      "recovered_upper_body_difference_radians": 0.000690533954184502,
+      "upper_body_difference_radians": 0.250690758228302
+    },
+    "render_pose_overwrite_radians": 0.0009765625,
+    "run_to_turn_transition": {
+      "cases": 16,
+      "finite_bone_transforms": true,
+      "finite_world_foot_rotations": true,
+      "gait_offsets": 8,
+      "maximum_allowed_radians": 1.0471975511966,
+      "maximum_world_foot_step_radians": 0.56213241815567,
+      "sample_delta_seconds": 0.0416666666666667,
+      "turn_directions": 2,
+      "worst_case": {
+        "direction": -1.0,
+        "foot": "right",
+        "frame_after_stop": 4,
+        "gait_weights": {
+          "idle": 0.5,
+          "run": 0.03125,
+          "turn": 0.903028032135595,
+          "walk": 0.46875
+        },
+        "run_frames": 60
+      }
+    }
+  },
+  "scope": "Native skeleton presentation plus actual realm contact simulation. Geometry uses original CPU-skinned boot vertices. Visual quality still requires reviewing native motion footage.",
+  "suite": "animation_controller",
+  "source_receipt": {
+    "sha256_at_launch": {
+      "controller_tests": "bb6b667b279d1ef4adb1512d1ef6315a735f76005c26e52858e13c43bd1387ac",
+      "avatar": "eec9c577e1a5a85ccc377e6c4e0ede148bb5e08db14049f8397b32b748395f7c",
+      "foot_placement": "aa1097e318191b52d466503e61f903e7d9e60a1c1e1946bb5c5204a093f3c7b8",
+      "realm": "841a3b7eaafd986bcde8621660fd9bde548dc54ca0b334b19213cc4334ca9d9f",
+      "catalog": "6ef9bae00371e6915bc931e4f8bae54b15ebaad46a2afa3a6fd3e89a3cf667a5",
+      "extended_library": "c6837181c5715528f0e8a3c38877bc92883802b3f758f73198b54f4fc251273d",
+      "mara": "8ada77b97e748814283fbf3f6efe960026674c0bf4ed04776610515c70fac94d"
+    },
+    "unchanged_during_test": true
+  }
+}

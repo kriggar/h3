@@ -114,7 +114,18 @@ func _process(delta: float) -> void:
 	if not playing or world==null or hud==null:return
 	if soundscape!=null:
 		var player: Dictionary=session.state.get("players",{}).get(str(session.local_id),{})
-		if not player.is_empty():soundscape.update_player(player,delta)
+		if not player.is_empty():
+			var presentation: Dictionary={}
+			var actor_key := "p_"+str(session.local_id)
+			if world.actors.has(actor_key):
+				var visual: Dictionary=world.actors[actor_key]
+				if visual.avatar.has_method("animation_diagnostics"):
+					presentation=visual.avatar.animation_diagnostics()
+					var motion: Dictionary=visual.get("motion",{})
+					var velocity: Vector3=motion.get("velocity",Vector3.ZERO)
+					presentation.motion_speed=Vector2(velocity.x,velocity.z).length()
+					presentation.teleported=bool(motion.get("teleported",false))
+			soundscape.update_player(player,delta,presentation)
 	hint_timer-=delta
 	if hint_timer<=0:
 		hint_timer=0.15
