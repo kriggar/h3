@@ -1,0 +1,151 @@
+{
+  "version": "0.4.0-third-person",
+  "engine": "Godot 4.7.2.stable.official.ed1daf0bf",
+  "entry_scene": "res://online.tscn",
+  "preserved_character": {
+    "path": "assets/models/mara/mara.glb",
+    "sha256": "8ada77b97e748814283fbf3f6efe960026674c0bf4ed04776610515c70fac94d"
+  },
+  "files": {
+    "assets/online/icons/abilities.png": {
+      "sha256": "2a9b64f340323ad2a32d200ac8eefa71c7eb37114d2bd139d6bb755e7bc9fd68",
+      "bytes": 2560047
+    },
+    "assets/online/terrain/cracked_stone_albedo.png": {
+      "sha256": "1783ad9e190b37e4a72422f9caa1d5abd0a401738c1bc7f4e2b918c2102b6e65",
+      "bytes": 4741123
+    },
+    "assets/online/terrain/meadow_albedo.png": {
+      "sha256": "fba409f32b6e4f570d4351d418f1bf44251dd5c5495ff9784231e2da62b33ffa",
+      "bytes": 4741123
+    },
+    "assets/online/terrain/packed_dirt_albedo.png": {
+      "sha256": "34cace108d24d8553310f1d9c7488d1fd6b82dbd8d1c83c2c654bd72a288b237",
+      "bytes": 4741123
+    },
+    "assets/online/terrain/pebble_gravel_albedo.png": {
+      "sha256": "726a123c5f86c12c5b74211963bb23c05e7644cf88f0b51ddc30555da6d18062",
+      "bytes": 4427903
+    },
+    "export_presets.cfg": {
+      "sha256": "6f2edb3c8df1ab555a995d84f214cbefce715e1df853bfa5e3a84e3ece202061",
+      "bytes": 1564
+    },
+    "game/online/avatar.gd": {
+      "sha256": "ab99d601f30c56d34d349604d1041eedece61e546363066baadfc36628a625bc",
+      "bytes": 6081
+    },
+    "game/online/catalog.gd": {
+      "sha256": "6ef9bae00371e6915bc931e4f8bae54b15ebaad46a2afa3a6fd3e89a3cf667a5",
+      "bytes": 13404
+    },
+    "game/online/environment_materials.gd": {
+      "sha256": "8a7d30cc03488e76859e52046ad7a84a5592645612b13adcd2c5ae8f77cd0bbf",
+      "bytes": 2598
+    },
+    "game/online/hud.gd": {
+      "sha256": "b0dc821e320cba50baed2fcad0a0b7e689452cdd4c65cb2c640c3182dc01f312",
+      "bytes": 49323
+    },
+    "game/online/main.gd": {
+      "sha256": "83a464c333fac78813fa4bd5cd334a6563d6f6ec7a85c42759d914be875e8251",
+      "bytes": 15886
+    },
+    "game/online/realm.gd": {
+      "sha256": "841a3b7eaafd986bcde8621660fd9bde548dc54ca0b334b19213cc4334ca9d9f",
+      "bytes": 25529
+    },
+    "game/online/scenery.gd": {
+      "sha256": "b19044f7df0d9133605740b064abe06ddd9fe77755a6f4767ce99c1917f1a77f",
+      "bytes": 18733
+    },
+    "game/online/session.gd": {
+      "sha256": "c9e72478a65a6d3281fa9b6a27db412f5ba3ea637edbaab2ab70d2c0dfe9a9b0",
+      "bytes": 13238
+    },
+    "game/online/soundscape.gd": {
+      "sha256": "ac4d3a4f1dd195ed09a00ddac7d810f28983d326e81fc5cfe0c7cdf64fa514d6",
+      "bytes": 2834
+    },
+    "game/online/terrain_blend.gdshader": {
+      "sha256": "bea876287d5b2e27dc7b12c8d64e4e99a6c3d960a7a9a56ecf547942071f20f9",
+      "bytes": 3157
+    },
+    "game/online/ui_frame.gd": {
+      "sha256": "3d0b0c7ceda24f8dc5d30a7462934f6ae3b1989b908e28bc477ce3f4f89afbfa",
+      "bytes": 3528
+    },
+    "game/online/ui_minimap.gd": {
+      "sha256": "a220c78c54d52fce7044ad3f0d190f8819bfa346dce331d66888364fc4ae49fe",
+      "bytes": 3923
+    },
+    "game/online/world.gd": {
+      "sha256": "ecae81b8637dfb34eeadc86dd2ac777feefe1c30e048bfc70847d8d18dc4ba17",
+      "bytes": 26613
+    },
+    "online.tscn": {
+      "sha256": "3203093e1d239b9316247e8b4addbfdd30d8a704c06ecf14f815233482c0dc79",
+      "bytes": 167
+    },
+    "project.godot": {
+      "sha256": "1bbc09ea865d337db3422dce7cdad166ed035b7a787a9e7ddf98678c0a4afbd1",
+      "bytes": 1136
+    },
+    "tests/online/acceptance.gd": {
+      "sha256": "6a94d6855cd5bc92090557edbc19650446f294c38ec790f5ad242d4ba8838e43",
+      "bytes": 7184
+    },
+    "tests/online/entry_network_probe.gd": {
+      "sha256": "b45fa68c25797db0fc8068c831a6e3e1f215791c82da63cb0da898a3c6134697",
+      "bytes": 11901
+    },
+    "tests/online/hud_probe.gd": {
+      "sha256": "2ec0cc463b9ec009463a6e13ef6a457b239b4ff4c5b028440a4cc05cd316278d",
+      "bytes": 5260
+    },
+    "tests/online/material_probe.gd": {
+      "sha256": "bb53ea87bf5fcd75a5114339fbfa436dd887c59a36c5b27c9b06450aa0b52d39",
+      "bytes": 4526
+    },
+    "tests/online/network_worker.gd": {
+      "sha256": "ebcc91e906fff236523a38d2606db118d2f24098db38b1ca8bef27bc3c3e7640",
+      "bytes": 9382
+    },
+    "tests/online/shutdown_probe.gd": {
+      "sha256": "4e5bfcdea66ed02685b57e16f232b0a3fbcaa705b3b1742a1298a7f88b5568a1",
+      "bytes": 4255
+    },
+    "tests/online/test_realm.gd": {
+      "sha256": "92d2835cacb2e12710367af40073c2f3f014838acc3927b10d6518e3e2feb094",
+      "bytes": 18219
+    },
+    "tests/online/world_probe.gd": {
+      "sha256": "de2d3d5eda78ac1ee2520748b40a73b96b76292dc08b4e9f91876e831f835a79",
+      "bytes": 1373
+    },
+    "tests/online/world_scene_tests.gd": {
+      "sha256": "9c10b1c4325720f0f32004415e6c2eb00699de0cfc5bcffbedc2204fc6905b66",
+      "bytes": 7504
+    },
+    "tools/build_online_audio.py": {
+      "sha256": "25ed83d38cca4099079a0d1b4153f1f2c7d1d821a6ed61a87e4c0f20d22eff5a",
+      "bytes": 4762
+    },
+    "tools/run_native_review.py": {
+      "sha256": "3e1f4e68dcb9a48b63c2f42ede1a2fee76835cf496b56897da1640d88c6ff7b4",
+      "bytes": 3902
+    },
+    "tools/test_online_entry.py": {
+      "sha256": "5152617eef8d322c9b22109f6579d31ed8b681154b887b1987e853f089b3b629",
+      "bytes": 6767
+    },
+    "tools/test_online_network.py": {
+      "sha256": "eea855c5c89186ae0ad3524687c0f7903b8d647949950d10100a4e7c6931fbe1",
+      "bytes": 5224
+    },
+    "tools/ui_run_probe.py": {
+      "sha256": "15112bad724bef1a548318593645ae10fcaece7ce558dc807cea2a36aa1d5622",
+      "bytes": 4661
+    }
+  }
+}

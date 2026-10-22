@@ -1,0 +1,26 @@
+{
+  "suite": "normal_quit_audio_teardown",
+  "passed": true,
+  "checks": 41,
+  "routes": [
+    {
+      "checks": 20,
+      "failures": [],
+      "passed": true,
+      "route": "window",
+      "exit_code": 0,
+      "runtime_errors": [],
+      "seconds": 3.68
+    },
+    {
+      "checks": 21,
+      "failures": [],
+      "passed": true,
+      "route": "menu",
+      "exit_code": 0,
+      "runtime_errors": [],
+      "seconds": 3.63
+    }
+  ],
+  "method": "Shipped online.tscn starts solo in isolated headless Godot; actual WM_CLOSE notification and actual Save & Quit button signal each use the production async quit path. Harness does not free scene or call quit on success."
+}

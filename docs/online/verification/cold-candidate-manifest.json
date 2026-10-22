@@ -1,0 +1,2696 @@
+[
+  {
+    "path": ".gitignore",
+    "bytes": 668,
+    "sha256": "e34b8cf233db3cdd42c425746b499ce494ff26ee62d95da39c3b6382607f3eea",
+    "method": "copy"
+  },
+  {
+    "path": "ASSET_CREDITS.md",
+    "bytes": 17958,
+    "sha256": "c96827792e1280dda5e92e5199a0b0a95a18d69c722dbe94cdce9c23fc9317cf",
+    "method": "copy"
+  },
+  {
+    "path": "LICENSE.txt",
+    "bytes": 2639,
+    "sha256": "44f301e9351c1b60d5df1bf741c19a82d2e551c61deacadc7128ce77da4ecebe",
+    "method": "copy"
+  },
+  {
+    "path": "README.md",
+    "bytes": 8023,
+    "sha256": "56331d2ee5fa67e9e8e218d164bca5e157f516fa28aa5f52ad18e59d01b580ae",
+    "method": "copy"
+  },
+  {
+    "path": "assets/CINZEL-OFL.txt",
+    "bytes": 4383,
+    "sha256": "f2b3029aba64c378bf0963b62945eee15e564fe4330b934c8f2eb058282b5e83",
+    "method": "copy"
+  },
+  {
+    "path": "assets/cinzel.ttf",
+    "bytes": 125468,
+    "sha256": "f4d83d34d1f6c741193e4acf4b3dff9531e5a67b6aa65228d00a7db72a4e0f34",
+    "method": "hardlink_immutable_asset"
+  },
+  {
+    "path": "assets/cinzel.ttf.import",
+    "bytes": 750,
+    "sha256": "43c7edee992ae5b622cbaa108b4b2309fff23ad572f9314e861dab59380725fb",
+    "method": "copy"
+  },
+  {
+    "path": "assets/ebgaramond.ttf",
+    "bytes": 851176,
+    "sha256": "ef9512f92f6d579e5dc75af59a5a4b1b8b47d2eda89e00b954d44520e5369027",
+    "method": "hardlink_immutable_asset"
+  },
+  {
+    "path": "assets/ebgaramond.ttf.import",
+    "bytes": 761,
+    "sha256": "4c2b4cd58d99a18b92a556e6cb58640208f8e54bbb57dbbcc973c1faf60d15f5",
+    "method": "copy"
+  },
+  {
+    "path": "assets/licenses/BARDS-TALE-SOURCE-PAGE.html",
+    "bytes": 40356,
+    "sha256": "f76254171353889730637147b86560a0f9de66c4cfecda1f7b0309b58b9b07fb",
+    "method": "copy"
+  },
+  {
+    "path": "assets/licenses/BUILDING-PBR-NOTICES.md",
+    "bytes": 3533,
+    "sha256": "8ab76fd153b231a22b18e2fcb2ad0fa234d57e97678fa0737d798db30a798381",
+    "method": "copy"
+  },
+  {
+    "path": "assets/licenses/CC0-1.0.txt",
+    "bytes": 7048,
+    "sha256": "a2010f343487d3f7618affe54f789f5487602331c0a8d03f49e9a7c547cf0499",
+    "method": "copy"
+  },
+  {
+    "path": "assets/licenses/CINZEL-PROVENANCE.json",
+    "bytes": 403,
+    "sha256": "e96c820b5f92723869e4cd42d665d5bcb2b4d081110748bbff7c04e5b18470ce",
+    "method": "copy"
+  },
+  {
+    "path": "assets/licenses/DRACONIA-ASSET-CREDITS.md",
+    "bytes": 22626,
+    "sha256": "d1079d3159e466cefd4d1a0ec024e9885899a91dc6c972be4f43e78a1b2dabc7",
+    "method": "copy"
+  },
+  {
+    "path": "assets/licenses/EBGARAMOND-OFL.txt",
+    "bytes": 4398,
+    "sha256": "0985066662eb755ed3683ae5482a81a9195b49ce3f7e165cc2388b3dbece7dd7",
+    "method": "copy"
+  },
+  {
+    "path": "assets/licenses/EBGARAMOND-PROVENANCE.json",
+    "bytes": 768,
+    "sha256": "ecfb1f4f928974381e14a824ccdb8974b132ccfc21e61d927ba181229825d2a2",
+    "method": "copy"
+  },
+  {
+    "path": "assets/licenses/FLARE-CC-BY-SA-3.0.txt",
+    "bytes": 22240,
+    "sha256": "3f941b3b89cf7b8370ceb83cc76d2120d471b58735d8ca60238a751a48d7f72f",
+    "method": "copy"
+  },
+  {
+    "path": "assets/licenses/FLARE-CREDITS.txt",
+    "bytes": 3510,
+    "sha256": "8b0985009dd04911b851553a35941e6862f1df66a6864f9b2a5c7ff330574fbc",
+    "method": "copy"
+  },
+  {
+    "path": "assets/licenses/FLARE-DETAILED-CREDITS.html",
+    "bytes": 259342,
+    "sha256": "d0c5ab931023f3c7ca3b0e0c9e8256e4c0a95d68aa282921ca31064404c59420",
+    "method": "copy"
+  },
+  {
+    "path": "assets/licenses/FLARE-DETAILED-CREDITS.md",
+    "bytes": 21809,
+    "sha256": "c33ffea3a608251b1c6bbee5f73930070a2fc276bb3aa1603b285ea5dc63e22d",
+    "method": "copy"
+  },
+  {
+    "path": "assets/licenses/FLARE-README.txt",
+    "bytes": 5144,
+    "sha256": "00039b58f496f89a97434750c4659fef10455675ccd6c26d238464bfc1850b82",
+    "method": "copy"
+  },
+  {
+    "path": "assets/licenses/GODOT-COPYRIGHT.txt",
+    "bytes": 100108,
+    "sha256": "cb1980c88089573bcacd7221d777c689bb8bbd778799f24c27fca0fe5f774d6d",
+    "method": "copy"
+  },
+  {
+    "path": "assets/licenses/GODOT-LICENSE.txt",
+    "bytes": 1149,
+    "sha256": "b0435e3b3e4e55238f05f4b306f30524a1b2e20147810d436eaa554fa6855c80",
+    "method": "copy"
+  },
+  {
+    "path": "assets/licenses/GODOT-NOTICES.md",
+    "bytes": 1499,
+    "sha256": "428becb572107d440c87c4627ac7460c6a9af257146ce744310197a0d6be2e55",
+    "method": "copy"
+  },
+  {
+    "path": "assets/licenses/MAKEHUMAN-CC0-ASSET-NOTICE.md",
+    "bytes": 6962,
+    "sha256": "f6089cba01cb570a24712b41ab8a586ccd3cc5ef53dc266ca50b95c288956d2c",
+    "method": "copy"
+  },
+  {
+    "path": "assets/licenses/MEDIEVAL-HOUSE-75519-LICENSE.html",
+    "bytes": 5397,
+    "sha256": "613c8eb39cabe63739a20a8aeec83bebe8dc6aa707d261a8e880dd0a4a9c3627",
+    "method": "copy"
+  },
+  {
+    "path": "assets/licenses/MEDIEVAL-HOUSE-75861-LICENSE.html",
+    "bytes": 5370,
+    "sha256": "32af07c754992f42805927c5070e777546c779909336267aaec9b7f4dd0ec130",
+    "method": "copy"
+  },
+  {
+    "path": "assets/licenses/MEDIEVAL-HOUSE-75862-LICENSE.html",
+    "bytes": 5376,
+    "sha256": "6638f731ec54792723f179841c3933bb612576590bd90958c96522fe982cb9e8",
+    "method": "copy"
+  },
+  {
+    "path": "assets/licenses/MEDIEVAL-HOUSE-75864-LICENSE.html",
+    "bytes": 5769,
+    "sha256": "7e5fe5b159badb07a9d3200cc77e4007b30e3ada7b71d3d9175bd7a629ff50e6",
+    "method": "copy"
+  },
+  {
+    "path": "assets/licenses/MEDIEVAL-HOUSES-SOURCE-PAGE.html",
+    "bytes": 33887,
+    "sha256": "c8a950578f81259cb4809af82ebecc4997f3a6ebe43dab8229c32f9f757c3085",
+    "method": "copy"
+  },
+  {
+    "path": "assets/licenses/POLYHAVEN-LICENSE-PAGE.html",
+    "bytes": 72685,
+    "sha256": "46158a6b319ae8ef55acd18bd96d986c9261fb0cc8086124e97bcbefe779a623",
+    "method": "copy"
+  },
+  {
+    "path": "assets/licenses/QUATERNIUS-ANIMATION-NOTICE.txt",
+    "bytes": 446,
+    "sha256": "11eac7504a28077e9d8dbac8ddfca2566510efba7eef46e11f21cdd2bc96d4d5",
+    "method": "copy"
+  },
+  {
+    "path": "assets/licenses/TIMBER-SHACK-SOURCE-PAGE.html",
+    "bytes": 22975,
+    "sha256": "2d360a866076d6a43ca47523fafd3f7b6ae2cf1be1eb9c72eb6d987cf31dfed4",
+    "method": "copy"
+  },
+  {
+    "path": "assets/licenses/WEREWOLF-SOURCE-PAGE.html",
+    "bytes": 23382,
+    "sha256": "3031ac29a8f4e840e9a8c223bad3d203ca9448a42d4e006a0d1eada5660be231",
+    "method": "copy"
+  },
+  {
+    "path": "assets/licenses/YUGHUES-FOREST-SOURCE-PAGE.html",
+    "bytes": 30772,
+    "sha256": "91a389b437a14740128f803980f96138434c063b6fff17de643145c802febe91",
+    "method": "copy"
+  },
+  {
+    "path": "assets/licenses/manifest.json",
+    "bytes": 4288,
+    "sha256": "dc97bbea2e7fea5e8429605adef030d1b9f90e05ba626bb9630f095f1b1c8298",
+    "method": "copy"
+  },
+  {
+    "path": "assets/models/README.md",
+    "bytes": 5139,
+    "sha256": "3358ce01be13dbe27ca20f2a16f2624fee218b231104863ba00cdbc47eee29c9",
+    "method": "copy"
+  },
+  {
+    "path": "assets/models/fir_sapling/fir_sapling.bin",
+    "bytes": 21677180,
+    "sha256": "efdebfae6ee4b3ea20c7a85eb9f798ff4953259a3616bcff0b7e580b00f34f40",
+    "method": "hardlink_immutable_asset"
+  },
+  {
+    "path": "assets/models/fir_sapling/fir_sapling_1k.gltf",
+    "bytes": 10979,
+    "sha256": "a9466ca9d8c5b9b2eeeeafd3ce426f8912dcbd98a7281bad8c734833eb35b186",
+    "method": "copy"
+  },
+  {
+    "path": "assets/models/fir_sapling/fir_sapling_1k.gltf.import",
+    "bytes": 1186,
+    "sha256": "4b633b2182d336fd844eab91e94a1aa3e2ad39f1d70380b1647cd2014e5e69d8",
+    "method": "copy"
+  },
+  {
+    "path": "assets/models/fir_sapling/fir_sapling_lod.glb",
+    "bytes": 3254356,
+    "sha256": "d3f8c49e06707a21107099df3df93af2a92135afcb3368d8d5008cc3638ba43d",
+    "method": "hardlink_immutable_asset"
+  },
+  {
+    "path": "assets/models/fir_sapling/fir_sapling_lod.glb.import",
+    "bytes": 1186,
+    "sha256": "a980d766569e38271475c3e8cdf828abef7413c68228a57580500c4c6a0876b6",
+    "method": "copy"
+  },
+  {
+    "path": "assets/models/fir_sapling/fir_sapling_lod_diffuse_none.png",
+    "bytes": 2045230,
+    "sha256": "f2d5ccaaa95de7087e5327fa52c4a5481771350020aa6da76125faac62c7fd8d",
+    "method": "hardlink_immutable_asset"
+  },
+  {
+    "path": "assets/models/fir_sapling/fir_sapling_lod_diffuse_none.png.import",
+    "bytes": 1080,
+    "sha256": "466620faf28217fa04a61b3e946ebfa3004c9c00638245bd3f619b3027a009f2",
+    "method": "copy"
+  },
+  {
+    "path": "assets/models/fir_sapling/fir_sapling_lod_fir_sapling_branches_diff.jpg",
+    "bytes": 776633,
+    "sha256": "46d216526b6203dbd5dc3cfce5e49d7a4cc1770da2420faab45adf33671c7de4",
+    "method": "hardlink_immutable_asset"
+  },
+  {
+    "path": "assets/models/fir_sapling/fir_sapling_lod_fir_sapling_branches_diff.jpg.import",
+    "bytes": 1119,
+    "sha256": "955cab58816dde0ed1cd370cd7056ab3bc90e17ae984f28472cfffceae5ca27e",
+    "method": "copy"
+  },
+  {
+    "path": "assets/models/fir_sapling/fir_sapling_lod_fir_sapling_branches_nor_gl.jpg",
+    "bytes": 1137599,
+    "sha256": "dbe474f6cd593d51a19fb92a627ad900b9ab47dabd1bf60117a2cf9d110f79ea",
+    "method": "hardlink_immutable_asset"
+  },
+  {
+    "path": "assets/models/fir_sapling/fir_sapling_lod_fir_sapling_branches_nor_gl.jpg.import",
+    "bytes": 1125,
+    "sha256": "5c084989cb2d6f9bbf7723e907660d769a2dc168c57612bf548ee0b7c3e4e35a",
+    "method": "copy"
+  },
+  {
+    "path": "assets/models/fir_sapling/fir_sapling_lod_fir_sapling_branches_rough.jpg",
+    "bytes": 793567,
+    "sha256": "44c32b056b78c1046aeeb44c973a1d1352ea12d0d7ef2425527555f1256a0964",
+    "method": "hardlink_immutable_asset"
+  },
+  {
+    "path": "assets/models/fir_sapling/fir_sapling_lod_fir_sapling_branches_rough.jpg.import",
+    "bytes": 1121,
+    "sha256": "38df2db7b3af1af9c02bacc9d28230b09e631135d1fd058f6eff03e1b0fe3384",
+    "method": "copy"
+  },
+  {
+    "path": "assets/models/fir_sapling/fir_sapling_lod_fir_sapling_twigs_diff.jpg",
+    "bytes": 252678,
+    "sha256": "a9900fafad850deeb5f79b928fd7590bca9e8ec8734d2368d4c64bba8b0c5b22",
+    "method": "hardlink_immutable_asset"
+  },
+  {
+    "path": "assets/models/fir_sapling/fir_sapling_lod_fir_sapling_twigs_diff.jpg.import",
+    "bytes": 1110,
+    "sha256": "13a4f35333a80ac7f311e7a779037eb9c309c5646bef04a65eac2cae144fe0df",
+    "method": "copy"
+  },
+  {
+    "path": "assets/models/fir_sapling/fir_sapling_lod_fir_sapling_twigs_nor_gl.jpg",
+    "bytes": 474717,
+    "sha256": "34928b2a9d1f722d2f64a7da468c790ecaca9b89c00ac0878a9e0bad26748368",
+    "method": "hardlink_immutable_asset"
+  },
+  {
+    "path": "assets/models/fir_sapling/fir_sapling_lod_fir_sapling_twigs_nor_gl.jpg.import",
+    "bytes": 1116,
+    "sha256": "b06d863090d5aa5e0b5f574d064899b9cb48914395f012e2d605a2d8b4034066",
+    "method": "copy"
+  },
+  {
+    "path": "assets/models/fir_sapling/fir_sapling_lod_fir_sapling_twigs_rough.jpg",
+    "bytes": 300249,
+    "sha256": "d1ec27a55bb67bfe5fa2c8a41a545dc71769934b142db56ad7c703d4146e1770",
+    "method": "hardlink_immutable_asset"
+  },
+  {
+    "path": "assets/models/fir_sapling/fir_sapling_lod_fir_sapling_twigs_rough.jpg.import",
+    "bytes": 1112,
+    "sha256": "2c586cce0d430b96b405bdd7f155e575ee67229658f9846a8f29cb379d3193b2",
+    "method": "copy"
+  },
+  {
+    "path": "assets/models/fir_sapling/fir_sapling_lod_normal_none.png",
+    "bytes": 1175853,
+    "sha256": "3462390046248345c9665d1d16edc4445bc34d0f80dc2f978ab840c4fea38ec4",
+    "method": "hardlink_immutable_asset"
+  },
+  {
+    "path": "assets/models/fir_sapling/fir_sapling_lod_normal_none.png.import",
+    "bytes": 1077,
+    "sha256": "ed7a6b1d2445ad9ec984b1c94c399a4edfa09ff1c538003eb214dadcea4eb94e",
+    "method": "copy"
+  },
+  {
+    "path": "assets/models/fir_sapling/textures/fir_sapling_branches_arm_1k.jpg",
+    "bytes": 793567,
+    "sha256": "44c32b056b78c1046aeeb44c973a1d1352ea12d0d7ef2425527555f1256a0964",
+    "method": "hardlink_immutable_asset"
+  },
+  {
+    "path": "assets/models/fir_sapling/textures/fir_sapling_branches_arm_1k.jpg.import",
+    "bytes": 1020,
+    "sha256": "59248af11c11b9df12d5f7f653ae886aa3cc60c85414c16e7090c41cc7e4f196",
+    "method": "copy"
+  },
+  {
+    "path": "assets/models/fir_sapling/textures/fir_sapling_branches_diff_1k.jpg",
+    "bytes": 776633,
+    "sha256": "46d216526b6203dbd5dc3cfce5e49d7a4cc1770da2420faab45adf33671c7de4",
+    "method": "hardlink_immutable_asset"
+  },
+  {
+    "path": "assets/models/fir_sapling/textures/fir_sapling_branches_diff_1k.jpg.import",
+    "bytes": 1023,
+    "sha256": "6d1a7c8ab3650a815b2fe2d3fc47c8e7a7901f16bdaa1e52d3ad21688465422c",
+    "method": "copy"
+  },
+  {
+    "path": "assets/models/fir_sapling/textures/fir_sapling_branches_nor_gl_1k.jpg",
+    "bytes": 1137599,
+    "sha256": "dbe474f6cd593d51a19fb92a627ad900b9ab47dabd1bf60117a2cf9d110f79ea",
+    "method": "hardlink_immutable_asset"
+  },
+  {
+    "path": "assets/models/fir_sapling/textures/fir_sapling_branches_nor_gl_1k.jpg.import",
+    "bytes": 1029,
+    "sha256": "4352964f24199fc729e1e236220e2a6ba4d9288f7e01041c39f3dc913c5aee27",
+    "method": "copy"
+  },
+  {
+    "path": "assets/models/fir_sapling/textures/fir_sapling_twigs_arm_1k.jpg",
+    "bytes": 300249,
+    "sha256": "d1ec27a55bb67bfe5fa2c8a41a545dc71769934b142db56ad7c703d4146e1770",
+    "method": "hardlink_immutable_asset"
+  },
+  {
+    "path": "assets/models/fir_sapling/textures/fir_sapling_twigs_arm_1k.jpg.import",
+    "bytes": 1010,
+    "sha256": "552b9b0ccc7836290220fcceb573f7b7898dde9d24044632d23cc34db1b9e315",
+    "method": "copy"
+  },
+  {
+    "path": "assets/models/fir_sapling/textures/fir_sapling_twigs_diff_1k.jpg",
+    "bytes": 252678,
+    "sha256": "a9900fafad850deeb5f79b928fd7590bca9e8ec8734d2368d4c64bba8b0c5b22",
+    "method": "hardlink_immutable_asset"
+  },
+  {
+    "path": "assets/models/fir_sapling/textures/fir_sapling_twigs_diff_1k.jpg.import",
+    "bytes": 1014,
+    "sha256": "6eb02b7019f7e907ff284c469a12506f6deaa7e2363a66933da66c84caa5535e",
+    "method": "copy"
+  },
+  {
+    "path": "assets/models/fir_sapling/textures/fir_sapling_twigs_nor_gl_1k.jpg",
+    "bytes": 474717,
+    "sha256": "34928b2a9d1f722d2f64a7da468c790ecaca9b89c00ac0878a9e0bad26748368",
+    "method": "hardlink_immutable_asset"
+  },
+  {
+    "path": "assets/models/fir_sapling/textures/fir_sapling_twigs_nor_gl_1k.jpg.import",
+    "bytes": 1020,
+    "sha256": "217c44cd22dcf3d244accae15211ca3775b71bc3879f3f013cd095b4962b4628",
+    "method": "copy"
+  },
+  {
+    "path": "assets/models/forest/broadleaf.glb",
+    "bytes": 4365064,
+    "sha256": "2723c6ef0d5522c3a86141c7dc16b99b6363da158373607db609cfdaca87ec44",
+    "method": "hardlink_immutable_asset"
+  },
+  {
+    "path": "assets/models/forest/broadleaf.glb.import",
+    "bytes": 1163,
+    "sha256": "aec84b5300a2478dad4c3683a1a98676e2e622381ffd8bcefb05d8100ea6876f",
+    "method": "copy"
+  },
+  {
+    "path": "assets/models/forest/broadleaf_diffuse.png",
+    "bytes": 2408471,
+    "sha256": "4bfb8d7f5d8c56d33ea249e360934f846609e026701fe5e407cde87e820f3b52",
+    "method": "hardlink_immutable_asset"
+  },
+  {
+    "path": "assets/models/forest/broadleaf_diffuse.png.import",
+    "bytes": 1042,
+    "sha256": "d7c905546cc0cc7d561f0459061f631cddd03c167be86db13d0df91518d638f0",
+    "method": "copy"
+  },
+  {
+    "path": "assets/models/forest/broadleaf_normal.png",
+    "bytes": 1899036,
+    "sha256": "f6323eeca1a067c6867531cb3b592d9360b96df58cada16ec82371a32616f3ab",
+    "method": "hardlink_immutable_asset"
+  },
+  {
+    "path": "assets/models/forest/broadleaf_normal.png.import",
+    "bytes": 1039,
+    "sha256": "b35d32e194ec5790db0c262a22114760607a66d3c04b5f6fad0128b3a9953c56",
+    "method": "copy"
+  },
+  {
+    "path": "assets/models/forest/pine.glb",
+    "bytes": 3254132,
+    "sha256": "4453800bea8f8966fcb5de4ea69f47560cefbe6fc3a6c888fa1eb3e9abe9828d",
+    "method": "hardlink_immutable_asset"
+  },
+  {
+    "path": "assets/models/forest/pine.glb.import",
+    "bytes": 1147,
+    "sha256": "7751aafd1abc65b6f4bb9380ef2bc78a337c3672055865fe51f58373480a0440",
+    "method": "copy"
+  },
+  {
+    "path": "assets/models/forest/pine_diffuse_none.png",
+    "bytes": 2045230,
+    "sha256": "f2d5ccaaa95de7087e5327fa52c4a5481771350020aa6da76125faac62c7fd8d",
+    "method": "hardlink_immutable_asset"
+  },
+  {
+    "path": "assets/models/forest/pine_diffuse_none.png.import",
+    "bytes": 1041,
+    "sha256": "b9c53b682da2beb50615b38bf9e7df0e407c6ce44c79b0934f839890059eec46",
+    "method": "copy"
+  },
+  {
+    "path": "assets/models/forest/pine_normal_none.png",
+    "bytes": 1175853,
+    "sha256": "3462390046248345c9665d1d16edc4445bc34d0f80dc2f978ab840c4fea38ec4",
+    "method": "hardlink_immutable_asset"
+  },
+  {
+    "path": "assets/models/forest/pine_normal_none.png.import",
+    "bytes": 1039,
+    "sha256": "220f375f08aae7750574e8fa57c8bc59ae51044fa0561074d138912089ed7a04",
+    "method": "copy"
+  },
+  {
+    "path": "assets/models/manifest.json",
+    "bytes": 57005,
+    "sha256": "6f4009897b3046274f60828392328f786e8dd681abe403ba083c549550af15fd",
+    "method": "copy"
+  },
+  {
+    "path": "assets/models/mara/README.md",
+    "bytes": 9678,
+    "sha256": "9898462341b001882165ba5f3bf54fd780042848a0895bfad95fc722cfa9fe84",
+    "method": "copy"
+  },
+  {
+    "path": "assets/models/mara/equipment/bellworn-cowl.glb",
+    "bytes": 204656,
+    "sha256": "a3aaa15f65ca9cedc2b80c8e5adbfe8aefb786a83fe596ef0524acb47c9c2e53",
+    "method": "hardlink_immutable_asset"
+  },
+  {
+    "path": "assets/models/mara/equipment/bellworn-cowl.glb.import",
+    "bytes": 1182,
+    "sha256": "7c8df6e5abe62c7ed9003b37cd9a66c1c066e035f44270aa904de43a12797f34",
+    "method": "copy"
+  },
+  {
+    "path": "assets/models/mara/equipment/manifest.json",
+    "bytes": 11249,
+    "sha256": "1cbafd0acb8144a5af799b32ffc40eacf143d4485ab2efe3be0447eb439f26cb",
+    "method": "copy"
+  },
+  {
+    "path": "assets/models/mara/equipment/vowkeeper.glb",
+    "bytes": 77208,
+    "sha256": "602efe0dca48cfcf4151c4b356c61a96f4ee2567ef9bd7474db0fe0b7ca93258",
+    "method": "hardlink_immutable_asset"
+  },
+  {
+    "path": "assets/models/mara/equipment/vowkeeper.glb.import",
+    "bytes": 1171,
+    "sha256": "4513e0b1db03d76853d7b3ef74c5fed7e7ca4065794be23db9520d4d1068d141",
+    "method": "copy"
+  },
+  {
+    "path": "assets/models/mara/manifest.json",
+    "bytes": 6171,
+    "sha256": "95e91a47b52ab85d4d54bdedac76051c7f7302db962568f8712b0a71193185ea",
+    "method": "copy"
+  },
+  {
+    "path": "assets/models/mara/mara.glb",
+    "bytes": 11190780,
+    "sha256": "8ada77b97e748814283fbf3f6efe960026674c0bf4ed04776610515c70fac94d",
+    "method": "hardlink_immutable_asset"
+  },
+  {
+    "path": "assets/models/mara/mara.glb.import",
+    "bytes": 1146,
+    "sha256": "589dad89192efa4bbffa940768e77e82f4377350e50ee33aa481b75c5ca1399d",
+    "method": "copy"
+  },
+  {
+    "path": "assets/models/mara/mara_BootsViking.png",
+    "bytes": 1020827,
+    "sha256": "114622c571ff7249bbd25223f6563d174894c426afb6ab92d35551b712bf1413",
+    "method": "hardlink_immutable_asset"
+  },
+  {
+    "path": "assets/models/mara/mara_BootsViking.png.import",
+    "bytes": 1037,
+    "sha256": "3492c524e7db69a1f19487d7e073fdba2eb0cc34a0935225431591661e3a1306",
+    "method": "copy"
+  },
+  {
+    "path": "assets/models/mara/mara_braid01_diffuse.png",
+    "bytes": 2615248,
+    "sha256": "24c0d2a639f04704734c3e38af97d110777c1b203e5a10c66a5c89563643a018",
+    "method": "hardlink_immutable_asset"
+  },
+  {
+    "path": "assets/models/mara/mara_braid01_diffuse.png.import",
+    "bytes": 1048,
+    "sha256": "d64695c25e70e34876a54d214f5dd4d39365f3994d55a3a75ca04c4aec39552a",
+    "method": "copy"
+  },
+  {
+    "path": "assets/models/mara/mara_brown_eye.png",
+    "bytes": 610817,
+    "sha256": "4659691c7295ad6206c78b003e5fd0e5f91dcd53032fa914a229bb48cabe424b",
+    "method": "hardlink_immutable_asset"
+  },
+  {
+    "path": "assets/models/mara/mara_brown_eye.png.import",
+    "bytes": 1031,
+    "sha256": "06e8c3613b854049ee2331356c45fa26e70d468f937a70c63ebd9e51f9c00be1",
+    "method": "copy"
+  },
+  {
+    "path": "assets/models/mara/mara_eyebrow001.png",
+    "bytes": 89619,
+    "sha256": "9940f7d0b1b223709a19b05156ba6f6e9e4dbdbced02d7574f4d51d72c58967b",
+    "method": "hardlink_immutable_asset"
+  },
+  {
+    "path": "assets/models/mara/mara_eyebrow001.png.import",
+    "bytes": 1033,
+    "sha256": "a64a31107a5144c16194462ab1365cee24f2f8a8ff01666187b48edfda57bed4",
+    "method": "copy"
+  },
+  {
+    "path": "assets/models/mara/mara_eyelashes01.png",
+    "bytes": 91600,
+    "sha256": "4b69c0fff2648874460e9caf80c31413c444218a5c50afebc425aeaa65484a35",
+    "method": "hardlink_immutable_asset"
+  },
+  {
+    "path": "assets/models/mara/mara_eyelashes01.png.import",
+    "bytes": 1037,
+    "sha256": "2a98262765d261f6ff87cca1724067a610fcac265413c65134dfae807c8c7bcb",
+    "method": "copy"
+  },
+  {
+    "path": "assets/models/mara/mara_young_lightskinned_female_diffuse2.png",
+    "bytes": 3724137,
+    "sha256": "8d1fb3ceedf142fad32a3504eca1feb4539aecca6de66acde1514b9a61fc7ba0",
+    "method": "hardlink_immutable_asset"
+  },
+  {
+    "path": "assets/models/mara/mara_young_lightskinned_female_diffuse2.png.import",
+    "bytes": 1106,
+    "sha256": "cbfca2ee3437cefe58d04b9e5363d7f22e6ea99fa43c63e90139ae145d44b189",
+    "method": "copy"
+  },
+  {
+    "path": "assets/models/mara/materials/Metal012_1K-PNG_Color.png",
+    "bytes": 445046,
+    "sha256": "3ee176198f3c3f20a4b328bbb3b5476811f17da5a76f2d8004139f080359265d",
+    "method": "hardlink_immutable_asset"
+  },
+  {
+    "path": "assets/models/mara/materials/Metal012_1K-PNG_Color.png.import",
+    "bytes": 996,
+    "sha256": "3dd5c62b4ca40b5a95547e52fa6b5167ac563120dbd638222f6ab9948f1ef249",
+    "method": "copy"
+  },
+  {
+    "path": "assets/models/mara/materials/brown_leather_albedo_2k.jpg",
+    "bytes": 2137518,
+    "sha256": "b0de2403a31efa31e501b0028c0bd8e504d5bd6318f4a5ce90c550c3067f96d8",
+    "method": "hardlink_immutable_asset"
+  },
+  {
+    "path": "assets/models/mara/materials/brown_leather_albedo_2k.jpg.import",
+    "bytes": 1002,
+    "sha256": "270453b92b61779ff038e8a4df4961498c5cb035d1853b38da0de977e78519ca",
+    "method": "copy"
+  },
+  {
+    "path": "assets/models/mara/materials/brown_leather_arm_2k.jpg",
+    "bytes": 1870765,
+    "sha256": "3c043ed2e4595e735c1cd013dacbcdfbaf8b2e5975b868d1dc188ecfe463f66d",
+    "method": "hardlink_immutable_asset"
+  },
+  {
+    "path": "assets/models/mara/materials/brown_leather_arm_2k.jpg.import",
+    "bytes": 993,
+    "sha256": "964efe9ab9fd167e4862430f3c8b659429fd6d02560d29f1eee2814d199b716c",
+    "method": "copy"
+  },
+  {
+    "path": "assets/models/mara/materials/brown_leather_normal_gl.png",
+    "bytes": 8272288,
+    "sha256": "822ae53ec4b82898f9ea074460ea06d3619a38b6f62a97b8b9a36e377b51b558",
+    "method": "hardlink_immutable_asset"
+  },
+  {
+    "path": "assets/models/mara/materials/brown_leather_normal_gl.png.import",
+    "bytes": 1002,
+    "sha256": "eeb6157b5aa600e4c53878087c7c0236ca11b1ff36befe24b366f8edced0fba6",
+    "method": "copy"
+  },
+  {
+    "path": "assets/models/mara/materials/caban_arm_2k.jpg",
+    "bytes": 5009613,
+    "sha256": "46ff2d45899578e0128d66600677f3f13161e8f7f8063fb9f9244748cd736345",
+    "method": "hardlink_immutable_asset"
+  },
+  {
+    "path": "assets/models/mara/materials/caban_arm_2k.jpg.import",
+    "bytes": 969,
+    "sha256": "bc778b4443a182090d6289590c07decc1c0a4b22e236a82042f9001d608d0563",
+    "method": "copy"
+  },
+  {
+    "path": "assets/models/mara/materials/caban_neutral_albedo_2k.png",
+    "bytes": 3586296,
+    "sha256": "79081f35effbdad35ae1713f7d09fa18d8dc1fc182a375e8ae376ee7c70594a2",
+    "method": "hardlink_immutable_asset"
+  },
+  {
+    "path": "assets/models/mara/materials/caban_neutral_albedo_2k.png.import",
+    "bytes": 1002,
+    "sha256": "5381d4d0d7d0bd316e8459018b9974b7f83bcaed0f6668a284ad2d80432bbb2a",
+    "method": "copy"
+  },
+  {
+    "path": "assets/models/mara/materials/caban_normal_gl.png",
+    "bytes": 6022744,
+    "sha256": "be4802a4b0985b725e9dd8833e4bf8d39ba013ab675445fc8445d63be080aa97",
+    "method": "hardlink_immutable_asset"
+  },
+  {
+    "path": "assets/models/mara/materials/caban_normal_gl.png.import",
+    "bytes": 978,
+    "sha256": "e55b3183d7faef69c9da783b82acc4853396f384d3a87f51f7c9a9b33c4b8661",
+    "method": "copy"
+  },
+  {
+    "path": "assets/models/mara/materials/mara_skin_micro_normal.png",
+    "bytes": 1735955,
+    "sha256": "175c8bacb3833c74c52e8a70873abacfd86589710aa36057e29a497bdd3c550e",
+    "method": "hardlink_immutable_asset"
+  },
+  {
+    "path": "assets/models/mara/materials/mara_skin_micro_normal.png.import",
+    "bytes": 999,
+    "sha256": "9857cef81aadbe7bc8f2d26819c35249fa24ad5e01a0d09ce4d47627902f4d9c",
+    "method": "copy"
+  },
+  {
+    "path": "assets/models/mara/materials/mara_skin_orm.png",
+    "bytes": 798166,
+    "sha256": "dbdb5b250f010ca8b52da5e79b6cbe0ecf5794dc654e8d66497c2167f73e3593",
+    "method": "hardlink_immutable_asset"
+  },
+  {
+    "path": "assets/models/mara/materials/mara_skin_orm.png.import",
+    "bytes": 972,
+    "sha256": "19521ed7724f1cde7c15a3915de26e4e8fa7d2c8d5d824a6b62f54ad39c8cf6c",
+    "method": "copy"
+  },
+  {
+    "path": "assets/models/mara/materials/metal012_normal_gl.png",
+    "bytes": 930025,
+    "sha256": "5974ee78569c91a46d812d5df357afd85046d2b9ea10b2f8969971837e91c52d",
+    "method": "hardlink_immutable_asset"
+  },
+  {
+    "path": "assets/models/mara/materials/metal012_normal_gl.png.import",
+    "bytes": 987,
+    "sha256": "f132b18fbe2c23f45a61d601dddd9ad3fafa1558648b3f8fd1be4c14de779ec5",
+    "method": "copy"
+  },
+  {
+    "path": "assets/models/mara/materials/metal012_orm_1k.png",
+    "bytes": 792062,
+    "sha256": "25593afeb954163abca4ffb2d3dab954adcded9505577d8abaf9ffca78e1c877",
+    "method": "hardlink_immutable_asset"
+  },
+  {
+    "path": "assets/models/mara/materials/metal012_orm_1k.png.import",
+    "bytes": 978,
+    "sha256": "fd53b622e034360f25f1dfccbf7f888d4929f9bb335293f6fb44b6a42d21c0f8",
+    "method": "copy"
+  },
+  {
+    "path": "assets/models/mara/materials/rough_linen_arm_2k.jpg",
+    "bytes": 5194705,
+    "sha256": "c5f29705fc1843c15f48ca187bec1d8b61bccb5859cbbf9a8b793eb172f0593b",
+    "method": "hardlink_immutable_asset"
+  },
+  {
+    "path": "assets/models/mara/materials/rough_linen_arm_2k.jpg.import",
+    "bytes": 986,
+    "sha256": "2de80ef9139c283bebfdccb3d222bdc4b726338ffd49eb142bbb3c656aaac418",
+    "method": "copy"
+  },
+  {
+    "path": "assets/models/mara/materials/rough_linen_neutral_albedo_2k.png",
+    "bytes": 4398368,
+    "sha256": "fce2c2f53eecdd625eed06245ec82bed479e1ad4de904ba4e722c94c1233bd70",
+    "method": "hardlink_immutable_asset"
+  },
+  {
+    "path": "assets/models/mara/materials/rough_linen_neutral_albedo_2k.png.import",
+    "bytes": 1020,
+    "sha256": "f1fa0ab057b8305545a611244870b231c6e52e78012a423fee68a8673c686d98",
+    "method": "copy"
+  },
+  {
+    "path": "assets/models/mara/materials/rough_linen_normal_gl.png",
+    "bytes": 8288229,
+    "sha256": "38c4c1c89d89ecc05866d91acc4c2d324c01470ead61b20f67618c08e8a0afb0",
+    "method": "hardlink_immutable_asset"
+  },
+  {
+    "path": "assets/models/mara/materials/rough_linen_normal_gl.png.import",
+    "bytes": 996,
+    "sha256": "c2ad06e44248447a6e920f517668aedc1a7996ccc12dcbf4c476875ad00020aa",
+    "method": "copy"
+  },
+  {
+    "path": "assets/models/mara/sword-socket.json",
+    "bytes": 778,
+    "sha256": "ca4c4f909b4283037c4cc6f11a583c30b547b6033707d2528aef26f6379467a5",
+    "method": "copy"
+  },
+  {
+    "path": "assets/models/mara/sword.glb",
+    "bytes": 11356,
+    "sha256": "1e3cf5bb82a2393fcc43122e8208a259b51d19843865f4621c303cd98f5d36f7",
+    "method": "hardlink_immutable_asset"
+  },
+  {
+    "path": "assets/models/mara/sword.glb.import",
+    "bytes": 1149,
+    "sha256": "4bb8561668c0990cdf9dcae94ed1a45051042ff6223ba20ab54c50b464cc7346",
+    "method": "copy"
+  },
+  {
+    "path": "assets/models/materials/brown_mud_leaves_01/albedo.jpg",
+    "bytes": 4539452,
+    "sha256": "29c997d77f56e4ea16d3e998a306be0c17fddb28ab4822657c7cd8249040ffda",
+    "method": "hardlink_immutable_asset"
+  },
+  {
+    "path": "assets/models/materials/brown_mud_leaves_01/albedo.jpg.import",
+    "bytes": 966,
+    "sha256": "e6001342718c47be78723c217bb55ad44a1ac825fe6b090810c476433cdcd2c0",
+    "method": "copy"
+  },
+  {
+    "path": "assets/models/materials/brown_mud_leaves_01/normal.jpg",
+    "bytes": 5688696,
+    "sha256": "b6ec386e00d9d2a1c3a1da6a98a67066b0dfaa88ddb779341df29700cf081bdf",
+    "method": "hardlink_immutable_asset"
+  },
+  {
+    "path": "assets/models/materials/brown_mud_leaves_01/normal.jpg.import",
+    "bytes": 966,
+    "sha256": "f6f27eb0af42716ac1daab1711f2e269617594b2181ab0e8c7f3d3c1d363c784",
+    "method": "copy"
+  },
+  {
+    "path": "assets/models/materials/brown_mud_leaves_01/roughness.jpg",
+    "bytes": 2421908,
+    "sha256": "9556215f5fef905c37cdf19c77aef7822f124890f8fb7dcce65d57c5eafc0ca5",
+    "method": "hardlink_immutable_asset"
+  },
+  {
+    "path": "assets/models/materials/brown_mud_leaves_01/roughness.jpg.import",
+    "bytes": 975,
+    "sha256": "8e934eb309b8e02425387eeb5a2987670b95f6671986f9059808b3ed31ec0c5d",
+    "method": "copy"
+  },
+  {
+    "path": "assets/models/materials/forrest_ground_01/albedo.jpg",
+    "bytes": 3077552,
+    "sha256": "e4d557ff61a0b42712a58e8a2e91c6010738977d4e172b7af47abd7d406ae735",
+    "method": "hardlink_immutable_asset"
+  },
+  {
+    "path": "assets/models/materials/forrest_ground_01/albedo.jpg.import",
+    "bytes": 964,
+    "sha256": "fab6ef20c91ca082948a0cb0fdc542b916cbb6bcbdf78c05431d65a45c9cb66b",
+    "method": "copy"
+  },
+  {
+    "path": "assets/models/materials/forrest_ground_01/normal.jpg",
+    "bytes": 5551101,
+    "sha256": "aa23fa930c6303490f842f7c016c19d838263e8e4538d42508a9332e3fd76b69",
+    "method": "hardlink_immutable_asset"
+  },
+  {
+    "path": "assets/models/materials/forrest_ground_01/normal.jpg.import",
+    "bytes": 963,
+    "sha256": "0853e317395dcc4892527812f31c548dd16e9b450b534e10900bcb6bf27fe896",
+    "method": "copy"
+  },
+  {
+    "path": "assets/models/materials/forrest_ground_01/roughness.jpg",
+    "bytes": 920422,
+    "sha256": "e09258c7f055156a7607f1b21dccf38c7efd847e7d030271d5ffcc4a722df37d",
+    "method": "hardlink_immutable_asset"
+  },
+  {
+    "path": "assets/models/materials/forrest_ground_01/roughness.jpg.import",
+    "bytes": 972,
+    "sha256": "0c075047dbd42adcd657cc0355aa419b0325de739a488256ac07889db3879878",
+    "method": "copy"
+  },
+  {
+    "path": "assets/models/medieval_house/credits.txt",
+    "bytes": 907,
+    "sha256": "9c6f8a985a391c8d9da94aa3c103efdaa4212c4186d9b2acc5abb33b84ed3c46",
+    "method": "copy"
+  },
+  {
+    "path": "assets/models/medieval_house/medieval_house.bin",
+    "bytes": 13840,
+    "sha256": "eba8b5b2c604e32ff6e746c4c8731600faca25ec5a6f9662d3b000e297c1543c",
+    "method": "hardlink_immutable_asset"
+  },
+  {
+    "path": "assets/models/medieval_house/medieval_house.gltf",
+    "bytes": 2212,
+    "sha256": "92564dc3b24727620d3cfd904aa804040c2e3ac8c509cb38cde66ed980eb85d5",
+    "method": "copy"
+  },
+  {
+    "path": "assets/models/medieval_house/medieval_house.gltf.import",
+    "bytes": 1189,
+    "sha256": "2e0c3cc94e236a3baebad3bcf54459f610c4e26528740a18db1c5cdb9c7b20bc",
+    "method": "copy"
+  },
+  {
+    "path": "assets/models/medieval_house/medieval_house_1_001.mtl",
+    "bytes": 127,
+    "sha256": "e6182c17f784166749ec2254c658385dac078674e0938b4ca5229753ec11733d",
+    "method": "copy"
+  },
+  {
+    "path": "assets/models/medieval_house/medieval_house_1_001.obj",
+    "bytes": 12958,
+    "sha256": "8ca5975ae66aedb9260871a66f791de4a632e91d321cf10a6d235a00ebd7d2d2",
+    "method": "copy"
+  },
+  {
+    "path": "assets/models/medieval_house/medieval_house_1_001.obj.import",
+    "bytes": 788,
+    "sha256": "dc758a68530f62fac142eda568c36fb6bb5e06303139815d933e32c6cb12fec9",
+    "method": "copy"
+  },
+  {
+    "path": "assets/models/medieval_house/medieval_house_1_001_d.png",
+    "bytes": 4639965,
+    "sha256": "7ad4da51dee5c01eb90db3360fad559940a201c04c0d1d87bcc3f58ee2f8f8e9",
+    "method": "hardlink_immutable_asset"
+  },
+  {
+    "path": "assets/models/medieval_house/medieval_house_1_001_d.png.import",
+    "bytes": 999,
+    "sha256": "2a5c9b9a72d17d4334cdc62f2525302e5a9f3456db25adedf6bb26e14e8baa49",
+    "method": "copy"
+  },
+  {
+    "path": "assets/models/medieval_house/medieval_house_1_001_n.png",
+    "bytes": 10564271,
+    "sha256": "6bbcf330261463f1e880bab169e5034d627a377c3278948f27cdc58fb9a2d9ee",
+    "method": "hardlink_immutable_asset"
+  },
+  {
+    "path": "assets/models/medieval_house/medieval_house_1_001_n.png.import",
+    "bytes": 998,
+    "sha256": "7810013515b1aaf501ce469001b3d20ddc0cd952ef754a1a5ae7412b888a93a2",
+    "method": "copy"
+  },
+  {
+    "path": "assets/models/medieval_house/medieval_house_1_001_s.png",
+    "bytes": 2291302,
+    "sha256": "e6b8bea08bb07c502b9e4c44422e20c2bbb3c50ff69356e92be91da51a694163",
+    "method": "hardlink_immutable_asset"
+  },
+  {
+    "path": "assets/models/medieval_house/medieval_house_1_001_s.png.import",
+    "bytes": 999,
+    "sha256": "eb107dcdd303888d8bcb07c0a3c4a8e73c1c757c8287a6da1f10dc9c6ab8be09",
+    "method": "copy"
+  },
+  {
+    "path": "assets/models/medieval_village/conversion-report.json",
+    "bytes": 942,
+    "sha256": "dfcea0042df78e3e1e4488f4ce795970686e7a2510d6cf555cc3214bbca8466c",
+    "method": "copy"
+  },
+  {
+    "path": "assets/models/medieval_village/medieval_house_01.glb",
+    "bytes": 4456116,
+    "sha256": "8ecf95228130ef664b21deacff03b6deaed72bc0fb4edad7b9e5464398b73fa4",
+    "method": "hardlink_immutable_asset"
+  },
+  {
+    "path": "assets/models/medieval_village/medieval_house_01.glb.import",
+    "bytes": 1197,
+    "sha256": "4cc543b223bd0318aa84110dbee787a84d01df35e559a6fa046d559cf26af06a",
+    "method": "copy"
+  },
+  {
+    "path": "assets/models/medieval_village/medieval_house_01_DoorType1_1.jpg",
+    "bytes": 427522,
+    "sha256": "39a1a9cabcafb9a2bef5532e3c15a159ec40451b96143ab6cf7b3a9e578aac28",
+    "method": "hardlink_immutable_asset"
+  },
+  {
+    "path": "assets/models/medieval_village/medieval_house_01_DoorType1_1.jpg.import",
+    "bytes": 1087,
+    "sha256": "7e885bdb4eeb124a8b19a41f9f30ceb9d8c9eb5214e1047004715305d18441b5",
+    "method": "copy"
+  },
+  {
+    "path": "assets/models/medieval_village/medieval_house_01_DoorType1_2.jpg",
+    "bytes": 248592,
+    "sha256": "cf831de534b37567c19638a2f8bf099c6ed3d2edc90e4f9c20aafcdde6beaa0d",
+    "method": "hardlink_immutable_asset"
+  },
+  {
+    "path": "assets/models/medieval_village/medieval_house_01_DoorType1_2.jpg.import",
+    "bytes": 1088,
+    "sha256": "3d9a35c92fff58a26109333ed47b89356afeafd67520ca957ac3f1c4688d15d3",
+    "method": "copy"
+  },
+  {
+    "path": "assets/models/medieval_village/medieval_house_01_GreyBricks2.jpg",
+    "bytes": 289485,
+    "sha256": "95689677a381bdbb0d50c6aec1d6f32a1bcd060faacbedb4b2a7bdc8e6e4ca2f",
+    "method": "hardlink_immutable_asset"
+  },
+  {
+    "path": "assets/models/medieval_village/medieval_house_01_GreyBricks2.jpg.import",
+    "bytes": 1087,
+    "sha256": "07a84ae7f3fb75f5f771770686db917f1f25d34e659ae4febc64a0e05d3777bc",
+    "method": "copy"
+  },
+  {
+    "path": "assets/models/medieval_village/medieval_house_01_GreyStone2.jpg",
+    "bytes": 21267,
+    "sha256": "b083e4e985829acd38c3dee98bfd1f71bae8ce997d605b00a4c880aff680802d",
+    "method": "hardlink_immutable_asset"
+  },
+  {
+    "path": "assets/models/medieval_village/medieval_house_01_GreyStone2.jpg.import",
+    "bytes": 1085,
+    "sha256": "15d713816c4b97791ae3484712fec865f2cd3e7a7b74caa88427a1889e80cbc8",
+    "method": "copy"
+  },
+  {
+    "path": "assets/models/medieval_village/medieval_house_01_PlasterLarge.jpg",
+    "bytes": 793902,
+    "sha256": "e66dba35cb0d00605288a74011408b1335c0acdde2b55c9378fd89535b218860",
+    "method": "hardlink_immutable_asset"
+  },
+  {
+    "path": "assets/models/medieval_village/medieval_house_01_PlasterLarge.jpg.import",
+    "bytes": 1090,
+    "sha256": "1ae5db568a7115d4eb615cd40cb062c328ac6bba6f9dcece744882290ab3c051",
+    "method": "copy"
+  },
+  {
+    "path": "assets/models/medieval_village/medieval_house_01_RoofTiles.jpg",
+    "bytes": 194812,
+    "sha256": "df73a93cc468528c36c4e0c39b706575e5aab6077dc5d829e5948284c3c67fc8",
+    "method": "hardlink_immutable_asset"
+  },
+  {
+    "path": "assets/models/medieval_village/medieval_house_01_RoofTiles.jpg.import",
+    "bytes": 1082,
+    "sha256": "4256d5b73fe47c8d4154c3f7224bab301f9edd7a7c6b05957fe71588c40dff69",
+    "method": "copy"
+  },
+  {
+    "path": "assets/models/medieval_village/medieval_house_01_Rusted Metal.jpg",
+    "bytes": 298722,
+    "sha256": "63a6a0bd18f8bd8c01ba18efe83a15baf18ce75cabf9f441b85cad11054118ac",
+    "method": "hardlink_immutable_asset"
+  },
+  {
+    "path": "assets/models/medieval_village/medieval_house_01_Rusted Metal.jpg.import",
+    "bytes": 1090,
+    "sha256": "be195aaf5cbf09e3f9f5e445602fdd5d36767c3ea45d0fbb77806d8f6bc35124",
+    "method": "copy"
+  },
+  {
+    "path": "assets/models/medieval_village/medieval_house_01_Stone.jpg",
+    "bytes": 127606,
+    "sha256": "8a54c76c44fa77849db7492ad99976a6caffe08238225fba9a9d1eb2556ac5f9",
+    "method": "hardlink_immutable_asset"
+  },
+  {
+    "path": "assets/models/medieval_village/medieval_house_01_Stone.jpg.import",
+    "bytes": 1070,
+    "sha256": "a789ee11cc4ee67fbad524da5b373e1e1eef699e29d75d66d7f88c433d04da87",
+    "method": "copy"
+  },
+  {
+    "path": "assets/models/medieval_village/medieval_house_01_TreeLogEdgeWeathered.jpg",
+    "bytes": 260268,
+    "sha256": "b68f0516d81a570e927675398c9bcb04490509d8dff8fc725581b0d028689480",
+    "method": "hardlink_immutable_asset"
+  },
+  {
+    "path": "assets/models/medieval_village/medieval_house_01_TreeLogEdgeWeathered.jpg.import",
+    "bytes": 1115,
+    "sha256": "163ea0dea60036fa0bd23b97f685f4a558ebbbe672a36e51e04f91aa470eb71c",
+    "method": "copy"
+  },
+  {
+    "path": "assets/models/medieval_village/medieval_house_01_WindowBlue1.jpg",
+    "bytes": 272852,
+    "sha256": "4ce8a2ac546132d29c83f49bd34424940b49c5eb54ad2f6ad457714dc61f8ef7",
+    "method": "hardlink_immutable_asset"
+  },
+  {
+    "path": "assets/models/medieval_village/medieval_house_01_WindowBlue1.jpg.import",
+    "bytes": 1088,
+    "sha256": "5c11f4f926dc4c0af9736bf4881d6166561dd4735797252ca7deed27e7f16b99",
+    "method": "copy"
+  },
+  {
+    "path": "assets/models/medieval_village/medieval_house_01_WindowsBlue2.jpg",
+    "bytes": 135995,
+    "sha256": "4f9a2426dd75d59745ff405e69e8bc75f120786be0af329064e05c88f0a2e790",
+    "method": "hardlink_immutable_asset"
+  },
+  {
+    "path": "assets/models/medieval_village/medieval_house_01_WindowsBlue2.jpg.import",
+    "bytes": 1091,
+    "sha256": "cae9d8461431d0cc398b5f8aafaf961eb8a10db2c7c418b6ad63a04e1a254cfc",
+    "method": "copy"
+  },
+  {
+    "path": "assets/models/medieval_village/medieval_house_01_Wood.jpg",
+    "bytes": 512848,
+    "sha256": "8def4262d4a9e6b46aa784261adfe08539b7d62a6349449d50b008f85f42c842",
+    "method": "hardlink_immutable_asset"
+  },
+  {
+    "path": "assets/models/medieval_village/medieval_house_01_Wood.jpg.import",
+    "bytes": 1067,
+    "sha256": "a71127218468f832541873e00563c23528ae696b97f2e3dd48f011be192733b6",
+    "method": "copy"
+  },
+  {
+    "path": "assets/models/medieval_village/medieval_house_02.glb",
+    "bytes": 4307008,
+    "sha256": "27459c5e71ed1f82322664ec4aa5fa0896318d1df1620e7f6dfdbbab8a66140b",
+    "method": "hardlink_immutable_asset"
+  },
+  {
+    "path": "assets/models/medieval_village/medieval_house_02.glb.import",
+    "bytes": 1197,
+    "sha256": "cc67ee06694312dec048cc758faedc05db42b6420285d4827d6f8197e7edd96b",
+    "method": "copy"
+  },
+  {
+    "path": "assets/models/medieval_village/medieval_house_02_DoorType1_2.jpg",
+    "bytes": 248592,
+    "sha256": "cf831de534b37567c19638a2f8bf099c6ed3d2edc90e4f9c20aafcdde6beaa0d",
+    "method": "hardlink_immutable_asset"
+  },
+  {
+    "path": "assets/models/medieval_village/medieval_house_02_DoorType1_2.jpg.import",
+    "bytes": 1087,
+    "sha256": "87f5a88d4d369839af2189b258ff3af962f4471975c4fddab662e8b013e98de9",
+    "method": "copy"
+  },
+  {
+    "path": "assets/models/medieval_village/medieval_house_02_GreyBricks.jpg",
+    "bytes": 582830,
+    "sha256": "101844a3101ad3b885f4849328b0f622d2a745b4acbb2aedc9d6c5df3634b863",
+    "method": "hardlink_immutable_asset"
+  },
+  {
+    "path": "assets/models/medieval_village/medieval_house_02_GreyBricks.jpg.import",
+    "bytes": 1085,
+    "sha256": "f321d679e5980ae375ca9b11687e7117fb2ca87e6c869b9d91aaf912a943b07e",
+    "method": "copy"
+  },
+  {
+    "path": "assets/models/medieval_village/medieval_house_02_GreyBricks2.jpg",
+    "bytes": 289485,
+    "sha256": "95689677a381bdbb0d50c6aec1d6f32a1bcd060faacbedb4b2a7bdc8e6e4ca2f",
+    "method": "hardlink_immutable_asset"
+  },
+  {
+    "path": "assets/models/medieval_village/medieval_house_02_GreyBricks2.jpg.import",
+    "bytes": 1088,
+    "sha256": "c8630107c94734aa4ea14ed4a3872f7ac74bdd4b93fb030509284492bb622532",
+    "method": "copy"
+  },
+  {
+    "path": "assets/models/medieval_village/medieval_house_02_PlasterLarge.jpg",
+    "bytes": 793902,
+    "sha256": "e66dba35cb0d00605288a74011408b1335c0acdde2b55c9378fd89535b218860",
+    "method": "hardlink_immutable_asset"
+  },
+  {
+    "path": "assets/models/medieval_village/medieval_house_02_PlasterLarge.jpg.import",
+    "bytes": 1091,
+    "sha256": "29458a54a896f61b37e365fed39923d1a727b51cd358d841f592d1300878e2c0",
+    "method": "copy"
+  },
+  {
+    "path": "assets/models/medieval_village/medieval_house_02_RoofTiles.jpg",
+    "bytes": 194812,
+    "sha256": "df73a93cc468528c36c4e0c39b706575e5aab6077dc5d829e5948284c3c67fc8",
+    "method": "hardlink_immutable_asset"
+  },
+  {
+    "path": "assets/models/medieval_village/medieval_house_02_RoofTiles.jpg.import",
+    "bytes": 1082,
+    "sha256": "21234c1f6c0ce1bf698c22bfb6491501672168ca17163179c52de8335496ea42",
+    "method": "copy"
+  },
+  {
+    "path": "assets/models/medieval_village/medieval_house_02_Rusted Metal.jpg",
+    "bytes": 298722,
+    "sha256": "63a6a0bd18f8bd8c01ba18efe83a15baf18ce75cabf9f441b85cad11054118ac",
+    "method": "hardlink_immutable_asset"
+  },
+  {
+    "path": "assets/models/medieval_village/medieval_house_02_Rusted Metal.jpg.import",
+    "bytes": 1091,
+    "sha256": "cd15cd48a244379281a00c43da65c1e5fd98922ab4b8c88239419421143deb1a",
+    "method": "copy"
+  },
+  {
+    "path": "assets/models/medieval_village/medieval_house_02_Stone.jpg",
+    "bytes": 127606,
+    "sha256": "8a54c76c44fa77849db7492ad99976a6caffe08238225fba9a9d1eb2556ac5f9",
+    "method": "hardlink_immutable_asset"
+  },
+  {
+    "path": "assets/models/medieval_village/medieval_house_02_Stone.jpg.import",
+    "bytes": 1069,
+    "sha256": "d729cf39de9d925d3eb784b6c0c3ba5154288460cca7026846c900a3a1348793",
+    "method": "copy"
+  },
+  {
+    "path": "assets/models/medieval_village/medieval_house_02_TreeLogEdgeWeathered.jpg",
+    "bytes": 260268,
+    "sha256": "b68f0516d81a570e927675398c9bcb04490509d8dff8fc725581b0d028689480",
+    "method": "hardlink_immutable_asset"
+  },
+  {
+    "path": "assets/models/medieval_village/medieval_house_02_TreeLogEdgeWeathered.jpg.import",
+    "bytes": 1115,
+    "sha256": "8141d4df0f83d3aba8ddc601ede337f03d209735b007d7a3d14fd3040a886dfe",
+    "method": "copy"
+  },
+  {
+    "path": "assets/models/medieval_village/medieval_house_02_WindowBlue1.jpg",
+    "bytes": 272852,
+    "sha256": "4ce8a2ac546132d29c83f49bd34424940b49c5eb54ad2f6ad457714dc61f8ef7",
+    "method": "hardlink_immutable_asset"
+  },
+  {
+    "path": "assets/models/medieval_village/medieval_house_02_WindowBlue1.jpg.import",
+    "bytes": 1088,
+    "sha256": "886ad02cfbd00b7aa291a6f3e5dd4ab961f93e865e68222580be2eba3eb73875",
+    "method": "copy"
+  },
+  {
+    "path": "assets/models/medieval_village/medieval_house_02_WindowsBlue2.jpg",
+    "bytes": 135995,
+    "sha256": "4f9a2426dd75d59745ff405e69e8bc75f120786be0af329064e05c88f0a2e790",
+    "method": "hardlink_immutable_asset"
+  },
+  {
+    "path": "assets/models/medieval_village/medieval_house_02_WindowsBlue2.jpg.import",
+    "bytes": 1091,
+    "sha256": "d2d68d53253af5d80514e5540a2cdbbf5b5ef6642d365919dd55abb4d9ec488d",
+    "method": "copy"
+  },
+  {
+    "path": "assets/models/medieval_village/medieval_house_02_Wood.jpg",
+    "bytes": 512848,
+    "sha256": "8def4262d4a9e6b46aa784261adfe08539b7d62a6349449d50b008f85f42c842",
+    "method": "hardlink_immutable_asset"
+  },
+  {
+    "path": "assets/models/medieval_village/medieval_house_02_Wood.jpg.import",
+    "bytes": 1066,
+    "sha256": "76ba5a69a7492e8025770178cc3d420e39247b417700a9e9577b4bdf8b6a1be2",
+    "method": "copy"
+  },
+  {
+    "path": "assets/models/medieval_village/medieval_house_03.glb",
+    "bytes": 3988328,
+    "sha256": "35e44180abb3dcd0e439bc6f1d60c51d2ecf3324ee8ae8ae55b411758a372045",
+    "method": "hardlink_immutable_asset"
+  },
+  {
+    "path": "assets/models/medieval_village/medieval_house_03.glb.import",
+    "bytes": 1197,
+    "sha256": "939533dd9171704a26848f2f0622fffbd4c7ef30b80f3d41e90030ac9d279a8c",
+    "method": "copy"
+  },
+  {
+    "path": "assets/models/medieval_village/medieval_house_03_DoorType1_2.jpg",
+    "bytes": 248592,
+    "sha256": "cf831de534b37567c19638a2f8bf099c6ed3d2edc90e4f9c20aafcdde6beaa0d",
+    "method": "hardlink_immutable_asset"
+  },
+  {
+    "path": "assets/models/medieval_village/medieval_house_03_DoorType1_2.jpg.import",
+    "bytes": 1088,
+    "sha256": "10166d99ff3e7204a2da13be5ab5b7635f7cbb785490ae3b1732279154f17053",
+    "method": "copy"
+  },
+  {
+    "path": "assets/models/medieval_village/medieval_house_03_GreyBricks2.jpg",
+    "bytes": 289485,
+    "sha256": "95689677a381bdbb0d50c6aec1d6f32a1bcd060faacbedb4b2a7bdc8e6e4ca2f",
+    "method": "hardlink_immutable_asset"
+  },
+  {
+    "path": "assets/models/medieval_village/medieval_house_03_GreyBricks2.jpg.import",
+    "bytes": 1088,
+    "sha256": "5481b701161197b09e8ea22afb115be5b1db37013049df8a71e6e1787d2167cc",
+    "method": "copy"
+  },
+  {
+    "path": "assets/models/medieval_village/medieval_house_03_GreyStone2.jpg",
+    "bytes": 21267,
+    "sha256": "b083e4e985829acd38c3dee98bfd1f71bae8ce997d605b00a4c880aff680802d",
+    "method": "hardlink_immutable_asset"
+  },
+  {
+    "path": "assets/models/medieval_village/medieval_house_03_GreyStone2.jpg.import",
+    "bytes": 1085,
+    "sha256": "1a0ed97a02002f487a46558ab3feebdf39974c8d27865df245f91939251161cf",
+    "method": "copy"
+  },
+  {
+    "path": "assets/models/medieval_village/medieval_house_03_PlasterLarge.jpg",
+    "bytes": 793902,
+    "sha256": "e66dba35cb0d00605288a74011408b1335c0acdde2b55c9378fd89535b218860",
+    "method": "hardlink_immutable_asset"
+  },
+  {
+    "path": "assets/models/medieval_village/medieval_house_03_PlasterLarge.jpg.import",
+    "bytes": 1089,
+    "sha256": "8904ee3e3bccf0ba5aafe707b1965724152f33b4af59ecbc3a51e09fa6bf2452",
+    "method": "copy"
+  },
+  {
+    "path": "assets/models/medieval_village/medieval_house_03_RoofTiles.jpg",
+    "bytes": 194812,
+    "sha256": "df73a93cc468528c36c4e0c39b706575e5aab6077dc5d829e5948284c3c67fc8",
+    "method": "hardlink_immutable_asset"
+  },
+  {
+    "path": "assets/models/medieval_village/medieval_house_03_RoofTiles.jpg.import",
+    "bytes": 1082,
+    "sha256": "c6792428d4ef03ce5ba5fac2937b2f6791263dd7bb4c2582648543503995ae38",
+    "method": "copy"
+  },
+  {
+    "path": "assets/models/medieval_village/medieval_house_03_Rusted Metal.jpg",
+    "bytes": 298722,
+    "sha256": "63a6a0bd18f8bd8c01ba18efe83a15baf18ce75cabf9f441b85cad11054118ac",
+    "method": "hardlink_immutable_asset"
+  },
+  {
+    "path": "assets/models/medieval_village/medieval_house_03_Rusted Metal.jpg.import",
+    "bytes": 1091,
+    "sha256": "46a33b36225b208ef7fdd7c451c3a131a14df537fa975ae22f28d24095505373",
+    "method": "copy"
+  },
+  {
+    "path": "assets/models/medieval_village/medieval_house_03_Stone.jpg",
+    "bytes": 127606,
+    "sha256": "8a54c76c44fa77849db7492ad99976a6caffe08238225fba9a9d1eb2556ac5f9",
+    "method": "hardlink_immutable_asset"
+  },
+  {
+    "path": "assets/models/medieval_village/medieval_house_03_Stone.jpg.import",
+    "bytes": 1070,
+    "sha256": "688442ea8766c16257450059d4b44456387ae77b1d6ec7b5a3b29d8d46081d4e",
+    "method": "copy"
+  },
+  {
+    "path": "assets/models/medieval_village/medieval_house_03_TreeLogEdgeWeathered.jpg",
+    "bytes": 260268,
+    "sha256": "b68f0516d81a570e927675398c9bcb04490509d8dff8fc725581b0d028689480",
+    "method": "hardlink_immutable_asset"
+  },
+  {
+    "path": "assets/models/medieval_village/medieval_house_03_TreeLogEdgeWeathered.jpg.import",
+    "bytes": 1114,
+    "sha256": "6b2a7c325dc7abde90ad0ba39005acb5a31cff0e8bdf745db3814506f85e2220",
+    "method": "copy"
+  },
+  {
+    "path": "assets/models/medieval_village/medieval_house_03_WindowBlue1.jpg",
+    "bytes": 272852,
+    "sha256": "4ce8a2ac546132d29c83f49bd34424940b49c5eb54ad2f6ad457714dc61f8ef7",
+    "method": "hardlink_immutable_asset"
+  },
+  {
+    "path": "assets/models/medieval_village/medieval_house_03_WindowBlue1.jpg.import",
+    "bytes": 1088,
+    "sha256": "eff34d3c343ff995fac47321edb2b459233f9d723361dfe91f93cc9920e63646",
+    "method": "copy"
+  },
+  {
+    "path": "assets/models/medieval_village/medieval_house_03_WindowsBlue2.jpg",
+    "bytes": 135995,
+    "sha256": "4f9a2426dd75d59745ff405e69e8bc75f120786be0af329064e05c88f0a2e790",
+    "method": "hardlink_immutable_asset"
+  },
+  {
+    "path": "assets/models/medieval_village/medieval_house_03_WindowsBlue2.jpg.import",
+    "bytes": 1091,
+    "sha256": "2d6a7add5601953b1e9ed6554dda6ab382fe5dd2d705b1d7673e6490929f159c",
+    "method": "copy"
+  },
+  {
+    "path": "assets/models/medieval_village/medieval_house_03_Wood.jpg",
+    "bytes": 512848,
+    "sha256": "8def4262d4a9e6b46aa784261adfe08539b7d62a6349449d50b008f85f42c842",
+    "method": "hardlink_immutable_asset"
+  },
+  {
+    "path": "assets/models/medieval_village/medieval_house_03_Wood.jpg.import",
+    "bytes": 1067,
+    "sha256": "a40b0f2b76609da747e54a8081139002284513b9d9fe09f499dccc1938cb148b",
+    "method": "copy"
+  },
+  {
+    "path": "assets/models/medieval_village/medieval_house_04.glb",
+    "bytes": 4247084,
+    "sha256": "cc060b9e8d3c9f21d0036847ae26396e6bde85e5113360942f8f867786f38a26",
+    "method": "hardlink_immutable_asset"
+  },
+  {
+    "path": "assets/models/medieval_village/medieval_house_04.glb.import",
+    "bytes": 1196,
+    "sha256": "0cae67c45bd50c1104b08c8455204595b1be97053d4571fe3ac62b68ec6ca1d2",
+    "method": "copy"
+  },
+  {
+    "path": "assets/models/medieval_village/medieval_house_04_DoorType1_2.jpg",
+    "bytes": 248592,
+    "sha256": "cf831de534b37567c19638a2f8bf099c6ed3d2edc90e4f9c20aafcdde6beaa0d",
+    "method": "hardlink_immutable_asset"
+  },
+  {
+    "path": "assets/models/medieval_village/medieval_house_04_DoorType1_2.jpg.import",
+    "bytes": 1088,
+    "sha256": "5844358aacafe234a57f906954eafc58ce10e625794a395b28dc5467013a8c1d",
+    "method": "copy"
+  },
+  {
+    "path": "assets/models/medieval_village/medieval_house_04_GreyBricks.jpg",
+    "bytes": 582830,
+    "sha256": "101844a3101ad3b885f4849328b0f622d2a745b4acbb2aedc9d6c5df3634b863",
+    "method": "hardlink_immutable_asset"
+  },
+  {
+    "path": "assets/models/medieval_village/medieval_house_04_GreyBricks.jpg.import",
+    "bytes": 1085,
+    "sha256": "382a2adf42aecb00a7341700b0b136d092113d9b5a22466ff2c48f68a8d7834c",
+    "method": "copy"
+  },
+  {
+    "path": "assets/models/medieval_village/medieval_house_04_GreyBricks2.jpg",
+    "bytes": 289485,
+    "sha256": "95689677a381bdbb0d50c6aec1d6f32a1bcd060faacbedb4b2a7bdc8e6e4ca2f",
+    "method": "hardlink_immutable_asset"
+  },
+  {
+    "path": "assets/models/medieval_village/medieval_house_04_GreyBricks2.jpg.import",
+    "bytes": 1088,
+    "sha256": "3067f21394a5391fbddc6249f552c088699ef6d0da1de9c22b142f93bf997215",
+    "method": "copy"
+  },
+  {
+    "path": "assets/models/medieval_village/medieval_house_04_GreyStone2.jpg",
+    "bytes": 21267,
+    "sha256": "b083e4e985829acd38c3dee98bfd1f71bae8ce997d605b00a4c880aff680802d",
+    "method": "hardlink_immutable_asset"
+  },
+  {
+    "path": "assets/models/medieval_village/medieval_house_04_GreyStone2.jpg.import",
+    "bytes": 1084,
+    "sha256": "8877653cded08ab5ceb144b62b69380ca86676a5e733f9a0e28240e7ce421f1d",
+    "method": "copy"
+  },
+  {
+    "path": "assets/models/medieval_village/medieval_house_04_PlasterLarge.jpg",
+    "bytes": 793902,
+    "sha256": "e66dba35cb0d00605288a74011408b1335c0acdde2b55c9378fd89535b218860",
+    "method": "hardlink_immutable_asset"
+  },
+  {
+    "path": "assets/models/medieval_village/medieval_house_04_PlasterLarge.jpg.import",
+    "bytes": 1091,
+    "sha256": "b6c258df7f693ca6d55e230b37d8f986def003bee624df891d1a4b70d7a1f794",
+    "method": "copy"
+  },
+  {
+    "path": "assets/models/medieval_village/medieval_house_04_RoofTiles.jpg",
+    "bytes": 194812,
+    "sha256": "df73a93cc468528c36c4e0c39b706575e5aab6077dc5d829e5948284c3c67fc8",
+    "method": "hardlink_immutable_asset"
+  },
+  {
+    "path": "assets/models/medieval_village/medieval_house_04_RoofTiles.jpg.import",
+    "bytes": 1082,
+    "sha256": "f59f497a16b120e0bfe390a2c32088213b31476fd0c8f804b3cabff643813e9a",
+    "method": "copy"
+  },
+  {
+    "path": "assets/models/medieval_village/medieval_house_04_Rusted Metal.jpg",
+    "bytes": 298722,
+    "sha256": "63a6a0bd18f8bd8c01ba18efe83a15baf18ce75cabf9f441b85cad11054118ac",
+    "method": "hardlink_immutable_asset"
+  },
+  {
+    "path": "assets/models/medieval_village/medieval_house_04_Rusted Metal.jpg.import",
+    "bytes": 1091,
+    "sha256": "34e01a10db95bac455510bd265dce9a76d4b7d9a08a2dd67d1977d23d23e206a",
+    "method": "copy"
+  },
+  {
+    "path": "assets/models/medieval_village/medieval_house_04_Stone.jpg",
+    "bytes": 127606,
+    "sha256": "8a54c76c44fa77849db7492ad99976a6caffe08238225fba9a9d1eb2556ac5f9",
+    "method": "hardlink_immutable_asset"
+  },
+  {
+    "path": "assets/models/medieval_village/medieval_house_04_Stone.jpg.import",
+    "bytes": 1070,
+    "sha256": "192b788b28bccab5a6b06ae074a369b491341ff290377abe7f4b09255627e5ed",
+    "method": "copy"
+  },
+  {
+    "path": "assets/models/medieval_village/medieval_house_04_TreeLogEdgeWeathered.jpg",
+    "bytes": 260268,
+    "sha256": "b68f0516d81a570e927675398c9bcb04490509d8dff8fc725581b0d028689480",
+    "method": "hardlink_immutable_asset"
+  },
+  {
+    "path": "assets/models/medieval_village/medieval_house_04_TreeLogEdgeWeathered.jpg.import",
+    "bytes": 1115,
+    "sha256": "58d6cdd7fc740f74c754f8b050d62bd324c402e0fc3677402fb5b1d5a1a08e89",
+    "method": "copy"
+  },
+  {
+    "path": "assets/models/medieval_village/medieval_house_04_WindowBlue1.jpg",
+    "bytes": 272852,
+    "sha256": "4ce8a2ac546132d29c83f49bd34424940b49c5eb54ad2f6ad457714dc61f8ef7",
+    "method": "hardlink_immutable_asset"
+  },
+  {
+    "path": "assets/models/medieval_village/medieval_house_04_WindowBlue1.jpg.import",
+    "bytes": 1088,
+    "sha256": "b68199214c924e033c648677982bdd41a93b3491dfc9470c179516c5fae3964d",
+    "method": "copy"
+  },
+  {
+    "path": "assets/models/medieval_village/medieval_house_04_WindowsBlue2.jpg",
+    "bytes": 135995,
+    "sha256": "4f9a2426dd75d59745ff405e69e8bc75f120786be0af329064e05c88f0a2e790",
+    "method": "hardlink_immutable_asset"
+  },
+  {
+    "path": "assets/models/medieval_village/medieval_house_04_WindowsBlue2.jpg.import",
+    "bytes": 1091,
+    "sha256": "f7fdbc67b662a6095214985b8cdae628e25ff752df70d3fa14bc39a45264932a",
+    "method": "copy"
+  },
+  {
+    "path": "assets/models/medieval_village/medieval_house_04_Wood.jpg",
+    "bytes": 512848,
+    "sha256": "8def4262d4a9e6b46aa784261adfe08539b7d62a6349449d50b008f85f42c842",
+    "method": "hardlink_immutable_asset"
+  },
+  {
+    "path": "assets/models/medieval_village/medieval_house_04_Wood.jpg.import",
+    "bytes": 1066,
+    "sha256": "9d99086a7b2f20f2f23975444d39a3740d87642c3377d08860dd6da20fabfbc2",
+    "method": "copy"
+  },
+  {
+    "path": "assets/models/modular_fort_01/modular_fort_01.bin",
+    "bytes": 1288144,
+    "sha256": "de86e71af4cd5b37006914a8e7ae7de59b245b73364317f1886285a6aa797f57",
+    "method": "hardlink_immutable_asset"
+  },
+  {
+    "path": "assets/models/modular_fort_01/modular_fort_01_1k.gltf",
+    "bytes": 71433,
+    "sha256": "829ac97d4c5c5672d3055d772e0ef4b545ad93cb4b639296f34e3ddf04cf9faf",
+    "method": "copy"
+  },
+  {
+    "path": "assets/models/modular_fort_01/modular_fort_01_1k.gltf.import",
+    "bytes": 1201,
+    "sha256": "198caea543179d6211bcb8cde35531585e02de6dd1aff27774dfb8f56f0ee2b7",
+    "method": "copy"
+  },
+  {
+    "path": "assets/models/modular_fort_01/textures/modular_fort_01_plaster_arm_1k.jpg",
+    "bytes": 872242,
+    "sha256": "d51902ce06084dd828cf82d60fcbc733160cc27ada41d5e57b38bafbe5d12327",
+    "method": "hardlink_immutable_asset"
+  },
+  {
+    "path": "assets/models/modular_fort_01/textures/modular_fort_01_plaster_arm_1k.jpg.import",
+    "bytes": 1033,
+    "sha256": "223b56e00a05aba12da2be8b86c70f9e03ee7325b088fe26cfb3d3bf13fca4af",
+    "method": "copy"
+  },
+  {
+    "path": "assets/models/modular_fort_01/textures/modular_fort_01_plaster_diff_1k.jpg",
+    "bytes": 995332,
+    "sha256": "d453b45cec06da3da9e67b38d016f6358c7c310a99db9b066e07e3a494731f4d",
+    "method": "hardlink_immutable_asset"
+  },
+  {
+    "path": "assets/models/modular_fort_01/textures/modular_fort_01_plaster_diff_1k.jpg.import",
+    "bytes": 1036,
+    "sha256": "85fcb37d7a536cbb5883bede00dab9d48cb66817b7a23045d815a5907c09f12c",
+    "method": "copy"
+  },
+  {
+    "path": "assets/models/modular_fort_01/textures/modular_fort_01_plaster_nor_gl_1k.jpg",
+    "bytes": 1478355,
+    "sha256": "567953f0b7da39f6d4f173cc98ff948d31e07b516c8d2e0e0b0ec69de35cab3e",
+    "method": "hardlink_immutable_asset"
+  },
+  {
+    "path": "assets/models/modular_fort_01/textures/modular_fort_01_plaster_nor_gl_1k.jpg.import",
+    "bytes": 1042,
+    "sha256": "5c9ad42effab05eef59a526a87f3fe8018d2df1c14af8c2681f713a1fcee9e3b",
+    "method": "copy"
+  },
+  {
+    "path": "assets/models/modular_fort_01/textures/modular_fort_01_trim_arm_1k.jpg",
+    "bytes": 807245,
+    "sha256": "d6a9e67be3f171857bb06af436ebaefedd1fd3ca4e1212c8ad42be7ef6038c91",
+    "method": "hardlink_immutable_asset"
+  },
+  {
+    "path": "assets/models/modular_fort_01/textures/modular_fort_01_trim_arm_1k.jpg.import",
+    "bytes": 1024,
+    "sha256": "34aeb546378d6c11bc27bea25feed2d0a9e1fede4e9a43ab3d5aec8e64ddaabf",
+    "method": "copy"
+  },
+  {
+    "path": "assets/models/modular_fort_01/textures/modular_fort_01_trim_diff_1k.jpg",
+    "bytes": 945345,
+    "sha256": "fe5811560cf0471321fe6af08114f279a7f957412b8aa6e2c224112990760556",
+    "method": "hardlink_immutable_asset"
+  },
+  {
+    "path": "assets/models/modular_fort_01/textures/modular_fort_01_trim_diff_1k.jpg.import",
+    "bytes": 1027,
+    "sha256": "e83509acf6ce2f39483cf141cddc02ca1b15d1b63894fceaaf14294d94c0390a",
+    "method": "copy"
+  },
+  {
+    "path": "assets/models/modular_fort_01/textures/modular_fort_01_trim_nor_gl_1k.jpg",
+    "bytes": 1070875,
+    "sha256": "c5a21bd71f1ed0186fedaad18edb74713527a9426f5d136a5b21c3e09a71e1c3",
+    "method": "hardlink_immutable_asset"
+  },
+  {
+    "path": "assets/models/modular_fort_01/textures/modular_fort_01_trim_nor_gl_1k.jpg.import",
+    "bytes": 1033,
+    "sha256": "58235e1fbba91fcf4ca05a576c28d087452c5ef09db554b0bde55d3e96975263",
+    "method": "copy"
+  },
+  {
+    "path": "assets/models/modular_fort_01/textures/modular_fort_01_wall_arm_1k.jpg",
+    "bytes": 936858,
+    "sha256": "6d3327658794a90fc1b52c19dfbb57059b7ea9801f59abd13417e4be7bf40a34",
+    "method": "hardlink_immutable_asset"
+  },
+  {
+    "path": "assets/models/modular_fort_01/textures/modular_fort_01_wall_arm_1k.jpg.import",
+    "bytes": 1024,
+    "sha256": "92be466747f613cff1e2fb57c29c409bbb26665c69e33ae33b7c02de9eaaa796",
+    "method": "copy"
+  },
+  {
+    "path": "assets/models/modular_fort_01/textures/modular_fort_01_wall_diff_1k.jpg",
+    "bytes": 978641,
+    "sha256": "8bdefadca0688e9b3fd91b4d12f341918b0a3670c25537c18a777fa51bb90bea",
+    "method": "hardlink_immutable_asset"
+  },
+  {
+    "path": "assets/models/modular_fort_01/textures/modular_fort_01_wall_diff_1k.jpg.import",
+    "bytes": 1027,
+    "sha256": "7b6c71fec9e064c1810139de2ce4be1dc5b9482cd121135639e84a0f8bc4fb76",
+    "method": "copy"
+  },
+  {
+    "path": "assets/models/modular_fort_01/textures/modular_fort_01_wall_nor_gl_1k.jpg",
+    "bytes": 1194253,
+    "sha256": "6e8b0e1abac9c6ab0f9a36c04300ea3d0ca83dede3b49485c969a71494ce8d53",
+    "method": "hardlink_immutable_asset"
+  },
+  {
+    "path": "assets/models/modular_fort_01/textures/modular_fort_01_wall_nor_gl_1k.jpg.import",
+    "bytes": 1032,
+    "sha256": "6bfaf956c3ee4852b566b17ac9cdf7817a4e9cd8638afd07746e43860f8c4479",
+    "method": "copy"
+  },
+  {
+    "path": "assets/models/qa-report.json",
+    "bytes": 991,
+    "sha256": "771ceedc511e8e680b36adf895768cdb20401c6ae3e09fbc2664403e3da32255",
+    "method": "copy"
+  },
+  {
+    "path": "assets/models/rock_moss_set_02/rock_moss_set_02.bin",
+    "bytes": 1316572,
+    "sha256": "2df9d8eaaca4207529b0f613d4886d3962d0b9ffc0cdfd2bc4bf35dbcd391cb5",
+    "method": "hardlink_immutable_asset"
+  },
+  {
+    "path": "assets/models/rock_moss_set_02/rock_moss_set_02_1k.gltf",
+    "bytes": 11608,
+    "sha256": "c3b992a7622e94f7d8da97a47277a2a5177a513af0312a127ec908d4056c97db",
+    "method": "copy"
+  },
+  {
+    "path": "assets/models/rock_moss_set_02/rock_moss_set_02_1k.gltf.import",
+    "bytes": 1205,
+    "sha256": "61b603a3d0d70da784cde5c0b880c4ccbe12f47d3ae5f3f1d88cf4ce1eaf4057",
+    "method": "copy"
+  },
+  {
+    "path": "assets/models/rock_moss_set_02/textures/rock_moss_set_02_diff_1k.jpg",
+    "bytes": 194307,
+    "sha256": "91dd2cc77d5198b067d77e5bdb3fa8ee7b8950aeff5aec2c1ccaddb76dcca481",
+    "method": "hardlink_immutable_asset"
+  },
+  {
+    "path": "assets/models/rock_moss_set_02/textures/rock_moss_set_02_diff_1k.jpg.import",
+    "bytes": 1016,
+    "sha256": "d021f420b25cd706c6377826ac214c53bb0129b97e53fe1ad9822661a5698380",
+    "method": "copy"
+  },
+  {
+    "path": "assets/models/rock_moss_set_02/textures/rock_moss_set_02_nor_gl_1k.jpg",
+    "bytes": 273527,
+    "sha256": "dd2503789089fb72ef469efd14364d393e769c0de8781a251475cac7e0b6f51d",
+    "method": "hardlink_immutable_asset"
+  },
+  {
+    "path": "assets/models/rock_moss_set_02/textures/rock_moss_set_02_nor_gl_1k.jpg.import",
+    "bytes": 1021,
+    "sha256": "256ff894312706d8c7f8a607277ca58c4cbe2f02b51fd4d3a08bc63f153349dc",
+    "method": "copy"
+  },
+  {
+    "path": "assets/models/rock_moss_set_02/textures/rock_moss_set_02_rough_1k.jpg",
+    "bytes": 146226,
+    "sha256": "12252219a98a560940359973e83af831abdcfab0ead3f0a2a7b135a0143105f1",
+    "method": "hardlink_immutable_asset"
+  },
+  {
+    "path": "assets/models/rock_moss_set_02/textures/rock_moss_set_02_rough_1k.jpg.import",
+    "bytes": 1019,
+    "sha256": "19062757bd4dbd52ba5cfd9c3761e14eaf2dff84e0c8d085c1b16357b6ff412b",
+    "method": "copy"
+  },
+  {
+    "path": "assets/models/treasure_chest/textures/treasure_chest_arm_1k.jpg",
+    "bytes": 958484,
+    "sha256": "1f09896cfad5b2f80483ab440b732fb03e94a67c3b09eee4c864af7ad2c6cc12",
+    "method": "hardlink_immutable_asset"
+  },
+  {
+    "path": "assets/models/treasure_chest/textures/treasure_chest_arm_1k.jpg.import",
+    "bytes": 1005,
+    "sha256": "d1ac7608bdb1bae64c06d73baeef828e61c3bdb8bce02cf425ed984ef1dc4dc4",
+    "method": "copy"
+  },
+  {
+    "path": "assets/models/treasure_chest/textures/treasure_chest_diff_1k.jpg",
+    "bytes": 812089,
+    "sha256": "4a2ee3b53835e7d4a3e411863c7829f37df1221aeb1cd78d89e24239cf8bbd0b",
+    "method": "hardlink_immutable_asset"
+  },
+  {
+    "path": "assets/models/treasure_chest/textures/treasure_chest_diff_1k.jpg.import",
+    "bytes": 1008,
+    "sha256": "fba20696f598d7f6a21fc0a269931dbf547ab272a973537276408abdf9f844e9",
+    "method": "copy"
+  },
+  {
+    "path": "assets/models/treasure_chest/textures/treasure_chest_nor_gl_1k.jpg",
+    "bytes": 893221,
+    "sha256": "c86a694f7d40e46dfdd0293a5a9bae32061a8476132bbd679b63404cc1795b68",
+    "method": "hardlink_immutable_asset"
+  },
+  {
+    "path": "assets/models/treasure_chest/textures/treasure_chest_nor_gl_1k.jpg.import",
+    "bytes": 1013,
+    "sha256": "d5097eb82f62e7b5a33f6c53901c606ffdb5752cfd2abb2dc5892584cbabb91e",
+    "method": "copy"
+  },
+  {
+    "path": "assets/models/treasure_chest/treasure_chest.bin",
+    "bytes": 2811372,
+    "sha256": "6e8fd5b5c641c3535bf26767fc7b0e7295c314d43613726da9679ee8cffecb03",
+    "method": "hardlink_immutable_asset"
+  },
+  {
+    "path": "assets/models/treasure_chest/treasure_chest_1k.gltf",
+    "bytes": 8584,
+    "sha256": "5edb8df3a45d2709b9407102ba4dd63025adff401ed8eba939d0117a74dd8dd5",
+    "method": "copy"
+  },
+  {
+    "path": "assets/models/treasure_chest/treasure_chest_1k.gltf.import",
+    "bytes": 1198,
+    "sha256": "fbe8201da154d887e027e12f7849b4e95c4969f7d9ee52b09a0b6292a2d0ad81",
+    "method": "copy"
+  },
+  {
+    "path": "assets/models/treasure_chest/treasure_chest_lod.glb",
+    "bytes": 3071044,
+    "sha256": "26f0c9a479f319cea62807cf3d08f99407818f2f86df3a5002f31d84c7419427",
+    "method": "hardlink_immutable_asset"
+  },
+  {
+    "path": "assets/models/treasure_chest/treasure_chest_lod.glb.import",
+    "bytes": 1198,
+    "sha256": "52deee29122a293040c74f3a75166a80f0e57f01cd78004d62c3019b94354adb",
+    "method": "copy"
+  },
+  {
+    "path": "assets/models/treasure_chest/treasure_chest_lod_treasure_chest_diff.jpg",
+    "bytes": 812089,
+    "sha256": "4a2ee3b53835e7d4a3e411863c7829f37df1221aeb1cd78d89e24239cf8bbd0b",
+    "method": "hardlink_immutable_asset"
+  },
+  {
+    "path": "assets/models/treasure_chest/treasure_chest_lod_treasure_chest_diff.jpg.import",
+    "bytes": 1113,
+    "sha256": "c0a4f6fcdd195cc71cc39115d63a56cd2d81229db9bb3fbd4749397d0b7be4ae",
+    "method": "copy"
+  },
+  {
+    "path": "assets/models/treasure_chest/treasure_chest_lod_treasure_chest_metal-treasure_chest_rough.jpg",
+    "bytes": 958484,
+    "sha256": "1f09896cfad5b2f80483ab440b732fb03e94a67c3b09eee4c864af7ad2c6cc12",
+    "method": "hardlink_immutable_asset"
+  },
+  {
+    "path": "assets/models/treasure_chest/treasure_chest_lod_treasure_chest_metal-treasure_chest_rough.jpg.import",
+    "bytes": 1179,
+    "sha256": "5cfeb0fdc37ccf078d4c7ca0d5cab9425102c90e1be4589aa0d462f6b113a077",
+    "method": "copy"
+  },
+  {
+    "path": "assets/models/treasure_chest/treasure_chest_lod_treasure_chest_nor_gl.jpg",
+    "bytes": 893221,
+    "sha256": "c86a694f7d40e46dfdd0293a5a9bae32061a8476132bbd679b63404cc1795b68",
+    "method": "hardlink_immutable_asset"
+  },
+  {
+    "path": "assets/models/treasure_chest/treasure_chest_lod_treasure_chest_nor_gl.jpg.import",
+    "bytes": 1118,
+    "sha256": "afb4986c1996290974eb711040aed33256a06d5064860d7a6a8e9ac64d172d09",
+    "method": "copy"
+  },
+  {
+    "path": "assets/models/werewolf/werewolf.dae",
+    "bytes": 1629945,
+    "sha256": "720efc21eac734e821d2341eef436a72de08cec1ae1dcc3de0adedf2490f42df",
+    "method": "copy"
+  },
+  {
+    "path": "assets/models/werewolf/werewolf.dae.import",
+    "bytes": 1085,
+    "sha256": "941ee288258ab9c4ed3a098b4e21289f514ae7d6acd30fde380dba56c7ea7e57",
+    "method": "copy"
+  },
+  {
+    "path": "assets/models/werewolf/werewolf.glb",
+    "bytes": 3019236,
+    "sha256": "32630fff2a2bc4cc47bf6096ed0e51d1f60ea5ce2f4c3066cff6889afe9a576e",
+    "method": "hardlink_immutable_asset"
+  },
+  {
+    "path": "assets/models/werewolf/werewolf.glb.import",
+    "bytes": 1162,
+    "sha256": "dc71830c584bee8fd45b31a0677ff0e0173e565abff715e9899d80333b77e5f5",
+    "method": "copy"
+  },
+  {
+    "path": "assets/models/werewolf/werewolf_diffuse.png",
+    "bytes": 2400211,
+    "sha256": "2805572122c5c952a2e49cd46957b131a729839e68c1277dac6b1db856bb567f",
+    "method": "hardlink_immutable_asset"
+  },
+  {
+    "path": "assets/models/werewolf/werewolf_diffuse.png.import",
+    "bytes": 974,
+    "sha256": "16e3e626c9eceface22905f92c397bf01bc6ee72fb06a40d1b7332b127434ec3",
+    "method": "copy"
+  },
+  {
+    "path": "assets/models/werewolf/werewolf_normal.png",
+    "bytes": 363004,
+    "sha256": "cdaa3fbb831366b258653daf13028c7f8c17b43bc8f4b37e7521b8e521c36910",
+    "method": "hardlink_immutable_asset"
+  },
+  {
+    "path": "assets/models/werewolf/werewolf_normal.png.import",
+    "bytes": 972,
+    "sha256": "a8dc200281ddd7ff4c9fe8adbd5fbe2630e3e13a187c6e339894b1e0fb0e357f",
+    "method": "copy"
+  },
+  {
+    "path": "assets/models/werewolf/werewolf_werewolf_diffuse.png",
+    "bytes": 2400211,
+    "sha256": "2805572122c5c952a2e49cd46957b131a729839e68c1277dac6b1db856bb567f",
+    "method": "hardlink_immutable_asset"
+  },
+  {
+    "path": "assets/models/werewolf/werewolf_werewolf_diffuse.png.import",
+    "bytes": 1067,
+    "sha256": "ca2871b15655e28f22b2540e84835bca3e9ce248b0943d1c9290cff6dacfafc9",
+    "method": "copy"
+  },
+  {
+    "path": "assets/models/werewolf/werewolf_werewolf_normal.png",
+    "bytes": 363004,
+    "sha256": "cdaa3fbb831366b258653daf13028c7f8c17b43bc8f4b37e7521b8e521c36910",
+    "method": "hardlink_immutable_asset"
+  },
+  {
+    "path": "assets/models/werewolf/werewolf_werewolf_normal.png.import",
+    "bytes": 1065,
+    "sha256": "1f68b7553509c9b3004695e247c837e44271448896211bc33372ffa48ae91e23",
+    "method": "copy"
+  },
+  {
+    "path": "assets/models/wine_barrel_01/textures/wine_barrel_01_arm_1k.jpg",
+    "bytes": 172531,
+    "sha256": "be658e1389dbe8669e847b8fc7df8affdce46d6582f01ac701555b6446a40b9d",
+    "method": "hardlink_immutable_asset"
+  },
+  {
+    "path": "assets/models/wine_barrel_01/textures/wine_barrel_01_arm_1k.jpg.import",
+    "bytes": 1005,
+    "sha256": "22592cef5ecc171c3ff05c5b9ade8053a955a9907d56266134deb6462ff90a7f",
+    "method": "copy"
+  },
+  {
+    "path": "assets/models/wine_barrel_01/textures/wine_barrel_01_diff_1k.jpg",
+    "bytes": 195980,
+    "sha256": "6bea25b4fadda0636b6b7e46e0cc15153eda21ef62c823d5ee2e06a5a7589214",
+    "method": "hardlink_immutable_asset"
+  },
+  {
+    "path": "assets/models/wine_barrel_01/textures/wine_barrel_01_diff_1k.jpg.import",
+    "bytes": 1008,
+    "sha256": "9779fd11d6f8f15028a8ec58aa9caef0137a57e13fbe501f5bcfdb1f4cc95a3d",
+    "method": "copy"
+  },
+  {
+    "path": "assets/models/wine_barrel_01/textures/wine_barrel_01_nor_gl_1k.jpg",
+    "bytes": 163587,
+    "sha256": "86cdb0729b44d1687c75d895e6d0ef650f7580d70f3bcb52bce6fedc5fd79b6f",
+    "method": "hardlink_immutable_asset"
+  },
+  {
+    "path": "assets/models/wine_barrel_01/textures/wine_barrel_01_nor_gl_1k.jpg.import",
+    "bytes": 1014,
+    "sha256": "c52eb29a150232aa80d5d734a42b260cf3b16b35d0acb0218dce2117b28a3eae",
+    "method": "copy"
+  },
+  {
+    "path": "assets/models/wine_barrel_01/wine_barrel_01.bin",
+    "bytes": 385912,
+    "sha256": "d827c31afed824b923ea9168462c93ab3ad3a88c4a68b155bd35efb1a02cbf00",
+    "method": "hardlink_immutable_asset"
+  },
+  {
+    "path": "assets/models/wine_barrel_01/wine_barrel_01_1k.gltf",
+    "bytes": 6673,
+    "sha256": "503d3339677217c3241a3cdbc1c803ed1eb82d1a48f51436d1545ec5745ae8d8",
+    "method": "copy"
+  },
+  {
+    "path": "assets/models/wine_barrel_01/wine_barrel_01_1k.gltf.import",
+    "bytes": 1197,
+    "sha256": "f7d2c8476c079c0237f46d37f129a585285c849c6826db282e864351d1befe81",
+    "method": "copy"
+  },
+  {
+    "path": "assets/models/wine_barrel_01/wine_barrel_lod.glb",
+    "bytes": 739544,
+    "sha256": "3681a502acfc9dba5cd75828116951f3a8ad29f8dcedb2eb31b53faa1d1d5fdf",
+    "method": "hardlink_immutable_asset"
+  },
+  {
+    "path": "assets/models/wine_barrel_01/wine_barrel_lod.glb.import",
+    "bytes": 1189,
+    "sha256": "95312ce3b722a57a9f3d7e1da17eb075b2778c5c614539104505807b1efea22f",
+    "method": "copy"
+  },
+  {
+    "path": "assets/models/wine_barrel_01/wine_barrel_lod_wine_barrel_01_diff.jpg",
+    "bytes": 195980,
+    "sha256": "6bea25b4fadda0636b6b7e46e0cc15153eda21ef62c823d5ee2e06a5a7589214",
+    "method": "hardlink_immutable_asset"
+  },
+  {
+    "path": "assets/models/wine_barrel_01/wine_barrel_lod_wine_barrel_01_diff.jpg.import",
+    "bytes": 1103,
+    "sha256": "e5a0af6224238ca9efa4e3384f792536f7f93b43b163ded230ba10684705d0b7",
+    "method": "copy"
+  },
+  {
+    "path": "assets/models/wine_barrel_01/wine_barrel_lod_wine_barrel_01_metal-wine_barrel_01_rough.jpg",
+    "bytes": 172531,
+    "sha256": "be658e1389dbe8669e847b8fc7df8affdce46d6582f01ac701555b6446a40b9d",
+    "method": "hardlink_immutable_asset"
+  },
+  {
+    "path": "assets/models/wine_barrel_01/wine_barrel_lod_wine_barrel_01_metal-wine_barrel_01_rough.jpg.import",
+    "bytes": 1169,
+    "sha256": "bdfcfddb18ccaa45dcca27bfa08214e9b276b90eb885e6cbb078a3b4d7a3b02d",
+    "method": "copy"
+  },
+  {
+    "path": "assets/models/wine_barrel_01/wine_barrel_lod_wine_barrel_01_nor_gl.jpg",
+    "bytes": 163587,
+    "sha256": "86cdb0729b44d1687c75d895e6d0ef650f7580d70f3bcb52bce6fedc5fd79b6f",
+    "method": "hardlink_immutable_asset"
+  },
+  {
+    "path": "assets/models/wine_barrel_01/wine_barrel_lod_wine_barrel_01_nor_gl.jpg.import",
+    "bytes": 1109,
+    "sha256": "66e171db96b48835eb85cfce31bc6dce0a65994ef122837ef404f278cf48a74a",
+    "method": "copy"
+  },
+  {
+    "path": "assets/online/audio/blade.wav",
+    "bytes": 37088,
+    "sha256": "f83702d8e292705358a58886cfd26285d61de172b72fb9d84df633fea74834b5",
+    "method": "hardlink_immutable_asset"
+  },
+  {
+    "path": "assets/online/audio/blade.wav.import",
+    "bytes": 492,
+    "sha256": "c22844dd11b0006e7e20832b4fffb56ab736df3d7b1bf1e231ab4192f4d940c0",
+    "method": "copy"
+  },
+  {
+    "path": "assets/online/audio/briar_air.wav",
+    "bytes": 2116844,
+    "sha256": "f7d4ed103585a26cb5825f4e101340d900f45555622af51c29b78c3ca0ca4e03",
+    "method": "hardlink_immutable_asset"
+  },
+  {
+    "path": "assets/online/audio/briar_air.wav.import",
+    "bytes": 504,
+    "sha256": "e7856fc5946abff31996b8723d73003895c34bbd6311e1d3ab56e7b26d5ff418",
+    "method": "copy"
+  },
+  {
+    "path": "assets/online/audio/heal.wav",
+    "bytes": 75012,
+    "sha256": "2f1e2d92ae28c577296fba2fd9cd5582eeecade7bc11107cef0a750aeeba5e40",
+    "method": "hardlink_immutable_asset"
+  },
+  {
+    "path": "assets/online/audio/heal.wav.import",
+    "bytes": 489,
+    "sha256": "7c0e765a33289c04be2db21689c474117743b0a92c333f371793aa869e8c41a8",
+    "method": "copy"
+  },
+  {
+    "path": "assets/online/audio/impact.wav",
+    "bytes": 22092,
+    "sha256": "f38697bb614d996e76828b3dfe8dd9d4b67f33073e2e25229085a33e3fabc31c",
+    "method": "hardlink_immutable_asset"
+  },
+  {
+    "path": "assets/online/audio/impact.wav.import",
+    "bytes": 496,
+    "sha256": "cbff419e9fab1e999492fe753a19e3334719d7db20c9a1d8520842028b76d339",
+    "method": "copy"
+  },
+  {
+    "path": "assets/online/audio/level.wav",
+    "bytes": 194084,
+    "sha256": "2f0990d0c19c4e61704fac650dfd0458ea80ce6b97f1cbcdb693016d0f46e37d",
+    "method": "hardlink_immutable_asset"
+  },
+  {
+    "path": "assets/online/audio/level.wav.import",
+    "bytes": 493,
+    "sha256": "cb9358e43697d1973f421779fd39d8b76a412f6d84c8facf4a53dbefdb6338d3",
+    "method": "copy"
+  },
+  {
+    "path": "assets/online/audio/manifest.json",
+    "bytes": 1736,
+    "sha256": "b06549b93df562ff38caf25f95c182742cee7f8b4d905f91690cd804afa9fc8a",
+    "method": "copy"
+  },
+  {
+    "path": "assets/online/audio/reward.wav",
+    "bytes": 97064,
+    "sha256": "234205af729dc3ee9396ad15a1020d45b77c5c058352462da3234d03b2255516",
+    "method": "hardlink_immutable_asset"
+  },
+  {
+    "path": "assets/online/audio/reward.wav.import",
+    "bytes": 496,
+    "sha256": "ccaf6c5e914e72e4237b16f2f75850edf6051e10a64534abecd28ad4a0b53668",
+    "method": "copy"
+  },
+  {
+    "path": "assets/online/audio/step.wav",
+    "bytes": 30032,
+    "sha256": "1bc5e88aab86107e22ea16b4023925ba96d165a28c72f690a312e34cda10101d",
+    "method": "hardlink_immutable_asset"
+  },
+  {
+    "path": "assets/online/audio/step.wav.import",
+    "bytes": 489,
+    "sha256": "a32de134bd7c5b73d6d3a6b71c2f19a6dd0335e4c8a217a75c5fde259e2fff03",
+    "method": "copy"
+  },
+  {
+    "path": "assets/online/audio/ward.wav",
+    "bytes": 114704,
+    "sha256": "9571e360afbd74ff08d16255b75961417013aca517508c43acf301dd8caf7f6f",
+    "method": "hardlink_immutable_asset"
+  },
+  {
+    "path": "assets/online/audio/ward.wav.import",
+    "bytes": 490,
+    "sha256": "0c52a30d2d93e48b6d12361e935d03f5c230110eef10139beb2a01dedf37b495",
+    "method": "copy"
+  },
+  {
+    "path": "assets/online/audio/watchfire_theme.wav",
+    "bytes": 2822444,
+    "sha256": "c60c775a15296cfe57845937da7ef81ca9297fbc3815a83dc0106cda64bbea8e",
+    "method": "hardlink_immutable_asset"
+  },
+  {
+    "path": "assets/online/audio/watchfire_theme.wav.import",
+    "bytes": 523,
+    "sha256": "87f8224e9e247d2f0ebc728f048d4a85a9c38c4764860e92e5581fa5544d1b4d",
+    "method": "copy"
+  },
+  {
+    "path": "assets/online/icons/PROVENANCE.md",
+    "bytes": 3222,
+    "sha256": "0765d13994cd3e1b85ab7549e08a4648be90bfc2825283fdf46fa4830e4d3c08",
+    "method": "copy"
+  },
+  {
+    "path": "assets/online/icons/abilities.png",
+    "bytes": 2560047,
+    "sha256": "2a9b64f340323ad2a32d200ac8eefa71c7eb37114d2bd139d6bb755e7bc9fd68",
+    "method": "hardlink_immutable_asset"
+  },
+  {
+    "path": "assets/online/icons/abilities.png.import",
+    "bytes": 951,
+    "sha256": "f44a08e9a99355d799887216451d556fc4695905f9d72be530a1d001bb89ae84",
+    "method": "copy"
+  },
+  {
+    "path": "assets/online/terrain/GRAVEL_REVISION.json",
+    "bytes": 1488,
+    "sha256": "2208d11610a94e7904da803ae1636ee35eeba9c9c0cb58fe8c31e3eadd3aee8b",
+    "method": "copy"
+  },
+  {
+    "path": "assets/online/terrain/PROVENANCE.json",
+    "bytes": 7362,
+    "sha256": "0f9439fe91125a9fece4457b08005cf28d67d7fdbe1a68401405e187b9236c5d",
+    "method": "copy"
+  },
+  {
+    "path": "assets/online/terrain/README.md",
+    "bytes": 2142,
+    "sha256": "5ff276d020a33767f3557721a5163c2dd7bf5ab9b5b8f609dbe6f86c8700b417",
+    "method": "copy"
+  },
+  {
+    "path": "assets/online/terrain/cracked_stone_albedo.png",
+    "bytes": 4741123,
+    "sha256": "1783ad9e190b37e4a72422f9caa1d5abd0a401738c1bc7f4e2b918c2102b6e65",
+    "method": "hardlink_immutable_asset"
+  },
+  {
+    "path": "assets/online/terrain/cracked_stone_albedo.png.import",
+    "bytes": 986,
+    "sha256": "d9c9333e8b2038c441aa5ac6940050a03059fb83d1fca951c024945fc40d2aaa",
+    "method": "copy"
+  },
+  {
+    "path": "assets/online/terrain/meadow_albedo.png",
+    "bytes": 4741123,
+    "sha256": "fba409f32b6e4f570d4351d418f1bf44251dd5c5495ff9784231e2da62b33ffa",
+    "method": "hardlink_immutable_asset"
+  },
+  {
+    "path": "assets/online/terrain/meadow_albedo.png.import",
+    "bytes": 964,
+    "sha256": "603753831ca49e90652ee4d34ff55946266bf472d33eec1f27f8986b5f181cd3",
+    "method": "copy"
+  },
+  {
+    "path": "assets/online/terrain/packed_dirt_albedo.png",
+    "bytes": 4741123,
+    "sha256": "34cace108d24d8553310f1d9c7488d1fd6b82dbd8d1c83c2c654bd72a288b237",
+    "method": "hardlink_immutable_asset"
+  },
+  {
+    "path": "assets/online/terrain/packed_dirt_albedo.png.import",
+    "bytes": 980,
+    "sha256": "0b2ce397f7eda90c8a9372db5896d4c78a7b718cc3cddca725473b5a52c45345",
+    "method": "copy"
+  },
+  {
+    "path": "assets/online/terrain/pebble_gravel_albedo.png",
+    "bytes": 4427903,
+    "sha256": "726a123c5f86c12c5b74211963bb23c05e7644cf88f0b51ddc30555da6d18062",
+    "method": "hardlink_immutable_asset"
+  },
+  {
+    "path": "assets/online/terrain/pebble_gravel_albedo.png.import",
+    "bytes": 986,
+    "sha256": "11333f6304df2545c22302b17ff0faf7193a8b12d6292e80767a29b014e214eb",
+    "method": "copy"
+  },
+  {
+    "path": "docs/CHARACTER_MATERIALS.md",
+    "bytes": 7852,
+    "sha256": "18e7d7a10376df301716143d656ef5361e6b946369cd9bc6e8d8f62ea6696e02",
+    "method": "copy"
+  },
+  {
+    "path": "docs/RAVEN_HOLLOW_REVIEW.md",
+    "bytes": 2635,
+    "sha256": "00f7d7e9608a7305834e86e68860391602beb3d891f3c909ac0e4d4387b02d62",
+    "method": "copy"
+  },
+  {
+    "path": "docs/online/.gdignore",
+    "bytes": 1,
+    "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "method": "copy"
+  },
+  {
+    "path": "docs/online/DESIGN.md",
+    "bytes": 3924,
+    "sha256": "51964ebe3b9896d2e71766b394fd63fe89bc2843a188d02e0c649cdf7bacd0d3",
+    "method": "copy"
+  },
+  {
+    "path": "docs/online/IMPLEMENTATION_CONTRACT.md",
+    "bytes": 5255,
+    "sha256": "bc696dab139bca33cfb0ebd6651fcecaf1a824e930ee57a9a8de6396a1d43d40",
+    "method": "copy"
+  },
+  {
+    "path": "docs/online/RELEASE_REVIEW.md",
+    "bytes": 10214,
+    "sha256": "5f5cc888511f09bf92aa421b2597d2d26240f0a362fcd2160a5a159d688427c9",
+    "method": "copy"
+  },
+  {
+    "path": "docs/online/screenshots/01-realm-selection.png",
+    "bytes": 1620860,
+    "sha256": "16d53833ef60bc3138548ced51aec5a81813281b08bd6a54405b8455ed908490",
+    "method": "copy"
+  },
+  {
+    "path": "docs/online/screenshots/02-thornwatch-third-person.png",
+    "bytes": 2010802,
+    "sha256": "f3c68d354f27c1b82359d5d3e5c5358307ad41d1a51344d241bbea2854355db2",
+    "method": "copy"
+  },
+  {
+    "path": "docs/online/screenshots/03-character-sheet.png",
+    "bytes": 1230023,
+    "sha256": "7c168b49dc55ae05c0656fe4ca135500a3e16948402a8b2bd3d7d89761d163f1",
+    "method": "copy"
+  },
+  {
+    "path": "docs/online/screenshots/04-quest-dialogue.png",
+    "bytes": 1328857,
+    "sha256": "6abdaf449143cfe78fd5dd1a33ab3be1a48b822944e7692ae1d4caf37a00a744",
+    "method": "copy"
+  },
+  {
+    "path": "docs/online/screenshots/05-iron-vow-cast.png",
+    "bytes": 2005565,
+    "sha256": "3cfdbbedb943b5e7e9e12cb91e68c40d2d7858f96b4dd44be7a387315f77bbd5",
+    "method": "copy"
+  },
+  {
+    "path": "docs/online/screenshots/06-blackbriar-road.png",
+    "bytes": 1796779,
+    "sha256": "03f020947f0cb75e861171c9e1023b799812d1da6a5b8b78bfefa39fd3c55288",
+    "method": "copy"
+  },
+  {
+    "path": "docs/online/screenshots/07-character-small-window.png",
+    "bytes": 692908,
+    "sha256": "0331d5e4dd6c2191c3a7b061b5e5bcd31879061c655c1d689499d66738060e59",
+    "method": "copy"
+  },
+  {
+    "path": "docs/online/verification/acceptance.json",
+    "bytes": 273,
+    "sha256": "8f22dbb67a48e163140fff3afee6aae175461af9172dabe83f9b0758a1df85c2",
+    "method": "copy"
+  },
+  {
+    "path": "docs/online/verification/entry-network.json",
+    "bytes": 842,
+    "sha256": "fdabf1d455c940a7c81c5aec1b143da88f88e75c1300b6decdfe1398737eb2be",
+    "method": "copy"
+  },
+  {
+    "path": "docs/online/verification/native.json",
+    "bytes": 1445,
+    "sha256": "14a16da8e0b2bab0fbc6560318f0f69df56093d7d0108078930a8c33c3bfc5cb",
+    "method": "copy"
+  },
+  {
+    "path": "docs/online/verification/network.json",
+    "bytes": 1148,
+    "sha256": "5383fd6c243c74e300cf67d76c0abafd614252c4f2c443533c34850e1db76dd4",
+    "method": "copy"
+  },
+  {
+    "path": "docs/online/verification/rules.json",
+    "bytes": 90,
+    "sha256": "da9c47df4e59d077eeec95717dd3eaffb8e4c2d7e4f1ffcf20deb5ea46c41410",
+    "method": "copy"
+  },
+  {
+    "path": "docs/online/verification/shutdown.json",
+    "bytes": 677,
+    "sha256": "620572dc076c0b6dab346988540370ff1e589b033093271f36601e533b9d4e19",
+    "method": "copy"
+  },
+  {
+    "path": "docs/online/verification/source-manifest.json",
+    "bytes": 4065,
+    "sha256": "e47dfdd8cc24b3b89659088a22453e2202a7444cfcc61b80965588e1f373629d",
+    "method": "copy"
+  },
+  {
+    "path": "docs/online/verification/ui.json",
+    "bytes": 991,
+    "sha256": "13d66b8ce399f836d908197523ef1fd5781796a92057ed149995577af7ab5aab",
+    "method": "copy"
+  },
+  {
+    "path": "docs/online/verification/world.json",
+    "bytes": 73,
+    "sha256": "c65b09c0ea3befbeb62587a08b6c96877d85446a11fba136edc21045c55a7724",
+    "method": "copy"
+  },
+  {
+    "path": "export_presets.cfg",
+    "bytes": 1564,
+    "sha256": "6f2edb3c8df1ab555a995d84f214cbefce715e1df853bfa5e3a84e3ece202061",
+    "method": "copy"
+  },
+  {
+    "path": "game/online/avatar.gd",
+    "bytes": 6081,
+    "sha256": "ab99d601f30c56d34d349604d1041eedece61e546363066baadfc36628a625bc",
+    "method": "copy"
+  },
+  {
+    "path": "game/online/avatar.gd.uid",
+    "bytes": 20,
+    "sha256": "64add70232195cd116b0824184305c5239e72e0da0c4489563aa2e2dc1384635",
+    "method": "copy"
+  },
+  {
+    "path": "game/online/catalog.gd",
+    "bytes": 13404,
+    "sha256": "6ef9bae00371e6915bc931e4f8bae54b15ebaad46a2afa3a6fd3e89a3cf667a5",
+    "method": "copy"
+  },
+  {
+    "path": "game/online/catalog.gd.uid",
+    "bytes": 20,
+    "sha256": "1d88d20afb79b061ad53da3f20602fd4a20bb1e90ec32374ff585fb673eb2dfc",
+    "method": "copy"
+  },
+  {
+    "path": "game/online/environment_materials.gd",
+    "bytes": 2598,
+    "sha256": "8a7d30cc03488e76859e52046ad7a84a5592645612b13adcd2c5ae8f77cd0bbf",
+    "method": "copy"
+  },
+  {
+    "path": "game/online/environment_materials.gd.uid",
+    "bytes": 19,
+    "sha256": "c0c11ab2b64e7e318dfba0950e1098c47203fd3807f85510c26210d16c97c57a",
+    "method": "copy"
+  },
+  {
+    "path": "game/online/hud.gd",
+    "bytes": 49323,
+    "sha256": "b0dc821e320cba50baed2fcad0a0b7e689452cdd4c65cb2c640c3182dc01f312",
+    "method": "copy"
+  },
+  {
+    "path": "game/online/hud.gd.uid",
+    "bytes": 20,
+    "sha256": "06a7db6359b26aa89d99bbe699956abe87cdfd623d6d772d9dec3f12b0178831",
+    "method": "copy"
+  },
+  {
+    "path": "game/online/main.gd",
+    "bytes": 15886,
+    "sha256": "83a464c333fac78813fa4bd5cd334a6563d6f6ec7a85c42759d914be875e8251",
+    "method": "copy"
+  },
+  {
+    "path": "game/online/main.gd.uid",
+    "bytes": 20,
+    "sha256": "c9e4ad958c419f52706ff5546e8681a9820b8428139c8d34ce924406a44d015c",
+    "method": "copy"
+  },
+  {
+    "path": "game/online/realm.gd",
+    "bytes": 25529,
+    "sha256": "841a3b7eaafd986bcde8621660fd9bde548dc54ca0b334b19213cc4334ca9d9f",
+    "method": "copy"
+  },
+  {
+    "path": "game/online/realm.gd.uid",
+    "bytes": 20,
+    "sha256": "6778fff74bba412c0493b4a2a405e46971c6daf5d1a1b459546513ff0d35f9bc",
+    "method": "copy"
+  },
+  {
+    "path": "game/online/scenery.gd",
+    "bytes": 18733,
+    "sha256": "b19044f7df0d9133605740b064abe06ddd9fe77755a6f4767ce99c1917f1a77f",
+    "method": "copy"
+  },
+  {
+    "path": "game/online/scenery.gd.uid",
+    "bytes": 20,
+    "sha256": "3b0a03cb27a2a5fff8f83ac40eb35d2a021811e88556f59a47ed2cbd7a8f77e9",
+    "method": "copy"
+  },
+  {
+    "path": "game/online/session.gd",
+    "bytes": 13238,
+    "sha256": "c9e72478a65a6d3281fa9b6a27db412f5ba3ea637edbaab2ab70d2c0dfe9a9b0",
+    "method": "copy"
+  },
+  {
+    "path": "game/online/session.gd.uid",
+    "bytes": 20,
+    "sha256": "aa32afdcb29bc09c38682779cb7e944174fea03bfdcc68aaeed82f1fb1d14c8e",
+    "method": "copy"
+  },
+  {
+    "path": "game/online/soundscape.gd",
+    "bytes": 2834,
+    "sha256": "ac4d3a4f1dd195ed09a00ddac7d810f28983d326e81fc5cfe0c7cdf64fa514d6",
+    "method": "copy"
+  },
+  {
+    "path": "game/online/soundscape.gd.uid",
+    "bytes": 20,
+    "sha256": "15ba4b24c3e2f550aaf023b6172506aeb4c8a78d82b328aa5bacee55e452b78c",
+    "method": "copy"
+  },
+  {
+    "path": "game/online/terrain_blend.gdshader",
+    "bytes": 3157,
+    "sha256": "bea876287d5b2e27dc7b12c8d64e4e99a6c3d960a7a9a56ecf547942071f20f9",
+    "method": "copy"
+  },
+  {
+    "path": "game/online/terrain_blend.gdshader.uid",
+    "bytes": 20,
+    "sha256": "ead2c3185624d8bedb7ab7a13f51434baeb1d524209edf87227a01e1a0c7ec71",
+    "method": "copy"
+  },
+  {
+    "path": "game/online/ui_frame.gd",
+    "bytes": 3528,
+    "sha256": "3d0b0c7ceda24f8dc5d30a7462934f6ae3b1989b908e28bc477ce3f4f89afbfa",
+    "method": "copy"
+  },
+  {
+    "path": "game/online/ui_frame.gd.uid",
+    "bytes": 20,
+    "sha256": "8dd90ba716efe723d87d3081149573e89f75b2a8492a28364327f30d353457aa",
+    "method": "copy"
+  },
+  {
+    "path": "game/online/ui_minimap.gd",
+    "bytes": 3923,
+    "sha256": "a220c78c54d52fce7044ad3f0d190f8819bfa346dce331d66888364fc4ae49fe",
+    "method": "copy"
+  },
+  {
+    "path": "game/online/ui_minimap.gd.uid",
+    "bytes": 20,
+    "sha256": "e80aa197a55d5ecc994e869d1db18a995d480f283bc2e4d0dfcec804fcd5187d",
+    "method": "copy"
+  },
+  {
+    "path": "game/online/world.gd",
+    "bytes": 26613,
+    "sha256": "ecae81b8637dfb34eeadc86dd2ac777feefe1c30e048bfc70847d8d18dc4ba17",
+    "method": "copy"
+  },
+  {
+    "path": "game/online/world.gd.uid",
+    "bytes": 18,
+    "sha256": "00f8d285e6fb69d89db68a14c2599d5daa2a4be57b3c11e60f0e5165ca9d8040",
+    "method": "copy"
+  },
+  {
+    "path": "icon.svg",
+    "bytes": 465,
+    "sha256": "732bb2708526897aa322663b15b8128af48c629815f6d24d6a761937c6463c01",
+    "method": "copy"
+  },
+  {
+    "path": "icon.svg.import",
+    "bytes": 1013,
+    "sha256": "00586a3fc08c173aa56440f7e9b48106eec6ffb01273796e53d62c7a750ef37c",
+    "method": "copy"
+  },
+  {
+    "path": "online.tscn",
+    "bytes": 167,
+    "sha256": "3203093e1d239b9316247e8b4addbfdd30d8a704c06ecf14f815233482c0dc79",
+    "method": "copy"
+  },
+  {
+    "path": "project.godot",
+    "bytes": 1136,
+    "sha256": "1bbc09ea865d337db3422dce7cdad166ed035b7a787a9e7ddf98678c0a4afbd1",
+    "method": "copy"
+  },
+  {
+    "path": "tests/online/README.md",
+    "bytes": 6029,
+    "sha256": "26d650fcd23e04f66a923f64ed257d938b9cbec900cb1532c010c0b245e1b1ba",
+    "method": "copy"
+  },
+  {
+    "path": "tests/online/acceptance.gd",
+    "bytes": 7184,
+    "sha256": "6a94d6855cd5bc92090557edbc19650446f294c38ec790f5ad242d4ba8838e43",
+    "method": "copy"
+  },
+  {
+    "path": "tests/online/acceptance.gd.uid",
+    "bytes": 19,
+    "sha256": "4b84fdad869d8170f2ba2e58317d87f22c5549bbe4d99a7a0b6925f3843320b9",
+    "method": "copy"
+  },
+  {
+    "path": "tests/online/entry_network_probe.gd",
+    "bytes": 11901,
+    "sha256": "b45fa68c25797db0fc8068c831a6e3e1f215791c82da63cb0da898a3c6134697",
+    "method": "copy"
+  },
+  {
+    "path": "tests/online/entry_network_probe.gd.uid",
+    "bytes": 20,
+    "sha256": "f474caba76f20ba9c28891135ef1c7da93faa6d94c055f76ff8ba1a92c7af0fb",
+    "method": "copy"
+  },
+  {
+    "path": "tests/online/hud_probe.gd",
+    "bytes": 5260,
+    "sha256": "2ec0cc463b9ec009463a6e13ef6a457b239b4ff4c5b028440a4cc05cd316278d",
+    "method": "copy"
+  },
+  {
+    "path": "tests/online/hud_probe.gd.uid",
+    "bytes": 20,
+    "sha256": "950a4193ee17cf4bf6063909ec39898b3c5ebfa2f9326fc1713894ebc2f000c6",
+    "method": "copy"
+  },
+  {
+    "path": "tests/online/network_worker.gd",
+    "bytes": 9382,
+    "sha256": "ebcc91e906fff236523a38d2606db118d2f24098db38b1ca8bef27bc3c3e7640",
+    "method": "copy"
+  },
+  {
+    "path": "tests/online/network_worker.gd.uid",
+    "bytes": 20,
+    "sha256": "1507b073e66b0974b7213145ab3bf22383eef3b147b660e09cbbf9aa39cf55f0",
+    "method": "copy"
+  },
+  {
+    "path": "tests/online/shutdown_probe.gd",
+    "bytes": 4255,
+    "sha256": "4e5bfcdea66ed02685b57e16f232b0a3fbcaa705b3b1742a1298a7f88b5568a1",
+    "method": "copy"
+  },
+  {
+    "path": "tests/online/shutdown_probe.gd.uid",
+    "bytes": 20,
+    "sha256": "56da43b0a9a25d736c118a6e3066417c775e8a3990fe9c0b3cebb86c27ba6920",
+    "method": "copy"
+  },
+  {
+    "path": "tests/online/test_realm.gd",
+    "bytes": 18219,
+    "sha256": "92d2835cacb2e12710367af40073c2f3f014838acc3927b10d6518e3e2feb094",
+    "method": "copy"
+  },
+  {
+    "path": "tests/online/test_realm.gd.uid",
+    "bytes": 19,
+    "sha256": "14ac172289a519ee65d6176603ad0180fc25dafb3ddc91fc02371e0f268b9fbc",
+    "method": "copy"
+  },
+  {
+    "path": "tests/online/world_probe.gd",
+    "bytes": 1373,
+    "sha256": "de2d3d5eda78ac1ee2520748b40a73b96b76292dc08b4e9f91876e831f835a79",
+    "method": "copy"
+  },
+  {
+    "path": "tests/online/world_probe.gd.uid",
+    "bytes": 19,
+    "sha256": "ef7219b640fb7db4fd2e9a86748addf6764abc4f256bcf317d4bb4e6396f0661",
+    "method": "copy"
+  },
+  {
+    "path": "tests/online/world_scene_tests.gd",
+    "bytes": 7504,
+    "sha256": "9c10b1c4325720f0f32004415e6c2eb00699de0cfc5bcffbedc2204fc6905b66",
+    "method": "copy"
+  },
+  {
+    "path": "tests/online/world_scene_tests.gd.uid",
+    "bytes": 20,
+    "sha256": "3f34ea7f03a61f453f594fd2a2eb7dc9a415fb1e17223a57e93aafc876f60d0a",
+    "method": "copy"
+  },
+  {
+    "path": "tools/build_character_pbr.py",
+    "bytes": 18986,
+    "sha256": "29ce2260b30a506af403c1e167c0855b3c65c8e1e1a3605ac0878b2128da4fe5",
+    "method": "copy"
+  },
+  {
+    "path": "tools/build_online_audio.py",
+    "bytes": 4762,
+    "sha256": "25ed83d38cca4099079a0d1b4153f1f2c7d1d821a6ed61a87e4c0f20d22eff5a",
+    "method": "copy"
+  },
+  {
+    "path": "tools/fetch_character_materials.py",
+    "bytes": 3592,
+    "sha256": "01a87e526e697ce58fb43d9f2fe5b6242158ad544b1267935f4318785c318896",
+    "method": "copy"
+  },
+  {
+    "path": "tools/native_export_probe.py",
+    "bytes": 20427,
+    "sha256": "d08acbda249c3efb2d237b799097c87f7b378cfc07cdbf5c4ddeddaedbfe41a1",
+    "method": "copy"
+  },
+  {
+    "path": "tools/run_native_review.py",
+    "bytes": 3902,
+    "sha256": "3e1f4e68dcb9a48b63c2f42ede1a2fee76835cf496b56897da1640d88c6ff7b4",
+    "method": "copy"
+  },
+  {
+    "path": "tools/test_online_entry.py",
+    "bytes": 6767,
+    "sha256": "5152617eef8d322c9b22109f6579d31ed8b681154b887b1987e853f089b3b629",
+    "method": "copy"
+  },
+  {
+    "path": "tools/test_online_network.py",
+    "bytes": 5224,
+    "sha256": "eea855c5c89186ae0ad3524687c0f7903b8d647949950d10100a4e7c6931fbe1",
+    "method": "copy"
+  },
+  {
+    "path": "tools/ui_run_probe.py",
+    "bytes": 4661,
+    "sha256": "15112bad724bef1a548318593645ae10fcaece7ce558dc807cea2a36aa1d5622",
+    "method": "copy"
+  }
+]

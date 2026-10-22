@@ -31,17 +31,16 @@ audio, engine components or other material carrying separate terms.
 
 Downloaded assets retain their original licensing:
 
-* Flare-derived character artwork and its adaptations: CC BY-SA 3.0.
 * Poly Haven models/textures, Yughues forest models, Daniel Andersson
   houses, Paul Wortmann's shack, br-n518's Werewolf model/animations and
   the identified downloaded audio: CC0 1.0 Universal.
 * Cinzel and EB Garamond fonts: SIL Open Font License 1.1.
 
-See ASSET_CREDITS.md, assets/licenses/, assets/animated/source/ provenance
-records and assets/audio/manifest.json for exact attribution, sources,
+See ASSET_CREDITS.md, assets/licenses/, the retained model manifests
+and assets/online/audio/manifest.json for exact attribution, sources,
 modifications and applicable notices. Preserve those credits and licenses
 when redistributing the corresponding assets. The source-code license does
-not override the Flare artwork's attribution and ShareAlike obligations.
+not override any third-party asset or font terms.
 
 Godot Engine is distributed under its own MIT License. Its copyright and
 license notice, and links to third-party component notices, are available

@@ -1,4 +1,0 @@
-Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
-
-RULES_STORAGE {"applicationName":"DraconiaRules-7f00db62138a48f4bfc9c6ccdef50d91-expedition_guidance","userDataDir":"/tmp/draconia-v032-tests/portable-release-gate/expedition_guidance/data/godot/app_userdata/DraconiaRules-7f00db62138a48f4bfc9c6ccdef50d91-expedition_guidance"}
-{"checks":76,"failures":0,"messages":[],"suite":"expedition_guidance"}

@@ -1,147 +1,72 @@
-# Draconia — artwork, model, audio and font credits
+# Draconia — The Blackbriar March: asset credits
 
-Draconia uses downloaded, licensed animated character artwork. These unit
-animations are credited to their original artists. They are not AI-generated
-unit animations and are not assets from Heroes of Might and Magic III or
-Manor Lords. The static landscape and object illustrations are a separate
-asset category created for this project.
+## Current third-person build
 
-## Animated units from Flare
+The active third-person game uses the unchanged Mara hero and Quaternius-derived
+motions, Yughues forest meshes, Daniel Andersson timber houses, the br-n518
+werewolf, and the credited CC0 environment/material library below. Raw model
+files are reused in a newly authored region. Original procedural geometry covers
+terrain/ridges, towers, props, NPC silhouettes, ground cover, UI ornament and VFX.
+NPC and creature art remains development art, not a photorealistic production roster.
 
-Nine character atlases use the original rendered character art and animation
-frames from **Flare: Empyrean Campaign**. The Flare repository states that its
-art and data files are available under **Creative Commons
-Attribution-ShareAlike 3.0**, with later versions permitted. The Draconia
-repacked and composited atlases are distributed under **CC BY-SA 3.0**.
+The old Flare sprite atlases, strategy illustrations, town cards, old card-based
+building models and earlier audio were removed from the active project in this
+reboot. Their previous versions and complete notices remain in Git history.
+The new runtime does not load those assets or the old strategy-game scripts.
 
-- Project: <https://flarerpg.org/>
-- Repository: <https://github.com/flareteam/flare-game>
-- Exact downloaded commit: `af6eee6d339ac98011864bfe89da837fe7769c28`
-- License: <https://creativecommons.org/licenses/by-sa/3.0/>
-- Upstream copyright and license statement: <https://github.com/flareteam/flare-game/blob/af6eee6d339ac98011864bfe89da837fe7769c28/README>
-- Detailed upstream artist attribution: <https://github.com/flareteam/flare-game/wiki/Credits>
+### New painted interface icons
 
-**Credit:** Clint Bellanger, Justin Nichol, and the Flare contributors.
-Contributors retain copyright in their original contributions. Relevant
-additional upstream credits include Jessica “Zeldyn” Cox for character
-concepts, D. Sharon Pruitt for the distressed leather texture used by the
-light armor source, Misha for the skeleton sword concept, and Justin Jacobs
-for subsequent contributions. The complete upstream contributor list and
-detailed per-file credits are bundled in `assets/licenses/` so this summary
-does not replace the original notices.
+`assets/online/icons/abilities.png` contains eight original AI-generated painted
+icons created for this project using the built-in image-generation tool. No
+commercial-game icons or reference-repository artwork was copied. The atlas was
+visually inspected for coherent silhouettes and objects; exact runtime regions
+handle its slightly uneven row boundary. The full prompt, source and hash are
+recorded in `assets/online/icons/PROVENANCE.md`. Generated art has no third-party
+asset-license grant implied by the source-code MIT license.
 
-| Draconia key / label | Downloaded visual source |
-|---|---|
-| `spearman` / Oștean | Male cloth armor, short sword and buckler |
-| `archer` / Arcaș | Male leather armor and longbow |
-| `swordsman` / Străjer | Male chain armor, sword and shield |
-| `knight` / Cavaler | Male plate armor and greatsword; a foot soldier |
-| `mage` / Solomonar | Male mage robes and staff |
-| `griffin` / Iele | Long-haired female in robes, with casting animation and no wings |
-| `skeleton` / Strigoi | Skeleton with sword and shield |
-| `orc` / Spiriduș Blestemat | Goblin |
-| `dragon` / Balaur | Fire wyvern |
+### New synthesized audio
 
-The stable programming keys preserve compatibility with the game's unit
-definitions. The Romanian names in this historical table record the earlier prototype roles; current display naming follows `docs/NAMING_AND_ART_LOCK.md`. In
-particular, the `griffin` filename contains a female figure, not a griffin.
+The nine WAV files in `assets/online/audio/` were synthesized for this project by
+`tools/build_online_audio.py`: wind/birds, a quiet harmonic theme, blade, impact,
+footstep, ward, reward, level and healing cues. No recorded song or commercial
+sound effect was sampled. These original synthesis assets are released under
+CC0-1.0; the generator follows the project's MIT code license. The asset manifest
+records exact hashes and durations. Mixing and broader sound design remain
+production work.
 
-### Changes made to the Flare assets
+### User-supplied environmental photographs
 
-The original source PNGs and animation definitions were downloaded to a
-build cache unchanged. The selected equipment layers were composited in
-the source game's layer order, using their exact per-frame origin offsets.
-One three-quarter source view was selected and horizontally mirrored to
-give a consistent right-facing battle orientation. Existing frames were
-aligned, padded with transparency, and packed into PNG atlases. No anatomy,
-clothing, textures, or animation poses were painted or redesigned. No
-resizing or recoloring was applied to the Flare artwork.
+Four ground photographs supplied by the user on 22 October 2026 form the basis
+of the new surfaces in `assets/online/terrain/`: packed dirt, weathered cracked
+mineral stone, meadow grass/clover, and pebble gravel. The built-in image editor
+prepared square base-color textures with more even illumination and repeatable
+detail. The first gravel candidate was rejected for conspicuous duplicated stone
+clusters; a revised version is used in the game.
 
-Idle, movement, attack, death and hit animations use different actual source
-frames. Four-frame standing cycles are played forward and backward as
-specified upstream. The source animations are classic rendered game art;
-they are not photorealistic contemporary character models.
+`PROVENANCE.json` records each original upload name and hash, output hash, exact
+editing prompt, and dimensions. `GRAVEL_REVISION.json` records the corrective
+prompt. The source photographs were supplied by the user for this project;
+rights remain with their respective owner. Neither those photographs nor their
+derived textures are relicensed as CC0 or MIT by this repository. Only the
+prepared runtime textures are bundled here.
 
-`assets/animated/source/flare-provenance.json` records the exact source URL,
-SHA-256 hash, and byte count for every used source PNG and animation
-definition. The original animation definitions are included under
-`assets/animated/source/flare-config/`. `pack_flare.py` documents the complete
-technical composition and atlas packing process. Source PNGs can be fetched
-at their pinned URLs to reproduce the atlases.
+These are photo-derived color maps, not measured photogrammetry material sets.
+Texture scale and roughness are authored in the renderer; there are no claimed
+measured normal, displacement, or roughness maps from these single photographs.
 
-## Vârcolac: CC0 werewolf by br-n518
+### Fonts and engine
 
-- Artist: **br-n518**
-- Original title: **Werewolf**
-- Original publication: 16 September 2018
-- Source and license declaration: <https://opengameart.org/content/werewolf-0>
-- Download: <https://opengameart.org/sites/default/files/werewolf_godot_export.zip>
-- License: **CC0 1.0 Universal** — <https://creativecommons.org/publicdomain/zero/1.0/>
+Cinzel is retained under SIL Open Font License 1.1, with its notice in
+`assets/CINZEL-OFL.txt` and exact provenance in
+`assets/licenses/CINZEL-PROVENANCE.json`. EB Garamond remains available under its
+bundled OFL notice. Godot supplies its built-in UI font. The game's own Godot and
+component notices are bundled in `assets/licenses/GODOT-*`.
 
-This is the artist's animated 3D werewolf, rendered into a transparent atlas
-for the `wolf` / Vârcolac unit. Its original idle, run, attack, death and walk
-clips are evaluated frame by frame from the COLLADA skeleton. The original
-geometry, diffuse texture and animation poses are preserved. Technical
-conversion consists of normalized skin-weight evaluation, an orthographic
-camera, simple lighting, supersampling and atlas packing. These are real
-articulated animation frames, not a transformed still image.
+## Retained model and material sources
 
-The downloaded model and textures are included under
-`assets/animated/source/werewolf/`. Its acquisition hashes and processing
-notes are in `werewolf-provenance.json`; `render_werewolf.py` reproduces the
-atlas. The artist's source page and CC0 legal text are bundled under
-`assets/licenses/`. Attribution is retained voluntarily even though CC0
-does not require it.
-
-## Optional ambient audio and music
-
-Both background recordings below are distributed under **CC0 1.0
-Universal**. Their original creators are credited voluntarily. These are
-downloaded recordings, separate from any procedurally generated interface
-tones. They are intended for an optional audio control and should begin
-only after the player enables audio.
-
-| Local file | Original recording | Author | Source |
-|---|---|---|---|
-| `assets/audio/forest.ogg` | Bird twitter forest loop | Chris Castiglione (`alienistcog`) | <https://freesound.org/people/alienistcog/sounds/125781/> |
-| `assets/audio/chronicle.ogg` | *Medieval: The Bard's Tale*, loop version | RandomMind | <https://opengameart.org/content/medieval-the-bards-tale> |
-
-The bird loop was obtained unchanged from the pinned Flare source at
-`mods/fantasycore/soundfx/environment/bird_twitter_loop.ogg`. Flare's detailed
-credits explicitly identify this recording, artist and CC0 license:
-<https://github.com/flareteam/flare-game/wiki/Credits>. It is a 9.36-second
-stereo loop, renamed `forest.ogg` for Draconia.
-
-The medieval instrumental is the composer's original 57.73-second looping
-WAV, downloaded from
-<https://opengameart.org/sites/default/files/Loop_The_Bards_Tale.wav>.
-It was transcoded to Ogg Vorbis quality 5 for a smaller download. Its
-composition, timing and loop boundaries were not edited. The original
-source page states CC0 and identifies the medieval, peaceful instrumental
-character of the track. This recording is by RandomMind; its title is not
-an attribution to a commercial game's soundtrack.
-
-`assets/audio/manifest.json` records exact source URLs, original and output
-hashes, durations, encoding, suggested quiet playback levels and
-`autoplay: false`. A copy of the composer's source and license page is
-`assets/licenses/BARDS-TALE-SOURCE-PAGE.html`; the CC0 legal text is bundled
-as `assets/licenses/CC0-1.0.txt`.
-
-## Cinzel display font
-
-**Cinzel** by **Natanael Gama and the Cinzel Project Authors**, downloaded
-from the official Google Fonts repository:
-<https://github.com/google/fonts/tree/main/ofl/cinzel>.
-
-The font is distributed unchanged under the **SIL Open Font License 1.1**.
-The original notice is `assets/CINZEL-OFL.txt`; its source URL and SHA-256
-are recorded in `assets/licenses/CINZEL-PROVENANCE.json`.
-
-## Native 3D environment models and PBR materials
-
-The native 3D environment uses downloaded, reuse-licensed meshes and textures.
-These are separate from the generated landscape and manuscript illustrations in
-`assets/generated/`. No 3D model below comes from Heroes III or Manor Lords.
+The source/evidence staging paths mentioned below are historical authoring paths,
+not required runtime downloads. The current repository bundles each runtime model
+and its texture dependencies. It does not require Blender or MPFB to run.
 
 ### Poly Haven — CC0 1.0 Universal
 
@@ -224,8 +149,8 @@ the author's preview was not copied.
 
 ### Live skinned Vârcolac model — br-n518, CC0
 
-In addition to the previously documented sprite atlas, the game can use
-`assets/models/werewolf/werewolf.glb`, converted from the same **br-n518**
+The active third-person game uses `assets/models/werewolf/werewolf.glb`,
+converted from **br-n518**'s
 werewolf's original Blender source:
 <https://opengameart.org/sites/default/files/werewolf_source.7z>.
 The source and CC0 declaration remain
@@ -385,122 +310,5 @@ qualified review are documented in `docs/CHARACTER_MATERIALS.md`. These are
 surface improvements to one development hero and two fitted items, not
 completed photorealistic character or armor rosters.
 
-### Historical sprite atlas verification
 
-`assets/animated/animations.json` is the runtime manifest. Image paths are
-relative to the project root and can be prefixed with `res://` in Godot.
-Frame rectangles and anchors use pixels; frame durations use milliseconds.
-Each unit supplies `contentBounds`, `displayHeight`, and `drawScale` so
-transparent atlas padding does not make the visible figure too small.
-
-All ten atlases were decoded, their hashes checked, frame rectangles checked
-against their sheet bounds, and the images inspected. Distinct frame hashes
-confirm that the advertised animation states contain changing artwork.
-The machine-readable report is `assets/animated/source/qa-report.json`.
-
-Retain this credit file and the applicable licenses when redistributing the
-downloaded or adapted artwork. The CC BY-SA requirement applies to the Flare
-artwork and its adaptations; this notice does not assign that license to
-unrelated code or independently created illustrations.
-
-## Current buildings reconstructed from the original painted cards
-
-The original Draconia manuscript atlas at
-`assets/ui/manuscript/buildings.png` is the visual authority for these eight
-buildings. Its SHA-256 remains
-`f1b2e11a4e82ae1aa84818acbed8653dee4303fa33c93ec10483662145e451be`.
-The construction interface displays the unchanged paintings. Blender models
-are reconstructed to match their architecture, roofs, entrances, heraldry and
-props; a rendered model never replaces the reference card.
-
-The independent construction modules are under
-`assets/models/source/towns/card_reconstruction/`, with packed editable scenes,
-embedded GLBs and individual source/material manifests in
-`assets/staging/card-reconstruction/`. These are original project geometry
-and local mechanisms, using the retained licensed PBR sources credited below.
-Source export, technical checks, development integration and final artistic
-acceptance are separate states recorded in the reconstruction evidence.
-The reviewed current GLBs are installed under
-`assets/models/towns/ashen_crown/`; that directory's schema-4 manifest binds
-each installed file to its individual source and review. Across the complete
-eight-building set they contain 408,644 triangles and 127,694,128 bytes of
-embedded image/model data. This is development integration, with remaining
-art refinements recorded in `docs/BUILDING_RECONSTRUCTION_REVIEW.md`.
-
-The cloth uses the documented neutral-yarn derivative retained with Mara's
-source. The Granary additionally uses a building-specific sack-linen bake,
-created by `prepare_sack_linen.py` from the unchanged Rough Linen photograph.
-Its preparation/pixel reports, original source hash and bake hash are retained
-under the reconstruction source's `prepared/` directory. Material color
-factors tint these derivatives. Original normal/ARM maps remain in use. None
-of the building paintings is projected onto geometry, and the original
-photographs and existing character bake are unchanged.
-
-## Historical Ashen Crown civic models constructed in Blender
-
-The previous eight-model set installed under `assets/models/towns/ashen_crown/`
-before the card reconstruction consists of original
-Draconia project geometry and local mechanisms constructed and exported in
-**Blender 4.5.14 LTS**: Granary, Training Yard (`barracks`), Market, Smithy,
-secular Oath Hall (`shrine`), Palisade, Wharf and Water Gate. Their individual
-roof tiles, planks, timber framing, stone courses, doors, access stairs and
-props are actual 3D geometry. No downloaded building model or proprietary
-game artwork is incorporated into these eight assets.
-
-Their major surfaces now use downloaded **CC0-1.0** PBR maps from the
-original creators: **Rough Wood** and **Sandstone Cracks** by Rob Tuytel,
-**Clay Roof Tiles 02** and **Clay Plaster** by Amal Kumar, **Rough Linen**
-with photography by colormass and processing by Rico Cilliers, and
-**Brown Leather** by Rob Tuytel, all from **Poly Haven**; plus **Metal012**
-by Lennart Demes / **ambientCG**. Exact asset links, channel URLs, hashes,
-physical UV scales and technical adaptations are retained in
-`assets/licenses/BUILDING-PBR-NOTICES.md` and
-`assets/models/source/towns/pbr-sources/manifest.json` with its metal and
-technical-derivative manifests. The full CC0 text is bundled. Original map
-pixels are unchanged except the documented resolution/channel conversion
-for small iron normal and packed roughness/metal maps. Material tints and
-normal strengths are preserved in the actual GLB exports.
-
-The user-supplied town reference provided a composition/quality brief.
-The original project building atlas supplied the architectural reference.
-Neither was projected as a texture onto the models. The later approach of
-replacing those paintings with native model renders was explicitly rejected
-on 22 October 2026. Its model/render identity evidence is retained as history;
-it does not govern the current interface or establish a match to the cards.
-
-Each model contains authored `hover` and `RESET` animations. The three-second
-showcase moves local doors, banners, awning cloth, scales, bellows or hoists
-as appropriate; it does not move the whole architecture. Time zero and the
-three-second endpoint share the rest pose, including morph weights. This
-is authored showcase motion, not worker AI or an economic production cycle.
-
-The packed editable source is
-`assets/models/source/towns/ashen_crown/ashen_crown_master.blend`; its
-construction/export script is
-`assets/models/source/towns/build_ashen_crown.py`. The ignored authoring tree
-retains the original downloaded maps/API metadata, scripts, packed master,
-source audits, native renders and earlier static/animation-only checkpoints.
-The previous runtime manifest, preserved with the prior-runtime-installation
-archive, records exact source/export hashes, rest and evaluated motion bounds,
-material settings and triangle counts. Those previous eight GLBs contain
-**113,860 triangles and 77,551,936 bytes** of locally embedded image/model data.
-
-The final batch passed bounded Blender/source and independent native Godot
-review of materials, moving mechanisms, rest restoration and targeted
-clearances. A Wharf support cap was lowered to resolve a misleading native
-silhouette; the bridge's separated plank joints require 4× MSAA to avoid
-small-scale edge aliasing. Faceted fruit/sacks, timber end sections, stone
-wear, LODs, target-GPU performance, working population, upgrade variants and
-the other eight capital sets remain production work. The original source
-scripts follow the project's code license; the downloaded textures retain
-CC0 and their source notices. This statement does not relabel other art.
-
-## Original synthesized spell cues
-
-The 18 short WAV cues in `assets/audio/spells/` were synthesized locally for
-Draconia by `tools/build_spell_audio.py`. They contain no downloaded sound
-recording or sampled commercial-game audio. These original sound assets are
-released under **CC0-1.0**; the synthesis script follows the project's **MIT**
-code license. `assets/audio/spells/manifest.json` records the cue definitions,
-output hashes and scope. Their presence does not certify final mixing,
-accessibility or every gameplay sound event.
+Retain these credits and the applicable source notices when redistributing the assets.

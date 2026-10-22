@@ -1,0 +1,62 @@
+{
+  "source": "Original mathematical synthesis for this project",
+  "generator": "tools/build_online_audio.py",
+  "quality": "development sound design",
+  "sample_rate": 22050,
+  "assets": [
+    {
+      "file": "briar_air.wav",
+      "seconds": 24.0,
+      "loop": true,
+      "sha256": "f7d4ed103585a26cb5825f4e101340d900f45555622af51c29b78c3ca0ca4e03"
+    },
+    {
+      "file": "watchfire_theme.wav",
+      "seconds": 32.0,
+      "loop": true,
+      "sha256": "c60c775a15296cfe57845937da7ef81ca9297fbc3815a83dc0106cda64bbea8e"
+    },
+    {
+      "file": "blade.wav",
+      "seconds": 0.42,
+      "loop": false,
+      "sha256": "f83702d8e292705358a58886cfd26285d61de172b72fb9d84df633fea74834b5"
+    },
+    {
+      "file": "impact.wav",
+      "seconds": 0.24997732426303854,
+      "loop": false,
+      "sha256": "f38697bb614d996e76828b3dfe8dd9d4b67f33073e2e25229085a33e3fabc31c"
+    },
+    {
+      "file": "step.wav",
+      "seconds": 0.34,
+      "loop": false,
+      "sha256": "1bc5e88aab86107e22ea16b4023925ba96d165a28c72f690a312e34cda10101d"
+    },
+    {
+      "file": "ward.wav",
+      "seconds": 1.3,
+      "loop": false,
+      "sha256": "9571e360afbd74ff08d16255b75961417013aca517508c43acf301dd8caf7f6f"
+    },
+    {
+      "file": "reward.wav",
+      "seconds": 1.1,
+      "loop": false,
+      "sha256": "234205af729dc3ee9396ad15a1020d45b77c5c058352462da3234d03b2255516"
+    },
+    {
+      "file": "level.wav",
+      "seconds": 2.2,
+      "loop": false,
+      "sha256": "2f0990d0c19c4e61704fac650dfd0458ea80ce6b97f1cbcdb693016d0f46e37d"
+    },
+    {
+      "file": "heal.wav",
+      "seconds": 0.8499773242630385,
+      "loop": false,
+      "sha256": "2f1e2d92ae28c577296fba2fd9cd5582eeecade7bc11107cef0a750aeeba5e40"
+    }
+  ]
+}

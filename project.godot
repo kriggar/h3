@@ -1,19 +1,20 @@
-; Draconia — Oaths of the Carpathians
+; Draconia — The Blackbriar March, native third-person multiplayer RPG
 config_version=5
 
 [application]
-config/name="Draconia — Oaths of the Carpathians"
-config/version="0.3.2-hunt-regions"
-run/main_scene="res://redesign.tscn"
+config/name="Draconia — The Blackbriar March"
+config/version="0.4.0-third-person"
+run/main_scene="res://online.tscn"
 config/features=PackedStringArray("4.7", "GL Compatibility")
 config/icon="res://icon.svg"
 
 [display]
 window/size/viewport_width=1440
 window/size/viewport_height=900
-window/size/window_width_override=1280
-window/size/window_height_override=800
+window/size/window_width_override=1440
+window/size/window_height_override=900
 window/stretch/mode="canvas_items"
+window/stretch/aspect="expand"
 window/size/min_width=960
 window/size/min_height=640
 
@@ -21,7 +22,10 @@ window/size/min_height=640
 renderer/rendering_method="gl_compatibility"
 renderer/rendering_method.mobile="gl_compatibility"
 textures/default_filters/use_nearest_mipmap_filter=false
-environment/defaults/default_clear_color=Color(0.067,0.075,0.063,1)
+environment/defaults/default_clear_color=Color(0.16,0.23,0.25,1)
+
+[physics]
+common/physics_ticks_per_second=60
 
 [gui]
 theme/default_font_multichannel_signed_distance_field=true

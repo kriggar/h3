@@ -1,0 +1,96 @@
+{
+  "actual_material_bindings": {
+    "BlackbriarPhotoGround": 1,
+    "PhotoReferencedWeatheredMineral": 37
+  },
+  "asset_revision": "Gravel revision SHA256 726a123c5f86c12c5b74211963bb23c05e7644cf88f0b51ddc30555da6d18062",
+  "colliders": 290,
+  "mara_preserved": true,
+  "mara_sha256": "8ada77b97e748814283fbf3f6efe960026674c0bf4ed04776610515c70fac94d",
+  "photo_normal_map": false,
+  "render_method": "gl_compatibility",
+  "screenshots": 6,
+  "stone_normal_enabled": false,
+  "stone_roughness_authored": 0.959999978542328,
+  "terrain_passes": 1,
+  "terrain_samplers_match_expected": {
+    "meadow": true,
+    "packed_dirt": true,
+    "pebble_gravel": true
+  },
+  "textures": [
+    {
+      "authored_scale": true,
+      "height": 1254,
+      "loaded": true,
+      "mipmaps": true,
+      "path": "res://assets/online/terrain/packed_dirt_albedo.png",
+      "role": "Packed soil in road centres and the village square",
+      "sha256": "34cace108d24d8553310f1d9c7488d1fd6b82dbd8d1c83c2c654bd72a288b237",
+      "surface": "packed_dirt",
+      "tile_metres": 1.8,
+      "width": 1254
+    },
+    {
+      "authored_scale": true,
+      "height": 1254,
+      "loaded": true,
+      "mipmaps": true,
+      "path": "res://assets/online/terrain/cracked_stone_albedo.png",
+      "role": "Weathered mineral faces on old ruins, waystones and rubble",
+      "sha256": "1783ad9e190b37e4a72422f9caa1d5abd0a401738c1bc7f4e2b918c2102b6e65",
+      "surface": "cracked_stone",
+      "tile_metres": 1.2,
+      "width": 1254
+    },
+    {
+      "authored_scale": true,
+      "height": 1254,
+      "loaded": true,
+      "mipmaps": true,
+      "path": "res://assets/online/terrain/meadow_albedo.png",
+      "role": "Clover and dry grass on verges and village ground",
+      "sha256": "fba409f32b6e4f570d4351d418f1bf44251dd5c5495ff9784231e2da62b33ffa",
+      "surface": "meadow",
+      "tile_metres": 1.1,
+      "width": 1254
+    },
+    {
+      "authored_scale": true,
+      "height": 1254,
+      "loaded": true,
+      "mipmaps": true,
+      "path": "res://assets/online/terrain/pebble_gravel_albedo.png",
+      "role": "Small aggregate along village footpaths",
+      "sha256": "726a123c5f86c12c5b74211963bb23c05e7644cf88f0b51ddc30555da6d18062",
+      "surface": "pebble_gravel",
+      "tile_metres": 0.75,
+      "width": 1254
+    }
+  ],
+  "visual_scope": "Native third-person world and material closeups; no HUD in this isolated renderer",
+  "native_capture": {
+    "exit_code": 0,
+    "duration_seconds": 17.79,
+    "engine": "Godot 4.7.2 stable",
+    "driver": "OpenGL Compatibility / llvmpipe software rendering",
+    "hardware_fps_benchmark": false,
+    "script_or_shader_errors": false,
+    "warning": "Xvfb driver cannot change V-Sync mode"
+  },
+  "visual_review": {
+    "reviewed_screenshots": [
+      "01-town-photo-ground.png",
+      "02-packed-dirt-close.png",
+      "03-meadow-verge-close.png",
+      "04-pebble-path-close.png",
+      "05-weathered-ruin-close.png",
+      "06-third-person-woodland.png"
+    ],
+    "packed_dirt": "Fine small-stone surface at authored 1.8m repeat; road centre remains visually distinct with a soft meadow boundary.",
+    "meadow": "Clover and dry-grass detail visible at close range; texture recedes without a hard material border from normal third-person camera.",
+    "pebble_gravel": "Revised tile removes conspicuous duplicated internal cluster. No obvious dark grid seam observed in normal town view or the supplied closeup. Some repeating individual stones can still be found when inspecting closeup; no claim of perfectly invisible tiling.",
+    "cracked_stone": "Rough grey mineral colour is applied to ruin walls, broken rubble, waystones and obelisks using world triplanar projection. Light and shadow preserve shape legibility.",
+    "scope": "This is a focused material integration check. Existing NPC proxy art and geometric scene limitations are not changed or represented as finished AAA art."
+  }
+}

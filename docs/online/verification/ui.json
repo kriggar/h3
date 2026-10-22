@@ -1,0 +1,16 @@
+{
+  "checks": 11,
+  "failures": 0,
+  "scope": "Native UI fixture, actual pointer dispatch and keyboard dispatch; not a world or network playthrough",
+  "screenshots": 8,
+  "source_sha256": {
+    "game/online/hud.gd": "b0dc821e320cba50baed2fcad0a0b7e689452cdd4c65cb2c640c3182dc01f312",
+    "game/online/ui_frame.gd": "3d0b0c7ceda24f8dc5d30a7462934f6ae3b1989b908e28bc477ce3f4f89afbfa",
+    "game/online/ui_minimap.gd": "a220c78c54d52fce7044ad3f0d190f8819bfa346dce331d66888364fc4ae49fe",
+    "game/online/avatar.gd": "ab99d601f30c56d34d349604d1041eedece61e546363066baadfc36628a625bc",
+    "game/online/catalog.gd": "6ef9bae00371e6915bc931e4f8bae54b15ebaad46a2afa3a6fd3e89a3cf667a5",
+    "game/online/realm.gd": "841a3b7eaafd986bcde8621660fd9bde548dc54ca0b334b19213cc4334ca9d9f",
+    "assets/online/icons/abilities.png": "2a9b64f340323ad2a32d200ac8eefa71c7eb37114d2bd139d6bb755e7bc9fd68",
+    "tests/online/hud_probe.gd": "2ec0cc463b9ec009463a6e13ef6a457b239b4ff4c5b028440a4cc05cd316278d"
+  }
+}

@@ -1,0 +1,140 @@
+{
+  "scope": "Final source freeze including four environment textures and production audio shutdown repair; source-only import and real shipped window-close startup regression",
+  "supersedes": "/tmp/draconia-online-cold-review/report.json",
+  "source": "/workspace/scratch/06ef9dc6bbe2/h3-upload/project",
+  "cold_project": "/tmp/draconia-online-cold-project",
+  "physical_cold_project": "/workspace/scratch/06ef9dc6bbe2/online-cold-review-project",
+  "source_git_head": "4d2421509561755f76c577ac6d7ba7c53f55a2b9",
+  "candidate_files": 449,
+  "candidate_bytes": 266760532,
+  "copied_files": 292,
+  "hardlinked_immutable_assets": 157,
+  "candidate_manifest": "/tmp/draconia-online-cold-final/candidate-manifest.json",
+  "candidate_manifest_sha256": "3f4019fb8c4fd8c0a4de799e2c4bc8b22cedad04eb86ef29e1f934ea485cf62f",
+  "source_content_sha256": "efda7dfa7de71da1c5b2944a284107af8e33085aeca82016a7ea63a7e6ae4177",
+  "old_generated_cache_removed_bytes": 258684904,
+  "empty_import_cache_at_start": true,
+  "removed_stale_cold_files": [],
+  "engine": "/workspace/scratch/06ef9dc6bbe2/analysis-tools/godot/Godot_v4.7.2-stable_linux.x86_64",
+  "engine_version": "4.7.2.stable.official.ed1daf0bf",
+  "main_entry": "run/main_scene=\"res://online.tscn\"",
+  "disk_free_before_bytes": 645894144,
+  "stages": [
+    {
+      "stage": "import",
+      "command": [
+        "/workspace/scratch/06ef9dc6bbe2/analysis-tools/godot/Godot_v4.7.2-stable_linux.x86_64",
+        "--headless",
+        "--path",
+        "/tmp/draconia-online-cold-project",
+        "--editor",
+        "--import"
+      ],
+      "exit_code": 0,
+      "seconds": 24.5,
+      "log": "/tmp/draconia-online-cold-final/import.log",
+      "log_sha256": "339c4a82b32a06ee19220cfdaa0ce66898c14743e42008dcc01d8cf2d6568a32",
+      "errors": [],
+      "shutdown_errors": [],
+      "warnings": [
+        "WARNING: OBJ: Ambient light for material 'Material' is ignored in PBR"
+      ]
+    },
+    {
+      "stage": "run",
+      "command": [
+        "/workspace/scratch/06ef9dc6bbe2/analysis-tools/godot/Godot_v4.7.2-stable_linux.x86_64",
+        "--headless",
+        "--path",
+        "/tmp/draconia-online-cold-project",
+        "--verbose",
+        "--audio-driver",
+        "Dummy",
+        "--script",
+        "res://tests/online/shutdown_probe.gd",
+        "--",
+        "--solo",
+        "--name=ColdImportReview",
+        "--shutdown-route=window",
+        "--report=/tmp/draconia-online-cold-final/window-close-report.json"
+      ],
+      "exit_code": 0,
+      "seconds": 3.861,
+      "log": "/tmp/draconia-online-cold-final/run.log",
+      "log_sha256": "07cb01a1db8dac180d38398373080dfbbffa6c4bddea874212885a87d2179bda",
+      "errors": [],
+      "shutdown_errors": [],
+      "warnings": []
+    }
+  ],
+  "userdata_isolation": {
+    "XDG_DATA_HOME": "/tmp/draconia-online-cold-final/userdata",
+    "XDG_CONFIG_HOME": "/tmp/draconia-online-cold-final/config",
+    "XDG_CACHE_HOME": "/tmp/draconia-online-cold-final/cache"
+  },
+  "repository_files_changed_since_copy": [
+    "docs/online/RELEASE_REVIEW.md"
+  ],
+  "runtime_source_files_changed": [],
+  "cold_runtime_files_changed": [],
+  "hardlinked_assets_changed": [],
+  "import_settings_checked": 160,
+  "missing_imported_dependencies": [],
+  "shipped_solo_entry_confirmed_by_profile": true,
+  "profile_path": "/tmp/draconia-online-cold-final/userdata/godot/app_userdata/Draconia \u2014 The Blackbriar March/blackbriar/solo_profile.json",
+  "window_close_regression": {
+    "checks": 20,
+    "failures": [],
+    "passed": true,
+    "route": "window"
+  },
+  "normal_window_close_clean": true,
+  "preserved_mara_sha256": "8ada77b97e748814283fbf3f6efe960026674c0bf4ed04776610515c70fac94d",
+  "preserved_mara_matches": true,
+  "changed_feature_source_hashes": {
+    "game/online/environment_materials.gd": "8a7d30cc03488e76859e52046ad7a84a5592645612b13adcd2c5ae8f77cd0bbf",
+    "game/online/main.gd": "83a464c333fac78813fa4bd5cd334a6563d6f6ec7a85c42759d914be875e8251",
+    "game/online/soundscape.gd": "ac4d3a4f1dd195ed09a00ddac7d810f28983d326e81fc5cfe0c7cdf64fa514d6",
+    "game/online/terrain_blend.gdshader": "bea876287d5b2e27dc7b12c8d64e4e99a6c3d960a7a9a56ecf547942071f20f9",
+    "game/online/world.gd": "ecae81b8637dfb34eeadc86dd2ac777feefe1c30e048bfc70847d8d18dc4ba17",
+    "online.tscn": "3203093e1d239b9316247e8b4addbfdd30d8a704c06ecf14f815233482c0dc79",
+    "project.godot": "1bbc09ea865d337db3422dce7cdad166ed035b7a787a9e7ddf98678c0a4afbd1",
+    "tests/online/shutdown_probe.gd": "4e5bfcdea66ed02685b57e16f232b0a3fbcaa705b3b1742a1298a7f88b5568a1"
+  },
+  "terrain_assets": [
+    {
+      "path": "assets/online/terrain/cracked_stone_albedo.png",
+      "bytes": 4741123,
+      "sha256": "1783ad9e190b37e4a72422f9caa1d5abd0a401738c1bc7f4e2b918c2102b6e65",
+      "method": "hardlink_immutable_asset"
+    },
+    {
+      "path": "assets/online/terrain/meadow_albedo.png",
+      "bytes": 4741123,
+      "sha256": "fba409f32b6e4f570d4351d418f1bf44251dd5c5495ff9784231e2da62b33ffa",
+      "method": "hardlink_immutable_asset"
+    },
+    {
+      "path": "assets/online/terrain/packed_dirt_albedo.png",
+      "bytes": 4741123,
+      "sha256": "34cace108d24d8553310f1d9c7488d1fd6b82dbd8d1c83c2c654bd72a288b237",
+      "method": "hardlink_immutable_asset"
+    },
+    {
+      "path": "assets/online/terrain/pebble_gravel_albedo.png",
+      "bytes": 4427903,
+      "sha256": "726a123c5f86c12c5b74211963bb23c05e7644cf88f0b51ddc30555da6d18062",
+      "method": "hardlink_immutable_asset"
+    }
+  ],
+  "generated_import_cache_bytes": 270939658,
+  "cache_preserved": true,
+  "disk_free_after_bytes": 593776640,
+  "caveats": [
+    "Headless verification establishes fresh import, resource availability, solo startup, persistence and production shutdown; rendered appearance and audio quality are covered separately.",
+    "The project path under /tmp is a symlink to an isolated workspace sibling because cross-filesystem hardlinks are unavailable. Only immutable binary assets share inodes; text, scripts, scenes, import settings and configuration are copies.",
+    "The OBJ ambient-light import warning is a nonfatal material conversion warning, recorded separately from script, resource or runtime errors."
+  ],
+  "passed": true,
+  "status": "passed"
+}

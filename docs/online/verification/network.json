@@ -1,0 +1,50 @@
+{
+  "suite": "independent_process_enet",
+  "passed": true,
+  "checks": 46,
+  "failure": "",
+  "processes": [
+    {
+      "checks": 12,
+      "failures": [],
+      "passed": true,
+      "role": "server",
+      "exit_code": 0,
+      "runtime_errors": []
+    },
+    {
+      "checks": 9,
+      "failures": [],
+      "passed": true,
+      "role": "client_a",
+      "exit_code": 0,
+      "runtime_errors": []
+    },
+    {
+      "checks": 13,
+      "failures": [],
+      "passed": true,
+      "role": "client_b",
+      "exit_code": 0,
+      "runtime_errors": []
+    },
+    {
+      "checks": 4,
+      "failures": [],
+      "passed": true,
+      "role": "resume_server",
+      "exit_code": 0,
+      "runtime_errors": []
+    },
+    {
+      "checks": 8,
+      "failures": [],
+      "passed": true,
+      "role": "resume_client",
+      "exit_code": 0,
+      "runtime_errors": []
+    }
+  ],
+  "scope": "Localhost native ENet, 2 concurrent clients, late join, duplicate reward rejection, same-name isolation, server restart/profile reconnect and host loss.",
+  "not_tested": "WAN routing/NAT, internet latency or load capacity, public account authentication."
+}

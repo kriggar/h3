@@ -1,139 +1,158 @@
-# Draconia — Oaths of the Carpathians
+# Draconia — The Blackbriar March
 
-## Download and play in Godot
+**A native Godot third-person multiplayer RPG foundation.** One controlled hero,
+an authored Eastern European fantasy borderland, deliberate sword combat, quests,
+loot, character progression, and private realms. This is the replacement of the
+earlier strategy/isometric runtime.
 
-1. On this repository, select **Code → Download ZIP**.
-2. Extract the **entire ZIP** into a writable folder on your computer.
-3. Open the standard **Godot 4.7.2** editor. In the Project Manager, select
-   **Import** and choose the extracted `project.godot` file, or drag that file
-   into the Project Manager.
-4. Open the project and let the first asset import finish.
-5. Press **F5** or the **Run Project** button to play.
+The accepted **Mara player model and all twelve source animation clips are
+unchanged**. The active camera, world, interface, simulation, quests, progression,
+and multiplayer session flow have been rebuilt around her.
 
-The repository contains the complete Godot source and runtime assets as
-ordinary files. **Git, Git LFS, Blender, export templates, and additional
-project ZIP parts are not required to play in the editor.** The standard
-editor is sufficient; the .NET edition is unnecessary. Godot creates its
-local `.godot` import cache during the first import, which can take a few
-minutes. Keep the extracted folder writable and allow additional free space
-for that cache.
+![Actual native Godot gameplay](docs/online/screenshots/02-thornwatch-third-person.png)
 
-**v0.3.2-hunt-regions development source — playable slice.** An original native Godot strategy/action RPG built around exactly one chosen hero for an entire campaign. The current playable character is **Mara Veyne, a Hearthborn Oathwarden**. She develops through earned levels and equipment, builds Dawnreach, and enters solo expeditions while her companies remain outside.
+## Download, import, play
 
-**Current art direction, 22 October 2026:** the original eight painted building cards define the architecture. All eight Blender reconstructions are now installed from their individually reviewed source files, and the town's foundations, roads and riverside installations have been adapted around them. The original paintings remain unchanged at rest, hover and press. The previous model-render cards and mismatched buildings are historical work. This is development integration; production art and user acceptance remain open. See the [reconstruction contract](docs/CARD_RECONSTRUCTION.md) and [building-by-building review](docs/BUILDING_RECONSTRUCTION_REVIEW.md).
+1. [Download the complete project ZIP](https://codeload.github.com/kriggar/h3/legacy.zip/refs/heads/main).
+2. Extract it into a writable folder.
+3. In **Godot 4.7.2** (the tested version), choose **Import** and select the
+   extracted `project.godot`. Wait for the first asset import to finish.
+4. Press **F5**. Enter a character name and select **Enter the March**.
+5. Walk to **Captain Elric**, beside the left watchhall, and press **F**.
 
-This is a working development slice, not a complete game matching Heroes III's breadth or production quality. The full design contains nine factions, twenty fixed classes, eight races and 156 authored hero concepts; only Mara is presently playable. Personal signatures, racial packages, class-resource traits, talent trees and the remaining protagonists are design work, not active bonuses hidden in this build.
-
-The immutable **v0.2 desktop and source archives** predate the attributes, class enforcement and hunt loop described here. A new export requires a new recorded build; this page does not relabel those older executables as v0.3.
-
-## Run the current source
-
-Open `project.godot` in the standard **Godot 4.7.2** editor, allow asset import to finish, then press **F5**. The configured starting scene is `redesign.tscn`. GDScript is used; the .NET editor is unnecessary. No Heroes III installation, commercial game executable or original game data is required.
-
-```bash
-godot --editor --path .
-godot --path .
-```
-
-For a packaged desktop checkpoint, extract its entire archive and launch `Draconia.exe` on Windows or `Draconia.x86_64` on Linux. Read that archive's version-specific notes. Windows packages are cross-exported; native Windows execution has not been verified in this environment. The exact Linux startup and normal-exit coverage belongs to each package's recorded export evidence.
-
-## New in 0.3.2
-
-Distinct hunt environments, a live field chart, clearer objectives and target feedback, exact movement clearance, safe continuation of older saves, and shared physical loot piles. See the [update and verification notes](docs/HUNT_REGIONS_V032.md) for actual screenshots and the test scope.
-
-## What works now
-
-- **One fixed identity and an enforced class kit.** Mara uses Cleave and Ward, plus basic attack, guard and dodge. Ember belongs to a Pyromancer fixture and Living Roots to a Druid fixture; they are not selectable Mara spells. The rules reject off-class casts, including queued inputs, independently of the hotbar.
-- **Earned levels 1–30 and four useful attributes.** Start with three points and earn three per level, for ninety total. Might increases Attack, Finesse movement speed, Vitality maximum Health, and Spirit maximum Focus and finite Ward capacity. The Character folio supports a draft, full derived-stat preview, atomic Apply, and a bounded safe-town reset. Allocation never heals or refills Focus.
-- **A dedicated persistent 3D town.** Dawnreach offers eight building definitions, including the exclusive Wharf/Water Gate river plot. A purchased building appears in its saved plot immediately and activates its actual service. The reconstructed architecture follows the original cards; terrain cores, entrance approaches, road coverage, retaining-wall openings and water levels accommodate the actual models. One construction is allowed per town/day; buying itself consumes no watches.
-- **The once-only Bellworn Vault story expedition.** Fight real actors, navigate matching visible collision, collect physical rewards, choose one registered item reward and extract. Enemy wounds, corpses and unclaimed story drops persist across legal retreat and return.
-- **Three distinct repeatable hunt locations.** The Briar Kennels has wooded timber pens and divided yards; The Ashen Watch Cellar has firelit masonry, four hunters and side aisles; Moonfang Underpass has a narrow stone passage and rock shoulders. Their registered geometry drives collision, visible barriers, enemy placement, entrance seals and the field chart. Tier, pack, item rolls, gold and XP are fixed before entry. Successful extraction refreshes three offers; an unfinished contract keeps its actual enemies and claims.
-- **A live expedition field guide.** The manuscript chart marks Mara, the entrance and unclaimed spoils. Objectives advance through fighting, collection and extraction; selected enemies show their role and Health. Accepted movement destinations remain visible after combat. Shared rewards occupy one physical chest, and the compact collection controls fit the small-window sidebar.
-- **Real loot, sets, sockets and a Market sale route.** Sixteen item definitions, eleven equipment slots, one five-piece set definition and two original ordered rune recipes. Hunts can award the remaining Bellworn pieces, normal socket bases, runes, a gem and existing accessories. A built friendly Market sells finite crafting supplies and buys a selected, owned, unequipped item at its stated fixed value.
-- **A working manuscript interface and character folio.** Town works, original painted building cards, painted resources and commands, class/race/trait status, Character and Inventory tabs, actual equipment/set comparisons, a live 3D model with orbit/zoom, oath terms, expedition previews, forfeit warnings and sale confirmations. Mara has a development PBR material pass. Dawnreach uses eight reviewed Blender reconstructions with local working mechanisms; final building detail, environment and character art remain unfinished.
-- **Persistent consequences and live saves.** Four watches/day, dawn accounting, two finite oaths, paid rival mustering/frontier claims, retained wounds and paid defeat recovery. Save/load retains the live action state, derived equipment, attribute allocation, unfinished hunt and once-only reward ledgers. Solo expeditions leave the waiting companies unchanged.
-
-## Start here
-
-1. Open **Character** or press **C**. Draft the initial three attribute points, inspect the actual before/after statistics, then Apply. Mara remains an Oathwarden whatever attributes you choose.
-2. Open **Browse Town Works**, select the Granary and construct it. It appears in Dawnreach and enables the relevant prerequisite chain.
-3. For the story route, accept **Silence the Bell** in **Oaths**, then open **Expedition**, read the chronicle expedition and enter the Bellworn Vault. Only Mara enters. Collect the four registered rewards and use the entrance seal to extract.
-4. For repeatable progression, choose an available **hunt** on the expedition board. Entry and each re-entry cost two watches. Kill the registered pack, physically collect its drops and return. The next board appears only after a completed extraction. Uncollected hunt spoils are forfeited on completion; the warning lets you go back for them.
-5. Open **Inventory** or press **I** to compare and equip earned items. The Vowkeeper sword and Bellworn Cowl have fitted, textured 3D visuals; every defined armor item does not yet have its final visible mesh.
-6. On a later day, construct the Market after the Granary. Buy finite ordinary crafting supplies or sell an unequipped item to make space. Cinder then Stone in a Notched Ironblade makes Hearthguard; Cinder then Gale makes Windscar. Selling a socketed item also removes its inserted materials, as shown by the confirmation.
+All runtime models, textures, fonts, icons, and sounds are included. There are no
+Git submodules, Git LFS pointers, runtime downloads, package-manager installs,
+Blender requirements, or API keys needed to play. This uses native **GL
+Compatibility**, not a browser wrapper.
 
 ## Controls
 
-| Context | Control |
-| --- | --- |
-| Town works, hunt board and panels | Left-click the actual controls |
-| Character / Inventory | C / I |
-| Oath ledger / rest | J / R |
-| Live hero model | Drag to orbit; wheel to zoom |
-| Dungeon movement, target, loot or exit | Left-click the relevant ground or object |
-| Mara's class skills | 1 casts Cleave; 2 casts Ward |
-| Selected legal skill | Right-click toward the cursor |
-| Directional guard / dodge | G / Shift |
-| Tactical pause / resume | Space |
-| Dungeon camera distance | Mouse wheel |
-| Town camera | Side arrows; wheel over the town |
-| Menu / back | Esc |
-| Manual save | Ctrl+S |
+| Input | Action |
+|---|---|
+| W / A / S / D | Move relative to the camera |
+| Hold left mouse + drag | Orbit the camera |
+| Hold right mouse + drag | Orbit and steer the character |
+| Mouse wheel | Zoom |
+| Space | Physical jump using the existing movement pose |
+| Tab / left-click an enemy | Select a hostile target |
+| F | Speak, gather, or collect nearby personal spoils |
+| 1 | **Swordfall** — targeted sword strike |
+| 2 | **Mooncleave** — forward area sweep |
+| 3 | **Iron Vow** — heal and temporary damage reduction |
+| 4 | **Wayfarer's Step** — directional roll and a brief evade window |
+| 5 | **Rowan Draught** — consume a carried healing potion |
+| C | Character, equipment, and attribute points |
+| I / B | Satchel and equipment |
+| J / L | Quest journal |
+| Enter | Realm chat; Enter sends, Escape cancels |
+| Escape | Close a panel or open the game menu |
 
-Loot and exit interactions approach a legal interaction distance. A spell or equipment item never grants another class's skill permission. Town purchases, allocation and sales do not advance watches; resting advances one watch. Next Dawn stops at dawn or an intervening oath deadline. Time spent reading, comparing equipment or pausing action does not silently advance the realm.
+The world continues while menus are open. Use **Save & Return to Realms** or
+**Save & Quit** to leave cleanly. Progress also saves periodically. The third-person
+camera uses a collision-aware spring arm.
 
-## Progress and saves
+## What is playable
 
-The slice uses `draconia-action-save.json` and `draconia-action-autosave.json` in Godot's application-data directory. A valid autosave restores on startup. The menu provides manual save/load and New Chronicle. Starting again replaces the active autosave while retaining the separate manual save.
+The region contains **Thornwatch**, the old forest road, the eastern emberbloom
+wood, and the ruined seat of the **Hollow King**, a cursed varcolac. The three
+authored quest chapters are:
 
-Closing the window or choosing **Menu → Save & Quit** records the current autosave and releases audio before exiting. Gameplay stays frozen during that operation. If writing or flushing the save fails, Draconia remains open with an error and retains the previous save; the separate manual save is unchanged. Forced termination by the operating system cannot provide this orderly save-and-exit behavior.
+1. **The Road of Teeth:** defeat the duskfang pack and earn Thornwatch Steel.
+2. **A Light Against the Briar:** recover emberblooms and earn a Rowan Signet.
+3. **The Hollow King's Due:** defeat the elite and claim the Fang of the Hollow
+   King. Eligible contributors receive their own rewards.
 
-The current campaign uses **save version 5**. Genuine earlier action saves from versions 1–4 migrate with their earned inventory and claims retained. An unfinished old hunt keeps its original vault, spawns, wounds and rewards; its next completed board uses the new locations. An untouched old board can upgrade immediately. Committed actions keep their saved state. If an old movement route grazes a corner accepted by the previous sampler, movement safely replans toward its original destination when it resumes. Migration does not reroll rewards or heal Mara. Already committed legacy effects can finish, while new illegal class casts are rejected. This format is separate from the archived hex campaign's saves. Invalid state is rejected without replacing the active game. Local save validation is an integrity/compatibility check, not a cryptographic anti-cheat guarantee.
+There is one playable **Highlander Vanguard**, using the retained character. The
+build includes three service/story NPCs, three enemy types, a named boss, five
+hotbar actions, seven equipment definitions across weapon/chest/ring slots,
+healing consumables, a merchant, personal loot, levels up to 20, and two spendable
+attribute points per level. Equipment currently changes statistics; the accepted
+character's visible outfit remains the same.
 
-## Verification and limits
+The interface includes the actual animated character in its portrait and equipment
+sheet, player and target frames, a live minimap, objectives, cooldowns and costs,
+item comparison tooltips, a combat/event log, actual connected-player frames, and
+realm chat. Eight new painted icons and nine original synthesized sounds are bundled.
 
-The [0.3.2 update report](docs/HUNT_REGIONS_V032.md) records **1,879 passing checks across eight rules suites**, plus a separate **176-check native dungeon integration pass** with ten actual Godot captures. The rules gate covers all three hunt clears, real pickups and extraction, earned progression to level 30, save migration and deterministic continuation, class restrictions and transaction integrity. The native gate checks scene geometry, object picking, shared loot piles and the HUD at 1440×900, 1280×800 and 960×640 window sizes. The smallest window preserves the project aspect ratio with 960×600 game content. Software rendering and Dummy audio were used; these are not hardware performance or audio acceptance results.
+Four environment surfaces are prepared from user-supplied ground photographs:
+packed earth, grass/clover, pebble paths, and weathered mineral stone on ruins.
+They are applied with world-scale tiling, mip filtering, and soft terrain blends;
+the exact sources and editing prompts are recorded in
+[`assets/online/terrain/`](assets/online/terrain/README.md).
 
-Run the checked-in logic gate with `python tools/run_rules.py --godot /path/to/godot`. It isolates test saves from player data and retains reports. [VERIFICATION.md](docs/VERIFICATION.md) preserves earlier town, character, spell and export evidence with its original scope. Test counts are not completion percentages or a guarantee that no bugs remain.
+![Actual character sheet](docs/online/screenshots/03-character-sheet.png)
 
-The repeated-contract rules route earned level 30 through forty-six real completions and tested another run at the cap. This proves a bounded usable progression loop; it does not establish an enjoyable full campaign, broad dungeon variety or production balance. Automated native capture on Mesa software rendering is not a frame-rate benchmark, complete human playthrough or native Windows test. Building reconstruction, placement and actual construction have separate revision-bound evidence; earlier tests are not silently treated as a run of the new geometry. Production art, target-hardware performance and full continuous motion review remain open.
+## Play together
 
-### Current development art
+One player selects **Host a Realm**. Others select **Join a Realm** using that
+host's IP address and matching UDP port; the default is **24572**. For two instances
+on one computer, use `127.0.0.1`. The realm allows **four adventurers total**,
+including the listen-server host.
 
-Mara's material revision contains four runtime GLBs and fourteen shared PBR maps, backed by a packed editable Blender snapshot of approximately 60.87 MB. The base character has 41,590 triangles, fifty-three bones and twelve retained clips. Its actual imported-scene review passed **245 checks with ten captures**. The two earned equipment modules separately pass eighteen adapter checks. These are accepted development assets, with remaining neckline, cowl-edge, deformation, hair, boot-map and LOD work recorded in [CHARACTER_MATERIALS.md](docs/CHARACTER_MATERIALS.md).
+The server decides movement, enemy AI, damage, cooldowns, loot ownership, quest
+rewards, equipment, and progression. Clients submit intentions and receive
+confirmed snapshots. Network tests use independent native Godot processes.
 
-Dawnreach's eight current reconstructed scenes total **408,644 triangles** across the complete asset set, with three-second local Hover clips and authored RESET poses. They retain individual packed editable Blender scenes, embedded GLBs, exact source manifests, original painting comparisons and bounded mechanical/native reports. Their characteristic entrances, roofs, towers, heraldry and props were reviewed against the locked atlas. The final staged town passed **168 checks with zero failures and eight inspected captures**, covering the corrected foundations, access and river installations. The separate actual-runtime route passed **1,506 assertions, zero failures, eight purchases and fifteen inspected captures**, including both exclusive river choices and menu save/reload. Its explicitly supplied test funds, unchanged rules, source bindings and bounded scope are recorded in [VERIFICATION.md](docs/VERIFICATION.md).
-
-The old 113,860-triangle set and its **83-check** rendered-card proof, **261-check** hover run and **77-check** town-composition run remain historical evidence of the rejected architectural direction. They are not current visual approval. The new models still need the close-detail refinements recorded in the [review](docs/BUILDING_RECONSTRUCTION_REVIEW.md); the keep, ambient houses, terrain, vegetation, shoreline, lighting and other eight faction environments remain unfinished. The [asset structure inspection](docs/BUILDING_ASSET_BUDGET.md) records cross-building image duplication and Water Gate chain complexity as optimization work, without treating file structure as a measured frame-rate or memory budget.
-
-Six current hero-preview open/render/close cycles pass **25 checks** with zero orphan nodes and the same **448,371,637 retained texture bytes** after every close. The fixed cache is intentionally resident; this is bounded repeated-use evidence, not zero memory usage or a validated target-GPU budget. See the [runtime integration record](docs/verification-logs/character-pbr/runtime-integration.json). The [Raven Hollow review](docs/RAVEN_HOLLOW_REVIEW.md) records the inspected source and the originally implemented interface decisions; item statistics remain authoritative rule data.
-
-A later focused shutdown regression passes **81 checks in eight groups**, including actual Ogg/SpellFeedback ownership, a live dungeon snapshot, repeated and cancelled quit requests, and a real post-open write failure. It fixes the observed audio lifetime and incomplete-save replacement risks. Its lightweight native fixture is separate from the exported application's window/menu exit checks and from audible-output testing; see [audio-lifetime/report.json](docs/verification-logs/audio-lifetime/report.json).
-
-Still outstanding: selectable implementations of the other heroes/classes, racial and personal traits, class talent trees, a complete campaign map and political simulation, field-company battles, defended conquest, sieges, broad enemy/environment content, full armor visuals, target-hardware performance and broad accessibility. No Heroes III parity, bug-free guarantee or complete-game claim is made.
-
-The complete design is [GAME_DESIGN.md](docs/GAME_DESIGN.md), with [HERO_ROSTER.md](docs/HERO_ROSTER.md), [CLASS_DESIGN.md](docs/CLASS_DESIGN.md), and [CREATURE_ROSTER.md](docs/CREATURE_ROSTER.md). The previously generated 82-page PDF predates the corrected card authority and is not the current art contract. Its historical layout review remains in [design-pdf.json](docs/verification-logs/design-pdf.json); a revised document must be rebuilt and reviewed before release.
-
-## Source structure
-
-- `redesign.tscn`, `game/redesign/`: current native town/action implementation.
-- `realm_rules.gd`, `hunt_rules.gd`, `item_rules.gd`, `hero_identity.gd`, `action_rules.gd`: authoritative transactions, contracts, items, fixed identity and action rules.
-- `data/class_catalog.json`, `data/hero_roster.json`: twenty class definitions and all 156 canonical hero mappings, with explicit design status.
-- `tests/test_realm.gd`, `test_hunts.gd`, `test_progression.gd`, `test_hero_identity.gd`, `test_item_rules.gd`, `test_action_rules.gd`: current rules suites.
-- `tests/render_hunt_ui.gd`: the current earned native hunt/sale route; earlier and targeted presentation harnesses retain their own scopes.
-- `assets/models/mara/`, `assets/models/towns/`, `assets/ui/manuscript/`: model and interface assets with provenance and integration contracts.
-- `main.tscn` and other historical `game/` modules: archived earlier campaign/hex prototype, not the configured entry point. Its evidence is under `docs/LEGACY_*`; the later v0.2 action checkpoint is preserved under `docs/V0_2_*`.
-
-This repository contains all files required to import and run the current Godot project. Editable Blender authoring material and historical verification archives are maintained separately; they are optional development records and are not prerequisites for the GitHub download. References to those separate archives in historical documents describe the earlier checkpoint distribution.
-
-## Build and attribution
-
-Matching Godot 4.7.2 export templates are required. Native presets are **Linux** and **Windows Desktop** in `export_presets.cfg`. Exports exclude staging assets, authoring tools, research and test evidence. The historical Web preset is not the delivered native target.
+For a dedicated host:
 
 ```bash
-mkdir -p builds/local/linux builds/local/windows
-godot --headless --path . --export-release Linux builds/local/linux/Draconia.x86_64
-godot --headless --path . --export-release "Windows Desktop" builds/local/windows/Draconia.exe
+godot --headless --path /absolute/path/to/project -- --server --port=24572
 ```
 
-These commands create new local exports; they do not overwrite or re-certify immutable v0.2 archives. Keep `LICENSE.txt`, `ASSET_CREDITS.md` and `assets/licenses/` with redistributed builds. Original generated Draconia art is recorded separately from downloaded licensed assets. Proprietary reference-game artwork and owned game binaries are excluded.
+A dedicated host has no local hero; players join it through the same interface.
+Direct internet connections require the host's UDP port to be reachable. This
+build does not configure routers, matchmaking, public accounts, or hosted shards.
+Use it as a private realm with people you trust.
+
+### Saves
+
+Solo and hosted characters have separate saves beneath Godot's application user
+data directory, in `blackbriar/`. The host keeps realm progression. Clients retain
+an opaque reconnect key; using the same address/port and the same client user data
+restores that host-owned profile. Names do not grant ownership of another hero.
+Reconnect keys are not included in world snapshots.
+
+Level, XP, currency, attributes, equipment, quests, and consumables persist.
+Characters arrive safely in Thornwatch when entering a realm. Enemies, gathering,
+and unclaimed loot start fresh when a realm restarts. This is not yet a continuously
+hosted persistent MMO world.
+
+## Verification and scope
+
+See [the release review](docs/online/RELEASE_REVIEW.md) for exact results, native
+screenshots, corrected issues, and reproducible commands. The new tests are
+independent of the retired strategy-game tests. The network scenario exercises
+two simultaneous remote clients and a server restart; four-player capacity is a
+configured limit, not a load-test claim.
+
+This is a **playable multiplayer RPG foundation**, not a finished AAA MMORPG or
+an assertion of bug-free production quality. It does not yet contain multiple
+complete regions, a class/race roster, dungeons, raids, a full visual armor catalog,
+mounts, crafting, guilds, public authentication, or MMO-scale services. NPC and
+creature art, terrain detail, an authored jump animation, sound design, equipment
+appearance, deformation/secondary motion, and target-hardware performance still
+need production work. The next milestone should deepen this region and its combat
+before expanding content count.
+
+## Project layout
+
+- `online.tscn` / `game/online/main.gd`: shipped F5 entry and session menus.
+- `game/online/catalog.gd`: content, terrain, and shared collision data.
+- `game/online/realm.gd`: authoritative game simulation.
+- `game/online/session.gd`: solo, ENet host/join, saves, and chat.
+- `game/online/world.gd`, `scenery.gd`, `avatar.gd`: third-person presentation.
+- `game/online/hud.gd`, `ui_*.gd`: native interface.
+- `assets/models/mara/`: exact accepted character and dependencies.
+- `assets/online/`: new icon atlas and sound assets.
+- `tests/online/`: rules, network workers, UI, and rendered acceptance.
+
+The earlier game remains in Git history at
+[`4d24215`](https://github.com/kriggar/h3/tree/4d2421509561755f76c577ac6d7ba7c53f55a2b9).
+Its strategy shell, town cards, arenas, sprite UI, and active tests are removed
+from this version. Licensed raw art is reused in the new authored environment.
+
+Raven Hollow supplied interaction/interface references. Its accessible Pygame
+source was inspected; no unlicensed code or assets were copied. See the
+[source review](docs/RAVEN_HOLLOW_REVIEW.md). Original code follows the
+[MIT license](LICENSE.txt); third-party art keeps its own terms in
+[asset credits](ASSET_CREDITS.md) and `assets/licenses/`.

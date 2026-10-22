@@ -1,0 +1,30 @@
+{
+  "suite": "shipped_entry_multiplayer",
+  "passed": true,
+  "checks": 50,
+  "seconds": 8.22,
+  "failure": "",
+  "processes": [
+    {
+      "checks": 27,
+      "failures": [],
+      "passed": true,
+      "role": "host",
+      "seconds": 7.889,
+      "runtime_errors": [],
+      "exit_code": 0
+    },
+    {
+      "checks": 23,
+      "failures": [],
+      "passed": true,
+      "role": "client",
+      "seconds": 4.626,
+      "runtime_errors": [],
+      "exit_code": 0
+    }
+  ],
+  "captures": [],
+  "method": "Two independent Godot processes instantiate shipped online.tscn; both headless. Real main menu paths, production Session networking, world actors, HUD party/chat and disconnect-to-lobby callbacks.",
+  "limits": "Scripted menu and client-input intents; not a manual mouse playthrough, WAN test, or hardware performance benchmark."
+}

@@ -1,0 +1,46 @@
+{
+  "exit_code": 0,
+  "seconds": 81.13,
+  "runtime_errors": [],
+  "passed": true,
+  "checks": 55,
+  "captures": [
+    {
+      "file": "01-realm-selection.png",
+      "bytes": 1947811,
+      "sha256": "e50226b10a22575c2b2cc1ba303444fb63f03638affd3b8488f5b128c6e3ca68"
+    },
+    {
+      "file": "02-thornwatch-third-person.png",
+      "bytes": 2389819,
+      "sha256": "ee8d582026bd18d29e02b90bd7730c0a7d24fdf8008746a289d3e2064d17f501"
+    },
+    {
+      "file": "03-character-sheet.png",
+      "bytes": 1468451,
+      "sha256": "456817254a70dd535d6dfc1bfe4dcb1e155219fe4a8a007bac3c99a176b406fc"
+    },
+    {
+      "file": "04-quest-dialogue.png",
+      "bytes": 1515756,
+      "sha256": "bfed8a27d03cf091d54d39f05489135797c2f56e3c47ae89a5d97a55cebaf63a"
+    },
+    {
+      "file": "05-iron-vow-cast.png",
+      "bytes": 2385730,
+      "sha256": "901ac63afacb2e5a01a2c270d93194a1e5c3313b6430165b4c6dd936b7489587"
+    },
+    {
+      "file": "06-blackbriar-road.png",
+      "bytes": 2290747,
+      "sha256": "f9da5b3e3e761395fd94935dcccde006e82ee349c3c1319f6e95704d7beb7ee8"
+    },
+    {
+      "file": "07-character-small-window.png",
+      "bytes": 762493,
+      "sha256": "3ae6a80869307fe877de86e15f501d4cfee1d5029cfcc48e1adf5002dd6174e0"
+    }
+  ],
+  "method": "Native Godot GL Compatibility / llvmpipe; scripted engine inputs and own-viewport captures.",
+  "limits": "This is not a hardware GPU benchmark or a manual long-duration playtest."
+}

@@ -1,0 +1,69 @@
+{
+  "version": 1,
+  "date": "2026-10-22",
+  "method": "Built-in image_gen editing of user-supplied ground photographs; non-destructive derived base-color images.",
+  "materials": [
+    {
+      "asset": "packed_dirt_albedo.png",
+      "source_upload": "WhatsApp Image 2026-10-22 at 20.09.28.jpeg",
+      "prompt": "Use case: precise-object-edit. Asset type: single seamless terrain base-color texture for a native 3D fantasy game. Edit target: the attached real photograph of pale compact gritty ground. Prepare ONE square texture, ideally 1536 by 1536, filling the entire image. Preserve its realistic compact soil/mineral grains, sparse tiny embedded pebbles, weathered fine pores and muted grey-brown character. Remove the broad dark smear, recognizable loose leaves, long isolated twigs and strong lighting gradients. Rectify to an orthographic straight-down surface, uniformly diffuse neutral illumination with no baked directional shadows or specular glare. Make opposite edges tile continuously horizontally and vertically, with evenly distributed non-identical fine details and no dominant repeated mark. Keep scale consistent across the tile. No vignette, no frame, no text, no labels, no material preview sphere, no normal-map colors, no new objects. This is the albedo surface itself, not a scene or material board. Preserve the natural photographic texture, do not turn it into painted fantasy art.",
+      "source_sha256": "29a0831356b87ede32616f0df3ebcfef82695d26d2a3d3ad981a240962cb9bce",
+      "output_sha256": "34cace108d24d8553310f1d9c7488d1fd6b82dbd8d1c83c2c654bd72a288b237",
+      "size": [
+        1254,
+        1254
+      ],
+      "bytes": 4741123,
+      "generated_output": "exec-53aeaf9c-a12d-4447-9bc5-26926cc2131d.png"
+    },
+    {
+      "asset": "cracked_stone_albedo.png",
+      "source_upload": "WhatsApp Image 2026-10-22 at 20.09.28 (1).jpeg",
+      "prompt": "Use case: precise-object-edit. Asset type: single seamless rough mineral stone base-color texture for ruined fantasy masonry. Edit target: the attached close photograph of cracked grey aggregate/asphalt. Prepare ONE square texture, ideally 1536 by 1536, filling the entire image. Retain the reference's irregular small cracks, coarse mineral fragments, mottled grey mineral grains and fine surface texture. Adapt the black tar-looking binder to weathered grey-brown mineral stone so this can read as old rough stone in a preindustrial ruin; preserve the reference's organic fracture detail. Remove isolated loose plant debris, flatten perspective to orthographic straight-down, equalize overall illumination without flattening fine stone detail. No large slabs, no laid paving pattern, no road markings. Make opposite edges continuous in both directions and maintain uniform physical scale. Soft flat neutral albedo light, no baked cast shadows, no highlights, no vignette. No text, no labels, no border, no material sphere, no normal-map colors. Output only a realistic tileable surface derived closely from this photograph.",
+      "source_sha256": "ca6e172314176f0c4a6535b3955920b60f7ee366850ca85b8079702773734c26",
+      "output_sha256": "1783ad9e190b37e4a72422f9caa1d5abd0a401738c1bc7f4e2b918c2102b6e65",
+      "size": [
+        1254,
+        1254
+      ],
+      "bytes": 4741123,
+      "generated_output": "exec-c193f2cb-82ab-4430-9efc-95bae4e8f08e.png"
+    },
+    {
+      "asset": "meadow_albedo.png",
+      "source_upload": "WhatsApp Image 2026-10-22 at 20.09.28 (2).jpeg",
+      "prompt": "Use case: precise-object-edit. Asset type: single seamless meadow ground base-color texture for a 3D game. Edit target: the attached close top-down photograph of short dry grass, clover and small green leaves. Prepare ONE square tile, ideally 1536 by 1536, filling the image. Preserve the distinctive mixture of subdued green clover, fine faded straw-colored grass and dark organic soil gaps, with believable small-scale photographic detail. Remove the few large identifiable loose leaves and sticks so one obvious object will not repeat across the whole landscape. Correct camera perspective to orthographic straight down, keep leaf and grass sizes consistent, and neutralize overall lighting gradient and directional shadows. Make all opposite edges join continuously, with irregular natural distribution and no horizontal/vertical bands or circular feature. This is low short meadow ground, not tall grass or a scenic meadow. No scene, no horizon, no vignette, no frame, no text, no labels, no preview sphere, no normal-map colors. Keep the reference's restrained natural color rather than saturated bright green.",
+      "source_sha256": "c987367b19a75db32d37259572ab4bcfdad90a6543624bf503cac3c3f6c6bd1a",
+      "output_sha256": "fba409f32b6e4f570d4351d418f1bf44251dd5c5495ff9784231e2da62b33ffa",
+      "size": [
+        1254,
+        1254
+      ],
+      "bytes": 4741123,
+      "generated_output": "exec-8df368ac-8940-48a7-827d-e60c59407113.png"
+    },
+    {
+      "asset": "pebble_gravel_albedo.png",
+      "source_upload": "WhatsApp Image 2026-10-22 at 20.09.28 (3).jpeg",
+      "prompt": "Use case: precise-object-edit. Asset type: single seamless small pebble footpath base-color texture for a 3D fantasy village. Edit target: the attached close photograph of multicolored rounded stone aggregate. Prepare ONE square texture, ideally 1536 by 1536, filling the entire image. Closely preserve the characteristic mix of small rounded charcoal, muted blue-grey, warm brown and pale quartz stones with individual natural mineral detail. Retain fine grey-brown compact earth/mineral material between stones, natural irregular sizes, and realistic photographic detail. Correct perspective and illumination to an evenly lit orthographic straight-down albedo. Remove unusually black isolated drill-like holes and strong highlights; do not add a laid paving pattern, new leaves, grass or objects. Keep the average pebble size consistent and small rather than turning this into large cobbles. Tile both opposite edges continuously with no dominant repeated boulder, diagonal band, frame or vignette. No text, no labels, no material spheres, no normal-map colors. Output only the realistic ground surface derived from the photograph.",
+      "source_sha256": "4e3149dbd725143da22ce20433426c903a60a4b66476279098e681a27f155b90",
+      "output_sha256": "726a123c5f86c12c5b74211963bb23c05e7644cf88f0b51ddc30555da6d18062",
+      "size": [
+        1254,
+        1254
+      ],
+      "bytes": 4427903,
+      "generated_output": "exec-64bf4b4d-3c91-4211-920a-530a04b08a45.png",
+      "rejected_attempt": {
+        "generated_output": "exec-d7d41e87-57ac-46a1-a2ff-bcec2447c1fa.png",
+        "output_sha256": "d172522379095fef635e9eb7931120f5aac68c929efc03934aa8ccdb02ecfae9",
+        "reason": "Obvious duplicated stone clusters inside the tile and high boundary discontinuity."
+      }
+    }
+  ],
+  "limits": [
+    "Base-color textures prepared from single photographs; not a measured photogrammetry/PBR capture.",
+    "Roughness and physical texture scale are authored in the material code. No measured normal, displacement, or roughness maps are claimed.",
+    "Source photographs were supplied by the user for this project; rights remain with their respective owner. They and their derivatives are not relicensed as CC0 or MIT. Only derived runtime images are bundled here."
+  ]
+}
