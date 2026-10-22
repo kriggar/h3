@@ -3,6 +3,7 @@ extends RefCounted
 ## Deterministic, bounded contract registry. RealmRules owns travel, inventory,
 ## XP and result transactions; ActionRules remains the only combat simulator.
 const Items = preload("res://game/redesign/item_rules.gd")
+const Dungeons = preload("res://game/redesign/dungeon_catalog.gd")
 const MAX_GENERATION: int = 1000000
 const MAX_ATTEMPTS: int = 10000
 const HISTORY_LIMIT: int = 32
@@ -42,16 +43,17 @@ static func _same(a: Variant, b: Variant) -> bool:
 		return true
 	return typeof(a) == typeof(b) and a == b
 
-static func definition(world_seed: int, generation: int, slot: int, tier: int) -> Dictionary:
-	if generation < 1 or generation > MAX_GENERATION or slot < 0 or slot >= TEMPLATES.size() or tier < 1 or tier > 30:
+static func definition(world_seed: int, generation: int, slot: int, tier: int, registry_version: int = Dungeons.CURRENT_REGISTRY_VERSION) -> Dictionary:
+	if generation < 1 or generation > MAX_GENERATION or slot < 0 or slot >= TEMPLATES.size() or tier < 1 or tier > 30 or not registry_version in [1, Dungeons.CURRENT_REGISTRY_VERSION]:
 		return {}
 	var template: Dictionary = TEMPLATES[slot]
+	var positions: Dictionary = Dungeons.enemy_positions_for(str(template.id), registry_version)
 	var id: String = "hunt:%d:%d:%d" % [world_seed,generation,slot]
 	var seed: int = _seed("%s:tier:%d" % [id,tier])
 	var enemies: Array = []
 	for row: Array in template.enemies:
 		var hp: int = roundi(float(row[2]) * (1.0 + 0.045 * float(tier-1)))
-		enemies.append({"id":id+":"+str(row[0]),"type":"wolf","behavior":str(row[4]),"pos":row[1].duplicate(),"hp":hp,"maxHp":hp,"attack":int(row[3])+int((tier-1)/3),"armor":(3 if str(row[4]) == "werewolf" else 0)+int((tier-1)/5),"speed":3.5 if str(row[4]) == "werewolf" else 3.0,"companyId":""})
+		enemies.append({"id":id+":"+str(row[0]),"type":"wolf","behavior":str(row[4]),"pos":row[1].duplicate() if registry_version == 1 else positions[str(row[0])].duplicate(),"hp":hp,"maxHp":hp,"attack":int(row[3])+int((tier-1)/3),"armor":(3 if str(row[4]) == "werewolf" else 0)+int((tier-1)/5),"speed":3.5 if str(row[4]) == "werewolf" else 3.0,"companyId":""})
 	# Visible deterministic rotation supplies varied real catalog pieces without
 	# a reload/re-entry roll. The once-only story unique and cowl stay excluded.
 	var gear: String = str(GEAR_POOL[(generation-1+slot+world_seed%GEAR_POOL.size())%GEAR_POOL.size()])
@@ -64,11 +66,13 @@ static func definition(world_seed: int, generation: int, slot: int, tier: int) -
 	]
 	return {"id":id,"slot":slot,"templateId":str(template.id),"name":str(template.name),"description":str(template.description),"tier":tier,"seed":seed,"quotedWatches":2,"xpReward":int(template.baseXp)+25*(tier-1),"goldReward":gold,"enemies":enemies,"lootRewards":rewards,"attempts":0,"lastResolvedAttempt":0,"claimedRewardIds":[],"claimedLoot":[]}
 
-static func create_board(world_seed: int, generation: int = 1, tier: int = 1, history: Array = []) -> Dictionary:
+static func create_board(world_seed: int, generation: int = 1, tier: int = 1, history: Array = [], registry_version: int = Dungeons.CURRENT_REGISTRY_VERSION) -> Dictionary:
+	if not registry_version in [1, Dungeons.CURRENT_REGISTRY_VERSION]:
+		return {}
 	var offers: Array = []
 	for slot: int in range(TEMPLATES.size()):
-		offers.append(definition(world_seed,generation,slot,tier))
-	return {"version":1,"generation":generation,"tier":tier,"activeContractId":"","offers":offers,"completedHistory":history.duplicate(true)}
+		offers.append(definition(world_seed,generation,slot,tier,registry_version))
+	return {"version":registry_version,"generation":generation,"tier":tier,"activeContractId":"","offers":offers,"completedHistory":history.duplicate(true)}
 
 static func contract(board: Dictionary, contract_id: String) -> Dictionary:
 	for offer: Variant in board.get("offers",[]):
@@ -109,13 +113,13 @@ static func completed_board(world_seed: int, board: Dictionary, offer: Dictionar
 	return create_board(world_seed,int(board.generation)+1,new_tier,history)
 
 static func validate_board(board: Variant, world_seed: int, watch_index: int, hero_level: int, pending_contract_id: String = "") -> bool:
-	if not board is Dictionary or board.size() != 6 or not _integer(board.get("version"),1,1) or not _integer(board.get("generation"),1,MAX_GENERATION) or not _integer(board.get("tier"),1,mini(30,hero_level)) or not board.get("activeContractId") is String or not board.get("offers") is Array or board.offers.size() != TEMPLATES.size() or not board.get("completedHistory") is Array:
+	if not board is Dictionary or board.size() != 6 or not _integer(board.get("version"),1,Dungeons.CURRENT_REGISTRY_VERSION) or not _integer(board.get("generation"),1,MAX_GENERATION) or not _integer(board.get("tier"),1,mini(30,hero_level)) or not board.get("activeContractId") is String or not board.get("offers") is Array or board.offers.size() != TEMPLATES.size() or not board.get("completedHistory") is Array:
 		return false
 	var active: String = str(board.activeContractId)
 	var active_found: bool = active.is_empty()
 	for slot: int in range(TEMPLATES.size()):
 		var value: Variant = board.offers[slot]
-		var original: Dictionary = definition(world_seed,int(board.generation),slot,int(board.tier))
+		var original: Dictionary = definition(world_seed,int(board.generation),slot,int(board.tier),int(board.version))
 		if not value is Dictionary or value.size() != original.size() or not value.get("enemies") is Array or value.enemies.size() != original.enemies.size() or not value.get("claimedRewardIds") is Array or not value.get("claimedLoot") is Array or not _integer(value.get("attempts"),0,MAX_ATTEMPTS) or not _integer(value.get("lastResolvedAttempt"),0,int(value.attempts)):
 			return false
 		var live: bool = str(original.id) == pending_contract_id

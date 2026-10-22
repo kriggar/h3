@@ -1,4 +1,4 @@
-extends "res://game/redesign/environment_kit.gd"
+extends "res://game/redesign/dungeon_scenery.gd"
 
 const Action = preload("res://game/redesign/action_rules.gd")
 const Appearance = preload("res://game/redesign/hero_appearance.gd")
@@ -10,6 +10,7 @@ const WOLF_MODEL: String = "res://assets/models/werewolf/werewolf.glb"
 var action_state: Dictionary = {}
 var actors: Dictionary = {}
 var _loot_nodes: Dictionary = {}
+var _loot_piles: Dictionary = {}
 var feedback: Feedback
 var sound_enabled: bool = true
 var _camera_target: Vector3 = Vector3.ZERO
@@ -23,8 +24,13 @@ func _ready() -> void:
 	feedback=Feedback.new()
 	feedback.set_sound_enabled(sound_enabled)
 	add_child(feedback)
-	terrain(Vector2(24,28),30,true)
-	_build_vault()
+	var arena: Dictionary = action_state.get("arena",{})
+	if str(arena.get("layoutId","bell_crypt")) == "bell_crypt":
+		terrain(Vector2(24,28),30,true)
+		_build_vault()
+	else:
+		build_hunt_scenery(arena)
+	_build_extraction_seal()
 	if not action_state.is_empty():
 		set_state(action_state)
 
@@ -74,8 +80,11 @@ func _build_vault() -> void:
 		rock.position = Vector3(-11.3+float(index%2)*22.6,0,-10+index*3)
 	banner(self,Vector3(-3,0,-12.4),4.4,Color("493e47"))
 	banner(self,Vector3(3,0,-12.4),4.4,Color("493e47"))
+
+func _build_extraction_seal() -> void:
+	var exit_position: Array = action_state.get("arena",{}).get("exit",[0,10])
 	_exit_marker = Node3D.new()
-	_exit_marker.position = Vector3(0,0,10)
+	_exit_marker.position = Vector3(float(exit_position[0]),0,float(exit_position[1]))
 	_exit_marker.name = "ExtractionSeal"
 	add_child(_exit_marker)
 	plane(_exit_marker,Vector3(0,0.015,0),Vector2(3.1,2.8),stone)
@@ -128,7 +137,7 @@ func _make_actor(actor: Dictionary) -> void:
 			var bound: AABB = part.transform * part.mesh.get_aabb()
 			bounds = bound if first else bounds.merge(bound)
 			first = false
-		var height: float = 2.55 if str(actor.id) == "crypt_alpha" else 2.05
+		var height: float = 2.55 if str(actor.id) == "crypt_alpha" else (2.35 if str(actor.get("behavior",""))=="werewolf" else 2.05)
 		var factor: float = height / maxf(0.01,bounds.size.y)
 		pivot.scale = Vector3.ONE*factor
 		pivot.position = -Vector3(bounds.get_center().x,bounds.position.y,bounds.get_center().z)*factor
@@ -272,22 +281,34 @@ func _sync_animation(visual: Dictionary, actor: Dictionary) -> void:
 			visual.droppedSword=loose
 
 func _sync_loot() -> void:
+	var groups: Dictionary = {}
 	for loot: Dictionary in action_state.loot:
-		var id: String = str(loot.id)
 		if bool(loot.claimed):
-			if _loot_nodes.has(id):
-				_loot_nodes[id].queue_free()
-				_loot_nodes.erase(id)
 			continue
-		if not _loot_nodes.has(id):
+		var anchor: Vector2 = Vector2(float(loot.pos[0]),float(loot.pos[1]))
+		if not groups.has(anchor):
+			groups[anchor]=[]
+		groups[anchor].append(loot)
+	for anchor: Vector2 in _loot_piles.keys():
+		if not groups.has(anchor):
+			_loot_piles[anchor].queue_free()
+			_loot_piles.erase(anchor)
+	_loot_nodes.clear()
+	for anchor: Vector2 in groups:
+		if not _loot_piles.has(anchor):
 			var root: Node3D = Node3D.new()
 			add_child(root)
-			var offset: Vector3 = Vector3(-0.75+float(_loot_nodes.size())*0.5,0,0.8)
-			root.position = Vector3(float(loot.pos[0]),0,float(loot.pos[1]))+offset
+			# Keep the visible reward and its pickup point identical. A count-based
+			# offset can place a chest across a wall or move it after reloading.
+			root.position = Vector3(anchor.x,0,anchor.y)
 			var chest: Node3D = model("res://assets/models/treasure_chest/treasure_chest_lod.glb","",root,0.35)
-			chest.rotation.y = float(_loot_nodes.size())*0.3
-			_ring(root,0.43,Color("bca65b") if str(loot.kind)=="gold" else Color("82af73"),0.03)
-			_loot_nodes[id] = root
+			chest.rotation.y = 0.15
+			_ring(root,0.43,Color("c7ad68"),0.03)
+			_loot_piles[anchor] = root
+		# Several registered rewards may share a dead keeper's position. One
+		# physical pile avoids intersecting chests and remains until its last claim.
+		for loot: Dictionary in groups[anchor]:
+			_loot_nodes[str(loot.id)] = _loot_piles[anchor]
 
 func show_events(events: Array) -> void:
 	for event: Dictionary in events:
@@ -310,8 +331,9 @@ func pick(screen_position: Vector2) -> Dictionary:
 	var point: Variant = ground_point(screen_position)
 	if point == null:
 		return {}
-	if Vector2(point.x,point.z).distance_to(Vector2(0,10))<1.6:
-		return {"kind":"exit","pos":[0,10]}
+	var exit_position: Array = action_state.get("arena",{}).get("exit",[0,10])
+	if Vector2(point.x,point.z).distance_to(Vector2(float(exit_position[0]),float(exit_position[1])))<1.6:
+		return {"kind":"exit","pos":exit_position.duplicate()}
 	return {"kind":"ground","pos":[point.x,point.z]}
 
 func zoom(amount: float) -> void:

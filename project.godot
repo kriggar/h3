@@ -3,7 +3,7 @@ config_version=5
 
 [application]
 config/name="Draconia — Oaths of the Carpathians"
-config/version="0.3.1-card-reconstruction"
+config/version="0.3.2-hunt-regions"
 run/main_scene="res://redesign.tscn"
 config/features=PackedStringArray("4.7", "GL Compatibility")
 config/icon="res://icon.svg"

@@ -1,4 +1,6 @@
-# Current development verification — Draconia 0.3.1 card reconstruction
+# Development verification — Draconia 0.3.2 hunt regions
+
+**Latest source update:** [0.3.2 hunt locations and field guide](HUNT_REGIONS_V032.md) records the current rules gate and native dungeon review. The older records below retain their original source and asset scope; their totals are not added to the new gate. The 0.3.1 desktop exports remain historical executables.
 
 This page covers `redesign.tscn` and the current `game/redesign/` rules. Evidence is attached to the recorded code/assets, not inferred from a version label. The immutable v0.2 action checkpoint has its own [historical verification](V0_2_VERIFICATION.md); the earlier hex campaign's 1,184 checks remain in [LEGACY_VERIFICATION.md](LEGACY_VERIFICATION.md). Neither historical total is added to the results below.
 

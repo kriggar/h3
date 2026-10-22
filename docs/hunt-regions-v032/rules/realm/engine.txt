@@ -1,0 +1,18 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+RULES_STORAGE {"applicationName":"DraconiaRules-7f00db62138a48f4bfc9c6ccdef50d91-realm","userDataDir":"/tmp/draconia-v032-tests/portable-release-gate/realm/data/godot/app_userdata/DraconiaRules-7f00db62138a48f4bfc9c6ccdef50d91-realm"}
+REALM GROUP 1 One protagonist, registered companies, real starter equipment: PASS
+REALM GROUP 2 Four watches and exactly one dawn settlement: PASS
+REALM GROUP 3 Atomic visible construction and persisted daily limit: PASS
+REALM GROUP 4 Prerequisites, market and exclusive riverside plot: PASS
+REALM GROUP 5 Inclusive oath deadlines, fulfilment and once-only rewards: PASS
+REALM GROUP 6 Advance-to-event and bounded forecast: PASS
+REALM GROUP 7 Paid rival recruitment and legal frontier claims: PASS
+REALM GROUP 8 Safe rest and building effects: PASS
+REALM GROUP 9 Solo encounter locks and pending-save continuation: PASS
+REALM GROUP 10 Real entrance withdrawal preserves companies and enemies: PASS
+REALM GROUP 11 Read-only registered reward previews and persistent corpse rolls: PASS
+REALM GROUP 12 Earned crypt clear, physical loot, extraction and atomic application: PASS
+REALM GROUP 13 Strict malformed-state rejection: PASS
+REALM GROUP 14 Finite paid crafting market, real socket route and saved stock: PASS
+REALM_SUMMARY {"checks":247,"earnedRun":{"companyCount":2,"elapsedTicks":507,"hp":71,"inventoryItems":6,"lootClaims":4,"mana":10,"obligation":"fulfilled","seed":711,"watchIndex":2},"failures":0,"groups":14}

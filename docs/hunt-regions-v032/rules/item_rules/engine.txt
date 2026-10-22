@@ -1,0 +1,4 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+RULES_STORAGE {"applicationName":"DraconiaRules-7f00db62138a48f4bfc9c6ccdef50d91-item_rules","userDataDir":"/tmp/draconia-v032-tests/portable-release-gate/item_rules/data/godot/app_userdata/DraconiaRules-7f00db62138a48f4bfc9c6ccdef50d91-item_rules"}
+{"checks":73,"details":[],"failures":0,"groups":5,"suite":"item_rules"}

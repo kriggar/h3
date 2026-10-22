@@ -7,6 +7,7 @@ const Items = preload("res://game/redesign/item_rules.gd")
 const TownStage = preload("res://game/redesign/town_stage.gd")
 const DungeonStage = preload("res://game/redesign/dungeon_stage.gd")
 const ArenaOverlay = preload("res://game/redesign/arena_overlay.gd")
+const ExpeditionChart = preload("res://game/redesign/expedition_chart.gd")
 const HeroFolio = preload("res://game/redesign/hero_folio.gd")
 const Identity = preload("res://game/redesign/hero_identity.gd")
 const UI = preload("res://game/redesign/manuscript_theme.gd")
@@ -47,6 +48,9 @@ var _focus: ProgressBar
 var _health_label: Label
 var _focus_label: Label
 var _objective: Label
+var _objective_detail: Label
+var _target_readout: Label
+var _expedition_chart: Control
 var _pause_label: Label
 var _loot_box: VBoxContainer
 var _status: Label
@@ -437,6 +441,8 @@ func _build_layout() -> void:
 func _responsive() -> void:
 	if _sidebar != null:
 		_sidebar.custom_minimum_size.x = 304 if size.x < 1100 else 352
+	if is_instance_valid(_expedition_chart):
+		_expedition_chart.custom_minimum_size.y = 120 if size.y < 740 else 146
 
 func _clear(parent: Node) -> void:
 	for child: Node in parent.get_children():
@@ -723,8 +729,10 @@ func _open_expedition() -> void:
 		title.custom_minimum_size.y=48
 		content.add_child(title)
 		content.add_child(_body("TIER %d · %d FOES · %d WATCHES" % [int(offer.tier),int(offer.remainingEnemies),int(offer.quotedWatches)],14,UI.MUTED))
-		var description: Label=_body(str(offer.description),17)
+		var briefing: String=str(offer.get("tacticalBrief",""))
+		var description: Label=_body(str(offer.description) if briefing.is_empty() else briefing,17)
 		description.custom_minimum_size.y=70
+		description.tooltip_text=str(offer.description)
 		content.add_child(description)
 		content.add_child(HSeparator.new())
 		content.add_child(_body("%d experience on completion" % int(offer.effectiveXpReward),17,UI.OXBLOOD))
@@ -825,11 +833,16 @@ func _dungeon_sidebar() -> void:
 	_clear(_right_actions)
 	_world_title.text=_expedition_name().to_upper()
 	_world_subtitle.text="Solo expedition · The Ashen March"
-	_section(_right,"MARA VEYNE",19)
-	_portrait(_right,256,158)
-	var identity: Label=_body("%s · Level %d" % [Identity.identity_line(realm.hero),realm.hero.level],15,UI.MUTED)
-	identity.horizontal_alignment=HORIZONTAL_ALIGNMENT_CENTER
-	_right.add_child(identity)
+	var hero_row: HBoxContainer=HBoxContainer.new()
+	hero_row.add_theme_constant_override("separation",10)
+	_right.add_child(hero_row)
+	_portrait(hero_row,72,64)
+	var hero_details: VBoxContainer=VBoxContainer.new()
+	hero_details.size_flags_horizontal=Control.SIZE_EXPAND_FILL
+	hero_details.add_theme_constant_override("separation",1)
+	hero_row.add_child(hero_details)
+	hero_details.add_child(UI.heading("MARA VEYNE",17))
+	hero_details.add_child(_body("Level %d · %s" % [realm.hero.level,Identity.class_name_for(realm.hero)],14,UI.MUTED))
 	_health_label = _body("Health",17,UI.OXBLOOD)
 	_right.add_child(_health_label)
 	_health = _bar(_right,Color("8f3f32"))
@@ -837,19 +850,32 @@ func _dungeon_sidebar() -> void:
 	_right.add_child(_focus_label)
 	_focus = _bar(_right,Color("477b85"))
 	_section(_right,"YOUR OBJECTIVE",15)
-	_objective = _body("",20,UI.OXBLOOD)
+	_objective = _body("",19,UI.OXBLOOD)
+	_objective.name="ExpeditionObjective"
 	_right.add_child(_objective)
-	_right.add_child(_body("Defeat the pack. Gather the spoils. Leave by the entrance seal.",17))
+	_objective_detail = _body("",15,UI.MUTED)
+	_objective_detail.name="ExpeditionObjectiveDetail"
+	_right.add_child(_objective_detail)
+	_section(_right,"FIELD CHART",14)
+	var chart_frame: PanelContainer=PanelContainer.new()
+	chart_frame.add_theme_stylebox_override("panel",UI.paper(5))
+	_right.add_child(chart_frame)
+	_expedition_chart=ExpeditionChart.new()
+	_expedition_chart.name="ExpeditionFieldChart"
+	_expedition_chart.custom_minimum_size=Vector2(0,120 if size.y<740 else 146)
+	_expedition_chart.size_flags_horizontal=Control.SIZE_EXPAND_FILL
+	chart_frame.add_child(_expedition_chart)
+	_target_readout=_body("",15,UI.MUTED)
+	_target_readout.name="ExpeditionTarget"
+	_target_readout.custom_minimum_size.y=38
+	_right.add_child(_target_readout)
 	_loot_box = VBoxContainer.new()
+	_loot_box.name="ExpeditionSpoils"
+	_loot_box.add_theme_constant_override("separation",4)
 	_right.add_child(_loot_box)
-	_button("RETURN TO ENTRANCE",_request_exit,_right_actions,40)
+	var return_button: Button=_button("RETURN TO ENTRANCE",_request_exit,_right_actions,40)
+	return_button.name="ExpeditionReturn"
 	_button("PAUSE · SPACE",_toggle_pause,_right_actions,36)
-	_section(_right,"FIELD NOTES",14)
-	_right.add_child(_body("LMB  Move / attack / inspect
-RMB  Selected skill
-1–2  Class skills toward cursor
-G  Guard    Shift  Dodge
-Wheel  Camera distance",15,UI.MUTED))
 
 func _dungeon_footer() -> void:
 	_clear(_footer)
@@ -1016,7 +1042,18 @@ func _update_action_hud() -> void:
 	_focus.max_value = maxf(1,float(hero.maxMana))
 	_focus.value = float(hero.mana)
 	_focus_label.text = "Focus  %d / %d" % [hero.mana,hero.maxMana]
-	_objective.text = "The hunt is won.\nClaim your spoils and return." if bool(action_state.objective.completed) else "Defeat the pack  %d / %d" % [action_state.objective.progress,action_state.objective.target]
+	var is_hunt: bool=realm.pendingEncounter is Dictionary and realm.pendingEncounter.has("contractId")
+	var guidance: Dictionary=ExpeditionChart.guidance(action_state,is_hunt)
+	_objective.text=str(guidance.title)
+	_objective_detail.text=str(guidance.detail)
+	_expedition_chart.set_state(action_state)
+	# Keep the actual reward actions visible when the hunt turns to collection.
+	# Combat target space is no longer useful once no live foes remain.
+	_expedition_chart.custom_minimum_size.y=104 if str(guidance.phase)=="collect" else (120 if size.y<740 else 146)
+	_target_readout.visible=str(guidance.phase)=="combat"
+	var target: Dictionary=ExpeditionChart.target_summary(action_state)
+	_target_readout.text="TARGET · None selected" if target.is_empty() else "%s · %s\nHealth %d / %d" % [str(target.name),str(target.role),int(target.hp),int(target.maxHp)]
+	_target_readout.add_theme_color_override("font_color",UI.MUTED if target.is_empty() else UI.OXBLOOD)
 	_pause_label.visible = bool(action_state.paused) and not modal_layer.visible
 	_pause_label.position.x = (world_container.size.x-_pause_label.size.x)*0.5
 	var index: int = 0
@@ -1037,7 +1074,15 @@ func _refresh_loot() -> void:
 		if bool(loot.claimed):
 			continue
 		var label: String = "%d gold" % int(loot.get("amount",0)) if str(loot.kind)=="gold" else ("Choose a keepsake" if str(loot.kind)=="choice" else str(Items.catalog()[loot.itemId].name))
-		_button("Inspect: "+label,func() -> void: _inspect_loot(str(loot.id)),_loot_box,36)
+		var button: Button=_button("Inspect: "+label,func() -> void: _inspect_loot(str(loot.id)),_loot_box,30)
+		button.add_theme_font_size_override("font_size",16)
+		for state_name: String in ["normal","hover","pressed","hover_pressed"]:
+			# Construct the manuscript frame explicitly: its procedural colors
+			# are not exported Resource fields and duplicate() loses that ink.
+			var style: StyleBox=UI.command(state_name in ["hover","hover_pressed"],state_name in ["pressed","hover_pressed"])
+			style.set_content_margin(SIDE_TOP,4)
+			style.set_content_margin(SIDE_BOTTOM,4)
+			button.add_theme_stylebox_override(state_name,style)
 
 func _inspect_loot(id: String) -> void:
 	for loot: Dictionary in action_state.loot:

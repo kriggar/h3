@@ -1,0 +1,285 @@
+{
+	"action": "{\"actors\":[{\"action\":{},\"animStartedTick\":0,\"animState\":\"idle\",\"armor\":3,\"attack\":19,\"baseStats\":{\"armor\":2.0,\"attack\":18.0,\"maxHp\":120.0,\"maxMana\":40.0,\"speed\":4.6},\"behavior\":\"hero\",\"classId\":\"oathwarden\",\"companyId\":\"\",\"cooldowns\":{},\"dead\":false,\"dodgeReadyAt\":0,\"equipment\":{\"amulet\":\"\",\"chest\":\"start/coat\",\"cloak\":\"\",\"feet\":\"start/boots\",\"hands\":\"\",\"head\":\"\",\"legs\":\"\",\"main_hand\":\"start/blade\",\"off_hand\":\"\",\"ring_1\":\"\",\"ring_2\":\"\"},\"facing\":[0.0,-1.0],\"factionId\":\"ashen_crown\",\"guarding\":false,\"hp\":120,\"id\":\"ileana\",\"inventory\":[{\"affixes\":[],\"baseId\":\"traveller_blade\",\"equipmentId\":\"traveller_sword\",\"identified\":true,\"instanceId\":\"start/blade\",\"itemId\":\"traveller_blade\",\"quality\":\"normal\",\"recipeId\":\"\",\"requiredLevel\":1.0,\"rollSeed\":0.0,\"setId\":\"\",\"slot\":\"main_hand\",\"sockets\":{\"capacity\":0.0,\"contents\":[]},\"uniqueId\":\"\"},{\"affixes\":[],\"baseId\":\"linen_coat\",\"equipmentId\":\"linen_coat\",\"identified\":true,\"instanceId\":\"start/coat\",\"itemId\":\"linen_coat\",\"quality\":\"normal\",\"recipeId\":\"\",\"requiredLevel\":1.0,\"rollSeed\":0.0,\"setId\":\"\",\"slot\":\"chest\",\"sockets\":{\"capacity\":0.0,\"contents\":[]},\"uniqueId\":\"\"},{\"affixes\":[],\"baseId\":\"road_boots\",\"equipmentId\":\"leather_boots\",\"identified\":true,\"instanceId\":\"start/boots\",\"itemId\":\"road_boots\",\"quality\":\"normal\",\"recipeId\":\"\",\"requiredLevel\":1.0,\"rollSeed\":0.0,\"setId\":\"\",\"slot\":\"feet\",\"sockets\":{\"capacity\":0.0,\"contents\":[]},\"uniqueId\":\"\"}],\"isHero\":true,\"lastCastTick\":-1000,\"leapReadyAt\":30,\"level\":1.0,\"locationId\":\"dawnwatch\",\"mana\":40,\"manaRemainder\":0,\"maxHp\":130,\"maxMana\":42,\"maxResolve\":100.0,\"name\":\"Mara Veyne\",\"nextThink\":0,\"path\":[[-5.000400066375732,0.3199999928474426]],\"pos\":[0.0,8.0],\"progression\":{\"allocations\":{\"finesse\":0.0,\"might\":1.0,\"spirit\":1.0,\"vitality\":1.0},\"resetCount\":0.0,\"revision\":1.0,\"unspent\":0.0,\"version\":1.0},\"raceId\":\"hearthborn\",\"radius\":0.42,\"range\":1.8,\"resolve\":100.0,\"restartUntil\":0,\"side\":\"player\",\"skills\":[\"cleave\",\"ward\"],\"spawnPos\":[0.0,8.0],\"speed\":4.6,\"state\":\"alive\",\"statuses\":{},\"targetId\":\"\",\"traits\":[],\"type\":\"ileana\",\"wardBonus\":1.0,\"xp\":0.0},{\"action\":{},\"animStartedTick\":0,\"animState\":\"idle\",\"armor\":0,\"attack\":8,\"behavior\":\"melee\",\"companyId\":\"\",\"cooldowns\":{},\"dead\":false,\"dodgeReadyAt\":0,\"facing\":[0.0,1.0],\"guarding\":false,\"hp\":45,\"id\":\"hunt:711:1:0:scout\",\"isHero\":false,\"lastCastTick\":-1000,\"leapReadyAt\":30,\"mana\":0,\"manaRemainder\":0,\"maxHp\":45,\"maxMana\":0,\"nextThink\":0,\"path\":[],\"pos\":[-3.0,3.0],\"radius\":0.5,\"range\":1.8,\"restartUntil\":0,\"side\":\"enemy\",\"skills\":[],\"spawnPos\":[-3.0,3.0],\"speed\":3.0,\"statuses\":{},\"targetId\":\"\",\"traits\":[],\"type\":\"wolf\"},{\"action\":{},\"animStartedTick\":0,\"animState\":\"idle\",\"armor\":0,\"attack\":8,\"behavior\":\"melee\",\"companyId\":\"\",\"cooldowns\":{},\"dead\":false,\"dodgeReadyAt\":0,\"facing\":[0.0,1.0],\"guarding\":false,\"hp\":45,\"id\":\"hunt:711:1:0:hound\",\"isHero\":false,\"lastCastTick\":-1000,\"leapReadyAt\":30,\"mana\":0,\"manaRemainder\":0,\"maxHp\":45,\"maxMana\":0,\"nextThink\":0,\"path\":[],\"pos\":[3.0,0.0],\"radius\":0.5,\"range\":1.8,\"restartUntil\":0,\"side\":\"enemy\",\"skills\":[],\"spawnPos\":[3.0,0.0],\"speed\":3.0,\"statuses\":{},\"targetId\":\"\",\"traits\":[],\"type\":\"wolf\"},{\"action\":{},\"animStartedTick\":0,\"animState\":\"idle\",\"armor\":3,\"attack\":12,\"behavior\":\"werewolf\",\"companyId\":\"\",\"cooldowns\":{},\"dead\":false,\"dodgeReadyAt\":0,\"facing\":[0.0,1.0],\"guarding\":false,\"hp\":100,\"id\":\"hunt:711:1:0:keeper\",\"isHero\":false,\"lastCastTick\":-1000,\"leapReadyAt\":30,\"mana\":0,\"manaRemainder\":0,\"maxHp\":100,\"maxMana\":0,\"nextThink\":0,\"path\":[],\"pos\":[0.0,-7.0],\"radius\":0.5,\"range\":1.8,\"restartUntil\":0,\"side\":\"enemy\",\"skills\":[],\"spawnPos\":[0.0,-7.0],\"speed\":3.5,\"statuses\":{},\"targetId\":\"\",\"traits\":[],\"type\":\"wolf\"}],\"arena\":{\"bounds\":[-10.0,-12.0,10.0,12.0],\"entry\":[0.0,9.0],\"exit\":[0.0,10.0],\"obstacles\":[{\"rect\":[-10.0,-3.0,8.0,0.9]},{\"rect\":[2.0,-3.0,8.0,0.9]},{\"rect\":[-6.0,2.0,1.4,1.4]},{\"rect\":[4.6,2.0,1.4,1.4]}]},\"encounterId\":\"hunt:711:1:0:attempt:1\",\"errors\":[],\"events\":[],\"heroId\":\"ileana\",\"inputSequence\":1,\"kind\":\"dungeon\",\"loot\":[],\"lootClaims\":[],\"lootRewards\":[{\"dropped\":false,\"id\":\"hunt_gear\",\"itemId\":\"bellwarden_boots\",\"kind\":\"item\",\"sourceId\":\"hunt:711:1:0:keeper\"},{\"dropped\":false,\"id\":\"hunt_supply\",\"itemId\":\"gem_amber\",\"kind\":\"item\",\"sourceId\":\"hunt:711:1:0:scout\"},{\"amount\":150.0,\"dropped\":false,\"id\":\"hunt_gold\",\"kind\":\"gold\",\"sourceId\":\"hunt:711:1:0:keeper\"}],\"nextProjectile\":0,\"objective\":{\"completed\":false,\"extracted\":false,\"progress\":0,\"target\":3,\"type\":\"dungeon_clear\"},\"paused\":false,\"pendingExit\":false,\"phase\":\"running\",\"projectiles\":[],\"queuedCommand\":{},\"result\":{},\"rng\":3247308825,\"schemaVersion\":1,\"seed\":3247308825,\"tick\":0}",
+	"command": {
+		"kind": "move",
+		"pos": [
+			-5.00040006637573,
+			0.319999992847443
+		]
+	},
+	"registeredEncounter": {
+		"arena": {
+			"bounds": [
+				-10.0,
+				-12.0,
+				10.0,
+				12.0
+			],
+			"entry": [
+				0.0,
+				9.0
+			],
+			"exit": [
+				0.0,
+				10.0
+			],
+			"obstacles": [
+				{
+					"rect": [
+						-10.0,
+						-3.0,
+						8.0,
+						0.9
+					]
+				},
+				{
+					"rect": [
+						2.0,
+						-3.0,
+						8.0,
+						0.9
+					]
+				},
+				{
+					"rect": [
+						-6.0,
+						2.0,
+						1.4,
+						1.4
+					]
+				},
+				{
+					"rect": [
+						4.6,
+						2.0,
+						1.4,
+						1.4
+					]
+				}
+			]
+		},
+		"committedWatch": 0.0,
+		"context": {
+			"contractTier": 1.0,
+			"regionId": "woodland",
+			"watch": "dusk",
+			"weather": "clear"
+		},
+		"contractId": "hunt:711:1:0",
+		"encounterId": "hunt:711:1:0:attempt:1",
+		"enemies": [
+			{
+				"armor": 0.0,
+				"attack": 8.0,
+				"behavior": "melee",
+				"companyId": "",
+				"hp": 45.0,
+				"id": "hunt:711:1:0:scout",
+				"maxHp": 45.0,
+				"pos": [
+					-3.0,
+					3.0
+				],
+				"speed": 3.0,
+				"type": "wolf"
+			},
+			{
+				"armor": 0.0,
+				"attack": 8.0,
+				"behavior": "melee",
+				"companyId": "",
+				"hp": 45.0,
+				"id": "hunt:711:1:0:hound",
+				"maxHp": 45.0,
+				"pos": [
+					3.0,
+					0.0
+				],
+				"speed": 3.0,
+				"type": "wolf"
+			},
+			{
+				"armor": 3.0,
+				"attack": 12.0,
+				"behavior": "werewolf",
+				"companyId": "",
+				"hp": 100.0,
+				"id": "hunt:711:1:0:keeper",
+				"maxHp": 100.0,
+				"pos": [
+					0.0,
+					-7.0
+				],
+				"speed": 3.5,
+				"type": "wolf"
+			}
+		],
+		"heroSnapshot": {
+			"armor": 3.0,
+			"attack": 19.0,
+			"baseStats": {
+				"armor": 2.0,
+				"attack": 18.0,
+				"maxHp": 120.0,
+				"maxMana": 40.0,
+				"speed": 4.6
+			},
+			"classId": "oathwarden",
+			"equipment": {
+				"amulet": "",
+				"chest": "start/coat",
+				"cloak": "",
+				"feet": "start/boots",
+				"hands": "",
+				"head": "",
+				"legs": "",
+				"main_hand": "start/blade",
+				"off_hand": "",
+				"ring_1": "",
+				"ring_2": ""
+			},
+			"factionId": "ashen_crown",
+			"hp": 120.0,
+			"id": "ileana",
+			"inventory": [
+				{
+					"affixes": [],
+					"baseId": "traveller_blade",
+					"equipmentId": "traveller_sword",
+					"identified": true,
+					"instanceId": "start/blade",
+					"itemId": "traveller_blade",
+					"quality": "normal",
+					"recipeId": "",
+					"requiredLevel": 1.0,
+					"rollSeed": 0.0,
+					"setId": "",
+					"slot": "main_hand",
+					"sockets": {
+						"capacity": 0.0,
+						"contents": []
+					},
+					"uniqueId": ""
+				},
+				{
+					"affixes": [],
+					"baseId": "linen_coat",
+					"equipmentId": "linen_coat",
+					"identified": true,
+					"instanceId": "start/coat",
+					"itemId": "linen_coat",
+					"quality": "normal",
+					"recipeId": "",
+					"requiredLevel": 1.0,
+					"rollSeed": 0.0,
+					"setId": "",
+					"slot": "chest",
+					"sockets": {
+						"capacity": 0.0,
+						"contents": []
+					},
+					"uniqueId": ""
+				},
+				{
+					"affixes": [],
+					"baseId": "road_boots",
+					"equipmentId": "leather_boots",
+					"identified": true,
+					"instanceId": "start/boots",
+					"itemId": "road_boots",
+					"quality": "normal",
+					"recipeId": "",
+					"requiredLevel": 1.0,
+					"rollSeed": 0.0,
+					"setId": "",
+					"slot": "feet",
+					"sockets": {
+						"capacity": 0.0,
+						"contents": []
+					},
+					"uniqueId": ""
+				}
+			],
+			"level": 1.0,
+			"locationId": "dawnwatch",
+			"mana": 40.0,
+			"maxHp": 130.0,
+			"maxMana": 42.0,
+			"maxResolve": 100.0,
+			"name": "Mara Veyne",
+			"pos": [
+				0.0,
+				8.0
+			],
+			"progression": {
+				"allocations": {
+					"finesse": 0.0,
+					"might": 1.0,
+					"spirit": 1.0,
+					"vitality": 1.0
+				},
+				"resetCount": 0.0,
+				"revision": 1.0,
+				"unspent": 0.0,
+				"version": 1.0
+			},
+			"raceId": "hearthborn",
+			"resolve": 100.0,
+			"skills": [
+				"cleave",
+				"ward"
+			],
+			"speed": 4.6,
+			"state": "alive",
+			"traits": [],
+			"wardBonus": 1.0,
+			"xp": 0.0
+		},
+		"id": "hunt:711:1:0:attempt:1",
+		"initiator": "player",
+		"interactive": true,
+		"kind": "dungeon",
+		"locationId": "hunt:711:1:0",
+		"locationName": "The Briar Kennels",
+		"lootRewards": [
+			{
+				"id": "hunt_gear",
+				"itemId": "bellwarden_boots",
+				"kind": "item",
+				"sourceId": "hunt:711:1:0:keeper"
+			},
+			{
+				"id": "hunt_supply",
+				"itemId": "gem_amber",
+				"kind": "item",
+				"sourceId": "hunt:711:1:0:scout"
+			},
+			{
+				"amount": 150.0,
+				"id": "hunt_gold",
+				"kind": "gold",
+				"sourceId": "hunt:711:1:0:keeper"
+			}
+		],
+		"objective": {
+			"type": "dungeon_clear"
+		},
+		"objectiveDefinitionId": "hunt_clear",
+		"originLocationId": "dawnwatch",
+		"playerCompanies": [],
+		"quotedWatches": 2.0,
+		"returnWatchId": "watch:2",
+		"sceneId": "bell_crypt",
+		"seed": 3247308825.0,
+		"stakesDefinitionId": "hunt_extraction",
+		"stationedCompanyIds": [
+			"company:dawn_guard",
+			"company:dawn_archers"
+		],
+		"xpReward": 120.0
+	},
+	"schema": "draconia-frozen-v4-grazing-path",
+	"sourceCommit": "9c84ff43ef3f9e1ea444fa90d7dee46a5e1c2b0d",
+	"sourceFixture": "v4-active-hunt-save.json",
+	"sourceSha256": "42d7c1d94de751ecf81fc687ba11897f4ba2ab0752e0fc1fde81c6c4b66791d7"
+}

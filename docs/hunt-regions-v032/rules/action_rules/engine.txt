@@ -1,0 +1,20 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+RULES_STORAGE {"applicationName":"DraconiaRules-7f00db62138a48f4bfc9c6ccdef50d91-action_rules","userDataDir":"/tmp/draconia-v032-tests/portable-release-gate/action_rules/data/godot/app_userdata/DraconiaRules-7f00db62138a48f4bfc9c6ccdef50d91-action_rules"}
+PASS Input ownership, aliases and JSON snapshots
+PASS Movement speed, obstacle routes and atomic rejection
+PASS Exact fence and circle boundary clearance
+PASS Attack commitment, recovery, aim and cancellation
+PASS Spell timing, costs, cooldowns and finite equipment wards
+PASS Traveling projectiles, walls, burns and exactly one impact
+PASS Guard direction, dodge windows and rooted movement
+PASS Locked leap telegraph and interruption
+PASS Unique cleave tradeoff and bounded nonrecursive ward
+PASS Pause, queued intent and deterministic replay
+PASS Persistent corpses, choice loot and extraction
+PASS Defeat and same-tick extraction interruption
+PASS Live action save validation and exact continuation
+PASS Authentic legacy grazing route restore and safe continuation
+PASS Earned three-enemy crypt, loot and return
+ACTION RULES: 15 groups, 232 checks, 0 failures
+ACTION JOURNEY {"claims":3,"commands":83,"elapsedTicks":496,"heroHp":71,"mana":9,"seconds":16.5333333333333}

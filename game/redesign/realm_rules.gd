@@ -4,9 +4,10 @@ extends RefCounted
 ## All mutations validate before commitment. The scene never owns costs or rewards.
 
 const RULESET: String = "draconia_action_v1"
-const VERSION: int = 4
+const VERSION: int = 5
 const Identity = preload("res://game/redesign/hero_identity.gd")
 const Hunts = preload("res://game/redesign/hunt_rules.gd")
+const Dungeons = preload("res://game/redesign/dungeon_catalog.gd")
 const MAX_LEVEL: int = 30
 const POINTS_PER_LEVEL: int = 3
 const MAX_ATTRIBUTE_INVESTMENT: int = 40
@@ -794,6 +795,10 @@ static func serialize(state: Dictionary) -> String:
 static func _hunt_board_valid(state: Dictionary) -> bool:
 	if str(state.get("ruleset","")) != RULESET or not _integer(state.get("version"),4,VERSION):
 		return false
+	# Version 4 only ever wrote the frozen registry. Validate it before any
+	# migration so edited old saves cannot opt into unregistered geometry.
+	if int(state.version) == 4 and (not state.get("huntBoard") is Dictionary or not _integer(state.huntBoard.get("version"),1,1)):
+		return false
 	var pending_id: String = str(state.pendingEncounter.get("contractId","")) if state.get("pendingEncounter") is Dictionary else ""
 	return Hunts.validate_board(state.get("huntBoard"),int(state.get("seed",0)),int(state.get("watchIndex",0)),int(state.get("hero",{}).get("level",1)),pending_id)
 
@@ -823,6 +828,9 @@ static func hunt_board(state: Dictionary) -> Dictionary:
 		for actor: Dictionary in offer.enemies:
 			remaining += 1 if int(actor.hp) > 0 else 0
 		offers.append({"id":str(offer.id),"name":str(offer.name),"description":str(offer.description),"tier":int(offer.tier),"quotedWatches":int(offer.quotedWatches),"xpReward":int(offer.xpReward),"effectiveXpReward":mini(int(offer.xpReward),experience_for_level(MAX_LEVEL)-int(state.hero.xp)),"goldReward":int(offer.goldReward),"rewardPreview":Hunts.reward_preview(int(state.seed),offer),"status":"active" if str(state.huntBoard.activeContractId) == str(offer.id) else "offered","remainingEnemies":remaining,"enemyCount":offer.enemies.size(),"attempts":int(offer.attempts),"canEnter":reason.is_empty(),"lockReason":reason,"completionNotice":"Completing and leaving this contract forfeits any spoils you did not collect. Retreat preserves the same enemies and unclaimed rewards; re-entry costs another two watches."})
+		offers.back()["templateId"] = str(offer.templateId)
+		offers.back()["layoutId"] = Dungeons.layout_id_for(str(offer.templateId),int(state.huntBoard.version))
+		offers.back()["tacticalBrief"] = Dungeons.briefing_for(str(offer.templateId),int(state.huntBoard.version))
 	var any_available: bool = false
 	for offer: Dictionary in offers:
 		any_available = any_available or bool(offer.canEnter)
@@ -838,6 +846,7 @@ static func begin_hunt(state: Dictionary, contract_id: String) -> Dictionary:
 	var selected: Dictionary = Hunts.contract(next.huntBoard,contract_id)
 	var origin: String = str(next.hero.locationId)
 	var hero: Dictionary = _hero_snapshot(next,origin)
+	hero.pos = Dungeons.hero_spawn_for(str(selected.templateId),int(next.huntBoard.version))
 	var committed_watch: int = int(next.watchIndex)
 	var quoted: int = int(selected.quotedWatches)
 	next.hero.locationId = contract_id
@@ -852,7 +861,7 @@ static func begin_hunt(state: Dictionary, contract_id: String) -> Dictionary:
 	for reward: Dictionary in selected.lootRewards:
 		if not selected.claimedRewardIds.has(str(reward.id)):
 			rewards.append(reward.duplicate(true))
-	var encounter: Dictionary = {"id":id,"encounterId":id,"kind":"dungeon","initiator":"player","interactive":true,"contractId":contract_id,"locationId":contract_id,"locationName":str(selected.name),"originLocationId":origin,"committedWatch":committed_watch,"quotedWatches":quoted,"returnWatchId":str(next.turn.id),"heroSnapshot":hero,"playerCompanies":[],"stationedCompanyIds":next.expeditionCompanyIds.duplicate(),"enemies":selected.enemies.duplicate(true),"lootRewards":rewards,"objective":{"type":"dungeon_clear"},"objectiveDefinitionId":"hunt_clear","stakesDefinitionId":"hunt_extraction","sceneId":"bell_crypt","seed":int(selected.seed),"xpReward":int(selected.xpReward),"context":{"watch":str(calendar(next).watch),"regionId":"woodland","weather":"clear","contractTier":int(selected.tier)},"arena":CRYPT_ARENA.duplicate(true)}
+	var encounter: Dictionary = {"id":id,"encounterId":id,"kind":"dungeon","initiator":"player","interactive":true,"contractId":contract_id,"locationId":contract_id,"locationName":str(selected.name),"originLocationId":origin,"committedWatch":committed_watch,"quotedWatches":quoted,"returnWatchId":str(next.turn.id),"heroSnapshot":hero,"playerCompanies":[],"stationedCompanyIds":next.expeditionCompanyIds.duplicate(),"enemies":selected.enemies.duplicate(true),"lootRewards":rewards,"objective":{"type":"dungeon_clear"},"objectiveDefinitionId":"hunt_clear","stakesDefinitionId":"hunt_extraction","sceneId":Dungeons.layout_id_for(str(selected.templateId),int(next.huntBoard.version)),"seed":int(selected.seed),"xpReward":int(selected.xpReward),"context":{"watch":str(calendar(next).watch),"regionId":"woodland","weather":"clear","contractTier":int(selected.tier)},"arena":Dungeons.arena_for(str(selected.templateId),int(next.huntBoard.version))}
 	next.pendingEncounter = encounter
 	_record(next,"hunt_departure","Mara Veyne enters %s alone. Two watches are committed; this contract's losses and unclaimed rewards persist on withdrawal." % str(selected.name),{"contractId":contract_id,"encounterId":id,"attempt":int(selected.attempts)})
 	_commit(state,next)
@@ -1382,6 +1391,11 @@ static func deserialize(text: String) -> Variant:
 		_apply_fixed_identity(hero)
 	if source_version < 4:
 		raw["huntBoard"] = Hunts.create_board(int(raw.seed),1,int(hero.level))
+	elif int(raw.huntBoard.version) == 1 and str(raw.huntBoard.activeContractId).is_empty():
+		# Only an untouched board may change locations. Withdrawn, defeated and
+		# pending contracts retain their old spawns, arena and claim ledger until
+		# completion; their next board is generated from the current registry.
+		raw["huntBoard"] = Hunts.create_board(int(raw.seed),int(raw.huntBoard.generation),int(raw.huntBoard.tier),raw.huntBoard.completedHistory)
 	if source_version < VERSION:
 		raw.version = VERSION
 	return raw.duplicate(true)
@@ -1431,6 +1445,7 @@ static func _valid_hunt_pending(state: Dictionary) -> bool:
 	if pending.get("playerCompanies") != [] or pending.get("stationedCompanyIds") != state.expeditionCompanyIds or not _same(pending.get("enemies"),offer.enemies) or not pending.get("heroSnapshot") is Dictionary or not pending.get("lootRewards") is Array or not _fixed_identity_valid(pending.heroSnapshot):
 		return false
 	var expected: Dictionary = _hero_snapshot(state,str(pending.originLocationId))
+	expected.pos = Dungeons.hero_spawn_for(str(offer.templateId),int(state.huntBoard.version))
 	for key: String in ["id","hp","maxHp","mana","maxMana","attack","armor","speed","inventory","equipment","traits","wardBonus","pos","classId","raceId","factionId","skills","level","xp","progression"]:
 		if not _same(pending.heroSnapshot.get(key),expected.get(key)):
 			return false
@@ -1440,4 +1455,4 @@ static func _valid_hunt_pending(state: Dictionary) -> bool:
 			rewards.append(reward)
 	if not _same(pending.lootRewards,rewards) or not _integer(pending.get("seed"),int(offer.seed),int(offer.seed)) or not _integer(pending.get("xpReward"),int(offer.xpReward),int(offer.xpReward)) or str(pending.get("objectiveDefinitionId","")) != "hunt_clear" or str(pending.get("stakesDefinitionId","")) != "hunt_extraction" or not _same(pending.get("objective"),{"type":"dungeon_clear"}):
 		return false
-	return _same(pending.get("arena"),CRYPT_ARENA) and _same(pending.get("context"),{"watch":str(calendar(state).watch),"regionId":"woodland","weather":"clear","contractTier":int(offer.tier)}) and str(pending.get("sceneId","")) == "bell_crypt" and str(pending.get("returnWatchId","")) == str(state.turn.id)
+	return _same(pending.get("arena"),Dungeons.arena_for(str(offer.templateId),int(state.huntBoard.version))) and _same(pending.get("context"),{"watch":str(calendar(state).watch),"regionId":"woodland","weather":"clear","contractTier":int(offer.tier)}) and str(pending.get("sceneId","")) == Dungeons.layout_id_for(str(offer.templateId),int(state.huntBoard.version)) and str(pending.get("returnWatchId","")) == str(state.turn.id)

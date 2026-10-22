@@ -559,11 +559,22 @@ static func _think(state: Dictionary, actor: Dictionary) -> void:
 		var direction: Vector2 = (_v(actor.pos) - _v(target.pos)).normalized()
 		var destination: Vector2 = _v(target.pos) + direction * (reach * 0.80 if ranged else maxf(0.8, reach * 0.65))
 		actor.path = _path(state, _v(actor.pos), destination, float(actor.radius))
+		# An approach point beside a valid target can fall inside a corner.
+		# Reaching attack range still stops pursuit before bodies overlap.
+		if actor.path.is_empty():
+			actor.path = _path(state, _v(actor.pos), _v(target.pos), float(actor.radius))
 
 static func _follow_path(state: Dictionary, actor: Dictionary) -> void:
 	if _has_status(actor, "rooted", int(state.tick)) or actor.path.is_empty():
 		actor.animState = "guard" if bool(actor.guarding) else "idle"
 		return
+	# Preserve a legacy snapshot at load, then replace only its stale movement
+	# route before motion. New commands never use the old sampled clearance.
+	if not state.arena.has("layoutId") and not _line_clear(state, _v(actor.pos), _v(actor.path[0]), float(actor.radius)):
+		actor.path = _path(state, _v(actor.pos), _v(actor.path.back()), float(actor.radius))
+		if actor.path.is_empty():
+			actor.animState = "guard" if bool(actor.guarding) else "idle"
+			return
 	var destination: Vector2 = _v(actor.path[0])
 	var before: Vector2 = _v(actor.pos)
 	_move_toward(state, actor, destination, float(actor.speed) * STEP * (0.45 if bool(actor.guarding) else 1.0))
@@ -611,7 +622,68 @@ static func _walkable(state: Dictionary, position: Vector2, radius: float) -> bo
 	return true
 
 static func _line_clear(state: Dictionary, a: Vector2, b: Vector2, radius: float) -> bool:
+	# Bounds are convex: valid endpoints keep the whole segment inside them.
+	if not _inside_bounds(state, a, radius) or not _inside_bounds(state, b, radius):
+		return false
+	for obstacle: Dictionary in state.arena.obstacles:
+		if obstacle.has("rect"):
+			var values: Array = obstacle.rect
+			var rect: Rect2 = Rect2(float(values[0]), float(values[1]), float(values[2]), float(values[3])).grow(radius)
+			if _segment_hits_rect(a, b, rect):
+				return false
+		else:
+			var center: Vector2 = _v(obstacle.get("pos", []))
+			var nearest: Vector2 = Geometry2D.get_closest_point_to_segment(center, a, b)
+			if center.distance_to(nearest) <= radius + float(obstacle.get("radius", 0.5)):
+				return false
+	return true
+
+static func _segment_hits_rect(a: Vector2, b: Vector2, rect: Rect2) -> bool:
+	# Clip the complete segment against each axis instead of sampling points.
+	# Match _walkable/Rect2.has_point: minimum edges are included; maximum
+	# edges are excluded. In particular, travelling along an excluded edge
+	# stays valid, while touching an included corner still blocks the route.
+	var enter: float = 0.0
+	var leave: float = 1.0
+	var enter_included: bool = true
+	var leave_included: bool = true
+	for axis: int in range(2):
+		var origin: float = float(a[axis])
+		var delta: float = float(b[axis]) - origin
+		var minimum: float = float(rect.position[axis])
+		var maximum: float = float(rect.end[axis])
+		if delta == 0.0:
+			if origin < minimum or origin >= maximum:
+				return false
+			continue
+		var near: float = (minimum - origin) / delta if delta > 0.0 else (maximum - origin) / delta
+		var far: float = (maximum - origin) / delta if delta > 0.0 else (minimum - origin) / delta
+		var near_included: bool = delta > 0.0
+		var far_included: bool = delta < 0.0
+		if near > enter:
+			enter = near
+			enter_included = near_included
+		elif near == enter:
+			enter_included = enter_included and near_included
+		if far < leave:
+			leave = far
+			leave_included = far_included
+		elif far == leave:
+			leave_included = leave_included and far_included
+		if enter > leave or (enter == leave and not (enter_included and leave_included)):
+			return false
+	return true
+
+static func _legacy_saved_line_clear(state: Dictionary, a: Vector2, b: Vector2, radius: float) -> bool:
+	# Frozen-v4 vaults can contain routes accepted by the old 0.12-unit
+	# sampler. This compatibility check is solely for otherwise-valid saves;
+	# exact geometry owns every new route and every simulated movement step.
+	if state.arena.has("layoutId") or not _walkable(state, a, radius) or not _walkable(state, b, radius):
+		return false
 	var count: int = maxi(1, ceili(a.distance_to(b) / 0.12))
+	# The original vault's diagonal requires fewer than 300 samples.
+	if count > 512:
+		return false
 	for index: int in range(count + 1):
 		if not _walkable(state, a.lerp(b, float(index) / float(count)), radius):
 			return false
@@ -646,8 +718,9 @@ static func _path(state: Dictionary, start: Vector2, destination: Vector2, radiu
 			continue
 		closed[current] = true
 		visited += 1
-		var here: Vector2 = origin + Vector2(current) * grid
-		if current == goal or here.distance_to(destination) < grid and _line_clear(state, here, destination, radius):
+		# The actual start, not its rounded grid cell, owns the first links.
+		var here: Vector2 = start if current == first else origin + Vector2(current) * grid
+		if (current == goal or here.distance_to(destination) < grid) and _line_clear(state, here, destination, radius):
 			var reversed: Array = [_p(destination)]
 			var cursor: Vector2i = current
 			while cursor != first:
@@ -995,7 +1068,9 @@ static func restore(saved: Dictionary, registered_encounter: Dictionary) -> Dict
 		var previous: Vector2 = _v(value.pos)
 		for path_index: int in range(value.path.size()):
 			var point: Variant = value.path[path_index]
-			if not _point(point) or not _line_clear(state, previous, _v(point), float(value.radius)):
+			if not _point(point):
+				return {}
+			if not _line_clear(state, previous, _v(point), float(value.radius)) and not _legacy_saved_line_clear(state, previous, _v(point), float(value.radius)):
 				return {}
 			value.path[path_index] = _p(_v(point))
 			previous = _v(point)

@@ -1,0 +1,15 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+RULES_STORAGE {"applicationName":"DraconiaRules-7f00db62138a48f4bfc9c6ccdef50d91-progression","userDataDir":"/tmp/draconia-v032-tests/portable-release-gate/progression/data/godot/app_userdata/DraconiaRules-7f00db62138a48f4bfc9c6ccdef50d91-progression"}
+PROGRESSION GROUP 1 Baseline, public view, and the complete level boundary table: PASS
+PROGRESSION GROUP 2 Atomic draft/commit, full stat previews, and no free healing: PASS
+PROGRESSION GROUP 3 Rejected drafts, maximum investments, and stale revisions: PASS
+PROGRESSION GROUP 4 Equipment/set/socket composition and preview invalidation: PASS
+PROGRESSION GROUP 5 Safe-town resets, capped costs, and recovery restrictions: PASS
+PROGRESSION GROUP 6 XP overflow, multi-level grants, and capped budgets: PASS
+PROGRESSION GROUP 7 Actual attack, movement, health capacity, and finite ward effects: PASS
+PROGRESSION GROUP 8 Pending locks and fractional-speed live save continuation: PASS
+PROGRESSION GROUP 9 Authentic v1 town, earned-equipment, and live-combat migration: PASS
+PROGRESSION GROUP 10 Malformed progression and derived-cache rejection: PASS
+PROGRESSION GROUP 11 Earned crypt XP, level-up, and once-only application: PASS
+PROGRESSION_SUMMARY {"checks":277,"earned":{"hp":71,"level":2,"mana":6,"ticks":454,"unspent":3,"xp":120},"failures":0,"groups":11}
